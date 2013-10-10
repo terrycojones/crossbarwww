@@ -1,0 +1,61 @@
+@font-face {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: normal;
+   src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+   font-family: 'Open Sans Light';
+   font-style: normal;
+   font-weight: normal;
+   src: url('../fonts/OpenSans-Light.ttf');
+}
+
+html {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   color: #666;
+   background-color: #ececec;
+   font-family: 'Open Sans', sans-serif;
+}
+
+/*
+  Vertical centering .. again;)
+  http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
+ */
+
+#viewport {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 60%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#footer {
+   margin-top: 100px;
+   font-size: 11px;
+   color: #bbb;
+}
+
+#footer a, a:visited {
+   color: #bbb;
+}

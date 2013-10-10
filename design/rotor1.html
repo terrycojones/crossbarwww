@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>crossbar.io application router</title>
+   <link rel="shortcut icon" href="favicon.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap -->
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+   <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+   <![endif]-->
+
+      <style>
+         body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            /* background-color: #ececec; */
+         }
+
+         #rotor1 {
+            width: 1197px;
+            margin: auto;
+         }
+
+         .jumbotron {
+            margin-bottom: 0;
+            padding-bottom: 40px;
+            background-color: #ececec;
+            /*border-bottom: 1px solid #ffde00;*/
+         }
+
+         hr {
+            /*border-color: #ffde00;*/
+         }
+
+         a {
+            color: #666;
+         }
+         a:visited {
+            color: #666;
+         }
+
+         h2 {
+            padding-left: 12px;
+            border-left: 3px solid #ffde00;
+            text-shadow: #ccc 1px 1px 2px;
+            font-family: "Segoe UI Light", sans;
+            color: #333;
+         }
+
+         .navbar-inverse .navbar-nav>.dropdown>a .caret {
+            border-top-color: #ffde00;
+            border-bottom-color: #ffde00;
+         }
+
+         .nav a:hover .caret {
+            border-top-color: #333;
+            border-bottom-color: #333;
+         }
+
+         .nav .caret {
+            border-top-color: #333;
+            border-bottom-color: #333;
+         }
+
+      </style>
+
+  </head>
+  <body>
+
+<a href="https://github.com/you"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 10000;" src="github.png" alt="Fork us on GitHub"></a>
+
+
+    <div class="navbar navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<!--
+          <a class="navbar-brand" href="#">
+            <img src="gravatar.png" width="40" height="40" style="margin: 0; padding: 0; display: inline;"></img>
+          </a>
+-->
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Get in touch</a></li>
+            <li><a href="#contact">Downloads</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+         <br>
+         <center>
+            <!-- <img src="rotor1.png" width="1197" height="760" id="rotor1"></img> -->
+            <img src="logo.png" width="600"></img>
+            <br><br>
+            <img src="arch.png" width="800"></img>
+         </center>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Less Complexity</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Real-time</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Direct-to-Database</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#">View details</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+         <center style="font-size: 12px;">
+            Copyright &copy; 2013, The crossbar.io project and contributors.<br>
+            Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC-BY-SA</a> and code licensed under <a href="http://opensource.org/licenses/AGPL-3.0">AGPL 3.0</a>.<br>
+            "crossbar.io" and the crossbar logo are trademarks of <a href="http://www.tavendo.com">Tavendo</a>.<br>
+            <br>
+<!--
+           <span style="float: right; margin-right: 120px;">Created by <img src="tavendo.png"></img></span>
+-->
+         </center>
+      </footer>
+    </div> <!-- /container -->
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
