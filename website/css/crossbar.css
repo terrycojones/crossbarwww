@@ -12,6 +12,20 @@
    src: url('../fonts/OpenSans-Light.ttf');
 }
 
+@font-face {
+   font-family: 'Play';
+   font-style: normal;
+   font-weight: normal;
+   src: url('../fonts/Play-Regular.ttf');
+}
+
+@font-face {
+   font-family: 'Play Bold';
+   font-style: normal;
+   font-weight: normal;
+   src: url('../fonts/Play-Bold.ttf');
+}
+
 html {
    margin: 0;
    padding: 0;
@@ -29,6 +43,48 @@ body {
    font-family: 'Open Sans', sans-serif;
 }
 
+#tagline {
+   margin-top: 20px;
+   margin-bottom: 36px;
+   font-size: 18px;
+}
+
+.cb_icon {
+   width: 80px;
+   height: 80px;
+   position: relative;
+   top: 18px;
+   margin-right: 12px;
+}
+
+.cb_prefix {
+   font-family: 'Play Bold', sans-serif;
+   font-size: 72px;
+   color: #1a1a1a;
+}
+
+.cb_suffix {
+   font-family: 'Play', sans-serif;
+   font-size: 72px;
+   color: #888;
+}
+
+
+#github {
+   width: 132px;
+   height: 133px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   border: 0;
+   z-index: 10000;
+   background-image: url('../img/github.png');
+}
+
+#github:hover {
+   background-image: url('../img/github_highlighted.png');
+}
+
 /*
   Vertical centering .. again;)
   http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
@@ -42,8 +98,8 @@ body {
 }
 
 #main {
-  width: 60%;
-  height: 50%;
+  width: 940px;
+  height: 800px;
   overflow: auto;
   margin: auto;
   position: absolute;

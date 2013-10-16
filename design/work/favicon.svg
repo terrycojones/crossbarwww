@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="160"
-   height="160"
+   width="16"
+   height="16"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="gravatar.svg"
-   inkscape:export-filename="C:\Users\oberstet\scm\svn\oberstet\projects\tavendo_visuals\rotor\gravatar.png"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="C:\Users\oberstet\scm\svn\oberstet\projects\tavendo_visuals\rotor\favicon.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -141,15 +141,6 @@
          id="feColorMatrix4782"
          type="saturate"
          values="0" />
-    </filter>
-    <filter
-       id="filter6207"
-       inkscape:collect="always"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur6209"
-         stdDeviation="0.40603442"
-         inkscape:collect="always" />
     </filter>
     <radialGradient
        r="88.392456"
@@ -911,9 +902,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6970563"
-     inkscape:cx="83.830001"
-     inkscape:cy="23.922293"
+     inkscape:zoom="19.2"
+     inkscape:cx="12.25613"
+     inkscape:cy="4.3895335"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -944,9 +935,10 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(281.93924,1747.8716)">
+     transform="translate(281.93924,1603.8716)">
     <g
-       id="g4097">
+       id="g4097"
+       transform="matrix(0.1,0,0,0.1,-253.74532,-1429.0844)">
       <rect
          ry="0"
          rx="676.11633"
