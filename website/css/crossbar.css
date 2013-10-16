@@ -40,13 +40,32 @@ body {
    height: 100%;
    color: #666;
    background-color: #ececec;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Segoe UI', 'Open Sans', sans-serif;
+}
+
+a {
+   color: #b59f00;
+}
+
+a:visited {
+   color: #b59f00;
+}
+
+a:hover {
+   color: #E4C904;
 }
 
 #tagline {
    margin-top: 20px;
-   margin-bottom: 36px;
-   font-size: 18px;
+   margin-bottom: 46px;
+   font-size: 20px;
+   font-family: 'Segoe UI Light', 'Open Sans Light', sans-serif;
+}
+
+#followus {
+   position: relative;
+   top: 4px;
+   margin-left: 12px;
 }
 
 .cb_icon {
@@ -108,10 +127,14 @@ body {
 
 #footer {
    margin-top: 100px;
-   font-size: 11px;
-   color: #bbb;
+   font-size: 13px;
+   color: #999;
 }
 
-#footer a, a:visited {
-   color: #bbb;
+#footer > a {
+   color: #999;
+}
+
+#footer > a:visited {
+   color: #999;
 }

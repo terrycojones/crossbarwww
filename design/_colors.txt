@@ -6,6 +6,13 @@ Yellow Highlighted:
    rgb(255, 228, 0)
    #ffe400
 
+Dark Yellow:
+   rgb(37, 255, 91)
+   #b59f00
+
+Medium Yellow:
+   #E4C904
+
 Dark Grey:
    rgb(26, 26, 26)
    #1a1a1a
