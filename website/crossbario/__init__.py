@@ -32,6 +32,10 @@ app.secret_key = str(uuid.uuid4())
 def page_home():
    return render_template('index.html')
 
+@app.route('/howitworks')
+def page_howitworks():
+   return render_template('page_t_howitworks.html')   
+
 
 
 if __name__ == "__main__":

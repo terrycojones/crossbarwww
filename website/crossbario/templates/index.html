@@ -1,43 +1,37 @@
-<!doctype html>
-<html>
-   <head>
-      <meta charset="utf-8" />
-      <title>Crossbar.io application router</title>
-      <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}">
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
-   </head>
-   <body>
-      <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
+{% extends "layout_t.html" %}
 
-      <div id="viewport">
-         <div id="main">
-            <center>
-               <img src="{{ url_for('static', filename = 'img/crossbar_icon.svg') }}" class="cb_icon" width="80" height="80">
-               <span class="cb_prefix">Crossbar</span><span class="cb_suffix">.io</span>
-            </center>
+{% block content %}
 
-            <center id="tagline">
-               Open-source multi-protocol application router.
-               <span id="followus">
-               <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
-            </center>
+   <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
 
-            <center>
-               <img src="{{ url_for('static', filename = 'img/crossbar_arch.png') }}" alt="Crossbar.io - Open-source multi-protocol application router" width="800" height="370"></img>
-            </center>
+   <div id="viewport">
+      <div id="main">
+         <center>
+            <img src="{{ url_for('static', filename = 'img/crossbar_icon.svg') }}" class="cb_icon" width="80" height="80">
+            <span class="cb_prefix">Crossbar</span><span class="cb_suffix">.io</span>
+         </center>
 
-            <center>
-               <a href="https://github.com/crossbario/crossbar/blob/master/README.md">Read more</a>
-            </center>
+         <center id="tagline">
+            Open-source multi-protocol application router.
+            <span id="followus">
+            <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
+         </center>
 
-            <center id="footer">
-               Copyright &copy; 2013, The Crossbar.io project and contributors.<br>
-               Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC-BY-SA</a> and code licensed under <a href="http://opensource.org/licenses/AGPL-3.0">AGPL 3.0</a>.<br>
-               "Crossbar.io" and the Crossbar.io logo are trademarks of <a href="http://www.tavendo.com">Tavendo</a>.<br>
-               <br>
-            </center>
-         </div>
+         <center>
+            <img src="{{ url_for('static', filename = 'img/crossbar_arch.png') }}" alt="Crossbar.io - Open-source multi-protocol application router" width="800" height="370"></img>
+         </center>
+
+         <center>
+            <a href="https://github.com/crossbario/crossbar/blob/master/README.md">Read more</a>
+         </center>
+
+         <center id="footer">
+            Copyright &copy; 2013, The Crossbar.io project and contributors.<br>
+            Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC-BY-SA</a> and code licensed under <a href="http://opensource.org/licenses/AGPL-3.0">AGPL 3.0</a>.<br>
+            "Crossbar.io" and the Crossbar.io logo are trademarks of <a href="http://www.tavendo.com">Tavendo</a>.<br>
+            <br>
+         </center>
       </div>
+   </div>
 
-   </body>
-</html>
+{% endblock %}   
