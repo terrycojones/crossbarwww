@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8" />
       <title>Crossbar.io application router</title>
-      <link rel="shortcut icon" href="img/favicon.ico">
-      <link rel="stylesheet" type="text/css" href="css/crossbar.css" />
+      <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
    </head>
    <body>
       <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
@@ -12,7 +12,7 @@
       <div id="viewport">
          <div id="main">
             <center>
-               <img src="img/crossbar_icon.svg" class="cb_icon" width="80" height="80">
+               <img src="{{ url_for('static', filename = 'img/crossbar_icon.svg') }}" class="cb_icon" width="80" height="80">
                <span class="cb_prefix">Crossbar</span><span class="cb_suffix">.io</span>
             </center>
 
@@ -23,7 +23,7 @@
             </center>
 
             <center>
-               <img src="img/crossbar_arch.png" alt="Crossbar.io - Open-source multi-protocol application router" width="800" height="370"></img>
+               <img src="{{ url_for('static', filename = 'img/crossbar_arch.png') }}" alt="Crossbar.io - Open-source multi-protocol application router" width="800" height="370"></img>
             </center>
 
             <center>
