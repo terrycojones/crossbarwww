@@ -1,0 +1,189 @@
+#hiw
+{
+    margin: 0;
+}
+
+
+#hiw_architecture, #hiw_c2c, #hiw_pfo, #hiw_cosp
+{
+   display: block;
+   margin: 20px auto 0 auto;
+}
+
+.hiw_illu_textblock {
+    float: left;
+    width: 40%;
+}
+
+.hiw_illu_textblock > h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.hiw_illu_right
+{
+   float:right;
+   margin: 1em 0 0 0;
+}
+
+.hiw_para_left
+{
+   float: left;
+   width: auto;
+}
+
+.hiw_para_left > p:first-of-type
+{
+   margin-top: 0;
+}
+
+.hiw_para_left.c2c_para
+{
+   width: 50%;
+}
+
+.hiw_para_left.pto_para
+{
+   width: 25%;}
+
+.hiw_para_left.cosp_left
+{
+   width: 24%;
+}
+
+
+.hiw_codeboxes
+{
+   clear: both;
+   padding: 2em 0 1em;
+}
+
+.hiw_codebox
+{
+   width: 90%;
+   margin: 40px auto 40px auto;
+   padding: 0;
+   font-size: 14px !important;
+}
+
+.syntaxhighlighter, .ie.syntaxhighlighter {
+   font-family: Consolas, monospace !important;
+   font-size: 14px !important;
+   padding-top: 12px !important;
+   padding-bottom: 12px !important;
+   box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.3);
+}
+
+.syntaxhighlighter table td.code {
+}
+
+/*
+   Fix for: https://bitbucket.org/alexg/syntaxhighlighter/issue/177/superfluous-vertical-scrollbars-in-chrome
+.syntaxhighlighter { padding-bottom: 1px !important; }
+ */
+.syntaxhighlighter table td.code .section { padding-bottom: 1px !important; }
+
+
+#hiw_bottom_spacer
+{
+   height: 100px;
+}
+
+
+.mixed
+{
+   width: 100%;
+   position: relative;
+   color: #fff;
+}
+
+.lightgrey_left,
+.darkgrey_right
+{
+   width: 50%;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   z-index: 0;
+   color: #fff;
+}
+.lightgrey_left
+{
+   left: 0;
+   background-color: #4D4D4D;
+}
+.darkgrey_right
+{
+   right: 0;
+   background-color: #1A1A1A;
+}
+
+
+#hiw .w960
+{
+   padding: 40px 0;
+   padding-left: 35px;
+}
+
+
+#wsWampExpand
+{
+   color: #BD9F01;
+   cursor: pointer;
+   text-align: center;
+   margin: 2em 0 0;
+}
+
+.wsNoDisplay
+{
+   display: none;
+}
+
+.js .wsNoDisplay
+{
+   display: block;
+}
+
+.js #wsWampContainer
+{
+   display: none;
+}
+
+
+.lightgrey {
+    padding: 10px 0;
+
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #c7c7c7;
+    background-color: #D8D8D8;
+}
+
+.white {
+    margin: 41px 0;
+
+    padding: 0 10px;
+}
+
+.section img {
+  
+}
+
+.hiw_illu_textblock.narrow {
+  width: 35%;
+}
+
+.section.white.first {
+    margin-top: 0;
+  
+}
+
+.section img.wamp {
+  float: left;
+  margin-top: 9px;
+}
+
+#hiw_crossbar_components {
+    position: relative;
+
+    right: 36px;
+}

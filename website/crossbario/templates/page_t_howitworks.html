@@ -1,0 +1,387 @@
+{% extends "layout_t.html" %}
+
+{% block additionalload %}
+
+   <link href="{{ url_for('static', filename='deps/syntaxhighlighter/styles/shCore.css') }}" rel="stylesheet" type="text/css" />
+   <link href="{{ url_for('static', filename='deps/syntaxhighlighter/styles/shThemeTavendo.css') }}" rel="stylesheet" type="text/css" />
+
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shCore.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushJScript.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPlSql.js') }}" type="text/javascript"></script>
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/page_t_howitworks.css') }}">
+
+   <script type="text/javascript">
+     SyntaxHighlighter.all()
+   </script>
+
+   <script>
+
+         // $("#hiw").addClass("js");
+
+         // var expandNotice = $("#wsWampExpand");
+         // var expanded = false;
+         // var expandTime = 300;
+         // var expandText;
+         // var unexpandText = "Hide information about WebSocket and WAMP";
+
+         // expandNotice.on("click", function() {
+
+         //    //// hide the exand notice
+         //    //expandNotice.fadeOut(300);
+
+         //    //// toggle display of expanded information
+         //    //$("#wsWampContainer").slideToggle(400);
+
+
+         //    // expand/shrink and change caption of expand notice
+         //    if (!expanded) {
+         //       expandText = expandNotice.text(); // save current text for restore on next click
+         //       expandNotice.text(unexpandText);
+         //       $("#wsWampContainer").slideDown(expandTime);
+         //       expanded = true;
+         //    }
+         //    else {
+         //       expandNotice.text(expandText);
+         //       $("#wsWampContainer").slideUp(expandTime);
+         //       expanded = false;
+         //    }
+
+         // });
+
+      </script>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="hiw" class="page_content">
+
+      <div class="section white first">
+         <div class="w820 content">
+            <h1>
+               How it works
+            </h1>
+            <p>
+               Crossbar.io enables the creation of Web and mobile applications
+               that are powered directly from your <strong>Oracle</strong>
+               or <strong>SAP HANA</strong> database without an application
+               server and without any coding on the middletier.
+            </p>
+            <p>Crossbar.io includes a comprehensive, integrated set of application infrastructure services:</p>
+         </div>
+      </div>
+
+      <div class="section white">
+         <div class="content w960">
+            <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/hiw_crossbar_components.png') }}" width="960" height="699"/>
+         </div>
+      </div>
+
+      <div class="section white">
+         <div class="w820 content">
+            <p>
+               In this architecture, user interface logic is implemented completely
+               in browser-based or mobile app frontends using <strong>JavaScript</strong>,
+               <strong>HTML5</strong> and <strong>CSS</strong> standards or
+               native mobile languages.
+               Business logic is implemented completely within the database,
+               nearby your data in database procedural SQL dialects such as
+               <strong>PL/SQL</strong> (Oracle) or <strong>SQLScript</strong> (SAP HANA).
+            </p>
+            <p>
+               Crossbar.io enables three communication patterns for your applications:
+            </p>
+            <ul>
+               <li>
+                  Client-to-Client PubSub
+               </li>
+               <li>
+                  Publish PubSub events from the Database
+               </li>
+               <li>
+                  Calling Database Stored Procedures from the client
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="section lightgrey">
+         <div class="content w960">
+            <div class="hiw_illu_textblock narrow">
+               <h2>
+                  Architecture
+               </h2>
+               <p>
+                  Crossbar.io works as a bidirectional real-time message bus between
+                  browser-based and native mobile app frontends and the database
+               </p>
+            </div>
+            <img id="hiw_architecture" src="{{ url_for('static', filename='img/hiw_crossbar_architecture.png') }}" width="554" height="140"/>
+            <div style="clearboth"></div>
+         </div>
+      </div>
+
+      <div class="section white">
+         <div class="content w820">
+            <p>
+               Please note that no application code is run on Crossbar.io.
+               All application specific code is either run in the frontends or
+               the database. Hence, the architecture is
+               <strong>logically 2-tier</strong>, which greatly simplifies
+               development and reduces overall complexity.
+            </p>
+
+            <p class="wsNoDisplay">
+               Frontend connections are via WebSocket and use the WAMP protocol
+               to provide PubSub and RPC functionality.
+            </p>
+
+            <!-- <div id="wsWampExpand" class="wsNoDisplay">Learn more about WebSocket and WAMP</div> -->
+
+           <!--  <div id="wsWampContainer"> -->
+               <h3>
+                  WebSocket and WAMP
+               </h3>
+               <p>
+                  Clients - both browser-based and native apps - connect to Crossbar.io via
+                  <a href="http://tools.ietf.org/html/rfc6455"><strong>WebSocket</strong></a>,
+                  a new IETF specified open protocol already built into modern browsers.
+                  <br>
+                  WebSocket is the new standard for real-time messaging on the Web
+                  and allows for bi-directional, low-latency communication over
+                  persistent and efficient connections.
+               </p>
+               <p>
+                  While WebSocket provides a solid low-level communication foundation,
+                  Crossbar.io adds two powerful higher-level messaging patterns
+                  for applications on top of WebSocket via <a href="http://wamp.ws/"><strong>WAMP</strong></a>:
+               </p>
+               <div style="width: 80%; margin: auto;">
+                  <img class="wamp" src="{{ url_for('static', filename='img/wamp_grey.png') }}" width="145" height="26"/>
+                  <ul style="float: left; margin-left: 30px;">
+                     <li>
+                        <strong>Publish and Subscribe</strong> (PubSub)
+                     </li>
+                     <li>
+                        <strong>Remote Procedure Calls</strong> (RPC)
+                     </li>
+                  </ul>
+               </div>
+               <div style="clear: both"></div>
+               <p>
+                  At its core, Crossbar.io then dispatches PubSub messages from both clients and Oracle, and
+                  forwards client RPCs to Oracle stored procedures.
+               </p>
+<!--             </div> -->
+
+
+         </div>
+      </div>
+
+      <div class="section lightgrey">
+         <div class="content w960">
+            <div class="hiw_illu_textblock">
+               <h2>
+                  Client-to-Client PubSub
+               </h2>
+               <p>
+                  The <strong>PubSub</strong> pattern allows for asynchronous,
+                  decoupled communication between clients.<br><br>
+                  Clients publish events to topics. Crossbar.io then dispatches
+                  events to all clients currently subscribed to and authorized
+                  for the topic.
+               </p>
+            </div>
+            <img id="hiw_c2c" src="{{ url_for('static', filename='img/hiw_crossbar_pubsub.png') }}" width="310" height="271" />
+            <div style="clearboth"></div>
+         </div>
+      </div>
+
+      <div class="section white">
+         <div class="content w820">
+            <p>
+               Here is how you subscribe in JavaScript to receive events on a topic:
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: javascript; toolbar: false; gutter: true; auto-links: false; highlight: []">
+                  session.subscribe('http://example.com/myevent',
+                     function (topic, event) {
+                        console.log(event);
+                     }
+                  );
+               </pre>
+            </div>
+            <p>
+               Publishing events from JavaScript to topics is done like this:
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: javascript; toolbar: false; gutter: true; auto-links: false; highlight: []">
+                  session.publish('http://example.com/myevent',
+                     {val1: 'Hello World', val2: 23}
+                  );
+               </pre>
+            </div>
+         </div>
+      </div>
+
+      <div class="section lightgrey">
+         <div class="content w960">
+            <div class="hiw_illu_textblock">
+               <h2>
+                  Publish from Database
+               </h2>
+               <p>
+                  Crossbar.io allows to publish events to topics directly from within database stored procedures or triggers:
+               </p>
+            </div>
+            <img id="hiw_pfo" src="{{ url_for('static', filename='img/hiw_crossbar_publish.png') }}" width="521" height="271"/>
+            <div style="clearboth"></div>
+         </div>
+      </div>
+
+      <div class="section white">
+         <div class="content w820">
+            <p>
+               You can publish events from <span class="bold">Oracle PL/SQL</span> with plain strings as payload ..
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: plsql; toolbar: false; gutter: true; auto-links: false; highlight: [2,3]">
+               BEGIN
+                  webmq.publish('http://tavendo.de/webmq/demo/notifications/702670',
+                                'Hello from Oracle!!!');
+               END;
+               /
+               </pre>
+            </div>
+            <p>
+               .. or publish events with structured payload using the JSON utility packages included:
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: plsql; toolbar: false; gutter: true; auto-links: false; highlight: [7]">
+                  DECLARE
+                     l_obj   JSON := json();
+                  BEGIN
+                     l_obj.put('name', 'Joe Lennon');
+                     l_obj.put('age', 24);
+                     l_obj.put('awesome', true);
+                     webmq.publish('http://tavendo.de/webmq/demo/sandbox#evt1', l_obj);
+                  END;
+                  /
+               </pre>
+            </div>
+            <p>
+               Of course structured payload can be arbitrary complex, i.e. consist of lists of objects:
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: plsql; toolbar: false; gutter: true; auto-links: false; highlight: [15]">
+                  DECLARE
+                     l_list  JSON_LIST := json_list();
+                     l_obj   JSON;
+                  BEGIN
+                     FOR r IN (SELECT owner, table_name, num_rows, last_analyzed
+                                  FROM all_tables WHERE rownum <= 10)
+                     LOOP
+                        l_obj := json();
+                        l_obj.put('owner', r.owner);
+                        l_obj.put('table', r.table_name);
+                        l_obj.put('rows', r.num_rows);
+                        l_obj.put('analyzed', r.last_analyzed);
+                        l_list.append(l_obj.to_json_value);
+                     END LOOP;
+                     webmq.publish('http://tavendo.de/webmq/demo/sandbox#evt1', l_list);
+                  END;
+                  /
+               </pre>
+            </div>
+         </div>
+      </div>
+
+      <div class="section lightgrey">
+         <div class="content w960">
+            <div class="hiw_illu_textblock">
+               <h2>
+                  Calling Database Stored Procedures
+               </h2>
+               <p>
+                  Crossbar.io allows you to call database stored procedures from JavaScript
+                  running in Web browsers or native mobile clients.
+               </p>
+            </div>
+            <img id="hiw_cosp" src="{{ url_for('static', filename='img/hiw_crossbar_call.png') }}" width="520" height="92" />
+            <div style="clearboth"></div>
+         </div>
+      </div>
+
+      <div class="section white">
+         <div class="content w820">
+            <p>
+               Here is a simple Oracle PL/SQL based package with a stored procedure that
+               gets registered with WebMQ for remote calling:
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: plsql; toolbar: false; gutter: true; auto-links: false; highlight: [24, 32]">
+                  --
+                  -- create an awesome package for our business logic ..
+                  --
+                  CREATE PACKAGE rpc1
+                  AS
+                     FUNCTION add2 (x NUMBER, y NUMBER) RETURN NUMBER;
+                  END;
+                  /
+
+                  CREATE PACKAGE BODY rpc1
+                  AS
+                     FUNCTION add2 (x NUMBER, y NUMBER) RETURN NUMBER
+                     AS
+                     BEGIN
+                        RETURN x + y;
+                     END add2;
+                  END;
+                  /
+
+                  --
+                  -- WebMQ needs execute rights on package
+                  --
+                  BEGIN
+                     EXECUTE IMMEDIATE 'GRANT EXECUTE ON rpc1 TO ' || webmq.REPOUSER;
+                  END;
+                  /
+
+                  --
+                  -- Register package procedure as RPC endpoint with WebMQ
+                  --
+                  BEGIN
+                     webmq.export('rpc1', 'add2', 'http://tavendo.de/webmq/demo/sandbox#add2');
+                  END;
+                  /
+               </pre>
+            </div>
+            <p>
+               Calling above database stored procedure then is easy:
+            </p>
+            <div class="hiw_codebox">
+               <pre class="brush: javascript; toolbar: false; gutter: true; auto-links: false; highlight: [1]">
+                  session.call("http://tavendo.de/webmq/demo/sandbox#add2", 23, 666).then(
+                     function (res) {
+                        alert("sum = " + res);
+                     },
+                     function (err) {
+                        alert("error: " + err.desc);
+                     }
+                  );
+               </pre>
+            </div>
+         </div>
+         <div id="hiw_bottom_spacer"></div>
+      </div>
+
+      
+
+   </div>
+
+
+{% endblock %} 

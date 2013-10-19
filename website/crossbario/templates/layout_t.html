@@ -4,16 +4,95 @@
       
       <meta charset="utf-8" />
       <title>Crossbar.io application router</title>
+
+      <!-- disabling the below yields zoomed-out full display on mobile devices, but prevents the navbar from collapsing -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
       <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}">
+
+      
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.css') }}" />
+      
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
 
    </head>
    
    <body>
+
+      <div id="wrap">
+         
+         <!-- Fixed navbar -->
+         <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            
+            <div class="navbar-header">
+               
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               
+               <a class="navbar-brand" href="#">
+                  <img src="{{ url_for('static', filename = 'img/crossbar_icon_inverted_small.png') }}" alt="crossbar logo inverted">
+                  <span>Crossbar</span><span>.io</span>
+               </a>
+
+            </div>
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+               
+               <ul class="nav navbar-nav">
+                  
+                  <li {% if session['tab_selected'] == 'page_home' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_home') }}">Home</a>
+                  </li>
+                  <li {% if session['tab_selected'] == 'page_howitworks' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_howitworks') }}">How It Works</a>
+                  </li>
+                  <li {% if session['tab_selected'] == 'page_gettingstarted' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_gettingstarted') }}">Getting Started</a>
+                  </li>
+                  <li {% if session['tab_selected'] == 'page_faq' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_faq') }}">FAQ</a>
+                  </li>
+                  <li {% if session['tab_selected'] == 'page_reference' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_reference') }}">Reference</a>
+                  </li>
+                  
+               </ul>
+               
+             </div><!--/.nav-collapse -->
+           
+         </nav>
+
+         <div id="container">
+            
+            <!--block for the page content-->
+            {% block content %}{% endblock %}
+
+         </div>         
+
+      </div>
+
+      <div id="footer">
+         <center>
+            Copyright &copy; 2013, The Crossbar.io project and contributors.<br>
+            Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC-BY-SA</a> and code licensed under <a href="http://opensource.org/licenses/AGPL-3.0">AGPL 3.0</a>.<br>
+            "Crossbar.io" and the Crossbar.io logo are trademarks of <a href="http://www.tavendo.com">Tavendo</a>.<br>
+            <br>
+         </center>
+      </div>
       
-   <!--block for the page content-->
-   {% block content %}{% endblock %}
+   
       
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="{{ url_for('static', filename = 'deps/jquery-1.10.2.min.js') }}"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.js') }}"></script>
+
+      
+      {% block additionalload %}{% endblock %}
 
    </body>
 </html>

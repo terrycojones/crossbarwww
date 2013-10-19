@@ -30,12 +30,28 @@ app.secret_key = str(uuid.uuid4())
 
 @app.route('/')
 def page_home():
+   session['tab_selected'] = 'page_home'
    return render_template('index.html')
 
 @app.route('/howitworks')
 def page_howitworks():
+   session['tab_selected'] = 'page_howitworks'
    return render_template('page_t_howitworks.html')   
 
+@app.route('/gettingstarted')
+def page_gettingstarted():
+   session['tab_selected'] = 'page_gettingstarted'
+   return render_template('page_t_gettingstarted.html')   
+
+@app.route('/faq')
+def page_faq():
+   session['tab_selected'] = 'page_faq'
+   return render_template('page_t_faq.html')   
+
+@app.route('/reference')
+def page_reference():
+   session['tab_selected'] = 'page_reference'
+   return render_template('page_t_reference.html')   
 
 
 if __name__ == "__main__":

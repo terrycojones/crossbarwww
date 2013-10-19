@@ -56,7 +56,7 @@ a:hover {
 }
 
 #tagline {
-   margin-top: 20px;
+   margin-top: -6px;
    margin-bottom: 46px;
    font-size: 20px;
    font-family: 'Segoe UI Light', 'Open Sans Light', sans-serif;
@@ -72,7 +72,7 @@ a:hover {
    width: 80px;
    height: 80px;
    position: relative;
-   top: 18px;
+   top: -20px;
    margin-right: 12px;
 }
 
@@ -92,11 +92,10 @@ a:hover {
 #github {
    width: 132px;
    height: 133px;
-   position: fixed;
-   top: 0;
-   right: 0;
+   position: absolute;
+   top: -20px;
+   right: -1px;
    border: 0;
-   z-index: 10000;
    background-image: url('../img/github.png');
 }
 
@@ -109,7 +108,7 @@ a:hover {
   http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
  */
 
-#viewport {
+/*#viewport {
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -130,11 +129,86 @@ a:hover {
    font-size: 13px;
    color: #999;
 }
-
+*/
 #footer > a {
    color: #999;
 }
 
 #footer > a:visited {
    color: #999;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -90px;
+  /* Pad bottom by footer height */
+  padding: 0 0 90px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 90px;
+  padding: 0 0 20px 0;
+}
+
+/* the page content container */
+#container {
+    padding: 0 0 57px 0;
+  
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+
+/* navbar stylings */
+
+.navbar-brand > span {
+   font-size: 21px;
+   position: relative;
+   top: 2px;
+}
+
+.navbar-brand > span:first-of-type {
+  font-family: 'Play Bold', sans-serif;
+  color: rgb(162, 162, 162);  
+  padding: 0 0 0 6px;
+}
+.navbar-brand > span:last-of-type {
+  font-family: 'Play', sans-serif;
+  color: rgb(240, 240, 240);  
+}
+
+#wrap .navbar {
+  min-height: 40px;
+  height: 40px;
+  max-height: 40px;
+}
+
+#wrap .navbar-nav > li > a {
+  padding: 10px 15px;
+}
+
+#wrap .navbar-brand {
+    padding: 6px 10px 0 0;
+  
+}
+
+#wrap .nav.navbar-nav .active a {
+  color: #FFE000;
 }
