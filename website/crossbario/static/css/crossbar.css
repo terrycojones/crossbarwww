@@ -38,9 +38,9 @@ body {
    padding: 0;
    width: 100%;
    height: 100%;
-   color: #666;
+   /* color: #666; */
    background-color: #ececec;
-   font-family: 'Segoe UI', 'Open Sans', sans-serif;
+   /* font-family: 'Segoe UI', 'Open Sans', sans-serif; */
 }
 
 a {
@@ -145,7 +145,15 @@ a:hover {
 html,
 body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   /* The html and body elements cannot have any padding or margin. */
+
+  /*min-width: 1080px;*/
+
+  /* without the min-width, the page itself expands horizontally to accomodate
+  the page content, but the navbar remains at the body = viewport width */
 }
 
 /* Wrapper for page content to push down footer */
@@ -168,13 +176,23 @@ body {
 /* the page content container */
 #container {
     padding: 0 0 57px 0;
-  
+
     position: relative;
     margin: 0 auto;
-    width: 960px;
+    /*width: 960px;*/
+    max-width: 960px;
 }
 
+#hiw_crossbar_components {
+/*   min-width: 400px;
+   max-width: 960px;*/
 
+   width: 100%;
+}
+
+#crossbar_arch {
+   width:;
+}
 
 /* navbar stylings */
 
@@ -186,18 +204,16 @@ body {
 
 .navbar-brand > span:first-of-type {
   font-family: 'Play Bold', sans-serif;
-  color: rgb(162, 162, 162);  
+  color: rgb(162, 162, 162);
   padding: 0 0 0 6px;
 }
 .navbar-brand > span:last-of-type {
   font-family: 'Play', sans-serif;
-  color: rgb(240, 240, 240);  
+  color: rgb(240, 240, 240);
 }
 
 #wrap .navbar {
   min-height: 40px;
-  height: 40px;
-  max-height: 40px;
 }
 
 #wrap .navbar-nav > li > a {
@@ -205,10 +221,18 @@ body {
 }
 
 #wrap .navbar-brand {
-    padding: 6px 10px 0 0;
-  
+    padding: 6px 10px 0 20px;
+
 }
 
 #wrap .nav.navbar-nav .active a {
   color: #FFE000;
+}
+
+
+#wrap .navbar-toggle {
+    padding: 5px 6px;
+
+    margin-top: 6px;
+    margin-right: 10px;
 }
