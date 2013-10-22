@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="554"
+   height="139.89047"
+   viewbox="0 0 554 140"
+   id="svg3547"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="crossbar_hiw_architecture.svg">
+  <defs
+     id="defs3549" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="205.76651"
+     inkscape:cy="67.756508"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1024"
+     inkscape:window-height="1258"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3552">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(132.6295,-399.66189)">
+    <text
+       inkscape:export-ydpi="77"
+       inkscape:export-xdpi="77"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       sodipodi:linespacing="125%"
+       id="text7599-7-1-0-6"
+       y="472.42239"
+       x="-21.05592"
+       style="font-size:12.57671165px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="472.42239"
+         x="-21.05592"
+         id="tspan7601-9-6-7-0"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans">WebSocket / WAMP</tspan></text>
+    <text
+       inkscape:export-ydpi="77"
+       inkscape:export-xdpi="77"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       sodipodi:linespacing="125%"
+       id="text7599-7-1-8-4-2"
+       y="470.7153"
+       x="230.37149"
+       style="font-size:12.57671165px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="470.7153"
+         x="230.37149"
+         id="tspan7601-9-6-4-2-6"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans">OCI / Net8</tspan><tspan
+         id="tspan5129-4-0"
+         y="486.43619"
+         x="230.37149"
+         sodipodi:role="line"
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none" /></text>
+    <path
+       d="m 87.902651,451.37419 -3.05637,-0.0129 c -0.797257,0 -1.525543,-0.70203 -1.522098,-1.60656 0.0026,-0.83504 0.736841,-1.59743 1.5341,-1.59392 l 3.056378,0.0137 c 0.863734,0 1.591729,0.77179 1.588584,1.60683 -0.0043,0.90454 -0.73686,1.59725 -1.600594,1.59366 z m -9.169032,-0.0376 -3.056301,-0.0129 c -0.863726,0 -1.525534,-0.7023 -1.522176,-1.60657 0.0026,-0.83496 0.670452,-1.59768 1.534195,-1.59409 l 3.056292,0.0129 c 0.863735,0 1.52533,0.77145 1.522184,1.60657 -0.0043,0.90436 -0.670451,1.59751 -1.534194,1.59392 z m -9.168954,-0.0376 -3.056361,-0.0129 c -0.863743,0 -1.525543,-0.7022 -1.522174,-1.60665 0.0026,-0.83495 0.670441,-1.59768 1.534175,-1.594 l 3.056369,0.0129 c 0.863735,0 1.525253,0.7717 1.522108,1.60682 -0.0043,0.90445 -0.670373,1.59742 -1.534117,1.59392 z m -9.169022,-0.0376 -3.056369,-0.0128 c -0.863735,0 -1.525552,-0.70213 -1.522107,-1.60666 0.0026,-0.83486 0.670373,-1.59759 1.534116,-1.59409 l 3.056379,0.0129 c 0.797326,0 1.525243,0.77179 1.522175,1.60657 -0.0043,0.90462 -0.736936,1.59742 -1.534194,1.59409 z m -9.169014,-0.0376 -3.122778,-0.0129 c -0.797266,0 -1.52556,-0.70203 -1.522201,-1.60657 0.0026,-0.83504 0.736944,-1.59742 1.534203,-1.59399 l 3.122786,0.0129 c 0.797334,0 1.52532,0.7716 1.522167,1.60657 -0.0043,0.90453 -0.736851,1.59725 -1.534177,1.59408 z m -9.235449,-0.0384 -3.056361,-0.0129 c -0.863734,0 -1.525552,-0.70203 -1.522107,-1.60666 0.0026,-0.83495 0.670374,-1.59751 1.534186,-1.594 l 3.056283,0.0128 c 0.863744,0 1.525331,0.77153 1.522193,1.60665 -0.0043,0.90454 -0.670451,1.59751 -1.534194,1.59384 z m -9.169022,-0.0376 -3.056293,-0.0128 c -0.863743,0 -1.525544,-0.70221 -1.522175,-1.60665 0.0026,-0.83496 0.670442,-1.59777 1.534176,-1.59409 l 3.056292,0.0128 c 0.863821,0 1.52533,0.7717 1.522185,1.60674 -0.0043,0.90436 -0.670451,1.59751 -1.534185,1.59392 z m -9.168955,-0.0376 -3.056378,-0.0128 c -0.863726,0 -1.525543,-0.70203 -1.522167,-1.60649 0.0026,-0.83495 0.670442,-1.59776 1.534176,-1.59417 l 3.056378,0.0137 c 0.863736,0 1.525253,0.77171 1.522185,1.60649 -0.0043,0.90462 -0.670451,1.59768 -1.534194,1.59417 z m -9.169023,-0.0376 -3.122795,-0.0129 c -0.797326,0 -1.5255342,-0.70204 -1.5221669,-1.60657 0.00259,-0.83504 0.7368599,-1.59742 1.5341949,-1.59401 l 3.122769,0.0137 c 0.797334,0 1.525329,0.77153 1.522193,1.60649 -0.0043,0.90461 -0.736869,1.59733 -1.534195,1.59417 z m -9.2354395,-0.0376 -3.0563695,-0.0128 c -0.797258,0 -1.5255434,-0.70211 -1.52209862,-1.60665 0.002564,-0.83495 0.73685042,-1.59725 1.53411692,-1.59391 l 3.0563523,0.0129 c 0.8637433,0 1.5253384,0.77152 1.5221757,1.60664 -0.00427,0.90454 -0.6704422,1.5976 -1.5341768,1.59401 z m -9.1690315,-0.0376 -3.0562839,-0.0128 c -0.8637432,0 -1.5255605,-0.70221 -1.5221842,-1.60666 0.00256,-0.83495 0.6704422,-1.59776 1.5341854,-1.59409 l 3.0562925,0.0129 c 0.8637518,0 1.5253297,0.77171 1.5221756,1.60674 -0.00427,0.90437 -0.6704421,1.59743 -1.5341854,1.59392 z m -9.168946,-0.0376 -3.056369,-0.0129 c -0.863736,0 -1.525545,-0.70203 -1.522185,-1.60648 0.0026,-0.83495 0.670451,-1.59777 1.534194,-1.59417 l 3.056369,0.0128 c 0.863736,0 1.525245,0.77178 1.522107,1.60683 -0.0043,0.90427 -0.670373,1.59734 -1.534116,1.59391 z"
+       style="fill:#2a2a2a;fill-opacity:1;fill-rule:nonzero;stroke:#2a2a2a;stroke-width:1.19852459px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-dasharray:none"
+       id="2-1-9-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77" />
+    <path
+       d="m -29.126141,450.02081 9.393129,-5.12453 c -1.513208,3.2723 -1.526808,7.09028 -0.03685,10.37572 l 0,0 -9.35628,-5.25119 z"
+       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:0.94074672;stroke-opacity:1"
+       id="3-5-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77" />
+    <path
+       d="m 101.13975,449.26458 -9.697486,-4.37539 c 1.718854,3.14544 1.97676,6.95282 0.700813,10.34684 l 0,0 8.996673,-5.97145 z"
+       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:0.94074672;stroke-opacity:1"
+       id="3-5-2-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77" />
+    <path
+       inkscape:export-ydpi="77"
+       inkscape:export-xdpi="77"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:connector-curvature="0"
+       style="fill:#2a2a2a;fill-opacity:1;stroke:#2a2a2a;stroke-width:4.83172941px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       d="m 205.91593,449.14337 103.01425,0"
+       id="path6872-5-8-1-5-4-1-02-9" />
+    <path
+       inkscape:export-ydpi="77"
+       inkscape:export-xdpi="77"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:connector-curvature="0"
+       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:1.2916249;stroke-opacity:1"
+       d="m 314.18702,449.21474 -6.98659,4.07262 c 1.11486,-2.55982 1.11486,-5.61439 0,-8.17439 l 0,0 6.98659,4.10177 z"
+       id="path6874-4-6-2-7-8-1-5-3" />
+    <path
+       inkscape:export-ydpi="77"
+       inkscape:export-xdpi="77"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:connector-curvature="0"
+       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:1.2916249;stroke-opacity:1"
+       d="m 200.20369,448.91873 6.98667,4.07263 c -1.11489,-2.55975 -1.11489,-5.6144 0,-8.1744 l 0,0 -6.98667,4.10177 z"
+       id="path6874-4-6-2-7-8-1-5-3-8" />
+    <g
+       id="g5409-3"
+       transform="matrix(0.47455387,0,0,0.47455387,-860.998,1582.3329)"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77">
+      <path
+         d="m 2063.08,-2427.1818 -7.3379,-27.6541 3.7538,0 4.2066,18.1279 c 0.4527,1.8989 0.8426,3.7852 1.1695,5.6591 0.7042,-2.9553 1.1192,-4.6593 1.2449,-5.112 l 5.2631,-18.675 4.4141,0 3.9614,13.9968 c 0.9933,3.4709 1.7101,6.7343 2.1503,9.7902 0.352,-1.7481 0.8111,-3.7538 1.3771,-6.0175 l 4.3385,-17.7695 3.6785,0 -7.5831,27.6541 -3.5276,0 -5.8288,-21.0707 c -0.4904,-1.7606 -0.7797,-2.8421 -0.8677,-3.2445 -0.2893,1.2701 -0.5597,2.3517 -0.8111,3.2445 l -5.8666,21.0707 z"
+         style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         id="path5004-1-2-2-2-2-5"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 2103.7382,-2433.6333 3.5086,0.4339 c -0.5533,2.0498 -1.5783,3.6408 -3.0748,4.7725 -1.4965,1.1318 -3.4079,1.6977 -5.7345,1.6977 -2.9301,0 -5.2536,-0.9023 -6.9701,-2.7069 -1.7166,-1.8046 -2.5748,-4.3355 -2.5748,-7.5926 0,-3.3702 0.8677,-5.986 2.6031,-7.8472 1.7355,-1.8612 3.9865,-2.7918 6.7532,-2.7918 2.6787,0 4.8668,0.9117 6.5645,2.7352 1.6976,1.8235 2.5465,4.389 2.5465,7.6964 0,0.2012 0,0.503 -0.02,0.9054 l -14.9398,0 c 0.1252,2.2007 0.7482,3.8859 1.8674,5.0554 1.1193,1.1696 2.5152,1.7543 4.1876,1.7543 1.2451,0 2.3078,-0.3269 3.188,-0.9809 0.8804,-0.6539 1.5784,-1.6977 2.0939,-3.1314 z m -11.1485,-5.4893 11.1861,0 c -0.1508,-1.685 -0.5783,-2.9489 -1.2826,-3.7915 -1.0816,-1.3078 -2.4837,-1.9618 -4.2066,-1.9618 -1.5594,0 -2.8705,0.5219 -3.933,1.5656 -1.0627,1.0439 -1.6506,2.4398 -1.7639,4.1877 z"
+         style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         id="path5006-4-7-3-8-0-1"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 2112.7046,-2427.1818 -3.1502,0 0,-27.6541 3.3954,0 0,9.8656 c 1.4337,-1.7982 3.2635,-2.6974 5.4892,-2.6974 1.2325,0 2.3989,0.2484 3.4993,0.7451 1.1003,0.4967 2.0059,1.1947 2.7164,2.0939 0.7104,0.8992 1.2668,1.9837 1.6694,3.2539 0.4022,1.2701 0.6035,2.6283 0.6035,4.0746 0,3.4332 -0.8487,6.0866 -2.5464,7.9603 -1.698,1.8739 -3.7351,2.8107 -6.1119,2.8107 -2.3642,0 -4.219,-0.9872 -5.5647,-2.9615 z m -0.038,-10.1676 c 0,2.402 0.3269,4.1375 0.9809,5.2064 1.0689,1.748 2.515,2.622 4.3386,2.622 1.4839,0 2.7666,-0.6445 3.8482,-1.9335 1.0814,-1.289 1.6222,-3.2099 1.6222,-5.7628 0,-2.6157 -0.5187,-4.5461 -1.5562,-5.7911 -1.0375,-1.245 -2.292,-1.8675 -3.7633,-1.8675 -1.4839,0 -2.7667,0.6446 -3.8482,1.9335 -1.0815,1.289 -1.6222,3.1534 -1.6222,5.593 z"
+         style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         id="path5008-2-9-3-6-9-2"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 2131.1034,-2427.1818 0,-27.6541 8.3566,0 5.0176,18.8636 4.9612,-18.8636 8.3754,0 0,27.6541 -5.1875,0 0,-21.7686 -5.4893,21.7686 -5.3761,0 -5.4704,-21.7686 0,21.7686 z"
+         style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         id="path5010-3-5-4-0-7-0"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 2183.0494,-2430.6905 c 1.3707,0.9809 2.8608,1.7606 4.4705,2.3391 l -2.0561,3.9424 c -0.8425,-0.2515 -1.6662,-0.5973 -2.471,-1.0375 -0.1761,-0.087 -1.4148,-0.9054 -3.7161,-2.4523 -1.8111,0.7923 -3.8168,1.1885 -6.0176,1.1885 -4.2505,0 -7.5799,-1.2513 -9.9882,-3.7539 -2.4082,-2.5025 -3.6124,-6.0174 -3.6124,-10.5447 0,-4.5147 1.2073,-8.0264 3.6218,-10.5352 2.4145,-2.5089 5.6905,-3.7634 9.828,-3.7634 4.0996,0 7.3505,1.2545 9.7524,3.7634 2.402,2.5088 3.6028,6.0205 3.603,10.5352 -2e-4,2.3894 -0.3334,4.4896 -0.9999,6.3004 -0.5032,1.3834 -1.3078,2.7227 -2.4144,4.018 z m -4.4896,-3.1502 c 0.7167,-0.8426 1.2544,-1.8612 1.6128,-3.0559 0.3584,-1.1947 0.5376,-2.5655 0.5376,-4.1123 0,-3.1941 -0.7042,-5.5805 -2.1126,-7.1587 -1.4086,-1.5782 -3.2509,-2.3673 -5.5271,-2.3673 -2.2762,0 -4.1217,0.7922 -5.5364,2.3768 -1.4148,1.5845 -2.1222,3.9676 -2.1222,7.1492 0,3.232 0.7074,5.6496 2.1222,7.2531 1.4147,1.6034 3.2036,2.4051 5.3666,2.4051 0.8049,0 1.5656,-0.1321 2.2825,-0.3962 -1.1318,-0.742 -2.2825,-1.3204 -3.4521,-1.7354 l 1.5658,-3.188 c 1.836,0.6288 3.5903,1.572 5.2629,2.8296 z"
+         style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         id="path5012-2-4-1-2-3-1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g6453"
+       transform="matrix(0.90769231,0,0,0.90769231,-236.57512,-1079.2883)"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 114.51636,1629.3519 109.41249,0 0,109.4125 -109.41249,0 z"
+         id="path5214-4-5-0-7-5-7-61" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5011-1"
+         y="1650.8595"
+         x="123.01935"
+         style="font-size:21.80163956px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:17.09570122px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+           y="1650.8595"
+           x="123.01935"
+           sodipodi:role="line"
+           id="tspan4659">Browser <tspan
+   id="tspan6440"
+   style="font-size:13.6765604px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans">or</tspan></tspan><tspan
+           id="tspan6438"
+           style="font-size:17.09570122px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+           y="1672.2291"
+           x="123.01935"
+           sodipodi:role="line">Mobile</tspan><tspan
+           style="font-size:13.6765604px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+           y="1693.5988"
+           x="123.01935"
+           sodipodi:role="line"
+           id="tspan4682" /><tspan
+           id="tspan5015-4"
+           y="1714.9684"
+           x="123.01935"
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></text>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="F:\svnwork\tavendo\mymepad\research\Tavendo\Products\WebMQ\design\landing_page\variant6.png"
+         ry="0"
+         y="1696.0251"
+         x="114.51636"
+         height="42.73925"
+         width="109.41248"
+         id="rect5170-9-4-9-35-6"
+         style="fill:#3cc33c;fill-opacity:1;stroke:none" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="F:\svnwork\tavendo\mymepad\research\Tavendo\Products\WebMQ\design\landing_page\variant6.png"
+         sodipodi:linespacing="125%"
+         id="text5222-9-7-3"
+         y="1712.9816"
+         x="168.3591"
+         style="font-size:13.03145695px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:13.03145695px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+           y="1712.9816"
+           x="168.3591"
+           id="tspan5224-89-4-6"
+           sodipodi:role="line">Your application</tspan><tspan
+           id="tspan6149-7-2-1"
+           style="font-size:13.03145695px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
+           y="1729.2709"
+           x="168.3591"
+           sodipodi:role="line">user interface</tspan></text>
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3045"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+         transform="matrix(1.1016949,0,0,1.1016949,114.51636,1629.0017)"><flowRegion
+           id="flowRegion3047"><rect
+             id="rect3049"
+             width="982.85712"
+             height="272.85715"
+             x="-121.42857"
+             y="-23.963673" /></flowRegion><flowPara
+           id="flowPara3051"></flowPara></flowRoot>    </g>
+    <g
+       id="g6442"
+       transform="matrix(0.77588182,0,0,0.77588182,-221.48066,-864.25088)"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 700.54262,1631.0017 128,0 0,128 -128,0 z"
+         id="path5214-4-5-0-7-5-7" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5011"
+         y="1656.2687"
+         x="710.41235"
+         style="font-size:25.50540543px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           id="tspan4495"
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+           y="1656.2687"
+           x="710.41235"
+           sodipodi:role="line">Database</tspan><tspan
+           id="tspan5015"
+           y="1681.2687"
+           x="710.41235"
+           sodipodi:role="line" /></text>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="F:\svnwork\tavendo\mymepad\research\Tavendo\Products\WebMQ\design\landing_page\variant6.png"
+         ry="0"
+         y="1709.0017"
+         x="700.5426"
+         height="50"
+         width="128"
+         id="rect5170-9-4-9-5"
+         style="fill:#3cc33c;fill-opacity:1;stroke:none" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="F:\svnwork\tavendo\mymepad\research\Tavendo\Products\WebMQ\design\landing_page\variant6.png"
+         sodipodi:linespacing="125%"
+         id="text5222-54-2-8-4"
+         y="1729.3239"
+         x="763.5061"
+         style="font-size:15.24530315px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:15.24530315px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+           y="1729.3239"
+           x="763.5061"
+           id="tspan5224-4-5-6-2"
+           sodipodi:role="line">Your application</tspan><tspan
+           id="tspan6149-1-8-5-0"
+           style="font-size:15.24530315px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
+           y="1748.3805"
+           x="763.5061"
+           sodipodi:role="line">business logic</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3cc33c;fill-opacity:1;stroke:none;font-family:Play;-inkscape-font-specification:Sans Bold"
+       x="66.749718"
+       y="533.23633"
+       id="text3874"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77.767265"
+       inkscape:export-ydpi="77.767265"><tspan
+         sodipodi:role="line"
+         id="tspan3876"
+         x="66.749718"
+         y="533.23633"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#3cc33c;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"><tspan
+           style="font-size:13px;font-weight:normal;fill:#3cc33c;fill-opacity:1;-inkscape-font-specification:Sans"
+           id="tspan3880">l<tspan
+   style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+   id="tspan3753">ogically</tspan></tspan><tspan
+           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
+           id="tspan3755"> 2-tier architecture</tspan></tspan></text>
+    <g
+       id="g4201"
+       transform="matrix(0.1108126,-0.39537693,0.39537693,0.1108126,-27.695556,501.32253)"
+       style="fill:#3cc33c;fill-opacity:1;stroke:#3cc33c"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77.767265"
+       inkscape:export-ydpi="77.767265">
+      <path
+         id="path4203"
+         d="m 5.5441454,3.7481546 0,10.7759444 c 0,0.937039 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.858952 -1.8740773,-1.795991 l 0,-10.7759444 c 0,-1.0151252 0.8589521,-1.8740773 1.8740773,-1.8740773 0.9370387,0 1.7959908,0.8589521 1.7959908,1.8740773 z m 0,21.5518894 0,10.775944 c 0,1.015126 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.780865 -1.8740773,-1.795991 l 0,-10.775944 c 0,-1.015125 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.780866 1.7959908,1.795991 z m 0,21.551889 0,10.854031 c 0,0.937039 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.858952 -1.8740773,-1.795991 l 0,-10.854031 c 0,-0.937039 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.858952 1.7959908,1.795991 z m 0,21.629976 0,10.775944 c 0,1.015126 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.780865 -1.8740773,-1.795991 l 0,-10.775944 c 0,-1.015125 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.780866 1.7959908,1.795991 z m 0,21.551889 0,10.854032 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.854032 c 0,-0.937039 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.858952 1.7959908,1.795991 z m 0,21.629972 0,10.77595 c 0,1.01512 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.78087 -1.8740773,-1.79599 l 0,-10.77595 c 0,-1.01512 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.78087 1.7959908,1.79599 z m 0,21.55189 0,10.85403 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.85403 c 0,-0.93704 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.85895 1.7959908,1.79599 z m 0,21.62998 0,10.77594 c 0,1.01513 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.78086 -1.8740773,-1.79599 l 0,-10.77594 c 0,-1.01513 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.78086 1.7959908,1.79599 z m 0,21.55189 0,10.85403 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.85403 c 0,-0.93704 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.85895 1.7959908,1.79599 z m 0,21.62997 0,10.77595 c 0,1.01512 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.78087 -1.8740773,-1.79599 l 0,-10.77595 c 0,-1.01512 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.78087 1.7959908,1.79599 z m 0,21.55189 0,10.85403 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.85403 c 0,-0.93704 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.85895 1.7959908,1.79599 z"
+         style="fill:#3cc33c;fill-opacity:1;fill-rule:nonzero;stroke:#3cc33c;stroke-width:1.24938488px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4201-4"
+       transform="matrix(-0.11063491,-0.35873282,-0.35873282,0.11063491,321.80597,503.23349)"
+       style="fill:#3cc33c;fill-opacity:1;stroke:#3cc33c"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77.767265"
+       inkscape:export-ydpi="77.767265">
+      <path
+         id="path4203-8"
+         d="m 5.5441454,3.7481546 0,10.7759444 c 0,0.937039 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.858952 -1.8740773,-1.795991 l 0,-10.7759444 c 0,-1.0151252 0.8589521,-1.8740773 1.8740773,-1.8740773 0.9370387,0 1.7959908,0.8589521 1.7959908,1.8740773 z m 0,21.5518894 0,10.775944 c 0,1.015126 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.780865 -1.8740773,-1.795991 l 0,-10.775944 c 0,-1.015125 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.780866 1.7959908,1.795991 z m 0,21.551889 0,10.854031 c 0,0.937039 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.858952 -1.8740773,-1.795991 l 0,-10.854031 c 0,-0.937039 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.858952 1.7959908,1.795991 z m 0,21.629976 0,10.775944 c 0,1.015126 -0.8589521,1.795991 -1.7959908,1.795991 -1.0151252,0 -1.8740773,-0.780865 -1.8740773,-1.795991 l 0,-10.775944 c 0,-1.015125 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.780866 1.7959908,1.795991 z m 0,21.551889 0,10.854032 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.854032 c 0,-0.937039 0.8589521,-1.795991 1.8740773,-1.795991 0.9370387,0 1.7959908,0.858952 1.7959908,1.795991 z m 0,21.629972 0,10.77595 c 0,1.01512 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.78087 -1.8740773,-1.79599 l 0,-10.77595 c 0,-1.01512 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.78087 1.7959908,1.79599 z m 0,21.55189 0,10.85403 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.85403 c 0,-0.93704 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.85895 1.7959908,1.79599 z m 0,21.62998 0,10.77594 c 0,1.01513 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.78086 -1.8740773,-1.79599 l 0,-10.77594 c 0,-1.01513 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.78086 1.7959908,1.79599 z m 0,21.55189 0,10.85403 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.85403 c 0,-0.93704 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.85895 1.7959908,1.79599 z m 0,21.62997 0,10.77595 c 0,1.01512 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.78087 -1.8740773,-1.79599 l 0,-10.77595 c 0,-1.01512 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.78087 1.7959908,1.79599 z m 0,21.55189 0,10.85403 c 0,0.93704 -0.8589521,1.79599 -1.7959908,1.79599 -1.0151252,0 -1.8740773,-0.85895 -1.8740773,-1.79599 l 0,-10.85403 c 0,-0.93704 0.8589521,-1.79599 1.8740773,-1.79599 0.9370387,0 1.7959908,0.85895 1.7959908,1.79599 z"
+         style="fill:#3cc33c;fill-opacity:1;fill-rule:nonzero;stroke:#3cc33c;stroke-width:1.24938488px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.85396568,0,0,0.85396568,-430.79032,-2812.061)"
+       id="g5235-5"
+       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_architecture.png"
+       inkscape:export-xdpi="77"
+       inkscape:export-ydpi="77">
+      <g
+         id="g5037-4-51"
+         transform="matrix(0.83636364,0,0,0.83636364,38.778088,1733.9844)">
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 711,2432 110,0 0,110 -110,0 z"
+           id="path5256-7-7-10-2-3-4-5-2-9" />
+        <g
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="F:\svnwork\tavendo\mymepad\research\Tavendo\Products\WebMQ\design\landing_page\variant6.png"
+           transform="matrix(0.61163163,0,0,0.61163163,-537.12356,3946.2927)"
+           id="g5409-3-3-3-6">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5004-1-2-2-2-2-5-1-2-4"
+             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+             d="m 2063.08,-2427.1818 -7.3379,-27.6541 3.7538,0 4.2066,18.1279 c 0.4527,1.8989 0.8426,3.7852 1.1695,5.6591 0.7042,-2.9553 1.1192,-4.6593 1.2449,-5.112 l 5.2631,-18.675 4.4141,0 3.9614,13.9968 c 0.9933,3.4709 1.7101,6.7343 2.1503,9.7902 0.352,-1.7481 0.8111,-3.7538 1.3771,-6.0175 l 4.3385,-17.7695 3.6785,0 -7.5831,27.6541 -3.5276,0 -5.8288,-21.0707 c -0.4904,-1.7606 -0.7797,-2.8421 -0.8677,-3.2445 -0.2893,1.2701 -0.5597,2.3517 -0.8111,3.2445 l -5.8666,21.0707 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path5006-4-7-3-8-0-1-9-21-5"
+             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+             d="m 2103.7382,-2433.6333 3.5086,0.4339 c -0.5533,2.0498 -1.5783,3.6408 -3.0748,4.7725 -1.4965,1.1318 -3.4079,1.6977 -5.7345,1.6977 -2.9301,0 -5.2536,-0.9023 -6.9701,-2.7069 -1.7166,-1.8046 -2.5748,-4.3355 -2.5748,-7.5926 0,-3.3702 0.8677,-5.986 2.6031,-7.8472 1.7355,-1.8612 3.9865,-2.7918 6.7532,-2.7918 2.6787,0 4.8668,0.9117 6.5645,2.7352 1.6976,1.8235 2.5465,4.389 2.5465,7.6964 0,0.2012 0,0.503 -0.02,0.9054 l -14.9398,0 c 0.1252,2.2007 0.7482,3.8859 1.8674,5.0554 1.1193,1.1696 2.5152,1.7543 4.1876,1.7543 1.2451,0 2.3078,-0.3269 3.188,-0.9809 0.8804,-0.6539 1.5784,-1.6977 2.0939,-3.1314 z m -11.1485,-5.4893 11.1861,0 c -0.1508,-1.685 -0.5783,-2.9489 -1.2826,-3.7915 -1.0816,-1.3078 -2.4837,-1.9618 -4.2066,-1.9618 -1.5594,0 -2.8705,0.5219 -3.933,1.5656 -1.0627,1.0439 -1.6506,2.4398 -1.7639,4.1877 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path5008-2-9-3-6-9-2-8-6-42"
+             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+             d="m 2112.7046,-2427.1818 -3.1502,0 0,-27.6541 3.3954,0 0,9.8656 c 1.4337,-1.7982 3.2635,-2.6974 5.4892,-2.6974 1.2325,0 2.3989,0.2484 3.4993,0.7451 1.1003,0.4967 2.0059,1.1947 2.7164,2.0939 0.7104,0.8992 1.2668,1.9837 1.6694,3.2539 0.4022,1.2701 0.6035,2.6283 0.6035,4.0746 0,3.4332 -0.8487,6.0866 -2.5464,7.9603 -1.698,1.8739 -3.7351,2.8107 -6.1119,2.8107 -2.3642,0 -4.219,-0.9872 -5.5647,-2.9615 z m -0.038,-10.1676 c 0,2.402 0.3269,4.1375 0.9809,5.2064 1.0689,1.748 2.515,2.622 4.3386,2.622 1.4839,0 2.7666,-0.6445 3.8482,-1.9335 1.0814,-1.289 1.6222,-3.2099 1.6222,-5.7628 0,-2.6157 -0.5187,-4.5461 -1.5562,-5.7911 -1.0375,-1.245 -2.292,-1.8675 -3.7633,-1.8675 -1.4839,0 -2.7667,0.6446 -3.8482,1.9335 -1.0815,1.289 -1.6222,3.1534 -1.6222,5.593 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path5010-3-5-4-0-7-0-6-8-5"
+             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+             d="m 2131.1034,-2427.1818 0,-27.6541 8.3566,0 5.0176,18.8636 4.9612,-18.8636 8.3754,0 0,27.6541 -5.1875,0 0,-21.7686 -5.4893,21.7686 -5.3761,0 -5.4704,-21.7686 0,21.7686 z" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path5012-2-4-1-2-3-1-5-5-3"
+             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+             d="m 2183.0494,-2430.6905 c 1.3707,0.9809 2.8608,1.7606 4.4705,2.3391 l -2.0561,3.9424 c -0.8425,-0.2515 -1.6662,-0.5973 -2.471,-1.0375 -0.1761,-0.087 -1.4148,-0.9054 -3.7161,-2.4523 -1.8111,0.7923 -3.8168,1.1885 -6.0176,1.1885 -4.2505,0 -7.5799,-1.2513 -9.9882,-3.7539 -2.4082,-2.5025 -3.6124,-6.0174 -3.6124,-10.5447 0,-4.5147 1.2073,-8.0264 3.6218,-10.5352 2.4145,-2.5089 5.6905,-3.7634 9.828,-3.7634 4.0996,0 7.3505,1.2545 9.7524,3.7634 2.402,2.5088 3.6028,6.0205 3.603,10.5352 -2e-4,2.3894 -0.3334,4.4896 -0.9999,6.3004 -0.5032,1.3834 -1.3078,2.7227 -2.4144,4.018 z m -4.4896,-3.1502 c 0.7167,-0.8426 1.2544,-1.8612 1.6128,-3.0559 0.3584,-1.1947 0.5376,-2.5655 0.5376,-4.1123 0,-3.1941 -0.7042,-5.5805 -2.1126,-7.1587 -1.4086,-1.5782 -3.2509,-2.3673 -5.5271,-2.3673 -2.2762,0 -4.1217,0.7922 -5.5364,2.3768 -1.4148,1.5845 -2.1222,3.9676 -2.1222,7.1492 0,3.232 0.7074,5.6496 2.1222,7.2531 1.4147,1.6034 3.2036,2.4051 5.3666,2.4051 0.8049,0 1.5656,-0.1321 2.2825,-0.3962 -1.1318,-0.742 -2.2825,-1.3204 -3.4521,-1.7354 l 1.5658,-3.188 c 1.836,0.6288 3.5903,1.572 5.2629,2.8296 z" />
+        </g>
+      </g>
+      <path
+         style="fill:#1a1a1a"
+         inkscape:connector-curvature="0"
+         d="m 633.54771,3767.9793 92.01966,0 0,92.0208 -92.01966,0 z"
+         id="rect3842-15-6-1-76-2" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 633.54771,3793.4762 0,9.2021 21.68673,-0.066 14.43789,14.4381 6.64957,-6.6497 -17.07425,-17.0744 z"
+         style="text-indent:0;text-align:start;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;fill:#ffde00;enable-background:accumulate"
+         id="path3902-18-6" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 689.35188,3823.4405 -6.64957,6.6496 16.50488,16.5051 26.35961,0 0,-9.2262 -22.28602,0 z"
+         style="text-indent:0;text-align:start;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;fill:#ffde00;enable-background:accumulate"
+         id="path5387-7-4-4-2-1-6-9-8" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 699.86513,3793.3612 -43.90603,44.1096 -22.41254,0 0,9.2021 26.27679,0 44.05556,-44.0257 21.68674,0 0,-9.286 z"
+         style="text-indent:0;text-align:start;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;fill:#ffde00;enable-background:accumulate"
+         id="path5387-7-4-4-5-7-4-8-2-2" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5011-1-0-1-7-6"
+         y="3784.3135"
+         x="635.99701"
+         style="font-size:21.31930733px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Play;-inkscape-font-specification:Play"
+         xml:space="preserve"><tspan
+           style="font-size:16.71748161px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Play;-inkscape-font-specification:Play"
+           id="tspan5015-4-2-74-9-6"
+           y="3784.3135"
+           x="635.99701"
+           sodipodi:role="line"><tspan
+   style="font-weight:bold;fill:#ffffff;-inkscape-font-specification:Play Bold"
+   id="tspan3574-5-3">Crossbar</tspan>.io</tspan></text>
+    </g>
+  </g>
+</svg>

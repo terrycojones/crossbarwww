@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1161.438"
-   height="845.5"
+   width="1169.438"
+   height="853.5"
    id="svg3031"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -38,16 +38,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="840.60309"
-     inkscape:cy="344.50366"
+     inkscape:zoom="1.4"
+     inkscape:cx="484.08783"
+     inkscape:cy="327.16439"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3046"
      showgrid="false"
-     fit-margin-top="1"
-     fit-margin-left="1"
-     fit-margin-right="1"
-     fit-margin-bottom="1"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
      inkscape:window-width="1858"
      inkscape:window-height="1178"
      inkscape:window-x="1016"
@@ -61,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,7 +69,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(206.1788,-118.43813)">
+     transform="translate(210.1788,-114.43813)">
     <g
        id="g3046"
        transform="translate(-205.1788,119.43813)">
@@ -85,43 +85,43 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3052"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="362.32162"
          x="333.58575"
          xml:space="preserve">Linux based Virtual Appliance</text>
       <text
          id="text3054"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="382.31177"
-         x="267.36835"
+         x="265.36835"
          xml:space="preserve">(</text>
       <text
          id="text3056"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="382.31177"
-         x="273.6153"
+         x="271.6153"
          xml:space="preserve">runs on VMware</text>
       <text
          id="text3058"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="382.31177"
-         x="394.80563"
+         x="396.80563"
          xml:space="preserve">, </text>
       <text
          id="text3060"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="382.31177"
          x="403.55133"
          xml:space="preserve">VirtualBox and Amazon EC</text>
       <text
          id="text3062"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="382.31177"
          x="605.95166"
          xml:space="preserve">2</text>
       <text
          id="text3064"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="382.31177"
          x="614.69739"
          xml:space="preserve">)</text>
@@ -137,10 +137,12 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3070"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="289.8573"
          x="193.65466"
-         xml:space="preserve">WebSocket Server</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3231">WebSocket Server</tspan></text>
       <path
          id="path3072"
          d="m 130.48263,138.52555 0,106.90049 131.2635,0 0,-106.90049 -131.2635,0 z"
@@ -148,28 +150,34 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3074"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="167.41757"
          x="161.17065"
-         xml:space="preserve">Message </text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3209">Message </tspan></text>
       <text
          id="text3076"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="187.40773"
          x="168.66696"
-         xml:space="preserve">Broker</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3211">Broker</tspan></text>
       <text
          id="text3078"
-         style="font-size:14.99261856px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#fa72c6;font-family:Arial"
+         style="font-size:14.99261856px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#fa72c6;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="226.13866"
          x="142.42989"
          xml:space="preserve">WAMP </text>
       <text
          id="text3080"
-         style="font-size:14.99261856px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         style="font-size:14.99261856px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="226.13866"
          x="193.65466"
-         xml:space="preserve">PubSub</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3213">PubSub</tspan></text>
       <path
          id="path3082"
          d="m 270.33565,138.52555 0,106.90049 132.20054,0 0,-106.90049 -132.20054,0 z"
@@ -177,28 +185,34 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3084"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="167.41757"
          x="298.603"
-         xml:space="preserve">Remoting </text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3219">Remoting </tspan></text>
       <text
          id="text3086"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="187.40773"
          x="302.35114"
-         xml:space="preserve">Gateway</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3217">Gateway</tspan></text>
       <text
          id="text3088"
-         style="font-size:14.99261856px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#fa72c6;font-family:Arial"
+         style="font-size:14.99261856px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#fa72c6;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="226.13866"
          x="294.85483"
          xml:space="preserve">WAMP </text>
       <text
          id="text3090"
-         style="font-size:14.99261856px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         style="font-size:14.99261856px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="226.13866"
          x="346.07962"
-         xml:space="preserve">RPC</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3215">RPC</tspan></text>
       <path
          id="path3092"
          d="m 130.48263,70.512159 0,58.330661 272.05356,0 0,-58.330661 -272.05356,0 z"
@@ -206,25 +220,25 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3094"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
          y="94.953255"
          x="197.40282"
          xml:space="preserve">REST </text>
       <text
          id="text3096"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
          y="94.953255"
          x="246.12881"
          xml:space="preserve">&amp; </text>
       <text
          id="text3098"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
          y="94.953255"
          x="262.37082"
          xml:space="preserve">Database</text>
       <text
          id="text3100"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="114.94341"
          x="192.40527"
          xml:space="preserve">Integration Services</text>
@@ -235,22 +249,28 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3104"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="177.41264"
          x="638.43567"
-         xml:space="preserve">Management</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3225">Management</tspan></text>
       <text
          id="text3106"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="197.40282"
          x="683.41351"
-         xml:space="preserve">&amp;</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3227">&amp;</tspan></text>
       <text
          id="text3108"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="217.39297"
          x="645.93201"
-         xml:space="preserve">Monitoring</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3229">Monitoring</tspan></text>
       <path
          id="path3110"
          d="m 411.98466,139.15024 0,174.28919 198.73029,0 0,-174.28919 -198.73029,0 z"
@@ -258,10 +278,12 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3112"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="231.1362"
          x="466.02057"
-         xml:space="preserve">Web Server</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3223">Web Server</tspan></text>
       <path
          id="path3114"
          d="m 411.98466,71.527284 0,58.252566 198.26177,0 0,-58.252566 -198.26177,0 z"
@@ -269,37 +291,39 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3116"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="96.202637"
          x="463.52179"
-         xml:space="preserve">Deployment</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3207">Deployment</tspan></text>
       <text
          id="text3118"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="116.19279"
          x="468.51932"
          xml:space="preserve">(</text>
       <text
          id="text3120"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="116.19279"
          x="474.76624"
          xml:space="preserve">FTP </text>
       <text
          id="text3122"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="116.19279"
          x="510.99841"
          xml:space="preserve">&amp; </text>
       <text
          id="text3124"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="116.19279"
          x="525.99103"
          xml:space="preserve">Git</text>
       <text
          id="text3126"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#404040;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="116.19279"
          x="547.23059"
          xml:space="preserve">)</text>
@@ -310,13 +334,13 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3130"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="184.90897"
          xml:space="preserve">HTML</text>
       <text
          id="text3132"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="229.88683"
          xml:space="preserve">5</text>
@@ -327,7 +351,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3136"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="654.67767"
          x="166.16818"
          xml:space="preserve">AutobahnJS</text>
@@ -338,7 +362,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3140"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="414.79578"
          xml:space="preserve">Android</text>
@@ -349,7 +373,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3144"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="654.67767"
          x="379.81299"
          xml:space="preserve">AutobahnAndroid</text>
@@ -360,61 +384,61 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3148"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="703.40369"
          x="669.67029"
          xml:space="preserve">Linux</text>
       <text
          id="text3150"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="703.40369"
-         x="708.40125"
+         x="710.40125"
          xml:space="preserve">, </text>
       <text
          id="text3152"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="703.40369"
-         x="718.3963"
+         x="716.3963"
          xml:space="preserve">*</text>
       <text
          id="text3154"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="703.40369"
          x="724.64325"
          xml:space="preserve">BSD</text>
       <text
          id="text3156"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="703.40369"
          x="758.37665"
          xml:space="preserve">,</text>
       <text
          id="text3158"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="723.39386"
          x="648.43073"
          xml:space="preserve">Windows</text>
       <text
          id="text3160"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="723.39386"
-         x="715.89752"
+         x="717.89752"
          xml:space="preserve">, </text>
       <text
          id="text3162"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="723.39386"
          x="725.89264"
          xml:space="preserve">OSX</text>
       <text
          id="text3164"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="723.39386"
          x="760.87537"
          xml:space="preserve">, </text>
       <text
          id="text3166"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="723.39386"
          x="769.62109"
          xml:space="preserve">...</text>
@@ -425,7 +449,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3170"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="654.67767"
          x="654.67767"
          xml:space="preserve">AutobahnPython</text>
@@ -697,13 +721,13 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3278"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="36.232162"
          x="953.28064"
          xml:space="preserve">Oracle</text>
       <text
          id="text3280"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="56.222321"
          x="932.04114"
          xml:space="preserve">PostgreSQL</text>
@@ -714,13 +738,13 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3284"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="171.16573"
          x="947.03375"
          xml:space="preserve">External </text>
       <text
          id="text3286"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="191.15588"
          x="937.03864"
          xml:space="preserve">Application</text>
@@ -731,126 +755,126 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3290"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3635142,-13.813379)"
          y="71.214935"
          x="792.10999"
          xml:space="preserve">n</text>
       <text
          id="text3292"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.364656,-13.944208)"
          y="71.214935"
          x="799.60632"
          xml:space="preserve">a</text>
       <text
          id="text3294"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3657977,-14.075037)"
          y="71.214935"
          x="807.1026"
          xml:space="preserve">t</text>
       <text
          id="text3296"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3663685,-14.140451)"
          y="71.214935"
          x="810.85077"
          xml:space="preserve">i</text>
       <text
          id="text3298"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3667491,-14.184061)"
          y="71.214935"
          x="813.34955"
          xml:space="preserve">v</text>
       <text
          id="text3300"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3678908,-14.314889)"
          y="71.214935"
          x="820.84589"
          xml:space="preserve">e</text>
       <text
          id="text3302"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3690326,-14.445718)"
          y="71.214935"
          x="828.34216"
          xml:space="preserve"> </text>
       <text
          id="text3304"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3696034,-14.511132)"
          y="71.214935"
          x="832.09033"
          xml:space="preserve">D</text>
       <text
          id="text3306"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3709354,-14.663766)"
          y="71.214935"
          x="840.836"
          xml:space="preserve">B</text>
       <text
          id="text3308"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3722675,-14.816399)"
          y="71.214935"
          x="849.58173"
          xml:space="preserve"> </text>
       <text
          id="text3310"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3728383,-14.881813)"
          y="71.214935"
          x="853.3299"
          xml:space="preserve">p</text>
       <text
          id="text3312"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.37398,-15.012642)"
          y="71.214935"
          x="860.82617"
          xml:space="preserve">r</text>
       <text
          id="text3314"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3747412,-15.099861)"
          y="71.214935"
          x="865.82373"
          xml:space="preserve">o</text>
       <text
          id="text3316"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3758829,-15.23069)"
          y="71.214935"
          x="873.32001"
          xml:space="preserve">t</text>
       <text
          id="text3318"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3764538,-15.296104)"
          y="71.214935"
          x="877.06818"
          xml:space="preserve">o</text>
       <text
          id="text3320"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3775955,-15.426933)"
          y="71.214935"
          x="884.56451"
          xml:space="preserve">c</text>
       <text
          id="text3322"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3785469,-15.535957)"
          y="71.214935"
          x="890.8114"
          xml:space="preserve">o</text>
       <text
          id="text3324"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          transform="matrix(0.9998477,0.01745241,-0.01745241,0.9998477,1.3796887,-15.666785)"
          y="71.214935"
          x="898.30774"
@@ -862,19 +886,19 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3328"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="207.39789"
          x="808.35199"
          xml:space="preserve">HTTP</text>
       <text
          id="text3330"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="207.39789"
          x="843.33478"
          xml:space="preserve">/</text>
       <text
          id="text3332"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="207.39789"
          x="847.08295"
          xml:space="preserve">REST</text>
@@ -890,7 +914,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3338"
-         style="font-size:23.73831177px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:23.73831177px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="176.16327"
          x="13.743234"
          xml:space="preserve">1</text>
@@ -906,7 +930,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3344"
-         style="font-size:23.73831177px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:23.73831177px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="493.50702"
          x="13.743234"
          xml:space="preserve">2</text>
@@ -922,7 +946,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3350"
-         style="font-size:23.73831177px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:23.73831177px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="657.17645"
          x="14.992619"
          xml:space="preserve">3</text>
@@ -933,10 +957,12 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3354"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="595.9566"
          x="151.17557"
-         xml:space="preserve">Your App Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3235">Your App Code</tspan></text>
       <path
          id="path3356"
          d="m 346.86048,562.2232 0,58.25257 194.35743,0 0,-58.25257 -194.35743,0 z"
@@ -944,10 +970,12 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3358"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="595.9566"
          x="383.56116"
-         xml:space="preserve">Your App Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3237">Your App Code</tspan></text>
       <path
          id="path3360"
          d="m 619.14829,562.2232 0,58.25257 194.35744,0 0,-58.25257 -194.35744,0 z"
@@ -955,10 +983,12 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3362"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="595.9566"
          x="655.92706"
-         xml:space="preserve">Your App Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3239">Your App Code</tspan></text>
       <path
          id="path3364"
          d="m 929.15192,71.214938 0,46.383412 98.93568,0 0,-46.383412 -98.93568,0 z"
@@ -966,16 +996,20 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3366"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="89.955711"
          x="940.7868"
-         xml:space="preserve">Your App </text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3253">Your App </tspan></text>
       <text
          id="text3368"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="109.94587"
          x="958.2782"
-         xml:space="preserve">Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3251">Code</tspan></text>
       <path
          id="path3370"
          d="m 929.15192,204.04017 0,46.38341 98.93568,0 0,-46.38341 -98.93568,0 z"
@@ -983,16 +1017,20 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3372"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="222.3905"
          x="940.7868"
-         xml:space="preserve">Your App </text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3247">Your App </tspan></text>
       <text
          id="text3374"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="242.38068"
          x="958.2782"
-         xml:space="preserve">Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3249">Code</tspan></text>
       <path
          id="path3376"
          d="m 213.7229,550.51021 -33.03061,-12.25959 21.78615,0 0.0781,-14.91453 22.48893,0 -0.0781,14.99262 21.86424,0 -33.1087,12.1815 z"
@@ -1015,31 +1053,31 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3384"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="893.31018"
          xml:space="preserve">Posix</text>
       <text
          id="text3386"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="934.53992"
          xml:space="preserve">, </text>
       <text
          id="text3388"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="943.28558"
          xml:space="preserve">RTOS</text>
       <text
          id="text3390"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
-         x="989.51282"
+         x="985.51282"
          xml:space="preserve">, </text>
       <text
          id="text3392"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="713.39874"
          x="999.50787"
          xml:space="preserve">...</text>
@@ -1050,7 +1088,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3396"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="654.67767"
          x="912.05096"
          xml:space="preserve">AutobahnC</text>
@@ -1061,10 +1099,12 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3400"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="595.9566"
          x="893.31018"
-         xml:space="preserve">Your App Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3241">Your App Code</tspan></text>
       <path
          id="path3402"
          d="m 954.13962,550.51021 -33.03062,-12.25959 21.86424,0 0,-14.91453 22.48893,0 -0.0781,14.99262 21.86423,0 -33.10869,12.1815 z"
@@ -1087,7 +1127,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3410"
-         style="font-size:23.73831177px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:23.73831177px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="832.09033"
          x="324.84006"
          xml:space="preserve">4</text>
@@ -1108,7 +1148,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3418"
-         style="font-size:23.73831177px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:23.73831177px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="832.09033"
          x="824.59399"
          xml:space="preserve">5</text>
@@ -1129,7 +1169,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3426"
-         style="font-size:23.73831177px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:23.73831177px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="211.14604"
          x="1134.4415"
          xml:space="preserve">6</text>
@@ -1140,13 +1180,13 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3430"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="307.34869"
          x="952.03125"
          xml:space="preserve">WAMP</text>
       <text
          id="text3432"
-         style="font-size:16.24200439px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="327.33884"
          x="937.03864"
          xml:space="preserve">Application</text>
@@ -1157,16 +1197,20 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3436"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="357.32407"
          x="940.7868"
-         xml:space="preserve">Your App </text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3243">Your App </tspan></text>
       <text
          id="text3438"
-         style="font-size:16.24200439px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="377.31424"
          x="958.2782"
-         xml:space="preserve">Code</text>
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           id="tspan3245">Code</tspan></text>
       <path
          id="path3440"
          d="m 785.39457,338.73948 19.05312,-33.03062 0,21.86424 84.56774,0 0,-21.86424 19.1312,33.03062 -19.1312,33.10869 0,-21.86423 -84.56774,0 0,21.86423 -19.05312,-33.10869 z"
@@ -1174,7 +1218,7 @@
          inkscape:connector-curvature="0" />
       <text
          id="text3442"
-         style="font-size:13.74323368px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Arial"
+         style="font-size:13.74323368px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#595959;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          y="342.33145"
          x="825.84338"
          xml:space="preserve">WAMP</text>
@@ -1258,6 +1302,16 @@
          d="m 585.36589,38.234473 0,7.373575 c 0,1.31517 -0.15097,2.436298 -0.47448,3.341825 -0.32351,0.905527 -0.7333,1.617012 -1.22935,2.112896 -0.51762,0.495884 -1.22935,0.862407 -2.13518,1.142689 -0.9274,0.258722 -1.81167,0.409643 -2.6528,0.474323 -0.81957,0.06468 -1.94108,0.08624 -3.29983,0.08624 -1.76853,0 -3.14885,-0.04312 -4.11939,-0.172481 -0.9921,-0.107801 -1.96264,-0.409644 -2.95475,-0.862407 -0.97053,-0.452763 -1.68226,-1.164249 -2.09204,-2.177576 -0.43135,-0.991768 -0.64703,-2.306938 -0.64703,-3.94551 l 0,-7.373575 c 0,-1.422971 0.17254,-2.60878 0.51762,-3.557427 0.32351,-0.970207 0.7333,-1.724813 1.22935,-2.242257 0.47448,-0.539004 1.18621,-0.927087 2.11361,-1.207369 0.94897,-0.280282 1.81167,-0.452763 2.63124,-0.517444 0.79799,-0.06468 1.89794,-0.08624 3.32139,-0.08624 1.40189,0 2.50183,0.02156 3.29983,0.08624 0.81956,0.06468 1.68226,0.237162 2.63123,0.517444 0.9274,0.280282 1.63913,0.668365 2.11362,1.207369 0.49605,0.517444 0.90583,1.27205 1.25091,2.242257 0.32351,0.948647 0.49605,2.134456 0.49605,3.557427 z m -4.05469,7.934139 0,-8.602504 c 0,-1.961975 -0.38821,-3.169344 -1.18621,-3.643667 -0.77643,-0.474324 -2.30772,-0.711486 -4.55074,-0.711486 -2.26459,0 -3.79588,0.237162 -4.57231,0.711486 -0.79799,0.474323 -1.18621,1.681692 -1.18621,3.643667 l 0,8.602504 c 0,0.948647 0.0863,1.703253 0.30195,2.242257 0.1941,0.560564 0.58232,0.970207 1.14307,1.207369 0.56076,0.258722 1.12151,0.409643 1.70383,0.474324 0.58233,0.06468 1.46659,0.08624 2.60967,0.08624 1.12151,0 2.00578,-0.02156 2.5881,-0.08624 0.58232,-0.06468 1.14308,-0.215602 1.70383,-0.474324 0.56076,-0.237162 0.94897,-0.646805 1.14308,-1.207369 0.21567,-0.539004 0.30194,-1.29361 0.30194,-2.242257 z"
          style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
          inkscape:connector-curvature="0" />
-    </g>
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3199"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"><flowRegion
+           id="flowRegion3201"><rect
+             id="rect3203"
+             width="1429.3658"
+             height="906.10681"
+             x="-112.12693"
+             y="-15.149971" /></flowRegion><flowPara
+           id="flowPara3205" /></flowRoot>    </g>
   </g>
 </svg>

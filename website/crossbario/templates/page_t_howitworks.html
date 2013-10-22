@@ -82,6 +82,7 @@
            <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_osvg2.svg') }}">
         </div> -->
            <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_osvg.svg') }}">
+           <!-- <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_960_ovg.svg') }}"> -->
            <!-- <embed id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_osvg.svg') }}" type="image/svg+xml"> -->
 
 
@@ -131,8 +132,18 @@
                   browser-based and native mobile app frontends and the database
                </p>
             </div>
-            <img id="hiw_architecture" src="{{ url_for('static', filename='img/hiw_crossbar_architecture.png') }}" width="554" height="140"/>
-            <div style="clearboth"></div>
+            <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/hiw_crossbar_architecture.png') }}" width="554" height="140"/> -->
+            <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture.svg') }}" width="554" height="140"/> -->
+            <div class="hiw_illu_image" id="hiw_architecture_container">
+               <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test1.svg') }}"/>
+
+               <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test2.svg') }}"/>
+               <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test3.svg') }}"/> -->
+               <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test4.svgz') }}"/> -->
+               <!-- width="554" height="140" -->
+            </div>
+            <div class="clearboth"></div>
+
          </div>
       </div>
 
@@ -207,8 +218,12 @@
                   for the topic.
                </p>
             </div>
-            <img id="hiw_c2c" src="{{ url_for('static', filename='img/hiw_crossbar_pubsub.png') }}" width="310" height="271" />
-            <div style="clearboth"></div>
+            <!-- <img id="hiw_c2c" src="{{ url_for('static', filename='img/hiw_crossbar_pubsub.png') }}" width="310" height="271" /> -->
+            <div class="hiw_illu_image" id="hiw_client_to_client_pubsub_container">
+               <img id="hiw_c2c" src="{{ url_for('static', filename='img/crossbar_hiw_client_to_client_pubsub.svg') }}"  />
+               <!-- width="310" height="271" -->
+            </div>
+            <div class="clearboth"></div>
          </div>
       </div>
 
@@ -249,8 +264,12 @@
                   Crossbar.io allows to publish events to topics directly from within database stored procedures or triggers:
                </p>
             </div>
-            <img id="hiw_pfo" src="{{ url_for('static', filename='img/hiw_crossbar_publish.png') }}" width="521" height="271"/>
-            <div style="clearboth"></div>
+            <!-- <img id="hiw_pfo" src="{{ url_for('static', filename='img/hiw_crossbar_publish.png') }}" width="521" height="271"/> -->
+            <div class="hiw_illu_image" id="hiw_publish_from_database_container">
+               <img id="hiw_pfo" src="{{ url_for('static', filename='img/crossbar_hiw_publish_from_database.svg') }}" />
+               <!-- width="521" height="271" -->
+            </div>
+            <div class="clearboth"></div>
          </div>
       </div>
 
@@ -322,8 +341,13 @@
                   running in Web browsers or native mobile clients.
                </p>
             </div>
-            <img id="hiw_cosp" src="{{ url_for('static', filename='img/hiw_crossbar_call.png') }}" width="520" height="92" />
-            <div style="clearboth"></div>
+            <!-- <img id="hiw_cosp" src="{{ url_for('static', filename='img/hiw_crossbar_call.png') }}" width="520" height="92" /> -->
+            <div class="hiw_illu_image" id="hiw_call_stored_procedure_container">
+               <img id="hiw_cosp" src="{{ url_for('static', filename='img/crossbar_hiw_call_stored_procedure.svg') }}"/>
+               <!-- width="520" height="92" -->
+            </div>
+            <div class="clearboth"></div>
+
          </div>
       </div>
 

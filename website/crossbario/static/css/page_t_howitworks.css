@@ -1,3 +1,7 @@
+.clearboth {
+   clear: both;
+}
+
 #hiw
 {
     margin: 0;
@@ -6,7 +10,7 @@
 
 #hiw_architecture, #hiw_c2c, #hiw_pfo, #hiw_cosp
 {
-   display: block;
+   display: inline-block;
    margin: 20px auto 0 auto;
 }
 
@@ -14,19 +18,74 @@
     float: left;
     width: 40%;
 }
+.hiw_illu_textblock.narrow {
+   width: 35%;
+}
 
 .hiw_illu_textblock > h2 {
     margin-top: 0;
     margin-bottom: 1em;
 }
 
-.hiw_illu_right
+.hiw_illu_image {
+   float: left;
+   width: 59%;
+   text-align: center;
+   margin: 0 0 0 20px;
+}
+
+.hiw_illu_image > img {
+   width: 100%;
+}
+
+/*.hiw_illu_image > img {
+   width: 100%;
+}*/
+
+.hiw_illu_image#hiw_architecture_container {
+   width: 554px;
+}
+.hiw_illu_image#hiw_client_to_client_pubsub_container {
+   width: 310px;
+}
+.hiw_illu_image#hiw_publish_from_database_container {
+   width: 521px;
+}
+.hiw_illu_image#hiw_call_stored_procedure_container {
+   width: 520px;
+}
+
+@media (max-width: 990px) {
+   .hiw_illu_textblock,
+   .hiw_illu_textblock.narrow {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   #wrap #hiw .hiw_illu_image {
+      width: 100%;
+      max-width: 700px;
+      margin-left: 0;
+   }
+
+   /*#wrap #hiw .hiw_illu_image#hiw_client_to_client_pubsub_container {
+      max-width: 400px;
+      margin: 0 auto;
+   }*/
+
+}
+
+#hiw.page_content {
+   /*min-width: 480px;*/
+}
+
+/*.hiw_illu_right
 {
    float:right;
    margin: 1em 0 0 0;
-}
+}*/
 
-.hiw_para_left
+/*.hiw_para_left
 {
    float: left;
    width: auto;
@@ -49,7 +108,7 @@
 .hiw_para_left.cosp_left
 {
    width: 24%;
-}
+}*/
 
 
 .hiw_codeboxes
@@ -165,16 +224,14 @@
 }
 
 .section img {
-  
+
 }
 
-.hiw_illu_textblock.narrow {
-  width: 35%;
-}
+
 
 .section.white.first {
     margin-top: 0;
-  
+
 }
 
 .section img.wamp {
