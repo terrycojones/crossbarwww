@@ -1,5 +1,11 @@
 {% extends "layout_t.html" %}
 
+{% block additionalload %}
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+{% endblock %}
+
 {% block content %}
 
    <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
@@ -17,14 +23,61 @@
             <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
          </center>
 
-         <center>
+         <!-- <center id="arch"> -->
             <!-- <img src="{{ url_for('static', filename = 'img/crossbar_arch.png') }}" alt="Crossbar.io - Open-source multi-protocol application router" width="800" height="370"></img> -->
-            <img id="crossbar_arch" src="{{ url_for('static', filename = 'img/crossbar_arch.png') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img>
-         </center>
+            <!-- <img id="crossbar_arch" src="{{ url_for('static', filename = 'img/crossbar_arch_new.svg') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img> -->
+         <!-- </center> -->
 
-         <center>
+         <div id="crossbarArch">
+            <div>
+               <div class="archBoxContainer">
+                  <div class="archBox">
+                     <h1>Frontends</h2>
+                     <img id="crossbar_arch_android" src="{{ url_for('static', filename = 'img/crossbar_arch_android.svg') }}" alt=""></img>
+                     <img id="crossbar_arch_html5" src="{{ url_for('static', filename = 'img/crossbar_arch_html5.svg') }}" alt=""></img>
+                     <img id="crossbar_arch_ios" src="{{ url_for('static', filename = 'img/crossbar_arch_ios.svg') }}" alt=""></img>
+                  </div>
+               </div>
+               <div class="archBoxContainer">
+                  <div class="archBox">
+                     <h1>Internet of Things</h2>
+                     <img id="crossbar_arch_arduino" src="{{ url_for('static', filename = 'img/crossbar_arch_arduino.svg') }}" alt=""></img>
+                     <img id="crossbar_arch_raspberry" src="{{ url_for('static', filename = 'img/crossbar_arch_raspberry.svg') }}" alt=""></img>
+                  </div>
+               </div>
+            </div>
+            <div id="archCenter">
+               <div class="archBoxContainer">
+                  <div class="archBox archCenter">
+                     <img id="crossbar_arch_crossbar" src="{{ url_for('static', filename = 'img/crossbar_arch_crossbar.svg') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="archBoxContainer">
+                  <div class="archBox">
+                     <h1>Databases</h2>
+                     <img id="crossbar_arch_oracle" src="{{ url_for('static', filename = 'img/crossbar_arch_oracle.svg') }}" alt=""></img>
+                     <img id="crossbar_arch_postgresql" src="{{ url_for('static', filename = 'img/crossbar_arch_postgresql.svg') }}" alt=""></img>
+                  </div>
+               </div>
+               <div class="archBoxContainer">
+                  <div class="archBox">
+                     <h1>Backend / Compute</h2>
+                     <img id="crossbar_arch_java" src="{{ url_for('static', filename = 'img/crossbar_arch_java.svg') }}" alt=""></img>
+                     <img id="crossbar_arch_python" src="{{ url_for('static', filename = 'img/crossbar_arch_python.svg') }}" alt=""></img>
+                     <img id="crossbar_arch_node" src="{{ url_for('static', filename = 'img/crossbar_arch_node.svg') }}" alt=""></img>
+                  </div>
+               </div>
+            </div>
+            <div class="clearBoth"></div>
+         </div>
+
+
+         <center class="clearBoth">
             <a href="https://github.com/crossbario/crossbar/blob/master/README.md">Read more</a>
          </center>
+
 
       </div>
    </div>

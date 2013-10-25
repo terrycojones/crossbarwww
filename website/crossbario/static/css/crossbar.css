@@ -55,53 +55,7 @@ a:hover {
    color: #E4C904;
 }
 
-#tagline {
-   margin-top: -6px;
-   margin-bottom: 46px;
-   font-size: 20px;
-   font-family: 'Segoe UI Light', 'Open Sans Light', sans-serif;
-}
 
-#followus {
-   position: relative;
-   top: 4px;
-   margin-left: 12px;
-}
-
-.cb_icon {
-   width: 80px;
-   height: 80px;
-   position: relative;
-   top: -20px;
-   margin-right: 12px;
-}
-
-.cb_prefix {
-   font-family: 'Play Bold', sans-serif;
-   font-size: 72px;
-   color: #1a1a1a;
-}
-
-.cb_suffix {
-   font-family: 'Play', sans-serif;
-   font-size: 72px;
-   color: #888;
-}
-
-
-#github {
-   width: 132px;
-   height: 133px;
-   position: absolute;
-   top: -20px;
-   right: -1px;
-   border: 0;
-   background-image: url('../img/github.png');
-}
-
-#github:hover {
-   background-image: url('../img/github_highlighted.png');
-}
 
 /*
   Vertical centering .. again;)
@@ -183,16 +137,7 @@ body {
     max-width: 960px;
 }
 
-#hiw_crossbar_components {
-/*   min-width: 400px;
-   max-width: 960px;*/
 
-   width: 100%;
-}
-
-#crossbar_arch {
-   width:;
-}
 
 /* navbar stylings */
 
@@ -235,4 +180,8 @@ body {
 
     margin-top: 6px;
     margin-right: 10px;
+}
+
+.clearBoth {
+   clear: both;
 }

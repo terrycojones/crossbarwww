@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="484.08783"
-     inkscape:cy="327.16439"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="579.83276"
+     inkscape:cy="519.8626"
      inkscape:document-units="px"
      inkscape:current-layer="g3046"
      showgrid="false"
@@ -90,41 +90,11 @@
          x="333.58575"
          xml:space="preserve">Linux based Virtual Appliance</text>
       <text
-         id="text3054"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="382.31177"
-         x="265.36835"
-         xml:space="preserve">(</text>
-      <text
          id="text3056"
          style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="382.31177"
-         x="271.6153"
-         xml:space="preserve">runs on VMware</text>
-      <text
-         id="text3058"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="382.31177"
-         x="396.80563"
-         xml:space="preserve">, </text>
-      <text
-         id="text3060"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="382.31177"
-         x="403.55133"
-         xml:space="preserve">VirtualBox and Amazon EC</text>
-      <text
-         id="text3062"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="382.31177"
-         x="605.95166"
-         xml:space="preserve">2</text>
-      <text
-         id="text3064"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="382.31177"
-         x="614.69739"
-         xml:space="preserve">)</text>
+         y="385.88318"
+         x="280.18671"
+         xml:space="preserve">(runs on VMware, VirtualBox and Amazon EC2)</text>
       <path
          id="path3066"
          d="m 113.53785,2.4987698 0,330.3842102 660.76843,0 0,-330.3842102 -660.76843,0 z"
@@ -357,7 +327,7 @@
          xml:space="preserve">AutobahnJS</text>
       <path
          id="path3138"
-         d="m 346.86048,678.80642 0,58.33066 194.35743,0 0,-58.33066 -194.35743,0 z"
+         d="m 346.8835,678.34468 0,58.33066 194.35743,0 0,-58.33066 -194.35743,0 z"
          style="fill:#595959;fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:connector-curvature="0" />
       <text
@@ -385,63 +355,15 @@
       <text
          id="text3148"
          style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="703.40369"
-         x="669.67029"
-         xml:space="preserve">Linux</text>
-      <text
-         id="text3150"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="703.40369"
-         x="710.40125"
-         xml:space="preserve">, </text>
-      <text
-         id="text3152"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="703.40369"
-         x="716.3963"
-         xml:space="preserve">*</text>
-      <text
-         id="text3154"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="703.40369"
-         x="724.64325"
-         xml:space="preserve">BSD</text>
-      <text
-         id="text3156"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="703.40369"
-         x="758.37665"
-         xml:space="preserve">,</text>
+         y="701.2608"
+         x="666.81317"
+         xml:space="preserve">Linux, *BSD,</text>
       <text
          id="text3158"
          style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="723.39386"
-         x="648.43073"
-         xml:space="preserve">Windows</text>
-      <text
-         id="text3160"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="723.39386"
-         x="717.89752"
-         xml:space="preserve">, </text>
-      <text
-         id="text3162"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="723.39386"
-         x="725.89264"
-         xml:space="preserve">OSX</text>
-      <text
-         id="text3164"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="723.39386"
-         x="760.87537"
-         xml:space="preserve">, </text>
-      <text
-         id="text3166"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="723.39386"
-         x="769.62109"
-         xml:space="preserve">...</text>
+         y="722.38373"
+         x="652.47131"
+         xml:space="preserve">Windows, OSX, ...</text>
       <path
          id="path3168"
          d="m 619.14829,620.47577 0,58.33065 194.35744,0 0,-58.33065 -194.35744,0 z"
@@ -1054,33 +976,9 @@
       <text
          id="text3384"
          style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="713.39874"
-         x="893.31018"
-         xml:space="preserve">Posix</text>
-      <text
-         id="text3386"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="713.39874"
-         x="934.53992"
-         xml:space="preserve">, </text>
-      <text
-         id="text3388"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="713.39874"
-         x="943.28558"
-         xml:space="preserve">RTOS</text>
-      <text
-         id="text3390"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="713.39874"
-         x="985.51282"
-         xml:space="preserve">, </text>
-      <text
-         id="text3392"
-         style="font-size:16.24200439px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         y="713.39874"
-         x="999.50787"
-         xml:space="preserve">...</text>
+         y="713.14618"
+         x="897.09827"
+         xml:space="preserve">Posix, RTOS, ...</text>
       <path
          id="path3394"
          d="m 856.21908,620.47577 0,58.33065 194.35742,0 0,-58.33065 -194.35742,0 z"

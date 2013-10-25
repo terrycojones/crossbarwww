@@ -15,42 +15,6 @@
      SyntaxHighlighter.all()
    </script>
 
-   <script>
-
-         // $("#hiw").addClass("js");
-
-         // var expandNotice = $("#wsWampExpand");
-         // var expanded = false;
-         // var expandTime = 300;
-         // var expandText;
-         // var unexpandText = "Hide information about WebSocket and WAMP";
-
-         // expandNotice.on("click", function() {
-
-         //    //// hide the exand notice
-         //    //expandNotice.fadeOut(300);
-
-         //    //// toggle display of expanded information
-         //    //$("#wsWampContainer").slideToggle(400);
-
-
-         //    // expand/shrink and change caption of expand notice
-         //    if (!expanded) {
-         //       expandText = expandNotice.text(); // save current text for restore on next click
-         //       expandNotice.text(unexpandText);
-         //       $("#wsWampContainer").slideDown(expandTime);
-         //       expanded = true;
-         //    }
-         //    else {
-         //       expandNotice.text(expandText);
-         //       $("#wsWampContainer").slideUp(expandTime);
-         //       expanded = false;
-         //    }
-
-         // });
-
-      </script>
-
 
 {% endblock %}
 
@@ -61,7 +25,7 @@
 <div id="hiw" class="page_content">
 
       <div class="section white first">
-         <div class="w820 content">
+         <div class="content">
             <h1>
                How it works
             </h1>
@@ -76,25 +40,13 @@
       </div>
 
       <div class="section white">
-         <div class="content w960">
-            <!-- <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/hiw_crossbar_components.png') }}"/  width="960" height="699"> -->
-            <!-- <div style="position: relative; width: 100%">
-           <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_osvg2.svg') }}">
-        </div> -->
-           <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_osvg.svg') }}">
-           <!-- <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_960_ovg.svg') }}"> -->
-           <!-- <embed id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components_osvg.svg') }}" type="image/svg+xml"> -->
-
-
-            <!-- <object data="{{ url_for('static', filename='img/crossbar_components_osvg2.svg') }}" type="image/svg+xml" width="100%" height="100%"></object> -->
-            <!-- <object data="{{ url_for('static', filename='img/crossbar_components_osvg.svg') }}" type="image/svg+xml" width="100%" height="100%"></object> -->
-
-
+         <div class="content imageSection">
+           <img id="hiw_crossbar_components" src="{{ url_for('static', filename='img/crossbar_components.svg') }}">
          </div>
       </div>
 
       <div class="section white">
-         <div class="w820 content">
+         <div class="content">
             <p>
                In this architecture, user interface logic is implemented completely
                in browser-based or mobile app frontends using <strong>JavaScript</strong>,
@@ -122,7 +74,7 @@
       </div>
 
       <div class="section lightgrey">
-         <div class="content w960">
+         <div class="content imageSection">
             <div class="hiw_illu_textblock narrow">
                <h2>
                   Architecture
@@ -132,15 +84,8 @@
                   browser-based and native mobile app frontends and the database
                </p>
             </div>
-            <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/hiw_crossbar_architecture.png') }}" width="554" height="140"/> -->
-            <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture.svg') }}" width="554" height="140"/> -->
             <div class="hiw_illu_image" id="hiw_architecture_container">
-               <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test1.svg') }}"/>
-
-               <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test2.svg') }}"/>
-               <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test3.svg') }}"/> -->
-               <!-- <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture_opt_test4.svgz') }}"/> -->
-               <!-- width="554" height="140" -->
+               <img id="hiw_architecture" src="{{ url_for('static', filename='img/crossbar_hiw_architecture.svg') }}"/>
             </div>
             <div class="clearboth"></div>
 
@@ -148,7 +93,7 @@
       </div>
 
       <div class="section white">
-         <div class="content w820">
+         <div class="content">
             <p>
                Please note that no application code is run on Crossbar.io.
                All application specific code is either run in the frontends or
@@ -162,50 +107,46 @@
                to provide PubSub and RPC functionality.
             </p>
 
-            <!-- <div id="wsWampExpand" class="wsNoDisplay">Learn more about WebSocket and WAMP</div> -->
 
-           <!--  <div id="wsWampContainer"> -->
-               <h3>
-                  WebSocket and WAMP
-               </h3>
-               <p>
-                  Clients - both browser-based and native apps - connect to Crossbar.io via
-                  <a href="http://tools.ietf.org/html/rfc6455"><strong>WebSocket</strong></a>,
-                  a new IETF specified open protocol already built into modern browsers.
-                  <br>
-                  WebSocket is the new standard for real-time messaging on the Web
-                  and allows for bi-directional, low-latency communication over
-                  persistent and efficient connections.
-               </p>
-               <p>
-                  While WebSocket provides a solid low-level communication foundation,
-                  Crossbar.io adds two powerful higher-level messaging patterns
-                  for applications on top of WebSocket via <a href="http://wamp.ws/"><strong>WAMP</strong></a>:
-               </p>
-               <div style="width: 80%; margin: auto;">
-                  <img class="wamp" src="{{ url_for('static', filename='img/wamp_grey.png') }}" width="145" height="26"/>
-                  <ul style="float: left; margin-left: 30px;">
-                     <li>
-                        <strong>Publish and Subscribe</strong> (PubSub)
-                     </li>
-                     <li>
-                        <strong>Remote Procedure Calls</strong> (RPC)
-                     </li>
-                  </ul>
-               </div>
-               <div style="clear: both"></div>
-               <p>
-                  At its core, Crossbar.io then dispatches PubSub messages from both clients and Oracle, and
-                  forwards client RPCs to Oracle stored procedures.
-               </p>
-<!--             </div> -->
-
+            <h3>
+               WebSocket and WAMP
+            </h3>
+            <p>
+               Clients - both browser-based and native apps - connect to Crossbar.io via
+               <a href="http://tools.ietf.org/html/rfc6455"><strong>WebSocket</strong></a>,
+               a new IETF specified open protocol already built into modern browsers.
+               <br>
+               WebSocket is the new standard for real-time messaging on the Web
+               and allows for bi-directional, low-latency communication over
+               persistent and efficient connections.
+            </p>
+            <p>
+               While WebSocket provides a solid low-level communication foundation,
+               Crossbar.io adds two powerful higher-level messaging patterns
+               for applications on top of WebSocket via <a href="http://wamp.ws/"><strong>WAMP</strong></a>:
+            </p>
+            <div style="width: 80%; margin: auto;">
+               <img class="wamp" src="{{ url_for('static', filename='img/wamp_grey.svg') }}" width="145" height="26"/>
+               <ul style="float: left; margin-left: 30px;">
+                  <li>
+                     <strong>Publish and Subscribe</strong> (PubSub)
+                  </li>
+                  <li>
+                     <strong>Remote Procedure Calls</strong> (RPC)
+                  </li>
+               </ul>
+            </div>
+            <div style="clear: both"></div>
+            <p>
+               At its core, Crossbar.io then dispatches PubSub messages from both clients and Oracle, and
+               forwards client RPCs to Oracle stored procedures.
+            </p>
 
          </div>
       </div>
 
       <div class="section lightgrey">
-         <div class="content w960">
+         <div class="content imageSection">
             <div class="hiw_illu_textblock">
                <h2>
                   Client-to-Client PubSub
@@ -218,17 +159,15 @@
                   for the topic.
                </p>
             </div>
-            <!-- <img id="hiw_c2c" src="{{ url_for('static', filename='img/hiw_crossbar_pubsub.png') }}" width="310" height="271" /> -->
             <div class="hiw_illu_image" id="hiw_client_to_client_pubsub_container">
                <img id="hiw_c2c" src="{{ url_for('static', filename='img/crossbar_hiw_client_to_client_pubsub.svg') }}"  />
-               <!-- width="310" height="271" -->
             </div>
             <div class="clearboth"></div>
          </div>
       </div>
 
       <div class="section white">
-         <div class="content w820">
+         <div class="content">
             <p>
                Here is how you subscribe in JavaScript to receive events on a topic:
             </p>
@@ -255,7 +194,7 @@
       </div>
 
       <div class="section lightgrey">
-         <div class="content w960">
+         <div class="content imageSection">
             <div class="hiw_illu_textblock">
                <h2>
                   Publish from Database
@@ -264,17 +203,15 @@
                   Crossbar.io allows to publish events to topics directly from within database stored procedures or triggers:
                </p>
             </div>
-            <!-- <img id="hiw_pfo" src="{{ url_for('static', filename='img/hiw_crossbar_publish.png') }}" width="521" height="271"/> -->
             <div class="hiw_illu_image" id="hiw_publish_from_database_container">
                <img id="hiw_pfo" src="{{ url_for('static', filename='img/crossbar_hiw_publish_from_database.svg') }}" />
-               <!-- width="521" height="271" -->
             </div>
             <div class="clearboth"></div>
          </div>
       </div>
 
       <div class="section white">
-         <div class="content w820">
+         <div class="content">
             <p>
                You can publish events from <span class="bold">Oracle PL/SQL</span> with plain strings as payload ..
             </p>
@@ -331,7 +268,7 @@
       </div>
 
       <div class="section lightgrey">
-         <div class="content w960">
+         <div class="content imageSection">
             <div class="hiw_illu_textblock">
                <h2>
                   Calling Database Stored Procedures
@@ -341,10 +278,8 @@
                   running in Web browsers or native mobile clients.
                </p>
             </div>
-            <!-- <img id="hiw_cosp" src="{{ url_for('static', filename='img/hiw_crossbar_call.png') }}" width="520" height="92" /> -->
             <div class="hiw_illu_image" id="hiw_call_stored_procedure_container">
                <img id="hiw_cosp" src="{{ url_for('static', filename='img/crossbar_hiw_call_stored_procedure.svg') }}"/>
-               <!-- width="520" height="92" -->
             </div>
             <div class="clearboth"></div>
 
@@ -352,7 +287,7 @@
       </div>
 
       <div class="section white">
-         <div class="content w820">
+         <div class="content">
             <p>
                Here is a simple Oracle PL/SQL based package with a stored procedure that
                gets registered with WebMQ for remote calling:

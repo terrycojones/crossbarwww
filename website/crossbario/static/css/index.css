@@ -1,0 +1,153 @@
+#tagline {
+   margin-top: -6px;
+   margin-bottom: 46px;
+   font-size: 20px;
+   font-family: 'Segoe UI Light', 'Open Sans Light', sans-serif;
+}
+
+#followus {
+   position: relative;
+   top: 4px;
+   margin-left: 12px;
+}
+
+.cb_icon {
+   width: 80px;
+   height: 80px;
+   position: relative;
+   top: -20px;
+   margin-right: 12px;
+}
+
+.cb_prefix {
+   font-family: 'Play Bold', sans-serif;
+   font-size: 72px;
+   color: #1a1a1a;
+}
+
+.cb_suffix {
+   font-family: 'Play', sans-serif;
+   font-size: 72px;
+   color: #888;
+}
+
+
+#github {
+   width: 132px;
+   height: 133px;
+   position: absolute;
+   top: -20px;
+   right: -1px;
+   border: 0;
+   background-image: url('../img/github.png');
+}
+
+#github:hover {
+   background-image: url('../img/github_highlighted.png');
+}
+
+
+#viewport {
+   min-width: 540px;
+}
+
+#main #arch img {
+   width: 100%;
+}
+
+
+#crossbarArch {
+   /*border: 1px solid red;*/
+   /*background-color: red;*/
+   width: 100%;
+   margin: 0 auto;
+}
+
+#crossbarArch > div {
+   width: 33%;
+   float: left;
+   /*border: 1px solid green;*/
+   /*background-color: green;*/
+}
+
+#crossbarArch > div#archCenter {
+   /*border: 1px solid blue;*/
+   width: 33%;
+   /*background-color: blue;*/
+}
+
+/* CSS hack to get scalable container height as a percentage of container width */
+/* Container: uses the fact that padding is relative to the Container's width to get the height; */
+/* Box: absolute and extends across the entire Container size; */
+
+#crossbarArch .archBoxContainer {
+   width: 100%;
+   position: relative;
+   padding-bottom: 79%;
+   /*background-color: grey;*/
+}
+
+#crossbarArch .archBoxContainer .archBox {
+   position: absolute;
+   width: 84%;
+   height: 70%;
+   /*border: 1px solid pink;*/
+   background-color: #fff;
+   border-radius: 19px;
+   margin: 12% 8%;
+}
+
+#crossbarArch #archCenter .archBoxContainer {
+   width: 100%;
+   margin: 0;
+}
+
+#crossbarArch #archCenter .archBoxContainer .archBox {
+   /*background-color: #ddd;*/
+   width: 100%;
+   margin: 56% 0 0 0;
+   background-color: inherit;
+}
+
+#crossbarArch #archCenter .archBoxContainer .archBox > img {
+   width: 100%;
+}
+
+.archBoxContainer {
+   text-align: center;
+}
+.archBox > h1 {
+   font-size: 1.5vw;
+   color: #999;
+}
+
+#crossbar_arch_android {
+   width: 33%;
+}
+#crossbar_arch_html5 {
+   width: 24%;
+}
+#crossbar_arch_ios {
+   width: 29%;
+}
+#crossbar_arch_oracle {
+   width: 68%;
+}
+#crossbar_arch_postgresql {
+   width: 62%;
+}
+#crossbar_arch_arduino {
+   width: 35%;
+}
+#crossbar_arch_raspberry {
+   width: 25%;
+}
+#crossbar_arch_java {
+   width: 24%;
+}
+#crossbar_arch_python {
+   width: 48%;
+}
+#crossbar_arch_node {
+   width: 46%;
+}

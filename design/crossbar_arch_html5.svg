@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50.907921"
+   height="67.741638"
+   id="svg6718"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="crossbar_arch_html5.svg">
+  <defs
+     id="defs6720">
+    <filter
+       id="filter5034-4"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix5036-8"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter6583"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix6585"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter6587"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix6589"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter6591"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix6593"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter6595"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix6597"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter6599"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix6601"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter6603"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix6605"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter4592"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix4594"
+         type="saturate"
+         values="0" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="-7.5054309"
+     inkscape:cy="17.795627"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-right="5"
+     fit-margin-left="5"
+     fit-margin-bottom="5"
+     inkscape:window-width="911"
+     inkscape:window-height="835"
+     inkscape:window-x="1865"
+     inkscape:window-y="109"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata6723">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-427.68278,-503.70709)">
+    <g
+       id="g3050"
+       transform="translate(65.407377,-2.0203051)">
+      <path
+         id="path3015"
+         d="m 405.72622,564.68249 -17.37121,4.81406 -17.31735,-4.80991 -3.86119,-43.28924 42.41094,0 z"
+         style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3017"
+         d="m 388.38401,524.93544 0,40.88221 14.03203,-3.89433 3.3019,-36.98788 z"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3019"
+         d="m 388.38401,535.55785 0,-5.3112 -0.0207,0 -13.29459,0 0.12843,1.42516 1.30501,14.6286 11.88186,0 0,-5.30706 -7.02637,0 -0.48472,-5.4355 z"
+         style="fill:#ebebeb;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3021"
+         d="m 382.06608,548.95602 -2.87104,0 -2.45674,0 0.74158,8.33967 10.87928,3.01604 0.0249,-0.004 0,-5.52664 -0.0249,0.008 -5.91193,-1.59916 z"
+         style="fill:#ebebeb;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3023"
+         d="m 371.12052,509.63154 2.70117,0 0,2.66803 2.46918,0 0,-2.66803 2.69703,0 0,8.07453 -2.69703,0 0,-2.70532 -2.46918,0 0,2.70532 -2.69703,0 0,-8.07453 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3025"
+         d="m 382.53423,512.30786 -2.37389,0 0,-2.67632 7.44895,0 0,2.67632 -2.37389,0 0,5.39821 -2.70117,0 0,-5.39821 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3027"
+         d="m 388.79416,509.63154 2.81304,0 1.73173,2.83789 1.72759,-2.83789 2.81304,0 0,8.07453 -2.68461,0 0,-4.00205 -1.85602,2.87103 -0.0497,0 -1.85603,-2.87103 0,4.00205 -2.63903,0 0,-8.07453 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3029"
+         d="m 399.22186,509.63154 2.70118,0 0,5.40649 3.7949,0 0,2.66804 -6.49608,0 0,-8.07453 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3031"
+         d="m 394.28766,553.19007 -5.92436,1.59502 0,5.52664 10.88342,-3.01604 0.0829,-0.89901 1.24702,-13.97817 0.12843,-1.42516 -1.4293,0 -10.91242,0 0,5.30706 6.53751,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3033"
+         d="m 388.3633,535.55785 12.80987,0 0,0 0.0166,0 0.10357,-1.1973 0.24443,-2.68874 0.12843,-1.42516 -13.30287,0 0,3.29775 0,1.99688 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
