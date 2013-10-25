@@ -1,385 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="520"
-   height="91.953247"
-   id="svg4124"
-   version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="crossbar_hiw_call_stored_procedure.svg">
-  <defs
-     id="defs4126" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="171.6"
-     inkscape:cy="-68.497144"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1024"
-     inkscape:window-height="1258"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata4129">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(571.68383,540.50731)">
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;stroke:#2a2a2a;stroke-width:2.39769959000000020;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -372.25342,-485.03573 -101.73219,-0.36356"
-       id="path6872-5-8-1-5-4-1-02-9-6-2-6-6-18" />
-    <path
-       inkscape:transform-center-y="-19.284559"
-       inkscape:transform-center-x="-3.9816936"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:1.60683106999999990;stroke-opacity:1"
-       d="m -482.18315,-485.53176 9.53955,5.64319 c -1.50546,-3.51823 -1.47858,-7.70451 0.0719,-11.20325 l 0,0 -9.61148,5.56006 z"
-       id="path6874-4-6-2-7-8-1-5-3-9-5-0-0-9" />
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       sodipodi:linespacing="125%"
-       id="text7599-7-1-8-4-2-5-6-1-8"
-       y="-511.76785"
-       x="-443.01202"
-       style="font-size:15.98466301000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1f;fill-opacity:0.94117647000000004;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       xml:space="preserve"><tspan
-         id="tspan5129-4-0-76-9-6-4"
-         y="-511.76785"
-         x="-443.01202"
-         sodipodi:role="line">Call</tspan></text>
-    <g
-       id="g5018-4-9-0"
-       transform="matrix(0.70841119,0,0,0.70841119,-1339.1305,-1952.0842)"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
-      <path
-         inkscape:connector-curvature="0"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         d="m 1083.3351,2008 110,0 0,110 -110,0 z"
-         id="path5214-4-5-0-7-5-7-61-9-9-8-7" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text5011-1-0-6-1-3"
-         y="2034.1614"
-         x="1092.5861"
-         style="font-size:25.50540543000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         xml:space="preserve"><tspan
-           style="font-size:20px;font-weight:normal;-inkscape-font-specification:Open Sans;font-family:Open Sans;font-style:normal;font-stretch:normal;font-variant:normal"
-           id="tspan5015-4-2-3-8-4"
-           y="2034.1614"
-           x="1092.5861"
-           sodipodi:role="line">Client</tspan></text>
-    </g>
-    <rect
-       y="-497.62515"
-       x="-571.68378"
-       height="45.955906"
-       width="77.925232"
-       id="rect5567-4-0-0-6-7-2-9"
-       style="fill:#3cc33c;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       sodipodi:linespacing="125%"
-       id="text7599-7-1-8-4-2-7-5-9-9-6-8-6-6"
-       y="-479.87488"
-       x="-566.57202"
-       style="font-size:11.98849678000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       xml:space="preserve"><tspan
-         id="tspan5129-4-0-7-0-4-0-1-8-6-5"
-         y="-479.87488"
-         x="-566.57202"
-         sodipodi:role="line"
-         style="font-weight:bold;-inkscape-font-specification:Open Sans Bold">Call</tspan><tspan
-         id="tspan5561-6-6-0-8-2-0-1"
-         y="-464.88925"
-         x="-566.57202"
-         sodipodi:role="line"
-         style="font-weight:normal;-inkscape-font-specification:Open Sans;font-family:Open Sans;font-style:normal;font-stretch:normal;font-variant:normal">Procedure A</tspan></text>
-    <g
-       id="g5018-7-4-4"
-       transform="matrix(0.70841119,0,0,0.70841119,-897.0558,-1953.3331)"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
-      <path
-         inkscape:connector-curvature="0"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         d="m 1083.3351,2008 110,0 0,110 -110,0 z"
-         id="path5214-4-5-0-7-5-7-61-9-17-7-9" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text5011-1-0-7-8-9"
-         y="2034.1614"
-         x="1092.5861"
-         style="font-size:25.50540543000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         xml:space="preserve"><tspan
-           style="font-size:20px;font-weight:normal;-inkscape-font-specification:Open Sans;font-family:Open Sans;font-style:normal;font-stretch:normal;font-variant:normal"
-           id="tspan5015-4-2-7-3-2"
-           y="2034.1614"
-           x="1092.5861"
-           sodipodi:role="line">Database</tspan></text>
-    </g>
-    <rect
-       y="-498.87396"
-       x="-129.60905"
-       height="45.955906"
-       width="77.925232"
-       id="rect5567-4-0-0-6-73-5-5"
-       style="fill:#3cc33c;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       sodipodi:linespacing="125%"
-       id="text7599-7-1-8-4-2-7-5-9-9-6-3-1-5"
-       y="-481.12366"
-       x="-124.49727"
-       style="font-size:11.98849678000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       xml:space="preserve"><tspan
-         id="tspan5129-4-0-7-0-4-0-1-5-2-3"
-         y="-481.12366"
-         x="-124.49727"
-         sodipodi:role="line"
-         style="font-weight:bold;-inkscape-font-specification:Open Sans Bold">Implements</tspan><tspan
-         id="tspan5561-6-6-0-8-9-0-3"
-         y="-466.13803"
-         x="-124.49727"
-         sodipodi:role="line"
-         style="font-weight:normal;-inkscape-font-specification:Open Sans;font-family:Open Sans;font-style:normal;font-stretch:normal;font-variant:normal">Procedure A</tspan></text>
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;stroke:#2a2a2a;stroke-width:2.39769959000000020;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -139.81465,-486.75838 -101.73229,-0.36355"
-       id="path6872-5-8-1-5-4-1-02-9-6-2-6-6-1-3" />
-    <path
-       inkscape:transform-center-y="-19.284559"
-       inkscape:transform-center-x="-3.9816936"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.60683106999999990;stroke-opacity:1"
-       d="m -249.74447,-487.25441 9.53955,5.64319 c -1.50546,-3.51822 -1.47859,-7.70451 0.0719,-11.20325 l 0,0 -9.61148,5.56006 z"
-       id="path6874-4-6-2-7-8-1-5-3-9-5-0-0-6-7" />
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       sodipodi:linespacing="125%"
-       id="text7599-7-1-8-4-2-5-6-1-4-4"
-       y="-517.48676"
-       x="-227.26439"
-       style="font-size:15.98466301000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       xml:space="preserve"><tspan
-         id="tspan5129-4-0-76-9-6-0-3"
-         y="-517.48676"
-         x="-227.26439"
-         sodipodi:role="line">Forward</tspan></text>
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;stroke:#2a2a2a;stroke-width:2.39769959000000020;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -249.75007,-506.02559 101.73219,-0.36356"
-       id="path6872-5-8-1-5-4-1-02-9-6-2-6-6-18-8" />
-    <path
-       inkscape:transform-center-y="-19.284559"
-       inkscape:transform-center-x="3.9817072"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:1.60683106999999990;stroke-opacity:1"
-       d="m -139.82034,-506.52162 -9.53955,5.64319 c 1.50546,-3.51823 1.47858,-7.70451 -0.0719,-11.20325 l 0,0 9.61148,5.56006 z"
-       id="path6874-4-6-2-7-8-1-5-3-9-5-0-0-9-0" />
-    <path
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;stroke:#2a2a2a;stroke-width:2.39769959000000020;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -482.18884,-503.75208 101.73229,-0.36355"
-       id="path6872-5-8-1-5-4-1-02-9-6-2-6-6-1-3-0" />
-    <path
-       inkscape:transform-center-y="-19.284559"
-       inkscape:transform-center-x="3.9817072"
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       inkscape:connector-curvature="0"
-       style="fill:#2a2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#2a2a2a;stroke-width:1.60683106999999990;stroke-opacity:1"
-       d="m -372.25902,-504.2481 -9.53955,5.64319 c 1.50546,-3.51823 1.47859,-7.70451 -0.0719,-11.20326 l 0,0 9.61148,5.56007 z"
-       id="path6874-4-6-2-7-8-1-5-3-9-5-0-0-6-7-6" />
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       sodipodi:linespacing="125%"
-       id="text7599-7-1-8-4-2-5-6-1-8-9"
-       y="-462.56555"
-       x="-461.7301"
-       style="font-size:15.98466301000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1f;fill-opacity:0.94117647000000004;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       xml:space="preserve"><tspan
-         id="tspan5129-4-0-76-9-6-4-8"
-         y="-462.56555"
-         x="-461.7301"
-         sodipodi:role="line">Call Result</tspan></text>
-    <text
-       inkscape:export-ydpi="300"
-       inkscape:export-xdpi="300"
-       inkscape:export-filename="C:\Users\AG\scm\wwwcrossbar\design\hiw_crossbar_call.png"
-       sodipodi:linespacing="125%"
-       id="text7599-7-1-8-4-2-5-6-1-4-4-9"
-       y="-464.28827"
-       x="-219.30095"
-       style="font-size:15.98466301000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       xml:space="preserve"><tspan
-         id="tspan5129-4-0-76-9-6-0-3-7"
-         y="-464.28827"
-         x="-219.30095"
-         sodipodi:role="line">Return</tspan></text>
-    <g
-       id="g5235"
-       transform="matrix(0.99904142,0,0,0.99904142,-987.7032,-4304.8747)">
-      <g
-         transform="matrix(0.83636364,0,0,0.83636364,38.778088,1733.9844)"
-         id="g5037-4">
-        <path
-           id="path5256-7-7-10-2-3-4-5-2"
-           d="m 711,2432 110,0 0,110 -110,0 z"
-           style="fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           inkscape:connector-curvature="0" />
-        <g
-           id="g5409-3-3-3"
-           transform="matrix(0.61163163,0,0,0.61163163,-537.12356,3946.2927)"
-           inkscape:export-filename="F:\svnwork\tavendo\mymepad\research\Tavendo\Products\WebMQ\design\landing_page\variant6.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90">
-          <path
-             d="m 2063.08,-2427.1818 -7.3379,-27.6541 3.7538,0 4.2066,18.1279 c 0.4527,1.8989 0.8426,3.7852 1.1695,5.6591 0.7042,-2.9553 1.1192,-4.6593 1.2449,-5.112 l 5.2631,-18.675 4.4141,0 3.9614,13.9968 c 0.9933,3.4709 1.7101,6.7343 2.1503,9.7902 0.352,-1.7481 0.8111,-3.7538 1.3771,-6.0175 l 4.3385,-17.7695 3.6785,0 -7.5831,27.6541 -3.5276,0 -5.8288,-21.0707 c -0.4904,-1.7606 -0.7797,-2.8421 -0.8677,-3.2445 -0.2893,1.2701 -0.5597,2.3517 -0.8111,3.2445 l -5.8666,21.0707 z"
-             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-             id="path5004-1-2-2-2-2-5-1-2"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2103.7382,-2433.6333 3.5086,0.4339 c -0.5533,2.0498 -1.5783,3.6408 -3.0748,4.7725 -1.4965,1.1318 -3.4079,1.6977 -5.7345,1.6977 -2.9301,0 -5.2536,-0.9023 -6.9701,-2.7069 -1.7166,-1.8046 -2.5748,-4.3355 -2.5748,-7.5926 0,-3.3702 0.8677,-5.986 2.6031,-7.8472 1.7355,-1.8612 3.9865,-2.7918 6.7532,-2.7918 2.6787,0 4.8668,0.9117 6.5645,2.7352 1.6976,1.8235 2.5465,4.389 2.5465,7.6964 0,0.2012 0,0.503 -0.02,0.9054 l -14.9398,0 c 0.1252,2.2007 0.7482,3.8859 1.8674,5.0554 1.1193,1.1696 2.5152,1.7543 4.1876,1.7543 1.2451,0 2.3078,-0.3269 3.188,-0.9809 0.8804,-0.6539 1.5784,-1.6977 2.0939,-3.1314 z m -11.1485,-5.4893 11.1861,0 c -0.1508,-1.685 -0.5783,-2.9489 -1.2826,-3.7915 -1.0816,-1.3078 -2.4837,-1.9618 -4.2066,-1.9618 -1.5594,0 -2.8705,0.5219 -3.933,1.5656 -1.0627,1.0439 -1.6506,2.4398 -1.7639,4.1877 z"
-             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-             id="path5006-4-7-3-8-0-1-9-21"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2112.7046,-2427.1818 -3.1502,0 0,-27.6541 3.3954,0 0,9.8656 c 1.4337,-1.7982 3.2635,-2.6974 5.4892,-2.6974 1.2325,0 2.3989,0.2484 3.4993,0.7451 1.1003,0.4967 2.0059,1.1947 2.7164,2.0939 0.7104,0.8992 1.2668,1.9837 1.6694,3.2539 0.4022,1.2701 0.6035,2.6283 0.6035,4.0746 0,3.4332 -0.8487,6.0866 -2.5464,7.9603 -1.698,1.8739 -3.7351,2.8107 -6.1119,2.8107 -2.3642,0 -4.219,-0.9872 -5.5647,-2.9615 z m -0.038,-10.1676 c 0,2.402 0.3269,4.1375 0.9809,5.2064 1.0689,1.748 2.515,2.622 4.3386,2.622 1.4839,0 2.7666,-0.6445 3.8482,-1.9335 1.0814,-1.289 1.6222,-3.2099 1.6222,-5.7628 0,-2.6157 -0.5187,-4.5461 -1.5562,-5.7911 -1.0375,-1.245 -2.292,-1.8675 -3.7633,-1.8675 -1.4839,0 -2.7667,0.6446 -3.8482,1.9335 -1.0815,1.289 -1.6222,3.1534 -1.6222,5.593 z"
-             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-             id="path5008-2-9-3-6-9-2-8-6"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2131.1034,-2427.1818 0,-27.6541 8.3566,0 5.0176,18.8636 4.9612,-18.8636 8.3754,0 0,27.6541 -5.1875,0 0,-21.7686 -5.4893,21.7686 -5.3761,0 -5.4704,-21.7686 0,21.7686 z"
-             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-             id="path5010-3-5-4-0-7-0-6-8"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2183.0494,-2430.6905 c 1.3707,0.9809 2.8608,1.7606 4.4705,2.3391 l -2.0561,3.9424 c -0.8425,-0.2515 -1.6662,-0.5973 -2.471,-1.0375 -0.1761,-0.087 -1.4148,-0.9054 -3.7161,-2.4523 -1.8111,0.7923 -3.8168,1.1885 -6.0176,1.1885 -4.2505,0 -7.5799,-1.2513 -9.9882,-3.7539 -2.4082,-2.5025 -3.6124,-6.0174 -3.6124,-10.5447 0,-4.5147 1.2073,-8.0264 3.6218,-10.5352 2.4145,-2.5089 5.6905,-3.7634 9.828,-3.7634 4.0996,0 7.3505,1.2545 9.7524,3.7634 2.402,2.5088 3.6028,6.0205 3.603,10.5352 -2e-4,2.3894 -0.3334,4.4896 -0.9999,6.3004 -0.5032,1.3834 -1.3078,2.7227 -2.4144,4.018 z m -4.4896,-3.1502 c 0.7167,-0.8426 1.2544,-1.8612 1.6128,-3.0559 0.3584,-1.1947 0.5376,-2.5655 0.5376,-4.1123 0,-3.1941 -0.7042,-5.5805 -2.1126,-7.1587 -1.4086,-1.5782 -3.2509,-2.3673 -5.5271,-2.3673 -2.2762,0 -4.1217,0.7922 -5.5364,2.3768 -1.4148,1.5845 -2.1222,3.9676 -2.1222,7.1492 0,3.232 0.7074,5.6496 2.1222,7.2531 1.4147,1.6034 3.2036,2.4051 5.3666,2.4051 0.8049,0 1.5656,-0.1321 2.2825,-0.3962 -1.1318,-0.742 -2.2825,-1.3204 -3.4521,-1.7354 l 1.5658,-3.188 c 1.836,0.6288 3.5903,1.572 5.2629,2.8296 z"
-             style="font-size:29.63261414px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-             id="path5012-2-4-1-2-3-1-5-5"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-      <path
-         id="rect3842-15-6-1-76"
-         d="m 633.54771,3767.9793 92.01966,0 0,92.0208 -92.01966,0 z"
-         inkscape:connector-curvature="0"
-         style="fill:#1a1a1a" />
-      <path
-         id="path3902-18"
-         style="text-indent:0;text-align:start;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;fill:#ffde00;enable-background:accumulate"
-         d="m 633.54771,3793.4762 0,9.2021 21.68673,-0.066 14.43789,14.4381 6.64957,-6.6497 -17.07425,-17.0744 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path5387-7-4-4-2-1-6-9"
-         style="text-indent:0;text-align:start;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;fill:#ffde00;enable-background:accumulate"
-         d="m 689.35188,3823.4405 -6.64957,6.6496 16.50488,16.5051 26.35961,0 0,-9.2262 -22.28602,0 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path5387-7-4-4-5-7-4-8-2"
-         style="text-indent:0;text-align:start;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;fill:#ffde00;enable-background:accumulate"
-         d="m 699.86513,3793.3612 -43.90603,44.1096 -22.41254,0 0,9.2021 26.27679,0 44.05556,-44.0257 21.68674,0 0,-9.286 z"
-         inkscape:connector-curvature="0" />
-      <text
-         xml:space="preserve"
-         style="font-size:21.31930733px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Play;-inkscape-font-specification:Play"
-         x="635.99701"
-         y="3784.3135"
-         id="text5011-1-0-1-7"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           x="635.99701"
-           y="3784.3135"
-           id="tspan5015-4-2-74-9"
-           style="font-size:16.71748161px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Play;-inkscape-font-specification:Play"><tspan
-   id="tspan3574-5"
-   style="font-weight:bold;fill:#ffffff;-inkscape-font-specification:Play Bold">Crossbar</tspan>.io</tspan></text>
-    </g>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4457"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Open Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Open Sans;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion4459"><rect
-           id="rect4461"
-           width="567.85712"
-           height="320.71429"
-           x="309.28571"
-           y="-70.189613" /></flowRegion><flowPara
-         id="flowPara4463"></flowPara></flowRoot>  </g>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 530 101.93">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<g transform="translate(576.68 545.33)">
+<path stroke-linejoin="round" d="m-372.25-485.04-101.73-0.36356" stroke="#2a2a2a" stroke-linecap="round" stroke-width="2.3977" fill="#2a2a2a"/>
+<path d="m-482.18-485.53 9.5396 5.6432c-1.5055-3.5182-1.4786-7.7045 0.0719-11.203l-9.6115 5.5601z" fill-rule="evenodd" stroke="#2a2a2a" stroke-width="1.6068" fill="#2a2a2a"/>
+<text style="word-spacing:0px;letter-spacing:0px" fill-opacity=".94118" font-size="15.985px" xml:space="preserve" line-height="125%" y="-511.76785" x="-443.01202" font-family="Open Sans" fill="#1a1a1f"><tspan y="-511.76785" x="-443.01202">Call</tspan></text>
+<g transform="matrix(.70841 0 0 .70841 -1339.1 -1952.1)">
+<path d="m1083.3 2008h110v110h-110z" fill="#999"/>
+<text style="word-spacing:0px;letter-spacing:0px" font-size="25.505px" line-height="125%" y="2034.1614" x="1092.5861" font-family="Open Sans" xml:space="preserve" fill="#ffffff"><tspan font-size="20px" y="2034.1614" x="1092.5861" font-family="Open Sans">Client</tspan></text>
+</g>
+<rect height="45.956" width="77.925" y="-497.63" x="-571.68" fill="#3cc33c"/>
+<text style="word-spacing:0px;letter-spacing:0px" font-size="11.988px" xml:space="preserve" line-height="125%" y="-479.87488" x="-566.57202" font-family="Open Sans" fill="#ffffff"><tspan y="-479.87488" x="-566.57202" font-weight="bold">Call</tspan><tspan y="-464.88925" x="-566.57202" font-family="Open Sans">Procedure A</tspan></text>
+<g transform="matrix(.70841 0 0 .70841 -897.06 -1953.3)">
+<path d="m1083.3 2008h110v110h-110z" fill="#999"/>
+<text style="word-spacing:0px;letter-spacing:0px" font-size="25.505px" line-height="125%" y="2034.1614" x="1092.5861" font-family="Open Sans" xml:space="preserve" fill="#ffffff"><tspan font-size="20px" y="2034.1614" x="1092.5861" font-family="Open Sans">Database</tspan></text>
+</g>
+<rect height="45.956" width="77.925" y="-498.87" x="-129.61" fill="#3cc33c"/>
+<text style="word-spacing:0px;letter-spacing:0px" font-size="11.988px" xml:space="preserve" line-height="125%" y="-481.12366" x="-124.49727" font-family="Open Sans" fill="#ffffff"><tspan y="-481.12366" x="-124.49727" font-weight="bold">Implements</tspan><tspan y="-466.13803" x="-124.49727" font-family="Open Sans">Procedure A</tspan></text>
+<path stroke-linejoin="round" d="m-139.81-486.76-101.73-0.36355" stroke="#2a2a2a" stroke-linecap="round" stroke-width="2.3977" fill="#2a2a2a"/>
+<path d="m-249.74-487.25 9.5396 5.6432c-1.5055-3.5182-1.4786-7.7045 0.0719-11.203l-9.6115 5.5601z" fill-rule="evenodd" stroke="#000" stroke-width="1.6068" fill="#1a1a1a"/>
+<text style="word-spacing:0px;letter-spacing:0px" font-size="15.985px" xml:space="preserve" line-height="125%" y="-517.48676" x="-227.26439" font-family="Open Sans" fill="#1a1a1a"><tspan y="-517.48676" x="-227.26439">Forward</tspan></text>
+<path stroke-linejoin="round" d="m-249.75-506.03 101.73-0.36356" stroke="#2a2a2a" stroke-linecap="round" stroke-width="2.3977" fill="#2a2a2a"/>
+<path d="m-139.82-506.52-9.5396 5.6432c1.5055-3.5182 1.4786-7.7045-0.0719-11.203l9.6115 5.5601z" fill-rule="evenodd" stroke="#2a2a2a" stroke-width="1.6068" fill="#2a2a2a"/>
+<path stroke-linejoin="round" d="m-482.19-503.75 101.73-0.36355" stroke="#2a2a2a" stroke-linecap="round" stroke-width="2.3977" fill="#2a2a2a"/>
+<path d="m-372.26-504.25-9.5396 5.6432c1.5055-3.5182 1.4786-7.7045-0.0719-11.203l9.6115 5.5601z" fill-rule="evenodd" stroke="#2a2a2a" stroke-width="1.6068" fill="#2a2a2a"/>
+<text style="word-spacing:0px;letter-spacing:0px" fill-opacity=".94118" font-size="15.985px" xml:space="preserve" line-height="125%" y="-462.56555" x="-461.7301" font-family="Open Sans" fill="#1a1a1f"><tspan y="-462.56555" x="-461.7301">Call Result</tspan></text>
+<text style="word-spacing:0px;letter-spacing:0px" font-size="15.985px" xml:space="preserve" line-height="125%" y="-464.28827" x="-219.30095" font-family="Open Sans" fill="#1a1a1a"><tspan y="-464.28827" x="-219.30095">Return</tspan></text>
+<path fill="#1a1a1a" d="m-354.76-540.33h91.931v91.933h-91.931z"/>
+<path style="block-progression:tb;text-indent:0;color:#000000;text-transform:none" fill="#ffde00" d="m-354.76-515.03v9.1933l21.666-0.0659 14.424 14.424 6.6432-6.6433-17.058-17.058z"/>
+<path style="block-progression:tb;text-indent:0;color:#000000;text-transform:none" fill="#ffde00" d="m-299.01-485.1-6.6432 6.6432 16.489 16.489h26.334v-9.2174h-22.265z"/>
+<path style="block-progression:tb;text-indent:0;color:#000000;text-transform:none" fill="#ffde00" d="m-288.51-515.15-43.864 44.067h-22.391v9.1933h26.252l44.013-43.984h21.666v-9.2771z"/>
+<g fill="#fff">
+<path d="m-342.85-524.39c-1.2246 0.24499-2.3937 0.36749-3.5072 0.36749-0.44547 0-0.86579-0.0195-1.261-0.0586-0.39519-0.0391-0.83496-0.12258-1.3193-0.25051-0.48438-0.12793-0.89638-0.30046-1.236-0.51759-0.33962-0.21712-0.62632-0.52336-0.86009-0.91871-0.23378-0.39535-0.35067-0.86027-0.35067-1.3948v-4.76c0-2.1821 1.6757-3.2732 5.027-3.2732 0.82399 0.00001 1.9708 0.1225 3.4404 0.36748v1.9541c-1.3249-0.31192-2.4604-0.46788-3.4068-0.46789-0.37853 0.00001-0.68749 0.0111-0.92687 0.0334s-0.48998 0.0779-0.75178 0.16692c-0.26182 0.089-0.45669 0.23098-0.58462 0.42584-0.12793 0.19488-0.1919 0.44828-0.19189 0.7602v4.6096c-0.00001 0.97962 0.89619 1.4694 2.6886 1.4694 0.79069 0 1.8707-0.1614 3.2401-0.4842z"/>
+<path d="m-335.97-530.42h-0.83538c-0.66804 0.00001-1.1719 0.10296-1.5115 0.30887-0.33963 0.20592-0.50944 0.55948-0.50943 1.0607v4.8599h-2.4384v-8.0836h2.3216v1.42c0.0112-0.40095 0.24227-0.76563 0.69317-1.094 0.4509-0.3284 0.92134-0.4926 1.4113-0.49261h0.86851z"/>
+<path d="m-326.66-529.35v2.3884c-0.00001 0.52328-0.0835 0.97138-0.25051 1.3443-0.16702 0.37292-0.37302 0.66234-0.618 0.86825-0.245 0.20592-0.56508 0.3646-0.96025 0.47605-0.39519 0.11145-0.75698 0.18111-1.0854 0.20897-0.32842 0.0279-0.72648 0.0418-1.1942 0.0418-0.46773 0-0.8658-0.0139-1.1942-0.0418-0.32841-0.0279-0.69029-0.0975-1.0856-0.20897-0.39535-0.11145-0.71552-0.27013-0.9605-0.47605-0.245-0.20591-0.45099-0.49533-0.618-0.86825s-0.25051-0.82102-0.25051-1.3443v-2.3884c0-0.55692 0.0863-1.033 0.25892-1.4282 0.17261-0.39517 0.38422-0.69852 0.63482-0.91005 0.25059-0.21151 0.57628-0.3758 0.97707-0.49286 0.40078-0.11705 0.75985-0.18943 1.0772-0.21713 0.31736-0.0277 0.7043-0.0415 1.1608-0.0415 0.4565 0.00001 0.84344 0.0139 1.1608 0.0415 0.31736 0.0277 0.67644 0.10008 1.0772 0.21713 0.40077 0.11706 0.72638 0.28135 0.97681 0.49286 0.25042 0.21153 0.46194 0.51488 0.63457 0.91005 0.1726 0.39519 0.25891 0.87123 0.25892 1.4282zm-2.4384 2.6723v-3.0566c-0.00001-0.43425-0.11137-0.7432-0.3341-0.92686-0.22274-0.18366-0.66812-0.27548-1.3362-0.27549-0.66803 0.00001-1.1133 0.0918-1.3359 0.27549-0.22257 0.18366-0.33385 0.49261-0.33385 0.92686v3.0566c0 0.42304 0.10848 0.71807 0.32544 0.88507 0.21695 0.16701 0.66505 0.25052 1.3443 0.25052 0.67924 0 1.1274-0.0835 1.3446-0.25052 0.21712-0.167 0.32568-0.46203 0.32569-0.88507z"/>
+<path d="m-317.8-527.35v1.0189c-0.00001 0.40061-0.0751 0.74567-0.22528 1.0352-0.1502 0.28951-0.33946 0.51504-0.56779 0.67661-0.22835 0.16158-0.52626 0.28687-0.89374 0.3759-0.36749 0.089-0.72096 0.14747-1.0604 0.17533-0.33946 0.0279-0.73752 0.0418-1.1942 0.0418-0.87972 0-1.9431-0.0836-3.1901-0.25077v-1.6198c1.5478 0.23378 2.6223 0.35067 3.2238 0.35067 0.47876 0 0.84897-0.0473 1.1106-0.14195 0.26164-0.0946 0.39246-0.28109 0.39246-0.55938v-0.50154c0-0.25586-0.0724-0.44784-0.21712-0.57594-0.14476-0.1281-0.45652-0.19215-0.93528-0.19216h-1.0525c-0.84608 0.00001-1.5057-0.1698-1.9789-0.50943-0.47316-0.33962-0.70974-0.83784-0.70974-1.4947v-0.98523c0-0.73496 0.35075-1.2416 1.0522-1.5199 0.7015-0.27828 1.6924-0.41742 2.9728-0.41743 0.53449 0.00001 1.492 0.0501 2.8726 0.15036v1.553c-1.737-0.13354-2.7168-0.2003-2.9394-0.20031-0.67924 0.00001-1.108 0.0473-1.2862 0.14195-0.17823 0.0946-0.26734 0.27549-0.26733 0.54256v0.43425c-0.00001 0.13355 0.0697 0.25604 0.20897 0.36749 0.13931 0.11146 0.35372 0.16718 0.64322 0.16718h1.0688c1.9817 0 2.9725 0.64578 2.9725 1.9373z"/>
+<path d="m-309.02-527.35v1.0189c-0.00001 0.40061-0.0751 0.74567-0.22528 1.0352-0.1502 0.28951-0.33946 0.51504-0.5678 0.67661-0.22834 0.16158-0.52626 0.28687-0.89373 0.3759-0.3675 0.089-0.72096 0.14747-1.0604 0.17533-0.33946 0.0279-0.73752 0.0418-1.1942 0.0418-0.87972 0-1.9431-0.0836-3.1901-0.25077v-1.6198c1.5478 0.23378 2.6224 0.35067 3.2238 0.35067 0.47876 0 0.84897-0.0473 1.1106-0.14195 0.26163-0.0946 0.39245-0.28109 0.39246-0.55938v-0.50154c-0.00001-0.25586-0.0724-0.44784-0.21713-0.57594-0.14475-0.1281-0.45651-0.19215-0.93527-0.19216h-1.0525c-0.84608 0.00001-1.5057-0.1698-1.9789-0.50943-0.47316-0.33962-0.70974-0.83784-0.70974-1.4947v-0.98523c0-0.73496 0.35075-1.2416 1.0522-1.5199 0.70149-0.27828 1.6924-0.41742 2.9728-0.41743 0.53449 0.00001 1.492 0.0501 2.8726 0.15036v1.553c-1.737-0.13354-2.7168-0.2003-2.9394-0.20031-0.67925 0.00001-1.108 0.0473-1.2862 0.14195-0.17823 0.0946-0.26734 0.27549-0.26734 0.54256v0.43425c0 0.13355 0.0697 0.25604 0.20898 0.36749 0.13931 0.11146 0.35372 0.16718 0.64322 0.16718h1.0688c1.9817 0 2.9725 0.64578 2.9725 1.9373z"/>
+<path d="m-298.93-529.72v2.6555c-0.00001 1.1023-0.33122 1.8845-0.99364 2.3466-0.66243 0.46212-1.7286 0.69318-3.1986 0.69318-1.5474 0-2.6162-0.24219-3.2064-0.72656-0.59022-0.48438-0.88533-1.2554-0.88533-2.3132v-8.8186h2.4384v4.4093c0.14474-0.36731 0.41479-0.62054 0.81015-0.75969 0.39534-0.13914 0.9994-0.20871 1.8122-0.20872 0.69011 0.00001 1.2523 0.0557 1.6866 0.16692 0.43425 0.11129 0.76274 0.29223 0.98548 0.54282 0.22273 0.2506 0.37028 0.52617 0.44266 0.82671 0.0724 0.30056 0.10856 0.69582 0.10857 1.1858zm-2.4384 2.9725v-2.9893c-0.00001-0.52327-0.0974-0.85448-0.29231-0.99363-0.19487-0.13914-0.67644-0.20871-1.4447-0.20872-0.69046 0.00001-1.1414 0.089-1.353 0.26708-0.21153 0.17805-0.31729 0.48981-0.31728 0.93527v2.9893c-0.00001 0.47911 0.10304 0.79937 0.30912 0.96076 0.20608 0.16141 0.6654 0.24211 1.3779 0.24211 0.71254 0 1.1774-0.0807 1.3945-0.24211 0.21712-0.16139 0.32568-0.48165 0.32569-0.96076z"/>
+<path d="m-289.75-524.19h-2.3884v-0.73497c-0.17806 0.3228-0.43409 0.55386-0.7681 0.69317-0.33402 0.13932-0.9465 0.20898-1.8374 0.20898-1.0911 0-1.8147-0.16701-2.171-0.50103-0.35627-0.33401-0.5344-1.0299-0.5344-2.0877 0-0.95753 0.18374-1.6228 0.55122-1.9959 0.36749-0.37308 1.0244-0.55963 1.9707-0.55963h2.7391v-0.55098c-0.00001-0.48997-0.11418-0.81566-0.34251-0.97707-0.22835-0.16139-0.70983-0.24209-1.4445-0.2421-0.69046 0.00001-1.637 0.0668-2.8395 0.20031v-1.5367c0.92423-0.11111 1.9541-0.16666 3.0897-0.16667 1.492 0.00001 2.5275 0.18095 3.1066 0.54282 0.57899 0.36188 0.8685 1.0771 0.8685 2.1458zm-2.4383-2.0709v-1.5698h-1.6702c-0.5345 0-0.86851 0.0612-1.002 0.18348-0.13354 0.12233-0.20031 0.45074-0.2003 0.98523-0.00001 0.52328 0.0696 0.84065 0.20871 0.9521 0.13914 0.11145 0.49261 0.16718 1.0604 0.16718 0.27828 0 0.48428-0.003 0.61799-0.008 0.13371-0.006 0.27846-0.0195 0.43426-0.0418 0.15579-0.0223 0.26435-0.0584 0.32569-0.10856 0.0613-0.0501 0.11425-0.11969 0.15877-0.20872 0.0445-0.089 0.0668-0.20591 0.0668-0.35066z"/>
+<path d="m-282.31-530.42h-0.83538c-0.66804 0.00001-1.1719 0.10296-1.5115 0.30887-0.33962 0.20592-0.50944 0.55948-0.50943 1.0607v4.8599h-2.4384v-8.0836h2.3216v1.42c0.0112-0.40095 0.24227-0.76563 0.69317-1.094 0.4509-0.3284 0.92135-0.4926 1.4113-0.49261h0.86851z"/>
+<path d="m-278.95-524.19h-1.9373v-1.8038h1.9373z"/>
+<path d="m-274.97-533.63h-1.5031v-1.5698h1.5031zm0 9.4364h-1.5031v-8.0836h1.5031z"/>
+<path d="m-265.22-529.55v2.8058c-0.00001 0.5012-0.0613 0.92441-0.18375 1.2696-0.1225 0.34523-0.27838 0.61247-0.46764 0.80173-0.18927 0.18927-0.45932 0.33402-0.81014 0.43426-0.35085 0.10024-0.68495 0.16148-1.0023 0.18374-0.31737 0.0223-0.73769 0.0334-1.261 0.0334-0.66804 0-1.1885-0.0223-1.5614-0.0668-0.37293-0.0445-0.74593-0.15308-1.119-0.32569-0.3731-0.17262-0.64034-0.44819-0.80174-0.82672-0.1614-0.37852-0.2421-0.87972-0.2421-1.5036v-2.8058c0-0.53415 0.064-0.98497 0.19215-1.3525 0.1281-0.36747 0.28398-0.65146 0.46764-0.85194 0.18365-0.20047 0.45362-0.35355 0.80989-0.45923 0.35627-0.10567 0.68748-0.16963 0.99364-0.1919 0.30615-0.0222 0.72647-0.0334 1.261-0.0334 0.53448 0.00001 0.95481 0.0111 1.261 0.0334 0.30615 0.0223 0.63745 0.0862 0.9939 0.1919 0.35643 0.10568 0.62648 0.25876 0.81014 0.45923 0.18365 0.20048 0.33953 0.48447 0.46764 0.85194 0.1281 0.36749 0.19215 0.81831 0.19216 1.3525zm-1.5367 3.023v-3.2732c-0.00001-0.74617-0.15037-1.2083-0.45108-1.3864-0.30072-0.17804-0.87972-0.26707-1.737-0.26707-0.8573 0-1.4362 0.089-1.7368 0.26707-0.30054 0.17806-0.45082 0.64018-0.45081 1.3864v3.2732c-0.00001 0.35644 0.0389 0.64042 0.11671 0.85194 0.0778 0.21153 0.22256 0.3646 0.43426 0.45923 0.21169 0.0946 0.42881 0.15308 0.65138 0.17533 0.22256 0.0223 0.55097 0.0334 0.98523 0.0334 0.43425 0 0.76274-0.0111 0.98548-0.0334 0.22273-0.0222 0.43985-0.0807 0.65138-0.17533 0.21151-0.0946 0.35626-0.2477 0.43425-0.45923 0.078-0.21152 0.11697-0.4955 0.11698-0.85194z"/>
+</g>
+<flowRoot style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="40px" line-height="125%" font-family="Open Sans" fill="#000000"><flowRegion><rect y="-70.19" width="567.86" x="309.29" height="320.71"/></flowRegion><flowPara/></flowRoot>
+</g>
 </svg>
