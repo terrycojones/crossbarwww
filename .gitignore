@@ -1,2 +1,4 @@
 *.sublime-workspace
+.sconsign.dblite
 website/crossbario/build
+build

@@ -67,3 +67,13 @@ svg:
 	      	--shorten-ids \
 	      	--indent=none \
 	   ; done
+
+png: svg
+	@for f in $(SVG_FILES); \
+	   do \
+	      inkscape.exe -z -e website/crossbario/static/img/$$f.png website/crossbario/static/img/$$f \
+	   ; done
+
+#"C:\Program Files (x86)\Inkscape\inkscape.exe" -z -e crossbar_hiw_architecture.png crossbar_hiw_architecture.svg
+#"C:\Program Files (x86)\Inkscape\inkscape.exe" -z -e crossbar_hiw_architecture.png -w 1024 crossbar_hiw_architecture.svg
+

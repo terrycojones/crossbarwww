@@ -5,7 +5,7 @@
          "name": "crossbar.io website",
          "path": ".",
          "folder_exclude_patterns": ["build"],
-         "file_exclude_patterns": []
+         "file_exclude_patterns": [".sconsign.dblite"]
       }
 	],
 	"settings":
