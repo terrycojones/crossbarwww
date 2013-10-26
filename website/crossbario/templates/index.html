@@ -6,50 +6,74 @@
 
 {% endblock %}
 
+{% block githubbanner %}
+
+<a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
+
+{% endblock %}
+
 {% block content %}
 
-   <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
+
 
    <div id="viewport">
       <div id="main">
-         <center>
-            <img src="{{ url_for('static', filename = 'img/crossbar_icon.svg') }}" class="cb_icon" width="80" height="80">
-            <span class="cb_prefix">Crossbar</span><span class="cb_suffix">.io</span>
-         </center>
+         <div id="header">
+            <center>
+               <img src="{{ url_for('static', filename = 'img/crossbar_icon.svg') }}" class="cb_icon" style="width: 80px; height: 80px;">
+               <span class="cb_prefix">Crossbar</span><span class="cb_suffix">.io</span>
+            </center>
 
-         <center id="tagline">
-            Open-source multi-protocol application router.
-            <span id="followus">
-            <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
-         </center>
-
-         <!-- <center id="arch"> -->
-            <!-- <img src="{{ url_for('static', filename = 'img/crossbar_arch.png') }}" alt="Crossbar.io - Open-source multi-protocol application router" width="800" height="370"></img> -->
-            <!-- <img id="crossbar_arch" src="{{ url_for('static', filename = 'img/crossbar_arch_new.svg') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img> -->
-         <!-- </center> -->
+            <center id="tagline">
+               Open-source multi-protocol application router.
+               <span id="followus">
+               <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
+            </center>
+         </div>
 
          <div id="crossbarArch">
             <div>
                <div class="archBoxContainer">
                   <div class="archBox">
                      <h1>Frontends</h2>
-                     <img id="crossbar_arch_android" src="{{ url_for('static', filename = 'img/crossbar_arch_android.svg') }}" alt=""></img>
-                     <img id="crossbar_arch_html5" src="{{ url_for('static', filename = 'img/crossbar_arch_html5.svg') }}" alt=""></img>
-                     <img id="crossbar_arch_ios" src="{{ url_for('static', filename = 'img/crossbar_arch_ios.svg') }}" alt=""></img>
+                     <div class="imgContainer frontends">
+                        <!-- <img id="crossbar_arch_android" src="{{ url_for('static', filename = 'img/crossbar_arch_android.svg') }}" alt=""></img>
+                        <img id="crossbar_arch_html5" src="{{ url_for('static', filename = 'img/crossbar_arch_html5.svg') }}" alt=""></img>
+                        <img id="crossbar_arch_ios" src="{{ url_for('static', filename = 'img/crossbar_arch_ios.svg') }}" alt=""></img> -->
+
+                        <img id="crossbar_arch_android" src="{{ url_for('static', filename = 'img/crossbar_arch_android.png') }}" alt=""></img>
+                        <img id="crossbar_arch_html5" src="{{ url_for('static', filename = 'img/crossbar_arch_html5.png') }}" alt=""></img>
+                        <img id="crossbar_arch_ios" src="{{ url_for('static', filename = 'img/crossbar_arch_ios.png') }}" alt=""></img>
+
+                        <div class="clearBoth"></div>
+                     </div>
+
                   </div>
                </div>
                <div class="archBoxContainer">
                   <div class="archBox">
                      <h1>Internet of Things</h2>
-                     <img id="crossbar_arch_arduino" src="{{ url_for('static', filename = 'img/crossbar_arch_arduino.svg') }}" alt=""></img>
-                     <img id="crossbar_arch_raspberry" src="{{ url_for('static', filename = 'img/crossbar_arch_raspberry.svg') }}" alt=""></img>
+                     <div class="imgContainer">
+                        <!-- <img id="crossbar_arch_arduino" src="{{ url_for('static', filename = 'img/crossbar_arch_arduino.svg') }}" alt=""></img>
+                        <img id="crossbar_arch_raspberry" src="{{ url_for('static', filename = 'img/crossbar_arch_raspberry.svg') }}" alt=""></img> -->
+
+
+                        <img id="crossbar_arch_arduino" src="{{ url_for('static', filename = 'img/crossbar_arch_arduino.png') }}" alt=""></img>
+                        <img id="crossbar_arch_raspberry" src="{{ url_for('static', filename = 'img/crossbar_arch_raspberry.png') }}" alt=""></img>
+
+                        <div class="clearBoth"></div>
+                     </div>
+
                   </div>
                </div>
             </div>
             <div id="archCenter">
                <div class="archBoxContainer">
                   <div class="archBox archCenter">
-                     <img id="crossbar_arch_crossbar" src="{{ url_for('static', filename = 'img/crossbar_arch_crossbar.svg') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img>
+                     <!-- <img id="crossbar_arch_crossbar" src="{{ url_for('static', filename = 'img/crossbar_arch_crossbar.svg') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img> -->
+                     <img id="crossbar_arch_crossbar" src="{{ url_for('static', filename = 'img/crossbar_arch_crossbar.png') }}" alt="Crossbar.io - Open-source multi-protocol application router"></img>
+
+
                   </div>
                </div>
             </div>
@@ -57,16 +81,33 @@
                <div class="archBoxContainer">
                   <div class="archBox">
                      <h1>Databases</h2>
-                     <img id="crossbar_arch_oracle" src="{{ url_for('static', filename = 'img/crossbar_arch_oracle.svg') }}" alt=""></img>
-                     <img id="crossbar_arch_postgresql" src="{{ url_for('static', filename = 'img/crossbar_arch_postgresql.svg') }}" alt=""></img>
+                     <div class="imgContainer">
+                        <!-- <img id="crossbar_arch_oracle" src="{{ url_for('static', filename = 'img/crossbar_arch_oracle.svg') }}" alt=""></img>
+                        <img id="crossbar_arch_postgresql" src="{{ url_for('static', filename = 'img/crossbar_arch_postgresql.svg') }}" alt=""></img> -->
+
+                        <img id="crossbar_arch_oracle" src="{{ url_for('static', filename = 'img/crossbar_arch_oracle.png') }}" alt=""></img>
+                        <img id="crossbar_arch_postgresql" src="{{ url_for('static', filename = 'img/crossbar_arch_postgresql.png') }}" alt=""></img>
+
+                        <div class="clearBoth"></div>
+                     </div>
+
                   </div>
                </div>
                <div class="archBoxContainer">
                   <div class="archBox">
                      <h1>Backend / Compute</h2>
-                     <img id="crossbar_arch_java" src="{{ url_for('static', filename = 'img/crossbar_arch_java.svg') }}" alt=""></img>
-                     <img id="crossbar_arch_python" src="{{ url_for('static', filename = 'img/crossbar_arch_python.svg') }}" alt=""></img>
-                     <img id="crossbar_arch_node" src="{{ url_for('static', filename = 'img/crossbar_arch_node.svg') }}" alt=""></img>
+                     <div class="imgContainer backend">
+                        <!-- <img id="crossbar_arch_java" src="{{ url_for('static', filename = 'img/crossbar_arch_java.svg') }}" alt=""></img>
+                        <img id="crossbar_arch_python" src="{{ url_for('static', filename = 'img/crossbar_arch_python.svg') }}" alt=""></img>
+                        <img id="crossbar_arch_node" src="{{ url_for('static', filename = 'img/crossbar_arch_node.svg') }}" alt=""></img> -->
+
+                        <img id="crossbar_arch_java" src="{{ url_for('static', filename = 'img/crossbar_arch_java.png') }}" alt=""></img>
+                        <img id="crossbar_arch_python" src="{{ url_for('static', filename = 'img/crossbar_arch_python.png') }}" alt=""></img>
+                        <img id="crossbar_arch_node" src="{{ url_for('static', filename = 'img/crossbar_arch_node.png') }}" alt=""></img>
+
+                        <div class="clearBoth"></div>
+                     </div>
+
                   </div>
                </div>
             </div>

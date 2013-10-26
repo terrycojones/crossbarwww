@@ -1,3 +1,5 @@
+
+
 #tagline {
    margin-top: -6px;
    margin-bottom: 46px;
@@ -36,8 +38,8 @@
    width: 132px;
    height: 133px;
    position: absolute;
-   top: -20px;
-   right: -1px;
+   top: 41px;
+   right: 0px;
    border: 0;
    background-image: url('../img/github.png');
 }
@@ -46,9 +48,15 @@
    background-image: url('../img/github_highlighted.png');
 }
 
+@media (max-width: 630px) {
+   #github {
+      visibility: hidden;
+   }
+
+}
 
 #viewport {
-   min-width: 540px;
+   min-width: 480px;
 }
 
 #main #arch img {
@@ -116,8 +124,15 @@
 .archBoxContainer {
    text-align: center;
 }
+
+/* fallback for cases with lack support of vw
+   otherwise the standard h1 would be used
+   - needs to be small enough to fit in the min box size */
+h1 {
+   font-size: 15px;
+}
 .archBox > h1 {
-   font-size: 1.5vw;
+   font-size: 2vw;
    color: #999;
 }
 
@@ -129,25 +144,62 @@
 }
 #crossbar_arch_ios {
    width: 29%;
+   padding-top: 12%;
 }
 #crossbar_arch_oracle {
    width: 68%;
 }
 #crossbar_arch_postgresql {
    width: 62%;
+   padding: 4% 0 0 0;
 }
 #crossbar_arch_arduino {
    width: 35%;
+   margin: 0 3% 0 0;
 }
 #crossbar_arch_raspberry {
    width: 25%;
 }
 #crossbar_arch_java {
-   width: 24%;
+   width: 19%;
+   margin: 0 0 0 13%;
 }
 #crossbar_arch_python {
    width: 48%;
+   margin: 4% 0 0 3%;
 }
 #crossbar_arch_node {
    width: 46%;
+   margin: 0 0 0 6%;
+}
+
+.archBox > .imgContainer {
+    position: relative;
+
+    top: 0%;
+}
+
+.archBox > .imgContainer.frontends {
+    top: -4%;
+
+}
+.archBox > .imgContainer.backend {
+    top: -4%;
+
+}
+.archBox > .imgContainer.backend > img {
+    float: left;
+
+}
+
+@media (min-width: 990px) {
+   .archBox > h1 {
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 480px) {
+   .archBox > h1 {
+      font-size: 12px;
+   }
 }

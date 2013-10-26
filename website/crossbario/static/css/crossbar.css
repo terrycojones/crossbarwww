@@ -26,6 +26,18 @@
    src: url('../fonts/Play-Bold.ttf');
 }
 
+
+/* CSS part of fix for IE10/WP8 viewport width reporting problem */
+/* http://getbootstrap.com/getting-started/#browsers */
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+
+
 html {
    margin: 0;
    padding: 0;

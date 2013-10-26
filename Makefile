@@ -42,8 +42,6 @@ SVG_FILES = crossbar_arch.svg \
             github.svg \
             github_highlighted.svg \
             wamp_grey.svg \
-            zeichnung.svg \
-            zeichnung2.svg \
             crossbar_arch_android.svg \
             crossbar_arch_arduino.svg \
             crossbar_arch_crossbar.svg \
