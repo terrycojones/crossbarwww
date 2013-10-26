@@ -16,22 +16,34 @@
 ##
 ###############################################################################
 
-
-import pkg_resources
-taschenmesser = pkg_resources.resource_filename('taschenmesser', '..')
-#taschenmesser = "../infrequent/taschenmesser"
-env = Environment(tools = ['default', 'taschenmesser'], toolpath = [taschenmesser])
-
-
 SVG_FILES = ['crossbar_hiw_architecture.svg',
              'crossbar_hiw_call_stored_procedure.svg']
 
-#BUILDDIR = "website/crossbario/static/img"
-BUILDDIR = "build"
+IMG_SOURCE_DIR = "design"
+IMG_GEN_DIR    = "website/crossbario/static/img/gen"
 
+
+###
+### Do not touch below this unless you know what you are doing;)
+###
+
+import os
+import pkg_resources
+#taschenmesser = pkg_resources.resource_filename('taschenmesser', '..')
+taschenmesser = "../infrequent/taschenmesser"
+env = Environment(tools = ['default', 'taschenmesser'],
+                  toolpath = [taschenmesser],
+                  ENV  = os.environ)
+
+
+## build optimized SVGs, PNGs and gzipped versions of the former
+## inside IMG_GEN_DIR
+##
 for svg in SVG_FILES:
-   svgOpt = env.Scour("%s/%s" % (BUILDDIR, svg),
-                      "design/%s" % svg,
+   svgOpt = env.Scour("%s/%s" % (IMG_GEN_DIR, svg),
+                      "%s/%s" % (IMG_SOURCE_DIR, svg),
                       SCOUR_OPTIONS = {'enable_viewboxing': True})
+   env.GZip("%s.gz" % svgOpt[0], svgOpt)
 
-   env.GZip("%s/%s.gz" % (BUILDDIR, svg), svgOpt)
+   png = env.Svg2Png("%s.png" % os.path.splitext(str(svgOpt[0]))[0], svgOpt, SVG2PNG_OPTIONS = {})
+   env.GZip("%s.gz" % png[0], png)
