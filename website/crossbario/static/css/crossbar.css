@@ -5,12 +5,12 @@
    src: url('../fonts/OpenSans-Regular.ttf');
 }
 
-@font-face {
+/*@font-face {
    font-family: 'Open Sans Light';
    font-style: normal;
    font-weight: normal;
    src: url('../fonts/OpenSans-Light.ttf');
-}
+}*/
 
 @font-face {
    font-family: 'Play';
@@ -120,6 +120,7 @@ body {
 
   /* without the min-width, the page itself expands horizontally to accomodate
   the page content, but the navbar remains at the body = viewport width */
+  position: relative;
 }
 
 /* Wrapper for page content to push down footer */
@@ -159,12 +160,12 @@ body {
    top: 2px;
 }
 
-.navbar-brand > span:first-of-type {
+.navbar-brand > span > span:first-of-type {
   font-family: 'Play Bold', sans-serif;
   color: rgb(162, 162, 162);
   padding: 0 0 0 6px;
 }
-.navbar-brand > span:last-of-type {
+.navbar-brand > span > span:last-of-type {
   font-family: 'Play', sans-serif;
   color: rgb(240, 240, 240);
 }
@@ -196,4 +197,35 @@ body {
 
 .clearBoth {
    clear: both;
+}
+.nonDisplay {
+   display: none;
+}
+
+
+#crossbarNameHeader {
+    width: 123px;
+
+}
+
+
+/* noscript alert */
+noscript {
+
+}
+
+noscript > div {
+    width: 80%;
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 13px 33px;
+    border: 1px solid rgb(240, 203, 9);
+    border-radius: 6px;
+    background-color: #F3F0D1;
+    font-size: 13px;
+}
+
+noscript > div > p {
+
 }

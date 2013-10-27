@@ -8,6 +8,7 @@
       <!-- disabling the below yields zoomed-out full display on mobile devices, but prevents the navbar from collapsing -->
       <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
       <meta name="viewport" content="initial-scale=1.0">
+      <!-- <meta name="viewport" content="width=480"> -->
 
       <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}">
 
@@ -20,7 +21,6 @@
       <!-- Modernizr -->
       <script src="{{ url_for('static', filename = 'deps/modernizr.custom.js') }}"></script>
 
-
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.css') }}" />
 
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
@@ -28,6 +28,15 @@
    </head>
 
    <body>
+
+      <!--[if lt IE 9]>
+
+         <div id="ltIE9">
+
+      <![endif]-->
+
+
+
 
       <div id="wrap">
 
@@ -45,7 +54,12 @@
 
                <a class="navbar-brand" href="#">
                   <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_inverted.svg') }}" alt="crossbar logo inverted" width="30" height="30">
-                  <span>Crossbar</span><span>.io</span>
+                  <span class="fontFace">
+                     <span>Crossbar</span><span>.io</span>
+                  </span>
+
+                  <img class="nonDisplay noFontFace" id="crossbarNameHeader" src="{{ url_for('static', filename = 'img/gen/crossbar_name_lighter.png') }}" alt="">
+
                </a>
 
             </div>
@@ -75,6 +89,27 @@
              </div>
 
          </nav>
+
+         <noscript>
+            <div>
+               <p>
+                  This site is best used with JavaScript turned on.
+               </p>
+               <p>
+                  While the majority of functionality should work in most browsers, some enhancements, handling of corner cases and adaptation to browser capabilities may not.
+               </p>
+            </div>
+
+         </noscript>
+
+         <!-- <div>
+            <p>
+               This site is best used with JavaScript.
+            </p>
+            <p>
+               While the majority of functionality should work in most browsers, some enhancements and handling of corner cases may not.
+            </p>
+         </div> -->
 
          <!-- block for the github banner -->
          {% block githubbanner %}{% endblock %}
@@ -109,6 +144,15 @@
          </center>
       </div>
 
+   <!--[if lt IE 9]>
+
+      </div>
+
+   <![endif]-->
+
+
+
+
 
       <!-- enable basic media queries on older browsers -->
       <!--[if lt IE 9]>
@@ -117,6 +161,69 @@
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="{{ url_for('static', filename = 'deps/jquery-1.10.2.min.js') }}"></script>
+
+      <!-- yahoo browser detect for some corner cases -->
+      <script src="{{ url_for('static', filename = 'deps/yahooBrowserDetect.js') }}"></script>
+
+
+      <script type="text/javascript">
+         // SVG vs. PNG detection and switching
+
+         if(!Modernizr.svg) {
+            // switch out all SVGs for PNGs on unsupported browsers
+            // loads both SVG + PNG on these, but then it's only a fallback
+            // for some cases
+            switchToPNG();
+         }
+         // Android browser does very badly with SVG, so switch to PNG for this
+         if(YAHOO.env.ua.android != 0 && YAHOO.env.ua.chrome === 0) {
+            // alert("android browser!"  + YAHOO.env.ua.chrome);
+            switchToPNG();
+         }
+
+
+         // fontface support detection and switching
+
+         if(!Modernizr.fontface || document.getElementById("ltIE9")) {
+            // switch out any elements which absolutely require a web font
+            // for display (e.g. logos)
+            // with a PNG counterpart
+            // IE8 is included here since it supports Web fonts, but only
+            // in EOT format, which we don't have (and don't want to produce)
+            // for our used fonts
+            $(".fontFace").addClass("nonDisplay");
+            $(".noFontFace").removeClass("nonDisplay");
+         }
+
+
+
+         function switchToPNG () {
+            // get all img elements on the page
+            // and replace any SVGs with PNGs
+            // requires that SVG & PNGs exist at the same path
+            // with only different file extensions
+
+            var imgLinks = document.getElementsByTagName("img"),
+                imgLinksLength = imgLinks.length;
+
+            for(var i = 0; i < imgLinksLength; i++ ) {
+               var cur = imgLinks[i],
+                   curLink = cur.src,
+                   curLinkSplit = cur.src.split("."),
+                   curLinkType = cur.src.split(".").pop(),
+                   curLinkBase = curLink.slice(0, curLink.lastIndexOf(".")),
+                   newLink;
+
+               if(curLinkType === "svg") {
+                  newLink = curLinkBase + ".png";
+                  cur.src = newLink;
+               }
+
+            }
+         }
+
+
+      </script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.js') }}"></script>
 

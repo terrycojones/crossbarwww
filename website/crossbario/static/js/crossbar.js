@@ -7,3 +7,6 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   )
   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
 }
+
+
+console.log("js enabled");
