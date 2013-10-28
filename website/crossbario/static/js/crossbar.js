@@ -1,3 +1,4 @@
+// IE mobile viewport fix
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement("style")
   msViewportStyle.appendChild(
@@ -9,4 +10,4 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 }
 
 
-console.log("js enabled");
+// console.log("js enabled");

@@ -23,6 +23,8 @@ SVG_FILES = ['crossbar_icon.svg',
              'crossbar_name_lighter.svg',
              'github.svg',
              'github_highlighted.svg',
+             'github_path.svg',
+             'github_path_highlighted.svg',
 
              'crossbar_arch_android.svg',
              'crossbar_arch_arduino.svg',

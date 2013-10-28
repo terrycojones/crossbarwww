@@ -55,13 +55,13 @@
 
 }
 
-#github {
+/*#github {
    background-image: url('../img/gen/github.png');
 }
 
 #github:hover {
    background-image: url('../img/gen/github_highlighted.png');
-}
+}*/
 
 
 
@@ -70,12 +70,18 @@
    text at an angle is currently so bad in Chrome
    that PNG is still the better solution
 */
-/*#github {
-   background-image: url('../img/gen/github.svg');
+#github {
+   background-image: url('../img/gen/github_path.svg');
+   -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+   filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+
+   z-index: 10; /* otherwise the crossbar log overlays this partially and prevents the hover */
 }
 
 #github:hover {
-   background-image: url('../img/gen/github_highlighted.svg');
+   background-image: url('../img/gen/github_path_highlighted.svg');
+   -webkit-filter: drop-shadow(0px 0px 15px rgba(0,0,0,0.7));
+   filter: svg-drop-shadow;
 }
 
 html.no-svg #github {
@@ -84,7 +90,7 @@ html.no-svg #github {
 
 html.no-svg #github:hover {
    background-image: url('../img/gen/github_highlighted.png');
-}*/
+}
 
 
 @media (max-width: 630px) {
@@ -95,7 +101,7 @@ html.no-svg #github:hover {
 }
 
 #viewport {
-   min-width: 480px;
+   /*min-width: 480px;*/
 }
 
 #main #arch img {
@@ -235,9 +241,10 @@ h1 {
    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 440px) {
    .archBox > h1 {
-      font-size: 12px;
+      font-size: 11px;
+      margin: 7px 0 5px 0;
    }
 }
 

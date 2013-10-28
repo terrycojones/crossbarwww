@@ -179,6 +179,9 @@
          if(YAHOO.env.ua.android != 0 && YAHOO.env.ua.chrome === 0) {
             // alert("android browser!"  + YAHOO.env.ua.chrome);
             switchToPNG();
+            var html= document.getElementsByTagName("html");
+            // needed for the CSS background image switching which is based on the Modernizr classes
+            $(html).removeClass("svg").addClass("no-svg");
          }
 
 
@@ -228,6 +231,20 @@
       <script src="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.js') }}"></script>
 
       <script src="{{ url_for('static', filename = 'js/crossbar.js') }}"></script>
+
+      <!-- SVG drop shadwo filter for Firefox -->
+      <svg height="0" xmlns="http://www.w3.org/2000/svg">
+         <filter id="svg-drop-shadow">
+         <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
+         <feOffset dx="0" dy="0" result="offsetblur"/>
+         <feFlood flood-color="rgba(0,0,0,0.5)"/>
+         <feComposite in2="offsetblur" operator="in"/>
+         <feMerge>
+         <feMergeNode/>
+         <feMergeNode in="SourceGraphic"/>
+         </feMerge>
+         </filter>
+      </svg>
 
 
 

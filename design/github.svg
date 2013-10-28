@@ -52,6 +52,38 @@
          operator="over"
          result="composite2" />
     </filter>
+    <filter
+       id="filter3775"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow">
+      <feFlood
+         id="feFlood3777"
+         flood-opacity="0.5"
+         flood-color="rgb(0,0,0)"
+         result="flood" />
+      <feComposite
+         id="feComposite3779"
+         in2="SourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3781"
+         in="composite"
+         stdDeviation="3"
+         result="blur" />
+      <feOffset
+         id="feOffset3783"
+         dx="3"
+         dy="3"
+         result="offset" />
+      <feComposite
+         id="feComposite3785"
+         in2="offset"
+         in="SourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -60,9 +92,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="12.483948"
-     inkscape:cy="60.001084"
+     inkscape:zoom="3.959798"
+     inkscape:cx="70.466563"
+     inkscape:cy="68.570018"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -70,10 +102,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1680"
-     inkscape:window-height="988"
+     inkscape:window-width="1024"
+     inkscape:window-height="1258"
      inkscape:window-x="-8"
-     inkscape:window-y="320"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -93,7 +125,7 @@
      id="layer1"
      transform="translate(128.79445,121.43508)">
     <path
-       style="fill:#ffde00;fill-opacity:1;stroke:none;filter:url(#filter3001)"
+       style="fill:#ffde00;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter3775)"
        d="m -128.79445,-121.43508 40.911179,0 91.4188049,91.41881 0,41.416254"
        id="path2996"
        inkscape:connector-curvature="0" />

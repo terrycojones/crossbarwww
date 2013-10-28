@@ -14,8 +14,6 @@
 
 {% block content %}
 
-
-
    <div id="viewport">
       <div id="main">
          <div id="header">
@@ -114,33 +112,5 @@
 
       </div>
    </div>
-
-   <script type="text/javascript">
-      // set viewport on devices which report width < 480px to 480px in order to display the entire content without zooming
-      if(screen.width < 480) {
-         updateMeta();
-
-      }
-
-
-
-      function updateMeta (width) {
-         var meta = document.head.querySelector('meta[name=viewport]');
-         var w = width || 480;
-         // var s = width / screen.width;
-         // meta.setAttribute("content", "width=" + w + " initial-scale=" + s)
-         meta.setAttribute("content", "width=" + w);
-         // at least gets the navbar to the width of the content!
-      }
-      function updateMetaScale (scale) {
-         var meta = document.head.querySelector('meta[name=viewport]');
-         var width = meta.getAttribute("content");
-         var s = scale  || 1;
-         meta.setAttribute("content", width + " initial-scale=" + s);
-      }
-
-   </script>
-
-
 
 {% endblock %}
