@@ -9,7 +9,7 @@ all:
 	@echo "  upload"
 	@echo ""
 
-deploy: clean freeze upload
+deploy: clean img freeze upload
 
 clean:
 	rm -rf website/crossbario/build
