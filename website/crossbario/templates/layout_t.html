@@ -35,6 +35,8 @@
         ga('send', 'pageview');
       </script>
 
+      {% block subheader %}{% endblock %}
+
    </head>
 
    <body>
@@ -147,7 +149,9 @@
             Copyright &copy; 2013, The Crossbar.io project and contributors.<br>
             Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC-BY-SA</a> and code licensed under <a href="http://opensource.org/licenses/AGPL-3.0">AGPL 3.0</a>.<br>
             "Crossbar.io" and the Crossbar.io logo are trademarks of <a href="http://www.tavendo.com">Tavendo</a>.<br>
-            <br>
+            <div id="impressum">
+               <a id="impressumLink" href="{{ url_for('page_impressum') }}">Impressum</a>
+            </div>
          </center>
       </div>
 

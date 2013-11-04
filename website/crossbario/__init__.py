@@ -52,6 +52,11 @@ def page_reference():
    session['tab_selected'] = 'page_reference'
    return render_template('page_t_reference.html')
 
+@app.route('/impressum/')
+def page_impressum():
+   session['tab_selected'] = 'page_impressum'
+   return render_template('page_t_impressum.html')
+
 
 if __name__ == "__main__":
 
