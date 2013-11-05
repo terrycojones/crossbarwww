@@ -57,6 +57,11 @@ def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
+@app.route('/cla/')
+def page_cla():
+   session['tab_selected'] = 'page_cla'
+   return render_template('page_t_cla.html')
+
 
 if __name__ == "__main__":
 

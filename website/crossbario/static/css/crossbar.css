@@ -1,9 +1,9 @@
-@font-face {
+/*@font-face {
    font-family: 'Open Sans';
    font-style: normal;
    font-weight: normal;
    src: url('../fonts/OpenSans-Regular.ttf');
-}
+}*/
 
 /*@font-face {
    font-family: 'Open Sans Light';
@@ -12,7 +12,7 @@
    src: url('../fonts/OpenSans-Light.ttf');
 }*/
 
-@font-face {
+/*@font-face {
    font-family: 'Play';
    font-style: normal;
    font-weight: normal;
@@ -24,7 +24,7 @@
    font-style: normal;
    font-weight: normal;
    src: url('../fonts/Play-Bold.ttf');
-}
+}*/
 
 
 /* CSS part of fix for IE10/WP8 viewport width reporting problem */
@@ -52,7 +52,7 @@ body {
    height: 100%;
    /* color: #666; */
    background-color: #ececec;
-   /* font-family: 'Segoe UI', 'Open Sans', sans-serif; */
+   font-family: 'Open Sans Pro', sans-serif;
 }
 
 a {
@@ -107,6 +107,8 @@ a:hover {
 
 /* Sticky footer styles
 -------------------------------------------------- */
+/* need to adapt this to a responsive solution */
+/* see the one used on the new tavendo website - FIXME */
 
 html,
 body {
@@ -115,11 +117,6 @@ body {
   margin: 0;
   padding: 0;
   /* The html and body elements cannot have any padding or margin. */
-
-  /*min-width: 1080px;*/
-
-  /* without the min-width, the page itself expands horizontally to accomodate
-  the page content, but the navbar remains at the body = viewport width */
   position: relative;
 }
 
@@ -228,4 +225,89 @@ noscript > div {
 
 noscript > div > p {
 
+}
+
+
+/* display the crossbar.io icon + name correctly formatted */
+
+.crossbarWithIcon {
+   position: relative;
+   text-decoration: none;
+}
+.crossbarWithIcon > img {
+   width: 1em;
+   height: 1em;
+   position: relative;
+   bottom: 0.1em;
+   margin-left: 0.3em;
+}
+
+#crossbarLandingHeader > span {
+   margin-right: -0.2em;
+}
+
+.crossbarLink {
+   text-decoration: none;
+   padding-right: 0;
+   margin-right: 0;
+}
+
+.crossbarLink:hover {
+   text-decoration: underline;
+   color: #6f6f6f;
+}
+
+.crossbar {
+   font-family: "Play";
+   font-size: 1em;
+   padding-right: 0;
+   margin-right: 0;
+}
+
+.crossbar > span {
+   font-weight: normal;
+   color: #888;
+}
+.crossbar > span:first-child {
+   font-weight: bold;
+   color: #1a1a1a;
+}
+
+.orange .crossbar > span {
+   font-weight: normal;
+   color: #eee;
+}
+.orange .crossbar > span:first-child {
+   font-weight: bold;
+   color: #444444;
+}
+
+
+/* heading styles */
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+   font-size: 2em;
+}
+
+h2 {
+   font-size: 1.5em;
+}
+
+h3 {
+   font-size: 1.2em;
+}
+
+
+.maincontent {
+   width: 90%;
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+
+.underline {
+   text-decoration: underline;
 }

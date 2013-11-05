@@ -21,6 +21,9 @@
       <!-- Modernizr -->
       <script src="{{ url_for('static', filename = 'deps/modernizr.custom.js') }}"></script>
 
+      <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'> -->
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.css') }}" />
 
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
@@ -92,6 +95,9 @@
                   <li {% if session['tab_selected'] == 'page_reference' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_reference') }}">Reference</a>
                   </li> -->
+                 <!--  <li {% if session['tab_selected'] == 'page_cla' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_cla') }}">Contribute</a>
+                  </li> -->
 
                </ul>
 
@@ -123,6 +129,13 @@
          <!-- block for the github banner -->
          {% block githubbanner %}{% endblock %}
 
+         {% macro crossbar() -%}
+            <a href="http://crossbar.io/" class="crossbarLink">
+               <span class="crossbar">
+                  <span>Crossbar</span><span>.io</span>
+               </span>
+            </a>
+         {%- endmacro %}
 
          <div id="container">
 
@@ -259,6 +272,8 @@
          </feMerge>
          </filter>
       </svg>
+
+
 
 
 
