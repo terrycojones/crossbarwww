@@ -1,18 +1,18 @@
-/*@font-face {
+@font-face {
    font-family: 'Open Sans';
    font-style: normal;
    font-weight: normal;
    src: url('../fonts/OpenSans-Regular.ttf');
-}*/
+}
 
-/*@font-face {
+@font-face {
    font-family: 'Open Sans Light';
    font-style: normal;
    font-weight: normal;
    src: url('../fonts/OpenSans-Light.ttf');
-}*/
+}
 
-/*@font-face {
+@font-face {
    font-family: 'Play';
    font-style: normal;
    font-weight: normal;
@@ -24,7 +24,7 @@
    font-style: normal;
    font-weight: normal;
    src: url('../fonts/Play-Bold.ttf');
-}*/
+}
 
 
 /* CSS part of fix for IE10/WP8 viewport width reporting problem */
@@ -52,7 +52,7 @@ body {
    height: 100%;
    /* color: #666; */
    background-color: #ececec;
-   font-family: 'Open Sans Pro', sans-serif;
+   font-family: 'Open Sans', sans-serif;
 }
 
 a {
