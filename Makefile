@@ -3,13 +3,14 @@ all:
 	@echo ""
 	@echo "  clean"
 	@echo "  deploy"
+	@echo "  img"
 	@echo "  freeze"
 	@echo "  test"
 	@echo "  test_frozen"
 	@echo "  upload"
 	@echo ""
 
-deploy: clean freeze upload
+deploy: clean img freeze upload
 
 clean:
 	rm -rf website/crossbario/build
