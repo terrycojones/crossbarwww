@@ -21,6 +21,9 @@
       <!-- Modernizr -->
       <script src="{{ url_for('static', filename = 'deps/modernizr.custom.js') }}"></script>
 
+      <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'> -->
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.css') }}" />
 
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
@@ -34,6 +37,8 @@
         ga('create', 'UA-23019220-6', 'crossbar.io');
         ga('send', 'pageview');
       </script>
+
+      {% block subheader %}{% endblock %}
 
    </head>
 
@@ -81,7 +86,7 @@
                   <li {% if session['tab_selected'] == 'page_howitworks' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_howitworks') }}">How It Works</a>
                   </li>
-                  <li {% if session['tab_selected'] == 'page_gettingstarted' %} class="active" {% else %} class="" {% endif %}>
+                  <!-- <li {% if session['tab_selected'] == 'page_gettingstarted' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_gettingstarted') }}">Getting Started</a>
                   </li>
                   <li {% if session['tab_selected'] == 'page_faq' %} class="active" {% else %} class="" {% endif %}>
@@ -89,7 +94,10 @@
                   </li>
                   <li {% if session['tab_selected'] == 'page_reference' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_reference') }}">Reference</a>
-                  </li>
+                  </li> -->
+                 <!--  <li {% if session['tab_selected'] == 'page_cla' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_cla') }}">Contribute</a>
+                  </li> -->
 
                </ul>
 
@@ -121,6 +129,13 @@
          <!-- block for the github banner -->
          {% block githubbanner %}{% endblock %}
 
+         {% macro crossbar() -%}
+            <a href="http://crossbar.io/" class="crossbarLink">
+               <span class="crossbar">
+                  <span>Crossbar</span><span>.io</span>
+               </span>
+            </a>
+         {%- endmacro %}
 
          <div id="container">
 
@@ -147,7 +162,9 @@
             Copyright &copy; 2013, The Crossbar.io project and contributors.<br>
             Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC-BY-SA</a> and code licensed under <a href="http://opensource.org/licenses/AGPL-3.0">AGPL 3.0</a>.<br>
             "Crossbar.io" and the Crossbar.io logo are trademarks of <a href="http://www.tavendo.com">Tavendo</a>.<br>
-            <br>
+            <div id="impressum">
+               <a id="impressumLink" href="{{ url_for('page_impressum') }}">Impressum</a>
+            </div>
          </center>
       </div>
 
@@ -240,7 +257,7 @@
       <script src="{{ url_for('static', filename = 'js/crossbar.js') }}"></script>
 
       <script src="{{ url_for('static', filename = 'deps/autobahn/autobahn.min.js') }}"></script>
-      <script src="{{ url_for('static', filename = 'js/cbtrack.js') }}"></script>
+      <!-- <script src="{{ url_for('static', filename = 'js/cbtrack.js') }}"></script> -->
 
       <!-- SVG drop shadwo filter for Firefox -->
       <svg height="0" xmlns="http://www.w3.org/2000/svg">
@@ -255,6 +272,8 @@
          </feMerge>
          </filter>
       </svg>
+
+
 
 
 
