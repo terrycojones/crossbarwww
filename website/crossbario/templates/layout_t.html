@@ -19,10 +19,11 @@
        <![endif]-->
 
       <!-- Modernizr -->
-      <script src="{{ url_for('static', filename = 'deps/modernizr.custom.js') }}"></script>
+      <!-- <script src="{{ url_for('static', filename = 'deps/modernizr.custom.js') }}"></script> -->
+      <script src="{{ url_for('static', filename = 'deps/modernizr.custom.svg.fontface.vw.media.js') }}"></script>
 
       <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'> -->
-      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+      <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Montserrat:400,700|Play:400,700' rel='stylesheet' type='text/css'> -->
 
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.css') }}" />
 
@@ -249,6 +250,17 @@
             }
          }
 
+         /* JS part of fix for IE10/WP8 viewport width reporting problem */
+         /* http://getbootstrap.com/getting-started/#browsers */
+         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+           var msViewportStyle = document.createElement("style")
+           msViewportStyle.appendChild(
+             document.createTextNode(
+               "@-ms-viewport{width:auto!important}"
+             )
+           )
+           document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+         }
 
       </script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -258,24 +270,6 @@
 
       <script src="{{ url_for('static', filename = 'deps/autobahn/autobahn.min.js') }}"></script>
       <!-- <script src="{{ url_for('static', filename = 'js/cbtrack.js') }}"></script> -->
-
-      <!-- SVG drop shadwo filter for Firefox -->
-      <svg height="0" xmlns="http://www.w3.org/2000/svg">
-         <filter id="svg-drop-shadow">
-         <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
-         <feOffset dx="0" dy="0" result="offsetblur"/>
-         <feFlood flood-color="rgba(0,0,0,0.5)"/>
-         <feComposite in2="offsetblur" operator="in"/>
-         <feMerge>
-         <feMergeNode/>
-         <feMergeNode in="SourceGraphic"/>
-         </feMerge>
-         </filter>
-      </svg>
-
-
-
-
 
       {% block additionalload %}{% endblock %}
 

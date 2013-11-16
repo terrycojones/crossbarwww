@@ -4,7 +4,8 @@
    margin-top: -6px;
    margin-bottom: 46px;
    font-size: 20px;
-   font-family: 'Segoe UI Light', 'Open Sans Light', sans-serif;
+   font-family: 'Segoe UI', 'Open Sans', sans-serif;
+   font-weight: 300;
 }
 
 #followus {
@@ -21,15 +22,18 @@
    margin-right: 12px;
 }
 
-.cb_prefix {
-   font-family: 'Play Bold', sans-serif;
+.cb_prefix,
+.cb_suffix {
+   font-family: 'Play', sans-serif;
    font-size: 72px;
+}
+
+.cb_prefix {
+   font-weight: bold;
    color: #1a1a1a;
 }
 
 .cb_suffix {
-   font-family: 'Play', sans-serif;
-   font-size: 72px;
    color: #888;
 }
 
@@ -156,6 +160,10 @@ html.no-svg #github:hover {
    margin: 0;
 }
 
+#crossbarArch #archCenter .archCenter {
+   background-color: none;
+}
+
 #crossbarArch #archCenter .archBoxContainer .archBox {
    /*background-color: #ddd;*/
    width: 100%;
@@ -176,15 +184,47 @@ html.no-svg #github:hover {
    text-align: center;
 }
 
-/* fallback for cases with lack support of vw
-   otherwise the standard h1 would be used
-   - needs to be small enough to fit in the min box size */
+/* fallback for IE<9: font size which should be OK for all
+desktop viewport widths;*/
+
 h1 {
    font-size: 15px;
 }
 .archBox > h1 {
    font-size: 2vw;
    color: #999;
+   margin-top: 7%;
+   margin-bottom: 2%;
+}
+
+/* fallback for browsers without viewport unit support */
+
+@media (max-width: 480px) {
+   .no-cssvwunit .archBox h1  {
+      font-size: 8px;
+   }
+}
+
+@media (min-width: 481px) {
+   .no-cssvwunit .archBox h1  {
+      font-size: 12px
+   }
+}
+
+@media (min-width: 640px) {
+   .no-cssvwunit .archBox h1  {
+      font-size: 16px;
+   }
+}
+
+
+
+/* set maximum font size, since the
+central wrapper does not extend beyond 990px width*/
+@media (min-width: 990px) {
+   #crossbarArch .archBox > h1 {
+      font-size: 23px;
+   }
 }
 
 #crossbar_arch_android {
@@ -235,18 +275,6 @@ h1 {
 
 }
 
-@media (min-width: 990px) {
-   .archBox > h1 {
-      font-size: 22px;
-   }
-}
-
-@media (max-width: 440px) {
-   .archBox > h1 {
-      font-size: 11px;
-      margin: 7px 0 5px 0;
-   }
-}
 
 
 

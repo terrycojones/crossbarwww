@@ -1202,8 +1202,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="674.76138"
-     inkscape:cy="340.28292"
+     inkscape:cx="189.17631"
+     inkscape:cy="180.28292"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1263,7 +1263,7 @@
        rx="3380.582"
        ry="0" />
     <svg:path
-       style="fill:#ffff00;fill-opacity:1;filter:url(#filter5711)"
+       style="fill:#fffeff;fill-opacity:1;filter:url(#filter5711)"
        d="m -304.20475,-823.6621 211.071301,0 c 6.441787,0 11.627774,5.2936 11.627774,11.86899 l 0,117.68335 c 0,6.57543 -5.185987,11.86901 -11.627774,11.86901 l -211.071301,0 c -6.44178,0 -11.62777,-5.29358 -11.62777,-11.86901 l 0,-117.68335 c 0,-6.57539 5.18599,-11.86899 11.62777,-11.86899 z"
        id="rect3335"
        inkscape:connector-curvature="0" />
