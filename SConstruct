@@ -45,7 +45,9 @@ SVG_FILES = ['crossbar_icon.svg',
              'crossbar_hiw_call_stored_procedure.svg',
              'crossbar_hiw_client_to_client_pubsub.svg',
              'crossbar_hiw_publish_from_database.svg',
-             'wamp_grey.svg'
+             'wamp_grey.svg',
+
+             'NY-404.svg',
              ]
 
 IMG_SOURCE_DIR = "design"
