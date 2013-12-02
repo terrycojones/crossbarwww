@@ -209,6 +209,22 @@
             $(html).removeClass("svg").addClass("no-svg");
          }
 
+         // check if forceSwitchToPNG is present in link fragment identifier
+         var forceSwitchToPNG = false,
+             pageURL = window.location.href;
+         if(pageURL.indexOf('#') !== -1) {
+            var hashPart = pageURL.split('#')[1];
+            if(hashPart === "forceSwitchToPNG") {
+               forceSwitchToPNG = true;
+            }
+         }
+         if(forceSwitchToPNG === true) {
+            switchToPNG();
+            var html= document.getElementsByTagName("html");
+            // needed for the CSS background image switching which is based on the Modernizr classes
+            $(html).removeClass("svg").addClass("no-svg");
+         }
+
 
          // fontface support detection and switching
 

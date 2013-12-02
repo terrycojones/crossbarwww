@@ -105,6 +105,22 @@ the font in use */
    font-style: italic;
 }
 
+/* Montserrat */
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Regular.ttf');
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Bold.ttf');
+   font-weight: bold;
+}
+
+
+
 
 /* Segoe UI */
 /* define here for used weights & styles so that
@@ -142,19 +158,7 @@ web font */
    font-weight: 300;
 }
 
-/* Montserrat */
 
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-Regular.ttf');
-   font-weight: normal;
-}
-
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-Bold.ttf');
-   font-weight: bold;
-}
 
 
 /* CSS part of fix for IE10/WP8 viewport width reporting problem */
