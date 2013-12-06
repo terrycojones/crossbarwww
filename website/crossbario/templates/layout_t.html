@@ -253,8 +253,7 @@
             for(var i = 0; i < imgLinksLength; i++ ) {
                var cur = imgLinks[i],
                    curLink = cur.src,
-                   curLinkSplit = cur.src.split("."),
-                   curLinkType = cur.src.split(".").pop(),
+                   curLinkType = curLink.split(".").pop(),
                    curLinkBase = curLink.slice(0, curLink.lastIndexOf(".")),
                    newLink;
 

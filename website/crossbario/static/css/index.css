@@ -14,6 +14,10 @@
    margin-left: 12px;
 }
 
+/*#logo {
+   border: 1px solid green;
+}*/
+
 .cb_icon {
    width: 80px;
    height: 80px;
@@ -266,7 +270,6 @@ central wrapper does not extend beyond 990px width*/
 
 .archBox > .imgContainer {
     position: relative;
-
     top: -0.2vw;
 }
 

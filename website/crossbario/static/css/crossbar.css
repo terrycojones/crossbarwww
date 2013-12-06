@@ -33,9 +33,9 @@ the font in use */
 
 @font-face {
    font-family: 'Open Sans';
-   src: url('../fonts/OpenSans-Regular.ttf');
+   src: url('../fonts/OpenSans-Regular_emb.ttf');
 }
-@font-face {
+/*@font-face {
    font-family: 'Open Sans';
    src: url('../fonts/OpenSans-Bold.ttf');
    font-weight: bold;
@@ -50,7 +50,7 @@ the font in use */
    src: url('../fonts/OpenSans-BoldItalic.ttf');
    font-style: italic;
    font-weight: bold;
-}
+}*/
 
 
 /* Play */
