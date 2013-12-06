@@ -118,14 +118,47 @@
 
          </noscript>
 
-         <!-- <div>
-            <p>
-               This site is best used with JavaScript.
-            </p>
-            <p>
-               While the majority of functionality should work in most browsers, some enhancements and handling of corner cases may not.
-            </p>
-         </div> -->
+
+         <iframe id="communityWidget" src="http://127.0.0.1:8040/iframe.html" frameborder="0"></iframe>
+         <style>
+            #communityWidget {
+               position: fixed;
+               top: 5px;
+               right: 5px;
+               width: 180px;
+               height: 70px;
+               background-color: #fff;
+               z-index: 1000;
+            }
+
+            #communityWiget.max {
+               width: 230px;
+               height: 350px;
+            }
+         </style>
+         <script>
+            var widget = document.getElementById("communityWidget"),
+                parentUrl = window.location.host;
+
+            widget.addEventListener("load", sendUrlToWidget);
+            function sendUrlToWidget() {
+               widget.contentWindow.postMessage(parentUrl, "*"); // "*" - can be sent irrespective of the origin of the calling page
+            }
+
+            window.addEventListener("message", function(message) {
+               console.log("message received", message);
+               resizeWidget(message.data);
+            });
+
+            function resizeWidget(targetSize) {
+               if(targetSize === "min") {
+                  $(widget).removeClass("max");
+               } else {
+                  $(widget).addClass("max");
+               }
+            }
+         </script>
+
 
          <!-- block for the github banner -->
          {% block githubbanner %}{% endblock %}
