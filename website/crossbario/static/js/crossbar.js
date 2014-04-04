@@ -20,7 +20,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 
 // set up community widget once everything else has loaded
-window.addEventListener("load", setupWidget);
+// window.addEventListener("load", setupWidget);
 
 function setupWidget() {
    // add the iFrame
