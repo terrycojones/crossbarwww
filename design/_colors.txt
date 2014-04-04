@@ -7,7 +7,7 @@ Yellow Highlighted:
    #ffe400
 
 Dark Yellow:
-   rgb(37, 255, 91)
+   rgb(181, 159, 91)
    #b59f00
 
 Medium Yellow:
