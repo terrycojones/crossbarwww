@@ -42,6 +42,16 @@ def page_gettingstarted():
    session['tab_selected'] = 'page_gettingstarted'
    return render_template('page_t_gettingstarted.html')
 
+@app.route('/features/')
+def page_features():
+   session['tab_selected'] = 'page_features'
+   return render_template('page_t_features.html')
+
+@app.route('/roadmap/')
+def page_roadmap():
+   session['tab_selected'] = 'page_roadmap'
+   return render_template('page_t_roadmap.html')
+
 @app.route('/faq/')
 def page_faq():
    session['tab_selected'] = 'page_faq'
@@ -57,10 +67,10 @@ def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
-@app.route('/cla/')
-def page_cla():
-   session['tab_selected'] = 'page_cla'
-   return render_template('page_t_cla.html')
+@app.route('/caa/')
+def page_caa():
+   session['tab_selected'] = 'page_caa'
+   return render_template('page_t_caa.html')
 
 
 if __name__ == "__main__":
