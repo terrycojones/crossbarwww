@@ -99,11 +99,11 @@
                         Features
                      </a>
                   </li>
-                  <li {% if session['tab_selected'] == 'page_roadmap' %} class="active" {% else %} class="" {% endif %}>
+                  <!-- <li {% if session['tab_selected'] == 'page_roadmap' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_roadmap') }}">
                         Roadmap
                      </a>
-                  </li>
+                  </li> -->
                   <li {% if session['tab_selected'] == 'page_faq' %} class="active last" {% else %} class="last" {% endif %}>
                      <a href="{{ url_for('page_faq') }}">
                         FAQ
@@ -112,8 +112,8 @@
                   <!-- <li {% if session['tab_selected'] == 'page_reference' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_reference') }}">Reference</a>
                   </li> -->
-                 <!--  <li {% if session['tab_selected'] == 'page_caa' %} class="active" {% else %} class="" {% endif %}>
-                     <a href="{{ url_for('page_caa') }}">Contribute</a>
+                 <!--  <li {% if session['tab_selected'] == 'page_contribute' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_contribute') }}">Contribute</a>
                   </li> -->
 
                   <!-- external links -->

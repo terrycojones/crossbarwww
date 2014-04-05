@@ -5,5 +5,58 @@
 
 <h1>Roadmap</h1>
 
+<p>
+   Crossbar.io is completely functional and usable as a WAMP router with advanced functionality.
+</p>
+<p>
+   At the same time, Crossbar.io is a work in progress. We have a lot of additional functionality planned.
+</p>
+<p>
+   Below is an high-level overview of where we want to go with Crossbar.io.
+</p>
+
+<h2>
+   Database Connectors
+</h2>
+
+<p>
+   Modern databases can be much more than simple data stores. They offer fully featured programming languages which are optimized for the processing of stored data.
+</p>
+<p>
+   With a database connector, we want to offer as much of the WAMP functionality as possible for code which runs directly in your database.
+</p>
+<p>
+   This means that you can move your business logic into the database, close to your data.
+   <br>
+   Using the Web server integrated into Crossbar.io, you will be able to write database applications without the need for an additional application server.
+</p>
+<p>
+   We are planning on offering database connectors for
+</p>
+<ul>
+   <li>
+      PostgreSQL
+   </li>
+   <li>
+      Oracle
+   </li>
+</ul>
+<p>
+   With PostgreSQL, you get pluggable programming languages. For example, you can use <a href="http://code.google.com/p/plv8js/wiki/PLV8">plv8js</a> to run JavaScript in the database.
+</p>
+
+<h2>
+   REST bridging
+</h2>
+
+<p>
+   While WAMP is all you need to develop your own applications, Web services today use REST APIs.
+</p>
+<p>
+   With REST bridging, Crossbar.io will be able to translate between WAMP and REST.
+</p>
+<p>
+   You could, for example, post a pubsub event from traditional Web application and have this delivered to WAMP subscribers, or call a REST API endpoint based on a WAMP remote procedure call.
+</p>
 
 {% endblock %}

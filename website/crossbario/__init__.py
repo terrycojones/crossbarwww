@@ -67,10 +67,10 @@ def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
-@app.route('/caa/')
-def page_caa():
-   session['tab_selected'] = 'page_caa'
-   return render_template('page_t_caa.html')
+@app.route('/contribute/')
+def page_contribute():
+   session['tab_selected'] = 'page_faq'
+   return render_template('page_t_contribute.html')
 
 
 if __name__ == "__main__":

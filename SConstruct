@@ -48,6 +48,13 @@ SVG_FILES = ['crossbar_icon.svg',
              'wamp_grey.svg',
 
              'NY-404.svg',
+             'hiw_sa_01.svg',
+             'hiw_pubsub.svg',
+             'hiw_rpc.svg',
+             'hiw_webapp.svg',
+             'hiw_sa_instant.svg',
+             'hiw_sa_line.svg',
+             'hiw_sa_sensor.svg'
              ]
 
 IMG_SOURCE_DIR = "design"

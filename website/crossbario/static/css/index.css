@@ -306,19 +306,23 @@ central wrapper does not extend beyond 990px width*/
 }
 
 
-#morePower {
+.centeredLink {
     text-align: center;
 
     font-size: 20px;
     font-weight: 300;
 }
 
-#morePower > a,
-#morePower > a:visited {
+.centeredLink > a,
+.centeredLink > a:visited {
 
 }
-#morePower > a:hover {
+.centeredLink > a:hover {
 
+}
+
+#contribute {
+   margin-top: 2em;
 }
 
 

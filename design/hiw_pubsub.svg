@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="707.98444"
+   height="552.22131"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="hiw_sa_01.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="122.02089"
+     inkscape:cy="397.5821"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1024"
+     inkscape:window-height="1258"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-227.97911,-377.72301)">
+    <g
+       id="g3514"
+       transform="translate(225.9967,377.84893)">
+      <path
+         id="path3516"
+         d="m 3.9824143,70.355986 0,134.621224 134.5431357,0 0,-134.621224 -134.5431357,0 z"
+         style="fill:#f8b57e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3518"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="128.68665"
+         x="26.237082"
+         xml:space="preserve">WAMP </text>
+      <text
+         id="text3520"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="164.91879"
+         x="33.733391"
+         xml:space="preserve">Client</text>
+      <text
+         id="text3522"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="244.87944"
+         x="2.4987698"
+         xml:space="preserve">Publisher</text>
+      <text
+         id="text3524"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="171.16573"
+         x="559.72443"
+         xml:space="preserve">Subscriber</text>
+      <text
+         id="text3526"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="244.87944"
+         x="293.60544"
+         xml:space="preserve">Crossbar</text>
+      <text
+         id="text3528"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="244.87944"
+         x="416.04517"
+         xml:space="preserve">.</text>
+      <text
+         id="text3530"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="244.87944"
+         x="423.54147"
+         xml:space="preserve">io</text>
+      <path
+         id="path3532"
+         d="m 150.31662,131.73202 106.43197,0"
+         style="fill:none;stroke:#92d050;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3534"
+         d="m 253.39087,118.37922 26.78369,13.3528 -26.78369,13.43089 0,-26.78369 z"
+         style="fill:#92d050;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3536"
+         d="m 469.06594,190.76545 51.38095,34.28"
+         style="fill:none;stroke:#ffc000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3538"
+         d="m 510.21755,234.33775 29.67289,3.67007 L 525.054,212.005 510.21755,234.33775 z"
+         style="fill:#ffc000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3540"
+         d="m 294.38631,61.688378 0,152.737302 152.65922,0 0,-152.737302 -152.65922,0 z"
+         style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3542"
+         d="m 294.38631,94.094299 0,15.226881 35.9979,-0.0781 23.89449,23.97257 11.08829,-11.08829 -28.34542,-28.267331 -42.63526,0.23426 z"
+         style="fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3544"
+         d="m 386.99697,143.75735 -11.08829,11.08829 27.40838,27.33029 43.72847,0 0,-15.30496 -36.93494,0 -23.11362,-23.11362 z"
+         style="fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3546"
+         d="m 404.41027,93.860039 -72.85476,73.167101 -37.1692,0 0,15.22688 43.5723,0 73.08902,-73.01093 35.9979,0 0,-15.383051 -42.63526,0 z"
+         style="fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3548"
+         d="m 563.55067,1.8740773 0,134.6212227 134.54313,0 0,-134.6212227 -134.54313,0 z"
+         style="fill:#f8b57e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3550"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="59.970474"
+         x="584.7121"
+         xml:space="preserve">WAMP </text>
+      <text
+         id="text3552"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="96.202637"
+         x="592.20844"
+         xml:space="preserve">Client</text>
+      <text
+         id="text3554"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="421.04269"
+         x="540.98364"
+         xml:space="preserve">Subscriber</text>
+      <path
+         id="path3556"
+         d="m 388.79296,275.80171 0,61.53221"
+         style="fill:none;stroke:#ffc000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3558"
+         d="m 375.44016,333.9762 13.3528,26.78368 13.43088,-26.78368 -26.78368,0 z"
+         style="fill:#ffc000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3560"
+         d="m 544.65372,250.97019 0,134.62122 134.54314,0 0,-134.62122 -134.54314,0 z"
+         style="fill:#f8b57e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3562"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="309.84744"
+         x="565.97137"
+         xml:space="preserve">WAMP </text>
+      <text
+         id="text3564"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="344.83023"
+         x="573.46765"
+         xml:space="preserve">Client</text>
+      <text
+         id="text3566"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="549.72937"
+         x="323.59067"
+         xml:space="preserve">Subscriber</text>
+      <path
+         id="path3568"
+         d="m 327.41693,379.65683 0,134.62122 134.62122,0 0,-134.62122 -134.62122,0 z"
+         style="fill:#f8b57e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3570"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="438.53409"
+         x="348.57837"
+         xml:space="preserve">WAMP </text>
+      <text
+         id="text3572"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="473.51688"
+         x="357.32407"
+         xml:space="preserve">Client</text>
+      <path
+         id="path3574"
+         d="m 469.06594,94.016212 58.01831,-18.81886"
+         style="fill:none;stroke:#ffc000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3576"
+         d="m 528.02128,89.018673 21.31763,-21.005284 -29.5948,-4.52902 8.27717,25.534304 z"
+         style="fill:#ffc000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

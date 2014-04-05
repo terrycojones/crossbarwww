@@ -257,3 +257,55 @@
    }*/
 
 }
+
+
+#hiw img {
+    display: block;
+
+    margin: 1em auto;
+    width: 50%;
+}
+
+#hiw #hiw_sa_01 {
+}
+
+#hiw #hiw_pubsub {
+}
+
+#hiw #hiw_rpc {
+    padding-bottom: 2em;
+}
+
+#hiw #hiw_webapp {
+}
+
+#saContainer {
+   position: relative;
+   padding-bottom: 88%;
+}
+
+#saContainer > img {
+   position: absolute;
+}
+
+#hiw #hiw_sa_instant {
+    width: 44%;
+
+    position: absolute;
+    top: 0;
+    right: -2%;
+}
+
+#hiw #hiw_sa_line {
+    width: 53%;
+
+    top: 5%;
+    left: 0%;
+}
+
+#hiw #hiw_sa_sensor {
+    width: 46%;
+
+    bottom: 0;
+    left: 20%;
+}

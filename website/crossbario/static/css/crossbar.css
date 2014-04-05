@@ -333,7 +333,7 @@ body {
 }
 
 .nav .external {
-   background-color: #aaa;
+   background-color: #222;
 }
 .nav li.external.first {
    margin-left: 0em;
@@ -341,14 +341,14 @@ body {
 
 #wrap .nav .external > a,
 #wrap .nav .external > a:visited {
-   color: #444;
+   color: #EBEBEB;
 }
 
 .nav .external:hover {
    /*background-color: #fff;*/
 }
 #wrap .nav .external > a:hover {
-   color: #fff;
+   color: #FF9651;
 }
 
 .clearBoth {
@@ -483,6 +483,7 @@ h1 {
 
 h2 {
    font-size: 1.5em;
+   margin-top: 2em;
 }
 
 h3 {
@@ -498,6 +499,7 @@ h3 {
 
 .maincontent.textpage {
     max-width: 800px;
+    padding-left: 5px;
 }
 
 .maincontent.textpage p,
@@ -532,4 +534,33 @@ h3 {
 #communityWidget.max {
    width: 300px;
    height: 400px;
+}
+
+
+.underDevelopment {
+    color: #CA5100;
+    font-weight: bold;
+}
+
+span.underDevelopment {
+
+}
+
+.sl .underDevelopment {
+   border: 1px solid #999;
+    padding: 0.2em 0.4em;
+}
+
+.underConsideration {
+
+}
+
+.partiallyImplemented {
+    color: #007200;
+
+    font-weight: bold;
+}
+
+span.partiallyImplemented {
+
 }
