@@ -64,3 +64,20 @@ function onInterActionDetected(evt) {
        source = window.location.href;
    messageTarget.postMessage([actionType, source], "*");
 }
+
+
+// change widget position on scrolling
+var widgetOffsetY = widget.getClientRects()[0].top;
+window.addEventListener("scroll", function() {
+   var widget = document.getElementById("communityWidget"),
+       windowOffsetY = window.pageYOffset,
+       curWoY = widget.getClientRects()[0].top,
+       newOffSet;
+
+   console.log("orig, cur, window", widgetOffsetY, curWoY, windowOffsetY);
+
+   curWoY = widgetOffsetY - windowOffsetY;
+   curWoY < 0 ? curWoY = 0 : curWoY = curWoY;
+
+   widget.style.top = curWoY + "px";
+})
