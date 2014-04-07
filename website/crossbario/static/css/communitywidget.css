@@ -1,0 +1,21 @@
+#communityWidget {
+   position: fixed;
+   top: 5px;
+   right: 5px;
+   background-color: #fff;
+   z-index: 1000;
+   border-radius: 6px;
+}
+
+#communityWidget.nonDisplay {
+   display: none;
+}
+
+#communityWidget.min {
+   width: 170px;
+   height: 40px;
+}
+#communityWidget.max {
+   width: 170px;
+   height: 279px;
+}
