@@ -1,0 +1,122 @@
+{% extends "layout_t.html" %}
+
+{% block content %}
+
+<div class="maincontent textpage">
+
+   <h1>Features</h1>
+
+   <p>
+      The primary function of Crossbar.io is as an advanced WAMP router.
+   </p>
+   <p>
+      In addition to this, it aims to offer functionality which makes the deployment of WAMP applications easier and extends connectivity.
+   </p>
+   <p>
+      Below is an overview of current and planned features, with the latter marked as such.
+   </p>
+
+   <h2>
+      WAMP routing
+   </h2>
+   <ul>
+      <li>
+         Implements the <a href="https://github.com/tavendo/WAMP/blob/master/spec/basic.md#calling-and-invocations">WAMP basic profile</a>
+      </li>
+      <li>
+         Implements the <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md">WAMP adavanced profile</a>
+         <span class="partiallyImplemented">Partially implemented</span>
+         <span class="underDevelopment">Under development</span>
+      </li>
+   </ul>
+
+
+   <h2>
+      Scalability & Federation
+   </h2>
+
+
+   <h2>
+      Other features
+   </h2>
+
+   <ul>
+      <li>
+         Integrated Web server to serve your Web application.
+      </li>
+   </ul>
+
+   <h2>
+      Database Connectors
+   </h2>
+
+   <p class="sl">
+      <span class="underDevelopment">
+         Under development
+      </span>
+   </p>
+
+   <p>
+      Modern databases can be much more than simple data stores. They offer fully featured programming languages which are optimized for the processing of stored data.
+   </p>
+   <p>
+      With a database connector, we want to offer as much of the WAMP functionality as possible for code which runs directly in your database.
+   </p>
+   <p>
+      This means that you can move your business logic into the database, close to your data.
+      <br>
+      Using the Web server integrated into Crossbar.io, you will be able to write database applications without the need for an additional application server.
+   </p>
+   <p>
+      We are planning on offering database connectors for
+   </p>
+   <ul>
+      <li>
+         PostgreSQL
+      </li>
+      <li>
+         Oracle
+      </li>
+   </ul>
+   <p>
+      With PostgreSQL, you even get pluggable programming languages. For example, you can use <a href="http://code.google.com/p/plv8js/wiki/PLV8">plv8js</a> to run JavaScript in the database.
+   </p>
+
+   <h2>
+      REST integration
+   </h2>
+
+   <p class="sl">
+      <span class="underDevelopment">
+         Under development
+      </span>
+   </p>
+
+   <p>
+      While WAMP is all you need to develop your own applications, Web services today use REST APIs.
+   </p>
+   <p>
+      With REST bridging, Crossbar.io will be able to do some translation between WAMP and REST.
+   </p>
+   <p>
+      Specificially you will be able to
+   </p>
+   <ul>
+      <li>
+         publish events via HTTP POST to a REST API endpoint in Crossbar.io <span class="underDevelopment">Under developement</span>
+      </li>
+      <li>
+         deliver PubSub events to a REST API endpoint <span class="underConsideration">Under consideration</span>
+      </li>
+      <li>
+         route a WAMP remote procedure call to a Web service REST API endpoint <span class="underConsideration">Under consideration</span>
+      </li>
+      <li>
+         call a remote procedure via a REST API call to an endpoint in Crossbar.io <span class="underConsideration">Under consideration</span>
+      </li>
+   </ul>
+
+</div>
+
+
+{% endblock %}

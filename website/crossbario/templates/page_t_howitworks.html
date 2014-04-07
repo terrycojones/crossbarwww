@@ -22,9 +22,133 @@
 {% block content %}
 
 
-<div id="hiw" class="page_content">
+<!-- <div id="hiw" class="page_content"> -->
 
-      <div class="section white first">
+<div class="maincontent textpage" id="hiw">
+
+      <h1>
+         How it works
+      </h1>
+
+      <p>
+         At its core, Crossbar.io is an implementation of a <a href="http://wamp.ws/">Web Application Messaging Protocol (WAMP)</a> router.
+      </p>
+      <p>
+         It provides the infrastructure to connect the parts of a distributed application architecture, e.g. Web or embedded clients and backend code.
+      </p>
+
+      <img src="{{ url_for('static', filename = 'img/gen/hiw_sa_01.svg') }}" alt="" id="hiw_sa_01">
+
+      <p>
+         In addition, it offers a large number of features to make the deployment and management of these applications quicker, easier and more efficient.
+      </p>
+
+      <h2>
+         What is WAMP?
+      </h2>
+
+      <p>
+         WAMP is an open communications protocol developed for modern, distributed application architectures. WAMP libraries for a variety of programmming languages exist.
+      </p>
+      <p>
+         With WAMP, application functionality can be spread across nodes developed in a language best suited to the task, and deployed on a device where it makes most sense for the application.
+      </p>
+      <p>
+         WAMP provides applications with two asynchronous messaging patterns
+      </p>
+      <ul>
+         <li>
+            Publish &amp; Subscribe (PubSub)
+         </li>
+         <li>
+            Remote Procedure Calls (RPC)
+         </li>
+      </ul>
+
+      <h3>
+         Publish &amp; Subscribe (PubSub)
+      </h3>
+      <p>
+         A WAMP client publishes an event to a topic (publisher). Crossbar.io then distributes this event to all WAMP clients subscribed to the topic (subscribers). Publishers need not be aware of subscribers - they're fully decoupled.
+      </p>
+
+      <img src="{{ url_for('static', filename = 'img/gen/hiw_pubsub.svg') }}" alt="" id="hiw_pubsub">
+
+      <h3>
+         Remote Procedure Calls (RPC)
+      </h3>
+      <p>
+         A WAMP client issues a call for a remote procedure (caller). Crossbar.io then routes this call to a WAMP client which has registerd an endpoint for this procedure (callee). It delivers the result back to the caller.
+      </p>
+      <p>
+         RPCs enable the distribution of functionality across different nodes of an application. This allows combining nodes written in different languages to be combined, as well as distribution across mutliple devices.
+      </p>
+
+      <img src="{{ url_for('static', filename = 'img/gen/hiw_rpc.svg') }}" alt="" id="hiw_rpc">
+
+      <h3>Distributed functionality</h3>
+      <p>
+         Since any WAMP client can, in principle, implement any combination of the four roles (publisher, subscriber, caller, callee), functionality can be freely distributed across all clients which make up an application.
+      </p>
+      <p>
+         Unlike in traditional client/server applications (especially for Web applications), a WAMP client can, at the same time, offer functionality to other clients, and use the functionality they provide.
+      </p>
+      <p>
+         In the case of a Web application, this means that the main backend which runs on a server can call remote procedures running in the browser.
+      </p>
+
+      <img src="{{ url_for('static', filename = 'img/gen/hiw_webapp.svg') }}" alt="" id="hiw_webapp">
+
+
+      <h3>
+         Learn more about WAMP
+      </h3>
+      </p>
+      <ul>
+         <li>
+            <a href="https://github.com/tavendo/WAMP/tree/master/spec">WAMP specification</a>
+         </li>
+         <li>
+            WAMP library documentations
+            <ul>
+               <li>
+                  <a href="http://autobahn.ws/js/">JavaScript</a>
+               </li>
+               <li>
+                  <a href="http://autobahn.ws/python/">Python</a>
+               </li>
+               <li>
+                  <a href="http://autobahn.ws/cpp/">C++</a>
+               </li>
+               <li>
+                  <a href="http://autobahn.ws/android/">Java/Android</a>
+               </li>
+            </ul>
+         </li>
+      </ul>
+
+      <h2>
+         Example architectures
+      </h2>
+
+      <div id="saContainer">
+
+         <img src="{{ url_for('static', filename = 'img/gen/hiw_sa_instant.svg') }}" alt="" id="hiw_sa_instant">
+
+         <img src="{{ url_for('static', filename = 'img/gen/hiw_sa_line.svg') }}" alt="" id="hiw_sa_line">
+
+         <img src="{{ url_for('static', filename = 'img/gen/hiw_sa_sensor.svg') }}" alt="" id="hiw_sa_sensor">
+
+      </div>
+
+
+
+
+
+
+
+
+      <!-- <div class="section white first">
          <div class="w820 content">
             <h1>
                How it works
@@ -351,7 +475,7 @@
          </div>
          <div id="hiw_bottom_spacer"></div>
       </div>
-
+ -->
 
 
    </div>

@@ -84,23 +84,51 @@
                <ul class="nav navbar-nav">
 
                   <li {% if session['tab_selected'] == 'page_home' %} class="active" {% else %} class="" {% endif %}>
-                     <a href="{{ url_for('page_home') }}">Home</a>
+                     <a href="{{ url_for('page_home') }}">
+                        Home
+                     </a>
                   </li>
                   <li {% if session['tab_selected'] == 'page_howitworks' %} class="active" {% else %} class="" {% endif %}>
-                     <a href="{{ url_for('page_howitworks') }}">How It Works</a>
+                     <a href="{{ url_for('page_howitworks') }}">
+                        How It Works
+                     </a>
                   </li>
                   <!-- <li {% if session['tab_selected'] == 'page_gettingstarted' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_gettingstarted') }}">Getting Started</a>
+                  </li> -->
+                  <li {% if session['tab_selected'] == 'page_features' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_features') }}">
+                        Features
+                     </a>
                   </li>
-                  <li {% if session['tab_selected'] == 'page_faq' %} class="active" {% else %} class="" {% endif %}>
-                     <a href="{{ url_for('page_faq') }}">FAQ</a>
+                  <!-- <li {% if session['tab_selected'] == 'page_roadmap' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_roadmap') }}">
+                        Roadmap
+                     </a>
+                  </li> -->
+                  <li {% if session['tab_selected'] == 'page_faq' %} class="active last" {% else %} class="last" {% endif %}>
+                     <a href="{{ url_for('page_faq') }}">
+                        FAQ
+                     </a>
                   </li>
-                  <li {% if session['tab_selected'] == 'page_reference' %} class="active" {% else %} class="" {% endif %}>
+                  <!-- <li {% if session['tab_selected'] == 'page_reference' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_reference') }}">Reference</a>
                   </li> -->
-                 <!--  <li {% if session['tab_selected'] == 'page_cla' %} class="active" {% else %} class="" {% endif %}>
-                     <a href="{{ url_for('page_cla') }}">Contribute</a>
+                 <!--  <li {% if session['tab_selected'] == 'page_contribute' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_contribute') }}">Contribute</a>
                   </li> -->
+
+                  <!-- external links -->
+                  <li class="external first">
+                     <a href="https://demo.crossbar.io/">
+                        Demos
+                     </a>
+                  </li>
+                  <li class="external">
+                     <a href="https://github.com/crossbario/crossbar/wiki">
+                        Documentation
+                     </a>
+                  </li>
 
                </ul>
 
