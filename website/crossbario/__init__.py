@@ -27,6 +27,10 @@ from flask import Flask, Request, request, session, g, url_for, \
 app = Flask(__name__)
 app.secret_key = str(uuid.uuid4())
 
+@app.before_request
+def before_request():
+   session["widgeturl"] = app.widgeturl
+
 @app.route('/')
 def page_home():
    session['tab_selected'] = 'page_home'
@@ -104,7 +108,15 @@ if __name__ == "__main__":
                       default = 8080,
                       help = "Listening port for Web server (i.e. 8090).")
 
+   parser.add_option ("-w",
+                      "--widgeturl",
+                      dest = "widgeturl",
+                      default = "http://tavendo.com/webclan",
+                      help = "WebClan widget base URL.")
+
    (options, args) = parser.parse_args ()
+
+   app.widgeturl = options.widgeturl
 
    if options.freeze:
 
