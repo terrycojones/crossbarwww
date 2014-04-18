@@ -111,12 +111,17 @@ if __name__ == "__main__":
    parser.add_option ("-w",
                       "--widgeturl",
                       dest = "widgeturl",
-                      default = "http://tavendo.com/webclan",
+                      default = "https://demo.crossbar.io/clandeckwidget",
                       help = "WebClan widget base URL.")
 
    (options, args) = parser.parse_args ()
 
    app.widgeturl = options.widgeturl
+
+   EXTRA_MIME_TYPES = {
+      '.svg': 'image/svg+xml',
+      '.jgz': 'text/javascript'
+   }
 
    if options.freeze:
 
@@ -134,6 +139,8 @@ if __name__ == "__main__":
          from twisted.web.static import File
 
          resource = File(os.path.join(os.path.dirname(__file__), 'build'))
+         resource.contentTypes.update(EXTRA_MIME_TYPES)
+         print "MIME types set"
          site = Site(resource)
          reactor.listenTCP(int(options.port), site)
          reactor.run()
@@ -155,5 +162,7 @@ if __name__ == "__main__":
             log.startLogging(sys.stdout)
          resource = WSGIResource(reactor, reactor.getThreadPool(), app)
          site = Site(resource)
+         site.contentTypes.update(EXTRA_MIME_TYPES)
+         print "MIME types set"
          reactor.listenTCP(int(options.port), site)
          reactor.run()
