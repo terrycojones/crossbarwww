@@ -1,0 +1,105 @@
+{% extends "layout_t.html" %}
+
+{% block content %}
+
+
+<div class="maincontent textpage">
+
+   <h1>
+      How to contribute to the project
+   </h1>
+
+   <h2>
+      Fork us on GitHub
+   </h2>
+
+   <p>
+      The code for {{crossbar()}} is on GitHub, and we use the Fork &amp; Pull Model.
+   </p>
+   <p>
+      This means that you fork the repo, make changes to your fork, and then make a pull request on the main repo.
+   </p>
+   <p>
+      This <a href="https://help.github.com/articles/using-pull-requests">article on GitHub</a> gives more detailed information on how the process works.
+   </p>
+
+   <h2>
+      Sign the Contributor Assignment Agreement (CAA)
+   </h2>
+
+   <p>
+      Before you can contribute any changes to the Crossbar.io project, we need a CAA (Contributor Assignment Agreement) from you.
+   </p>
+   <p>
+      The CAA gives us the rights to your code, which we need e.g.  distribute the project code and documentation, and indemnifies us against legal attacks.
+   </p>
+   <p>
+      The CAA closely follows a template established by the <a href="http://harmonyagreements.org/">Harmony project</a>, and CAAs are required by almost all open source projects which are non-trivial in scope.
+   </p>
+
+   <h3>
+      What we need you to do:
+   </h3>
+
+   <ol>
+      <li>
+         Download the <a href="/static/docs/individual_caa.pdf" target="_blank">Individual CAA (PDF)</a>.
+         <!-- reference to our folder structure - ugly, FIXME! -->
+      </li>
+      <li>
+         Fill in the required information that identifies you and sign the CAA.
+      </li>
+      <li>
+         Scan it to PNG, JPG or TIFF (or take a good quality photo).
+      </li>
+      <li>
+         Email the scan to <a href="mailto:service@tavendo.de">service@tavendo.de</a> with the subject line "Crossbar.io project contributor assignment agreement"
+      </li>
+      <li>
+         If your write contributions as part of your work for a company, you also need to send us a <a href="/static/docs/entity_caa.pdf" target="_blank">Entity CAA (PDF)</a> signed by somebody responsible in the company.
+      </li>
+   </ol>
+
+   <p>
+      You only need to do this once - all future contributions are covered!
+   </p>
+
+   <p>
+      We are looking into a fully electronic workflow to get legally binding CAAs, but due to how different legislations handle electronic signing, we currently see no other way than the print/scan/mail workflow.
+   </p>
+
+   <p>
+      Sorry for the inconvenience!
+   </p>
+
+   <h3>
+      What the CAA means:
+   </h3>
+
+   <ul>
+      <li>
+         We get full rights to your contribution.
+      </li>
+      <li>
+         We assign you back as many rights as possible. You are free to do what you want with your contribution outside of the project.
+      </li>
+      <li>
+         If we add your contribution to the project, we agree to distribute it under the license which applied at the time you submitted your contribution (i.e. the AGPL 3.0 at the time of writing).
+      </li>
+   </ul>
+   <p>
+      This means that your contribution will be distributed as open source, and remain so. Everybody gets access to what you contribute.
+   </p>
+   <p>
+      It also means that we can distribute the project under other licenses. This includes commercial closed source. Having additional licenses does not change anything in your ability to use the code under the AGPL 3.0.
+   </p>
+   <p>
+      If you wonder why we require a copyright assignment instead of a license - it's complicated, but our decision was based on the conclusions reached in the <a href="http://script-ed.org/?p=1061">exhaustive analysis in this paper</a>.
+   </p>
+   <p>
+      For a more detailed explanation of what particular parts of the CAA mean, the Harmony website has a  <a href="http://www.harmonyagreements.org/guide.html">good walkthrough</a>.
+   </p>
+
+</div>
+
+{% endblock %}

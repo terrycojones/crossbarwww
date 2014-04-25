@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="675.79816"
+   height="571.09875"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="hiw_sa_instant.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-90.824262"
+     inkscape:cy="571.85724"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1024"
+     inkscape:window-height="1258"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-440.82427,-533.12071)">
+    <g
+       id="g3903"
+       transform="translate(437.92434,520.88944)">
+      <text
+         id="text3905"
+         style="font-size:39.98031616px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="43.72847"
+         x="278.61282"
+         xml:space="preserve">Sensor Monitoring</text>
+      <text
+         id="text3907"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="286.10913"
+         x="254.87453"
+         xml:space="preserve">Crossbar</text>
+      <text
+         id="text3909"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="286.10913"
+         x="377.31424"
+         xml:space="preserve">.</text>
+      <text
+         id="text3911"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="286.10913"
+         x="384.81055"
+         xml:space="preserve">io</text>
+      <path
+         id="path3913"
+         d="m 256.43625,104.32364 0,152.65921 152.65921,0 0,-152.65921 -152.65921,0 z"
+         style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3915"
+         d="m 256.43625,136.65147 0,15.30497 35.9979,-0.15618 23.97257,23.97258 11.01021,-11.01021 -28.34542,-28.34542 -42.63526,0.23426 z"
+         style="fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3917"
+         d="m 349.0469,186.39261 -11.08829,11.0102 27.40838,27.40838 43.72847,0 0,-15.30496 -36.93494,0 -23.11362,-23.11362 z"
+         style="fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3919"
+         d="m 366.4602,136.41721 -72.85475,73.1671 -37.1692,0 0,15.30497 43.57229,0 73.08902,-73.08902 35.9979,0 0,-15.38305 -42.63526,0 z"
+         style="fill:#ffde00;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3921"
+         d="m 542.15495,102.76191 0,134.54313 134.54314,0 0,-134.54313 -134.54314,0 z"
+         style="fill:#b5cb85;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3923"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="161.17065"
+         x="575.96643"
+         xml:space="preserve">Java</text>
+      <text
+         id="text3925"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="161.17065"
+         x="630.93933"
+         xml:space="preserve">-</text>
+      <text
+         id="text3927"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="197.40282"
+         x="572.21826"
+         xml:space="preserve">Script</text>
+      <text
+         id="text3929"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="277.36343"
+         x="548.47998"
+         xml:space="preserve">Browser</text>
+      <path
+         id="path3931"
+         d="m 13.274714,15.383051 0,134.543139 134.543136,0 0,-134.543139 -134.543136,0 z"
+         style="fill:#b5cb85;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3933"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="91.205093"
+         x="51.224781"
+         xml:space="preserve">C</text>
+      <text
+         id="text3935"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="91.205093"
+         x="68.716171"
+         xml:space="preserve">++</text>
+      <text
+         id="text3937"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="189.90649"
+         x="2.4987698"
+         xml:space="preserve">Embedded</text>
+      <path
+         id="path3939"
+         d="m 416.9822,171.16573 94.64091,0"
+         style="fill:none;stroke:#ffe000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3941"
+         d="m 508.26539,157.81293 26.78368,13.3528 -26.78368,13.43089 0,-26.78369 z"
+         style="fill:#ffe000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3943"
+         d="m 13.274714,241.99023 0,134.62122 134.543136,0 0,-134.62122 -134.543136,0 z"
+         style="fill:#b5cb85;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3945"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="318.59314"
+         x="33.733391"
+         xml:space="preserve">Python</text>
+      <text
+         id="text3947"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="416.04517"
+         x="2.4987698"
+         xml:space="preserve">Embedded</text>
+      <text
+         id="text3949"
+         style="font-size:29.98523712px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="580.96399"
+         x="209.89667"
+         xml:space="preserve">Embedded</text>
+      <path
+         id="path3951"
+         d="m 161.95152,289.2326 60.12664,-35.29512"
+         style="fill:none;stroke:#ffe000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3953"
+         d="m 212.39543,244.09857 29.90715,-2.10834 -16.32009,25.14387 -13.58706,-23.03553 z"
+         style="fill:#ffe000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3955"
+         d="m 265.88472,397.851 37.09111,-77.69612"
+         style="fill:none;stroke:#ffe000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3957"
+         d="m 289.46686,317.42185 23.66023,-18.42843 0.46851,29.98524 -24.12874,-11.55681 z"
+         style="fill:#ffe000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3959"
+         d="m 220.98495,407.29947 0,134.54314 134.62122,0 0,-134.54314 -134.62122,0 z"
+         style="fill:#b5cb85;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3961"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="483.51196"
+         x="258.62268"
+         xml:space="preserve">C</text>
+      <text
+         id="text3963"
+         style="font-size:29.98523712px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Segoe UI"
+         y="483.51196"
+         x="277.36343"
+         xml:space="preserve">++</text>
+      <path
+         id="path3965"
+         d="m 161.95152,76.759084 60.12664,35.295126"
+         style="fill:none;stroke:#ffe000;stroke-width:6.79353046px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3967"
+         d="m 212.39543,121.9712 29.90715,2.03025 -16.32009,-25.143871 -13.58706,23.113621 z"
+         style="fill:#ffe000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

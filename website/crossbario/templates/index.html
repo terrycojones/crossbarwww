@@ -15,15 +15,17 @@
 {% block content %}
 
    <div id="viewport">
+
       <div id="main">
+
          <div id="header">
+
             <center id="logo">
                <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon.svg') }}" class="cb_icon">
                <span class="fontFace">
                   <span class="cb_prefix">Crossbar</span><span class="cb_suffix">.io</span>
                </span>
                <img class="nonDisplay noFontFace" id="crossbarNameHomepage" src="{{ url_for('static', filename = 'img/gen/crossbar_name.png') }}" alt="">
-
             </center>
 
             <center id="tagline">
@@ -31,13 +33,26 @@
                <span id="followus">
                <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
             </center>
+
+         </div>
+
+         <div id="shortExplainer">
+            <p>
+               Crossbar.io is a <strong>polyglot, open-source application router</strong> which <strong>implements the Web Application Messaging Protocol (WAMP)</strong>.
+            </p>
+            <!-- <p>
+               WAMP implements <strong>asynchronous Remote Procedure Calls and Publish & Subscribe</strong>, with WebSocket as a preferred transport.
+            </p>
+            <p>
+               Crossbar.io enables the easy implementation of <strong>distributed, multi-client and server applications</strong> such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games)
+            </p> -->
          </div>
 
          <div id="crossbarArch">
             <div>
                <div class="archBoxContainer">
                   <div class="archBox">
-                     <h1>Frontends</h2>
+                     <h1>Frontends</h1>
                      <div class="imgContainer frontends">
 
                         <img id="crossbar_arch_android" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_android.svg') }}" alt=""></img>
@@ -51,7 +66,7 @@
                </div>
                <div class="archBoxContainer">
                   <div class="archBox">
-                     <h1>Internet of Things</h2>
+                     <h1>Internet of Things</h1>
                      <div class="imgContainer">
                         <img id="crossbar_arch_arduino" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_arduino.svg') }}" alt=""></img>
                         <img id="crossbar_arch_raspberry" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_raspberry.svg') }}" alt=""></img>
@@ -76,7 +91,7 @@
             <div>
                <div class="archBoxContainer">
                   <div class="archBox">
-                     <h1>Databases</h2>
+                     <h1>Databases</h1>
                      <div class="imgContainer">
                         <img id="crossbar_arch_oracle" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_oracle.svg') }}" alt=""></img>
                         <img id="crossbar_arch_postgresql" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_postgresql.svg') }}" alt=""></img>
@@ -89,7 +104,7 @@
                </div>
                <div class="archBoxContainer">
                   <div class="archBox">
-                     <h1>Backend / Compute</h2>
+                     <h1>Backend / Compute</h1>
                      <div class="imgContainer backend">
                         <img id="crossbar_arch_java" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_java.svg') }}" alt=""></img>
                         <img id="crossbar_arch_python" src="{{ url_for('static', filename = 'img/gen/crossbar_arch_python.svg') }}" alt=""></img>
@@ -106,18 +121,136 @@
             <div class="clearBoth"></div>
          </div>
 
+         <div id="morePower" class="centeredLink">
+            <a href="https://github.com/crossbario/crossbar/blob/master/README.md">More power, less complexity</a>
+         </div>
 
-         <center class="clearBoth">
+         <div id="shortExplainer">
+            <!-- <p>
+               Crossbar.io is a <strong>polyglot, open-source application router</strong> which <strong>implements the Web Application Messaging Protocol (WAMP)</strong>.
+            </p> -->
+            <p>
+               WAMP implements <strong>asynchronous Remote Procedure Calls and Publish & Subscribe</strong>, with WebSocket as a preferred transport.
+            </p>
+            <p>
+               Crossbar.io enables the easy implementation of <strong>distributed, multi-client and server applications</strong> such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games)
+            </p>
+         </div>
+
+
+         <!-- <center class="clearBoth">
             More power, less complexity. <a href="https://github.com/crossbario/crossbar/blob/master/README.md">Read more</a>
-         </center>
+         </center> -->
+
+
+
+         <div id="demoBox">
+
+            <div class="spacerLine"></div>
+
+            <h2>Try out a demo</h2>
+
+            <ul class="demos_list">
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/pubsub/index.html">
+                     PubSub
+                     <img src="{{ url_for('static', filename = 'img/screenshot_pubsub.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/notification/index.html">
+                     Notification
+                     <img src="{{ url_for('static', filename = 'img/screenshot_notifications.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li>
+                  <a href="https://demo.crossbar.io/demo/chat/index.html#ch1">
+                     Chat
+                     <img src="{{ url_for('static', filename = 'img/screenshot_chat.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li>
+                  <a href="https://demo.crossbar.io/demo/gauges/index.html">
+                     Gauges
+                     <img src="{{ url_for('static', filename = 'img/screenshot_gauges.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/sliders/index.html">
+                     Sliders
+                     <img src="{{ url_for('static', filename = 'img/screenshot_sliders.png') }}" />
+                  </a>
+                  PubSub Functionality, jQuery UI
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/colorpicker/index.html">
+                     Colorpicker
+                     <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/beatbox/index.html">
+                     Beatbox
+                     <img src="{{ url_for('static', filename = 'img/screenshot_beatbox.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+            </ul>
+
+         </div>
+
+         <div id="contribute" class="centeredLink">
+            <a href="{{ url_for('page_contribute') }}">
+               Learn how to contribute
+            </a>
+         </div>
 
       </div>
    </div>
 
+   <script>
+      // randomly pick two of the existing demos for display
+
+      // get all demo list elements into array
+      var demosNodeList = document.querySelectorAll(".demos_list > li");
+      var demosArray = [];
+      // set all to display: none
+      // and copy nodesList into real array with array methods
+      for(var i = 0; i < demosNodeList.length; i++) {
+         demosNodeList[i].classList.add("nonDisplay");
+         demosArray[i] = demosNodeList[i];
+      }
+
+      // pick a number between one and the array length
+      // display this element + remove from array
+      function displayRandomDemo() {
+         var d = Math.floor(Math.random() * demosArray.length);
+         demosArray[d].classList.remove("nonDisplay");
+         demosArray.splice(d, 1);
+      }
+
+      // pick the two demos
+      displayRandomDemo();
+      displayRandomDemo();
+   </script>
+
 {% endblock %}
 
 
-<div>
+<!-- <div>
    <div>
       <div class="container">
          <div class="box"></div>
@@ -143,4 +276,4 @@
       </div>
    </div>
    <div class="clearBoth"></div>
-</div>
+</div> -->
