@@ -22,3 +22,45 @@ dl.faq {
 .faq dd > p {
 
 }
+
+#toc {
+   margin-bottom: 3em;
+}
+
+#toc > li {
+   margin-bottom: 0.5em;
+   font-size: 120%;
+}
+
+.top {
+   display: block;
+   float: right;
+   margin-right: 20px;
+   height: 28px;
+   width: 50px;
+   border-radius: 12px;
+   background-color: #7c6a00;
+   color: #fff;
+   text-align: center;
+   vertical-align: middle;
+   padding-top: 2px;
+   margin-bottom: 1.5em;
+   margin-top: 0.5em;
+}
+
+.top > a {
+   color: #fff;   
+}
+
+.top > a:visited {
+   color: #fff;   
+}
+
+.top:hover {
+   background-color: #ffde00;
+   color: #333;
+}
+
+h2 {
+   clear: both;
+}

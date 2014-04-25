@@ -18,6 +18,12 @@
 
 import uuid
 
+import mimetypes
+
+mimetypes.add_type('image/svg+xml', '.svg')
+mimetypes.add_type('text/javascript', '.jgz')
+
+
 from optparse import OptionParser
 
 from flask import Flask, Request, request, session, g, url_for, \

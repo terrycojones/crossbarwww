@@ -10,29 +10,42 @@
 
 <div class="maincontent textpage">
 
+   <a name="top"></a>
    <h1>
       Frequently Asked Questions
    </h1>
+   <ol id="toc">
+      <li><a href="#relation_between_wamp_autobahn_crossbar">What is the relationship between WAMP, Autobahn and Crossbar.io?</a></li>
+      <li><a href="#what_is_wamp">What is WAMP?</a></li>
+      <li><a href="#what_is_autobahn">What is Autobahn?</a></li>
+      <li><a href="#what_is_crossbar">What is Crossbar.io?</a></li>
+      <li><a href="#crossbar_oss_license">What does Crossbar.io's open-source license mean for me when I use it for a project?</a></li>
+      <li><a href="#hacking">Can I hack Crossbar.io to fit my own needs?</a></li>
+      <li><a href="#contributing">I want to contribute to Crossbar.io - what do I need to do?</a></li>
+   </ol>
 
    <div class="faq">
 
+      <a name="relation_between_wamp_autobahn_crossbar"></a>
       <h2>
          What is the relationship between WAMP, Autobahn and Crossbar.io?
       </h2>
-
       <div>
-         <ul>
-            <li>
-               <strong><a href="http://wamp.ws/">WAMP</a></strong> is an open source protocol which provides RPC and PubSub messaging patterns.
-            </li>
-            <li>
-                The <strong><a href="http://autobahn.ws/">Autobahn project</a></strong> provides WAMP implementations in multiple languages.
-            </li>
-            <li>
-               <strong>Crossbar.io</strong> builds on Autobahn|Python, one of the Autobahn projects, and provides a much larger set of functionality to make it into a powerful router for application messaging.
-            </li>
-         </ul>
-         <p>In more detail:</p>
+         <p>
+         <strong><a href="http://wamp.ws/">WAMP</a></strong> is an open source protocol which provides RPC and PubSub messaging patterns.
+
+         The <strong><a href="http://autobahn.ws/">Autobahn project</a></strong> provides WAMP implementations in multiple languages.
+
+         <strong>Crossbar.io</strong> builds on Autobahn|Python, one of the Autobahn projects, and provides a much larger set of functionality to make it into a powerful router for application messaging.
+         </p>
+      </div>
+      <a class="top" href="#top">Top</a>
+
+      <a name="what_is_wamp"></a>
+      <h2>
+         What is WAMP?
+      </h2>
+      <div>
          <p>
             <strong>WAMP (Web Application Messaging Protocol)</strong> is a protocol which provides both Remote Procedure Calls (RPC) and Publish & Subscribe (PubSub) messaging patterns. All clients can be both publishers and subscribers, callers of remote procedures and offer remote procedure endpoints. A WAMP router connects the clients.
             <br>
@@ -40,21 +53,37 @@
             <br>
             WAMP has WebSocket as a preferred transport.
          </p>
+      </div>
+      <a class="top" href="#top">Top</a>    
+
+      <a name="what_is_autobahn"></a>
+      <h2>
+         What is Autobahn?
+      </h2>
+      <div>
          <p>
             The <strong>Autobahn project</strong> provides open-source WebSocket and WAMP implementations for several programming languages. WAMP implementations are for client roles implementations, with the exception of Autobahn|Python, which includes basic router capabilities.
          </p>
+      </div>
+      <a class="top" href="#top">Top</a>
+
+      <a name="what_is_crossbar"></a>
+      <h2>
+         What is Crossbar.io?
+      </h2>
+      <div>
          <p>
             <strong>Crossbar.io</strong> builds on Autobahn|Python. It adds the full set of advanced WAMP router functionality, as well as things like an integrated Web server, hosting of application components or support for various authentication methods.
             <br>
             Applications developed with Crossbar.io can use any WAMP client library. This, obviously, includes the Autobahn libraries.
          </p>
-
       </div>
+      <a class="top" href="#top">Top</a>
 
+      <a name="crossbar_oss_license"></a>
       <h2>
          What does Crossbar.io's open-source license mean for me when I use it for a project?
       </h2>
-
       <div>
          <p>
             The license (<a href="http://www.gnu.org/licenses/agpl-3.0.html">AGPL v3</a>) does not have any effect on your application.
@@ -69,11 +98,12 @@
             Your code remains yours, and you can license it in whichever way you want.
          </p>
       </div>
+      <a class="top" href="#top">Top</a>
 
+      <a name="hacking"></a>
       <h2>
          Can I hack Crossbar.io to fit my own needs?
       </h2>
-
       <div>
          <p>
             Like all open source licenses, the <a href="http://www.gnu.org/licenses/agpl-3.0.html">AGPL</a> gives you the right to modify the code: to fix bugs, optimize things, add features, or anything else you need or feel like doing.
@@ -96,11 +126,12 @@
             What this means is that you cannot use Crossbar.io as the basis for developing closed source software (except for when you are its only user).
          </p>
       </div>
+      <a class="top" href="#top">Top</a>
 
+      <a name="contributing"></a>
       <h2>
          I want to contribute to Crossbar.io - what do I need to do?
       </h2>
-
       <div>
          <p>
             There are <a href="{{ url_for('page_contribute') }}">full instructions for how to contribute</a>.
@@ -118,6 +149,7 @@
             This is needed in order for the Crossbar.io project to have all necessary rights to the code, e.g. to be able to switch licenses in the future.
          </p>
       </div>
+      <a class="top" href="#top">Top</a>
 
 <!--       <h2>
          I have a question about Crossbar.io - where do I ask it?

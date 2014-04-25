@@ -264,20 +264,16 @@ a:hover {
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
+*/
 #footer {
-   margin-top: 100px;
+   width: 95%;
+   max-width: 780px;
+   margin: 40px auto 1em auto;
+   padding: 0.8em 1em 0 1em;
+   border-top: 1px solid #ccc;
    font-size: 13px;
    color: #999;
 }
-*/
-#footer > a {
-   color: #999;
-}
-
-#footer > a:visited {
-   color: #999;
-}
-
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -306,10 +302,12 @@ body {
 }
 
 /* Set the fixed height of the footer here */
+/*
 #footer {
   height: 90px;
   padding: 0 0 20px 0;
 }
+*/
 
 /* the page content container */
 #container {
@@ -541,7 +539,6 @@ h6 { font-size: .75em; margin: 1.67em 0 }
 
 h1 {
    font-size: 2em;
-   margin: 1.2em 0 .67em;
    font-family: 'Source Sans Pro', 'sans-serif';
    font-weight: 300;
    color: #7c6a00;
@@ -549,7 +546,6 @@ h1 {
 
 h2 {
    font-size: 1.5em;
-   margin: 1.4em 0 .75em;
    font-family: 'Source Sans Pro', 'sans-serif';
    font-weight: 300;
    color: #7c6a00;
@@ -557,7 +553,6 @@ h2 {
 
 h3 {
    font-size: 1.17em;
-   margin: 1.3em 0 .83em;
    font-family: 'Source Sans Pro', 'sans-serif';
    font-weight: 300;
    color: #574b00;
@@ -566,7 +561,6 @@ h3 {
 
 h4 {
    font-size: 1em;
-   margin: 1.12em 0;
    font-family: 'Source Sans Pro', 'sans-serif';
    font-weight: 600;
    color: #666;
@@ -578,7 +572,7 @@ h4 {
    width: 90%;
    max-width: 960px;
    margin: 0 auto;
-   margin-top: 62px;
+   margin-top: 2em;
 }
 
 .maincontent.textpage {
