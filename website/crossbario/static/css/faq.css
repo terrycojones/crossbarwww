@@ -37,28 +37,30 @@ dl.faq {
    float: right;
    margin-right: 20px;
    height: 28px;
-   width: 50px;
-   border-radius: 12px;
+   width: 40px;
+   border-radius: 14px;
    background-color: #7c6a00;
    color: #fff;
    text-align: center;
    vertical-align: middle;
-   padding-top: 2px;
+   padding-top: 3px;
    margin-bottom: 1.5em;
    margin-top: 0.5em;
+   font-size: 14px;
 }
 
-.top > a {
-   color: #fff;   
+a.top {
+   color: #D8D8D8;
 }
 
-.top > a:visited {
-   color: #fff;   
+a.top:visited {
+   color: #D8D8D8;
 }
 
-.top:hover {
-   background-color: #ffde00;
-   color: #333;
+a.top:hover {
+   background-color: #ad9500;
+   color: #fff;
+   text-decoration: none;
 }
 
 h2 {
