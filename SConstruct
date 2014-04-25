@@ -1,6 +1,6 @@
 ###############################################################################
 ##
-##  Copyright 2012-2013 Tavendo GmbH
+##  Copyright (C) 2012-2014 Tavendo GmbH
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
 ##  you may not use this file except in compliance with the License.
@@ -16,46 +16,53 @@
 ##
 ###############################################################################
 
-SVG_FILES = ['crossbar_icon.svg',
-             'crossbar_icon_inverted.svg',
-             'crossbar_icon_and_text.svg',
-             'crossbar_icon_and_text_vectorized.svg',
-             'crossbar_name.svg',
-             'crossbar_name_lighter.svg',
-             'github.svg',
-             'github_highlighted.svg',
-             'github_path.svg',
-             'github_path_highlighted.svg',
+SVG_FILES = [
+   'unified_routing/broker_dealer.svg',
+   'unified_routing/pubsub_broker.svg',
+   'unified_routing/rpc_client_server.svg',
+   'unified_routing/rpc_dealer.svg',
+   'unified_routing/wamp_iot.svg',
+   
+   'crossbar_icon.svg',
+   'crossbar_icon_inverted.svg',
+   'crossbar_icon_and_text.svg',
+   'crossbar_icon_and_text_vectorized.svg',
+   'crossbar_name.svg',
+   'crossbar_name_lighter.svg',
+   'github.svg',
+   'github_highlighted.svg',
+   'github_path.svg',
+   'github_path_highlighted.svg',
 
-             'crossbar_arch_android.svg',
-             'crossbar_arch_arduino.svg',
-             'crossbar_arch_crossbar.svg',
-             'crossbar_arch_crossbar_bs.svg',
-             'crossbar_arch_html5.svg',
-             'crossbar_arch_ios.svg',
-             'crossbar_arch_java.svg',
-             'crossbar_arch_node.svg',
-             'crossbar_arch_oracle.svg',
-             'crossbar_arch_postgresql.svg',
-             'crossbar_arch_python.svg',
-             'crossbar_arch_raspberry.svg',
+   'crossbar_arch_android.svg',
+   'crossbar_arch_arduino.svg',
+   'crossbar_arch_crossbar.svg',
+   'crossbar_arch_crossbar_bs.svg',
+   'crossbar_arch_html5.svg',
+   'crossbar_arch_ios.svg',
+   'crossbar_arch_java.svg',
+   'crossbar_arch_node.svg',
+   'crossbar_arch_oracle.svg',
+   'crossbar_arch_postgresql.svg',
+   'crossbar_arch_python.svg',
+   'crossbar_arch_raspberry.svg',
 
-             'crossbar_components.svg',
-             'crossbar_hiw_architecture.svg',
-             'crossbar_hiw_call_stored_procedure.svg',
-             'crossbar_hiw_client_to_client_pubsub.svg',
-             'crossbar_hiw_publish_from_database.svg',
-             'wamp_grey.svg',
+   'crossbar_components.svg',
+   'crossbar_hiw_architecture.svg',
+   'crossbar_hiw_call_stored_procedure.svg',
+   'crossbar_hiw_client_to_client_pubsub.svg',
+   'crossbar_hiw_publish_from_database.svg',
+   'wamp_grey.svg',
 
-             'NY-404.svg',
-             'hiw_sa_01.svg',
-             'hiw_pubsub.svg',
-             'hiw_rpc.svg',
-             'hiw_webapp.svg',
-             'hiw_sa_instant.svg',
-             'hiw_sa_line.svg',
-             'hiw_sa_sensor.svg'
-             ]
+   'NY-404.svg',
+   'hiw_sa_01.svg',
+   'hiw_pubsub.svg',
+   'hiw_rpc.svg',
+   'hiw_webapp.svg',
+   'hiw_sa_instant.svg',
+   'hiw_sa_line.svg',
+   'hiw_sa_sensor.svg'
+]
 
 IMG_SOURCE_DIR = "design"
 IMG_GEN_DIR    = "website/crossbario/static/img/gen"

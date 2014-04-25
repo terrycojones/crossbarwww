@@ -116,7 +116,9 @@ if __name__ == "__main__":
 
    (options, args) = parser.parse_args ()
 
-   app.widgeturl = options.widgeturl
+   app.widgeturl = str(options.widgeturl).strip()
+   if len(app.widgeturl) == 0:
+      app.widgeturl = None
 
    EXTRA_MIME_TYPES = {
       '.svg': 'image/svg+xml',
@@ -140,7 +142,6 @@ if __name__ == "__main__":
 
          resource = File(os.path.join(os.path.dirname(__file__), 'build'))
          resource.contentTypes.update(EXTRA_MIME_TYPES)
-         print "MIME types set"
          site = Site(resource)
          reactor.listenTCP(int(options.port), site)
          reactor.run()
@@ -162,7 +163,7 @@ if __name__ == "__main__":
             log.startLogging(sys.stdout)
          resource = WSGIResource(reactor, reactor.getThreadPool(), app)
          site = Site(resource)
-         site.contentTypes.update(EXTRA_MIME_TYPES)
-         print "MIME types set"
+         # FIXME (does not work)
+         #site.contentTypes.update(EXTRA_MIME_TYPES)
          reactor.listenTCP(int(options.port), site)
          reactor.run()

@@ -147,7 +147,7 @@
          </noscript>
 
          <!-- community widget iframe -->
-
+         {% if session["widgeturl"] %}
          <!-- general styles for the widget -->
          <link rel="stylesheet" type="text/css" href="{{ session["widgeturl"] }}/css/parent.css" />
          <!-- site-specific modifications -->
@@ -155,6 +155,9 @@
 
          <iframe id="communityWidget" src="{{ session["widgeturl"] }}/index.html" frameborder="0"></iframe>
          <script src="{{ session["widgeturl"] }}/js/parent.js"></script>
+         {% else %}
+         <!-- Community Widget stripped! -->
+         {% endif %}
 
          <!-- block for the github banner -->
          <!-- {% block githubbanner %}{% endblock %} -->
