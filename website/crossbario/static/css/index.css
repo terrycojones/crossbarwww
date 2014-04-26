@@ -5,7 +5,7 @@
 
 #tagline {
    margin-top: -6px;
-   margin-bottom: 46px;
+   margin-bottom: 0.2em;
    font-size: 20px;
    font-family: 'Segoe UI', 'Open Sans', sans-serif;
    font-weight: 300;
@@ -116,12 +116,12 @@ html.no-svg #github:hover {
 }
 
 #shortExplainer {
-    width: 80%;
+    width: 100%;
 
     max-width: 754px;
-    margin: 0 auto 1em;
+    margin: 0 auto;
     /* background-color: #fff; */
-    padding: 1.2em 2em;
+    padding: 0.8em 2em;
     border-radius: 4px;
 }
 
@@ -333,7 +333,7 @@ central wrapper does not extend beyond 990px width*/
 
 #demoBox {
    text-align: center;
-   margin-top: 2em;
+   margin-top: 0.2em;
 }
 
 #demoBox .spacerLine {
