@@ -5,7 +5,7 @@
 
 #tagline {
    margin-top: -6px;
-   margin-bottom: 0.2em;
+   margin-bottom: 0.8em;
    font-size: 20px;
    font-family: 'Segoe UI', 'Open Sans', sans-serif;
    font-weight: 300;
@@ -118,7 +118,7 @@ html.no-svg #github:hover {
 #shortExplainer {
     width: 100%;
 
-    max-width: 754px;
+    max-width: 790px;
     margin: 0 auto;
     /* background-color: #fff; */
     padding: 0.8em 2em;
