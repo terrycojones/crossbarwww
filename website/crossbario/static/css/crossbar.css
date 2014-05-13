@@ -349,12 +349,12 @@ body {
 }
 
 #wrap .navbar-brand {
-    padding: 6px 10px 0 20px;
-
+    padding: 6px 60px 0 20px;
 }
 
 #wrap .nav.navbar-nav .active a {
   color: #FFE000;
+  color: #fff;
 }
 
 
@@ -379,6 +379,7 @@ body {
 #wrap .nav .external > a,
 #wrap .nav .external > a:visited {
    color: #EBEBEB;
+   color: #aaa;
 }
 
 .nav .external:hover {
@@ -386,6 +387,8 @@ body {
 }
 #wrap .nav .external > a:hover {
    color: #FF9651;
+   color: #FFE000;
+   color: #fff;
 }
 
 .clearBoth {
