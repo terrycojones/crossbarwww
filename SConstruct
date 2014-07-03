@@ -17,12 +17,6 @@
 ###############################################################################
 
 SVG_FILES = [
-   'unified_routing/broker_dealer.svg',
-   'unified_routing/pubsub_broker.svg',
-   'unified_routing/rpc_client_server.svg',
-   'unified_routing/rpc_dealer.svg',
-   'unified_routing/wamp_iot.svg',
-   
    'crossbar_icon.svg',
    'crossbar_icon_inverted.svg',
    'crossbar_icon_and_text.svg',
