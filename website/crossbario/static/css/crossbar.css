@@ -376,6 +376,14 @@ body {
    margin-left: 0em;
 }
 
+/*.nav .external a:after {
+   display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: transparent url('../img/gen/link_external.png') no-repeat;
+}*/
+
 #wrap .nav .external > a,
 #wrap .nav .external > a:visited {
    color: #EBEBEB;
