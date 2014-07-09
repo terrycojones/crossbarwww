@@ -57,7 +57,9 @@ SVG_FILES = [
    'hiw_sa_line.svg',
    'hiw_sa_sensor.svg',
 
-   'link_external.svg'
+   'link_external.svg',
+   'homepage_cross_diagram.svg'
+
 ]
 
 IMG_SOURCE_DIR = "design"
