@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Crossbar Arch Graphic</title>
+    <style>
+      #main #arch img {
+         width: 100%;
+      }
+
+
+      #crossbarArch {
+         /*border: 1px solid red;*/
+         /*background-color: red;*/
+         width: 100%;
+         margin: 0 auto;
+      }
+
+      #crossbarArch > div {
+         width: 33%;
+         float: left;
+         /*border: 1px solid green;*/
+         /*background-color: green;*/
+      }
+
+      #crossbarArch > div#archCenter {
+         /*border: 1px solid blue;*/
+         width: 33%;
+         /*background-color: blue;*/
+      }
+
+      /* CSS hack to get scalable container height as a percentage of container width */
+      /* Container: uses the fact that padding is relative to the Container's width to get the height; */
+      /* Box: absolute and extends across the entire Container size; */
+
+      #crossbarArch .archBoxContainer {
+         width: 100%;
+         position: relative;
+         padding-bottom: 79%;
+         /*background-color: grey;*/
+      }
+
+      #crossbarArch .archBoxContainer .archBox {
+         position: absolute;
+         width: 84%;
+         height: 70%;
+         /*border: 1px solid pink;*/
+         background-color: #fff;
+         border-radius: 19px;
+         margin: 12% 8%;
+         box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      #crossbarArch #archCenter .archBoxContainer {
+         width: 100%;
+         margin: 0;
+      }
+
+      #crossbarArch #archCenter .archCenter {
+         background-color: none;
+      }
+
+      #crossbarArch #archCenter .archBoxContainer .archBox {
+         /*background-color: #ddd;*/
+         width: 100%;
+         margin: 56% 0 0 0;
+         background-color: inherit;
+         box-shadow: none;
+      }
+
+      #crossbarShadowFaker {
+
+      }
+
+      #crossbarArch #archCenter .archBoxContainer .archBox > img {
+         width: 100%;
+      }
+
+      .archBoxContainer {
+         text-align: center;
+      }
+
+      /* fallback for IE<9: font size which should be OK for all
+      desktop viewport widths;*/
+
+      h1 {
+         font-size: 15px;
+      }
+      .archBox > h1 {
+         font-size: 2vw;
+         color: #999;
+         margin-top: 7%;
+         margin-bottom: 2%;
+      }
+
+      /* fallback for browsers without viewport unit support */
+
+      @media (max-width: 480px) {
+         .no-cssvwunit .archBox h1  {
+            font-size: 8px;
+         }
+      }
+
+      @media (min-width: 481px) {
+         .no-cssvwunit .archBox h1  {
+            font-size: 12px
+         }
+      }
+
+      @media (min-width: 640px) {
+         .no-cssvwunit .archBox h1  {
+            font-size: 16px;
+         }
+      }
+
+
+
+      /* set maximum font size, since the
+      central wrapper does not extend beyond 990px width*/
+      @media (min-width: 990px) {
+         #crossbarArch .archBox > h1 {
+            font-size: 23px;
+         }
+      }
+
+      #crossbar_arch_android {
+         width: 33%;
+      }
+      #crossbar_arch_html5 {
+         width: 24%;
+      }
+      #crossbar_arch_ios {
+         width: 29%;
+         padding-top: 12%;
+      }
+      #crossbar_arch_oracle {
+         width: 68%;
+      }
+      #crossbar_arch_postgresql {
+         width: 62%;
+         padding: 4% 0 0 0;
+      }
+      #crossbar_arch_arduino {
+         width: 35%;
+         margin: 0 3% 0 0;
+      }
+      #crossbar_arch_raspberry {
+         width: 25%;
+      }
+      #crossbar_arch_java {
+         width: 19%;
+         margin: 0 0 0 13%;
+      }
+      #crossbar_arch_python {
+         width: 48%;
+         margin: 4% 0 0 3%;
+      }
+      #crossbar_arch_node {
+         width: 46%;
+         margin: 0 0 0 6%;
+      }
+
+      .archBox > .imgContainer {
+          position: relative;
+          top: -0.2vw;
+      }
+
+      .archBox > .imgContainer.backend > img {
+          float: left;
+
+      }
+
+
+    </style>
+</head>
+<body>
+   <div id="crossbarArch">
+      <div>
+         <div class="archBoxContainer">
+            <div class="archBox">
+               <h1>Frontends</h1>
+               <div class="imgContainer frontends">
+
+                  <img id="crossbar_arch_android" src="img/crossbar_arch_android.svg" alt=""></img>
+                  <img id="crossbar_arch_html5" src="img/crossbar_arch_html5.svg" alt=""></img>
+                  <img id="crossbar_arch_ios" src="img/crossbar_arch_ios.svg" alt=""></img>
+
+                  <div class="clearBoth"></div>
+               </div>
+
+            </div>
+         </div>
+         <div class="archBoxContainer">
+            <div class="archBox">
+               <h1>Internet of Things</h1>
+               <div class="imgContainer">
+                  <img id="crossbar_arch_arduino" src="img/crossbar_arch_arduino.svg" alt=""></img>
+                  <img id="crossbar_arch_raspberry" src="img/crossbar_arch_raspberry.svg" alt=""></img>
+
+
+                  <div class="clearBoth"></div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <div id="archCenter">
+         <div class="archBoxContainer">
+            <div class="archBox archCenter">
+               <img id="crossbar_arch_crossbar" src="img/crossbar_arch_crossbar_bs.svg" alt="Crossbar.io - Open-source multi-protocol application router"></img>
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="archBoxContainer">
+            <div class="archBox">
+               <h1>Databases</h1>
+               <div class="imgContainer">
+                  <img id="crossbar_arch_oracle" src="img/crossbar_arch_oracle.svg" alt=""></img>
+                  <img id="crossbar_arch_postgresql" src="img/crossbar_arch_postgresql.svg" alt=""></img>
+
+
+                  <div class="clearBoth"></div>
+               </div>
+
+            </div>
+         </div>
+         <div class="archBoxContainer">
+            <div class="archBox">
+               <h1>Backend / Compute</h1>
+               <div class="imgContainer backend">
+                  <img id="crossbar_arch_java" src="img/crossbar_arch_java.svg" alt=""></img>
+                  <img id="crossbar_arch_python" src="img/crossbar_arch_python.svg" alt=""></img>
+                  <img id="crossbar_arch_node" src="img/crossbar_arch_node.svg" alt=""></img>
+
+
+
+                  <div class="clearBoth"></div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <div class="clearBoth"></div>
+   </div>
+
+</body>
+</html>
