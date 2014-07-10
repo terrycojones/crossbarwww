@@ -348,8 +348,9 @@ central wrapper does not extend beyond 990px width*/
     /* max-width: 500px; */
 
     padding: 5px;
-    margin: 41px;
+    margin: 5%;
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    width: 94%;
 }
 
 #initialExplanation h1  {
@@ -363,6 +364,22 @@ central wrapper does not extend beyond 990px width*/
     font-size: 22px;
 
 }
+
+@media (max-width: 1024px) {
+   #initialExplanation > div {
+       float: left;
+
+       width: 100%;
+   }
+
+   #initialExplanation > div > img {
+      max-width: 600px;
+      margin: 41px auto;
+   
+      display: block;
+}
+}
+
 
 /* detailExplanations formatting */
 
@@ -396,7 +413,7 @@ central wrapper does not extend beyond 990px width*/
 }
 
 #detailExplanations .detailsItem p.readMore {
-    text-align: right;
+    /* text-align: right; */
 
 }
 
@@ -430,13 +447,6 @@ central wrapper does not extend beyond 990px width*/
 }
 
 @media (max-width: 720px) {
-   #initialExplanation > div {
-       float: left;
-
-       width: 100%;
-   }
-
-
    #detailExplanations .detailsItem h2 {
       /*color: blue;*/
    }
@@ -494,7 +504,7 @@ central wrapper does not extend beyond 990px width*/
    min-height: 100px;
    text-align: center;
    /*max-width: 1507px;*/
-   max-width: 80%;
+   max-width: 100%;
    padding: 0;
 }
 

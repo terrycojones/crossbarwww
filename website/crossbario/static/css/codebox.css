@@ -230,3 +230,9 @@
        display: none;
 
 }
+
+
+.syntaxContainer .container:before,
+.syntaxContainer .container:after {
+   content: none;
+}

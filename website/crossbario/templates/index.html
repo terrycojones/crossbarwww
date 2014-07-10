@@ -404,7 +404,7 @@
 
                </div>
 
-               <!-- <a data-bind="attr: { href: currentExample.link() }">Code for this example on GitHub</a> -->
+               <a data-bind="attr: { href: currentExample.link() }">Code for this example on GitHub</a>
             </div>
 
 
@@ -518,6 +518,7 @@
       // pick the two demos
       displayRandomDemo();
       displayRandomDemo();
+      displayRandomDemo();
    </script>
 
    <script src="{{ url_for('static', filename='deps/knockout-3.1.0.js') }}"></script>
@@ -527,7 +528,7 @@
    <!-- <script src="{{ url_for('static', filename='deps/autobahn.min.js') }}"></script> -->
     <script src="{{ url_for('static', filename='deps/autobahn/autobahn.js') }}"></script>
 
-   <!-- // <script src="{{ url_for('static', filename='js/codebox.js') }}"></script> -->
+   <script src="{{ url_for('static', filename='js/codebox.js') }}"></script>
 
 {% endblock %}
 
