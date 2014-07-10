@@ -329,11 +329,148 @@ central wrapper does not extend beyond 990px width*/
 }
 
 
+/* initialExplanation formatting */
+
+#initialExplanation {
+    overflow: hidden;
+
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#initialExplanation > div {
+    float: left;
+
+    width: 50%;
+}
+
+#initialExplanation > div > img {
+    /* max-width: 500px; */
+
+    padding: 5px;
+    margin: 41px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+#initialExplanation h1  {
+    font-size: 40px;
+
+    color: #444;
+    font-weight: normal;
+}
+
+#initialExplanation p {
+    font-size: 22px;
+
+}
+
+/* detailExplanations formatting */
+
+#detailExplanations {
+    overflow: hidden;
+
+}
+
+#detailExplanations .detailsItem {
+    /* float: left; */
+
+    display: inline-block;
+    /* width: 33.333333%; */
+    width: 32%;
+    vertical-align: top;
+    padding: 0 2em;
+}
+
+#detailExplanations .detailsItem:first-of-type {
+   padding-left: 0;
+}
+
+#detailExplanations .detailsItem h2 {
+    color: #CBAE00;
+
+    font-weight: normal;
+}
+
+#detailExplanations .detailsItem p {
+
+}
+
+#detailExplanations .detailsItem p.readMore {
+    text-align: right;
+
+}
+
+#detailExplanations .detailsItem p > a {
+
+}
+
+
+@media (min-width: 1200px) {
+   #detailExplanations .detailsItem h2 {
+      /*color: red;*/
+   }
+   #detailExplanations .detailsItem:nth-of-type(4) {
+      padding-left: 0;
+   }
+}
+
+@media (max-width: 1199px) {
+   #detailExplanations .detailsItem h2 {
+      /*color: green;*/
+   }
+
+   #detailExplanations .detailsItem {
+      width: 49%;
+   }
+
+   #detailExplanations .detailsItem:nth-of-type(3),
+   #detailExplanations .detailsItem:nth-of-type(5) {
+      padding-left: 0;
+   }
+}
+
+@media (max-width: 720px) {
+   #initialExplanation > div {
+       float: left;
+
+       width: 100%;
+   }
+
+
+   #detailExplanations .detailsItem h2 {
+      /*color: blue;*/
+   }
+
+   #detailExplanations .detailsItem {
+      width: 100%;
+   }
+
+   #detailExplanations .detailsItem {
+      padding-left: 0;
+   }
+}
+
+
+#code h2  {
+   font-size: 45px;
+   color: #444;
+   font-weight: normal;
+   text-align: left;
+}
+
+
 /* demoBox formatting */
 
 #demoBox {
    text-align: center;
    margin-top: 0.2em;
+}
+
+#demoBox h2 {
+   font-size: 45px;
+   color: #444;
+   font-weight: normal;
+   text-align: left;
 }
 
 #demoBox .spacerLine {
@@ -343,11 +480,12 @@ central wrapper does not extend beyond 990px width*/
    border-top: 2px solid #D1D1D1;
 }
 
-#demoBox h2 {
+#demoBox h3 {
    font-size: 20px;
    font-family: 'Segoe UI', 'Open Sans', sans-serif;
    font-weight: 300;
    margin-top: 0.5em;
+   border-bottom: none;
 }
 
 .demos_list {

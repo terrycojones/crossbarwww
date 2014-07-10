@@ -135,14 +135,118 @@
 
          <!-- code box -->
 
+         <div id="initialExplanation">
+            <div class="text">
+               <h1>
+                  Build more powerful applications in less time
+               </h1>
+               <p>
+                  Crossbar.io is a <strong>unified application router</strong> that enables application developers to create powerful systems from loosely coupled application components.
+               </p>
+               <p>
+                  Application components can talk freely to each other, whether running locally or when distributed over different machines using the application messaging services provided by Crossbar.io.
+               </p>
+               <p>
+                  Crossbar.io messaging services are based on <strong>WAMP (Web Application Messaging Protocol)</strong>, an open protocol which provides easy to use <em>remote procedure calls</em> and <em>real-time event notifications</em>.
+               </p>
+            </div>
+            <div>
+               <img src="{{ url_for('static', filename = 'img/gen/homepage_cross_diagram.svg') }}" alt="diagram of crossbar.io router connecting frontend and backend application components in a variety of languages">
+            </div>
+
+         </div>
+
+
+         <div id="detailExplanations">
+
+            <div class="detailsItem">
+               <h2>
+                  Unified Application Messaging
+               </h2>
+               <p>
+                  At its core, Crossbar.io provides a <strong>flexible and scalable communication infrastructure</strong> for application components to talk to each other. This communication infrastructure is based on <strong>Unified Routing</strong> and <strong>WAMP</strong>.
+               </p>
+               <p>
+                  Application components involved are fully decoupled by Crossbar.io which dynamically routes calls and events between them.
+               </p>
+               <p class="readMore">
+                  <a href="">Read more</a>
+               </p>
+
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Cross-language Integration
+               </h2>
+               <p>
+                  Crossbar.io supports application components written in different programming languages:
+               </p>
+               <p>
+                  <strong>JavaScript</strong> (both Browser and NodeJS), <strong>Python</strong>, <strong>PHP</strong>, <strong>C++</strong>, <strong>Java</strong> (Android) and <strong>ObjectiveC</strong> (iOS), with more upcoming.
+               </p>
+               <p>
+                  Application components run under their native run-time and can be automatically started and monitored by Crossbar.io.
+               </p>
+               <p class="readMore">
+                  <a href="">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Cross-Layer Integration
+               </h2>
+               <p>
+                  Crossbar.io features cross-layer integration: application components can be <strong>flexibly deployed across layers</strong>, and transparently talk to each other no matter in what layer the components reside.
+               </p>
+               <p>
+                  E.g. you can call a remote procedure residing in a backend component from a frontend component running in the browser, but you can also call into code running inside the browser from a backend component!
+               </p>
+               <p class="readMore">
+                  <a href="">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Full-stack Services
+               </h2>
+               <p>
+                  Crossbar.io also includes a whole <strong>set of full-stack services</strong>, such as authentication and authorization, serving static Web files, HTTP long-poll fallback, HTTP push bridge, CGI scripts and hosting WSGI applications.
+               </p>
+               <p>
+                  This will often make Crossbar.io <strong>all the infrastructure you need</strong> besides your database.
+               </p>
+               <p class="readMore">
+                  <a href="">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Scale-up & Scale-out Architecture
+               </h2>
+               <p>
+                  Crossbar.io has a multi-process architecture where a single node controller process spawns and monitors multiple worker processes. Worker process types include router, application component host and arbitrary guest processes.
+               </p>
+               <p>
+                  The multi-process architecture <strong>enables scaling up on multi-core systems</strong> and <strong>supports secure and robust operation</strong>.
+               </p>
+               <p class="readMore">
+                  <a href="">Read more</a>
+               </p>
+            </div>
+
+         </div>
+
 
          <div id="code">
 
-            <a id="show-me-some-code"></a>
-            <center class="projectsHeader">
-               Explore Autobahn/WAMP <strong>code examples</strong>
-            </center>
-            <br>
+            <h2>
+               Here is what code for application components looks like:
+            </h2>
+
 
             <div id="codeBlock">
                <div id="switchBar">
@@ -313,7 +417,11 @@
 
          <div id="demoBox">
 
-            <h2>Try out a demo</h2>
+            <h2>
+               Demo Gallery:
+            </h2>
+
+            <h3>Try out a demo</h2>
 
             <ul class="demos_list">
 
@@ -419,7 +527,7 @@
    <!-- <script src="{{ url_for('static', filename='deps/autobahn.min.js') }}"></script> -->
     <script src="{{ url_for('static', filename='deps/autobahn/autobahn.js') }}"></script>
 
-   <script src="{{ url_for('static', filename='js/codebox.js') }}"></script>
+   <!-- // <script src="{{ url_for('static', filename='js/codebox.js') }}"></script> -->
 
 {% endblock %}
 
