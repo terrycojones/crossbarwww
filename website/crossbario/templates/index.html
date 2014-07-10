@@ -170,7 +170,7 @@
                   Application components involved are fully decoupled by Crossbar.io which dynamically routes calls and events between them.
                </p>
                <p class="readMore">
-                  <a href="">Read more</a>
+                  <a href="https://github.com/crossbario/crossbar/wiki/Unified-Application-Messaging">Read more</a>
                </p>
 
             </div>
@@ -189,7 +189,7 @@
                   Application components run under their native run-time and can be automatically started and monitored by Crossbar.io.
                </p>
                <p class="readMore">
-                  <a href="">Read more</a>
+                  <a href="https://github.com/crossbario/crossbar/wiki/Cross-Language-Integration">Read more</a>
                </p>
             </div>
 
@@ -204,7 +204,7 @@
                   E.g. you can call a remote procedure residing in a backend component from a frontend component running in the browser, but you can also call into code running inside the browser from a backend component!
                </p>
                <p class="readMore">
-                  <a href="">Read more</a>
+                  <a href="https://github.com/crossbario/crossbar/wiki/Cross-Layer-Integration">Read more</a>
                </p>
             </div>
 
@@ -219,7 +219,7 @@
                   This will often make Crossbar.io <strong>all the infrastructure you need</strong> besides your database.
                </p>
                <p class="readMore">
-                  <a href="">Read more</a>
+                  <a href="https://github.com/crossbario/crossbar/wiki/Full-stack-Services">Read more</a>
                </p>
             </div>
 
@@ -234,7 +234,7 @@
                   The multi-process architecture <strong>enables scaling up on multi-core systems</strong> and <strong>supports secure and robust operation</strong>.
                </p>
                <p class="readMore">
-                  <a href="">Read more</a>
+                  <a href="https://github.com/crossbario/crossbar/wiki/Scale-up-%26-Scale-out-Architecture">Read more</a>
                </p>
             </div>
 
@@ -257,10 +257,13 @@
 
                      <div class="switchBarButtons">
                         <!-- ko foreach: examples -->
-                        <button data-bind="text: title, attr: { id: $parent.category + '_' + example }, click: function() {
-                           vm.currentExample.category($parent.category);
-                           vm.currentExample.example(example);
-                        }, css: { isSelected: $root.currentExample.category() === $parent.category  && $root.currentExample.example() === example}"></button>
+                        <button data-bind="
+                           text: title, attr: { id: $parent.category + '_' + example },
+                           click: function() {
+                              vm.currentExample.category($parent.category);
+                              vm.currentExample.example(example);
+                           },
+                           css: { isSelected: $root.currentExample.category() === $parent.category  && $root.currentExample.example() === example}"></button>
                         <!-- /ko -->
                      </div>
 
@@ -404,7 +407,6 @@
 
                </div>
 
-               <a data-bind="attr: { href: currentExample.link() }">Code for this example on GitHub</a>
             </div>
 
 
@@ -525,8 +527,8 @@
    <script>
       AUTOBAHN_DEBUG = true;
    </script>
-   <!-- <script src="{{ url_for('static', filename='deps/autobahn.min.js') }}"></script> -->
-    <script src="{{ url_for('static', filename='deps/autobahn/autobahn.js') }}"></script>
+   <script src="{{ url_for('static', filename='deps/autobahn/autobahn.min.js') }}"></script>
+
 
    <script src="{{ url_for('static', filename='js/codebox.js') }}"></script>
 
