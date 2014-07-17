@@ -17,6 +17,7 @@
 ###############################################################################
 
 import uuid
+import os
 
 import mimetypes
 
@@ -29,9 +30,61 @@ from optparse import OptionParser
 from flask import Flask, Request, request, session, g, url_for, \
      abort, render_template, flash
 
+from flask_flatpages import FlatPages
+
 
 app = Flask(__name__)
 app.secret_key = str(uuid.uuid4())
+
+app.config['FLATPAGES_AUTO_RELOAD'] = True
+app.config['FLATPAGES_EXTENSION'] = '.md'
+app.config['FLATPAGES_ROOT'] = '../wiki'
+
+pages = FlatPages(app)
+
+
+## generate Pygments CSS file for style:
+## pygmentize -S default -f html > pygments.css
+##
+
+import mistune
+from pygments import highlight
+from pygments.lexers import get_lexer_by_name
+from pygments.formatters import HtmlFormatter
+import json
+
+class DocPageRenderer(mistune.Renderer):
+
+   def block_code(self, code, lang):
+      print "CODE", lang, len(code)
+
+      lexer = None
+      if lang:
+         try:
+            lexer = get_lexer_by_name(lang, stripall = True)
+         except:
+            print("failed to load lexer for language '{}'".format(lang))
+
+      if not lexer:
+         return "\n<pre><code>{}</code></pre>\n".format(mistune.escape(code))
+
+      formatter = HtmlFormatter()
+      return highlight(code, lexer, formatter)
+
+
+renderer = DocPageRenderer()
+app_md = mistune.Markdown(renderer = renderer)
+
+
+## load Sphinx documentation inventory
+##
+# from sphinx.ext.intersphinx import read_inventory_v2
+# from posixpath import join
+
+# f = open("./_build/html/objects.inv", "rb")
+# f.readline()
+# res = read_inventory_v2(f, "http://example.com", join)
+
 
 @app.before_request
 def before_request():
@@ -41,6 +94,23 @@ def before_request():
 def page_home():
    session['tab_selected'] = 'page_home'
    return render_template('index.html')
+
+## generic template for all doc pages
+##
+@app.route('/doc/<path:path>/')
+def page_doc(path):
+   page = pages.get_or_404(path)
+   return render_template('page_t_doc_page.html', page = page)
+
+@app.route('/doc2/<path:path>/')
+def page_doc2(path):
+   fn = os.path.abspath(os.path.join(app.config['FLATPAGES_ROOT'], "{}.md".format(path)))
+   print fn
+   with open(fn, 'r') as f:
+      source = f.read()
+      contents = app_md.render(source)
+      return render_template('page_t_doc_page2.html', contents = contents)
+
 
 @app.route('/howitworks/')
 def page_howitworks():
@@ -171,5 +241,8 @@ if __name__ == "__main__":
          site = Site(resource)
          # FIXME (does not work)
          #site.contentTypes.update(EXTRA_MIME_TYPES)
+         site.noisy = False
+         site.log = lambda _: None
+
          reactor.listenTCP(int(options.port), site)
          reactor.run()
