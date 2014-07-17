@@ -30,17 +30,9 @@ from optparse import OptionParser
 from flask import Flask, Request, request, session, g, url_for, \
      abort, render_template, flash
 
-from flask_flatpages import FlatPages
-
 
 app = Flask(__name__)
 app.secret_key = str(uuid.uuid4())
-
-app.config['FLATPAGES_AUTO_RELOAD'] = True
-app.config['FLATPAGES_EXTENSION'] = '.md'
-app.config['FLATPAGES_ROOT'] = '../wiki'
-
-pages = FlatPages(app)
 
 
 ## generate Pygments CSS file for style:
@@ -55,8 +47,14 @@ import json
 
 class DocPageRenderer(mistune.Renderer):
 
+   def __init__(self, pages, debug = False):
+      mistune.Renderer.__init__(self)
+      self.debug = debug
+      self._pages = pages
+
    def block_code(self, code, lang):
-      print "CODE", lang, len(code)
+      if self.debug:
+         print "CODE", lang, len(code)
 
       lexer = None
       if lang:
@@ -71,9 +69,65 @@ class DocPageRenderer(mistune.Renderer):
       formatter = HtmlFormatter()
       return highlight(code, lexer, formatter)
 
+   def autolink(self, link, is_email = False):
+      if self.debug:
+         print "autolink", link
+      return mistune.Renderer.autolink(self, link, is_email)
 
-renderer = DocPageRenderer()
-app_md = mistune.Markdown(renderer = renderer)
+   def codespan(self, text):
+      if self.debug:
+         print "codespan", text
+      return mistune.Renderer.codespan(self, text)
+
+   def link(self, link, title, content):
+      if link.strip() == "":
+         link = "../{}".format(content.replace(' ', '-'))
+
+      if not (link.startswith('http') or link.startswith('/')):
+         link = "../{}".format(link.replace(' ', '-'))
+
+      if self.debug:
+         print "link", link, title, content
+      return mistune.Renderer.link(self, link, title, content)
+
+
+
+
+class DocPages:
+   def __init__(self, docroot, extensions = ['.md'], debug = False):
+      self._renderer = mistune.Markdown(renderer = DocPageRenderer(self, debug))
+      self._pages = {}
+      self.debug = debug
+
+      total = 0
+      errors = 0
+
+      for dirpath, dirnames, filenames in os.walk(docroot):
+         for f in filenames:
+            base, ext = os.path.splitext(f)
+            if ext in extensions:
+               total += 1
+               fp = os.path.join(dirpath, f)
+               with open(fp, 'r') as fd:
+                  source = fd.read()
+                  try:
+                     if self.debug:
+                        print "\nprocessing {}".format(fp)
+                     contents = self._renderer(source)
+                  except Exception as e:
+                     print "warning: failed to process {}: {}".format(fp, e)
+                     errors += 1
+                  else:
+                     path = base
+                     self._pages[base] = contents
+      print("processed {} files: {} ok, {} error".format(total, len(self._pages), errors))
+
+   def render(self, path):
+      return self._pages.get(path, None)
+
+
+pages = DocPages('../wiki')
+
 
 
 ## load Sphinx documentation inventory
@@ -97,20 +151,14 @@ def page_home():
 
 ## generic template for all doc pages
 ##
-@app.route('/doc/<path:path>/')
-def page_doc(path):
-   page = pages.get_or_404(path)
-   return render_template('page_t_doc_page.html', page = page)
-
-@app.route('/doc2/<path:path>/')
-def page_doc2(path):
-   fn = os.path.abspath(os.path.join(app.config['FLATPAGES_ROOT'], "{}.md".format(path)))
-   title = path.replace('-', ' ')
-   print fn, title
-   with open(fn, 'r') as f:
-      source = f.read()
-      contents = app_md.render(source)
-      return render_template('page_t_doc_page2.html', contents = contents, title = title)
+@app.route('/docs/<path:path>/')
+def page_docs(path):
+   contents = pages.render(path)
+   if contents:
+      title = path.replace('-', ' ')
+      return render_template('page_t_doc_page.html', contents = contents, title = title)
+   else:
+      return "no such page"
 
 
 @app.route('/howitworks/')
