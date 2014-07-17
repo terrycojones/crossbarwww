@@ -83,9 +83,9 @@ class DocPageRenderer(mistune.Renderer):
    def link(self, link, title, content):
       if not (link.startswith('http') or link.startswith('/')):
          if self._prefix:
-            link = "{}/{}".format(self._prefix, link.replace(' ', '-'))
+            link = "{}/{}/".format(self._prefix, link.replace(' ', '-'))
          else:
-            link = link.replace(' ', '-')
+            link = "{}/".format(link.replace(' ', '-'))
 
       if self.debug:
          print "link", link, title, content
@@ -134,6 +134,7 @@ class DocPages:
       return self._pages.get(path, None)
 
 
+
 pages = DocPages('../wiki')
 
 
@@ -176,46 +177,48 @@ def page_docs(path = None):
    else:
       return "no such page"
 
-
-@app.route('/howitworks/')
-def page_howitworks():
-   session['tab_selected'] = 'page_howitworks'
-   return render_template('page_t_howitworks.html')
-
-@app.route('/gettingstarted/')
-def page_gettingstarted():
-   session['tab_selected'] = 'page_gettingstarted'
-   return render_template('page_t_gettingstarted.html')
-
-@app.route('/features/')
-def page_features():
-   session['tab_selected'] = 'page_features'
-   return render_template('page_t_features.html')
-
-@app.route('/roadmap/')
-def page_roadmap():
-   session['tab_selected'] = 'page_roadmap'
-   return render_template('page_t_roadmap.html')
-
-@app.route('/faq/')
-def page_faq():
-   session['tab_selected'] = 'page_faq'
-   return render_template('page_t_faq.html')
-
-@app.route('/reference/')
-def page_reference():
-   session['tab_selected'] = 'page_reference'
-   return render_template('page_t_reference.html')
-
 @app.route('/impressum/')
 def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
-@app.route('/contribute/')
-def page_contribute():
-   session['tab_selected'] = 'page_faq'
-   return render_template('page_t_contribute.html')
+
+
+if False:
+   @app.route('/howitworks/')
+   def page_howitworks():
+      session['tab_selected'] = 'page_howitworks'
+      return render_template('page_t_howitworks.html')
+
+   @app.route('/gettingstarted/')
+   def page_gettingstarted():
+      session['tab_selected'] = 'page_gettingstarted'
+      return render_template('page_t_gettingstarted.html')
+
+   @app.route('/features/')
+   def page_features():
+      session['tab_selected'] = 'page_features'
+      return render_template('page_t_features.html')
+
+   @app.route('/roadmap/')
+   def page_roadmap():
+      session['tab_selected'] = 'page_roadmap'
+      return render_template('page_t_roadmap.html')
+
+   @app.route('/faq/')
+   def page_faq():
+      session['tab_selected'] = 'page_faq'
+      return render_template('page_t_faq.html')
+
+   @app.route('/reference/')
+   def page_reference():
+      session['tab_selected'] = 'page_reference'
+      return render_template('page_t_reference.html')
+
+   @app.route('/contribute/')
+   def page_contribute():
+      session['tab_selected'] = 'page_faq'
+      return render_template('page_t_contribute.html')
 
 
 if __name__ == "__main__":
@@ -270,6 +273,14 @@ if __name__ == "__main__":
 
       from flask_frozen import Freezer
       freezer = Freezer(app)
+
+      @freezer.register_generator
+      def list_doc_pages():
+         for p in pages._pages.keys():
+            if not p.startswith('FAQ'):
+               yield "/docs/{}/".format(p)
+#            yield {'path': p}
+
       freezer.freeze()
 
       if options.debug:
