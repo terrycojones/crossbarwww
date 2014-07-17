@@ -51,6 +51,7 @@ class DocPageRenderer(mistune.Renderer):
       mistune.Renderer.__init__(self)
       self.debug = debug
       self._pages = pages
+      self._prefix = None
 
    def block_code(self, code, lang):
       if self.debug:
@@ -80,11 +81,11 @@ class DocPageRenderer(mistune.Renderer):
       return mistune.Renderer.codespan(self, text)
 
    def link(self, link, title, content):
-      if link.strip() == "":
-         link = "../{}".format(content.replace(' ', '-'))
-
       if not (link.startswith('http') or link.startswith('/')):
-         link = "../{}".format(link.replace(' ', '-'))
+         if self._prefix:
+            link = "{}/{}".format(self._prefix, link.replace(' ', '-'))
+         else:
+            link = link.replace(' ', '-')
 
       if self.debug:
          print "link", link, title, content
@@ -94,8 +95,9 @@ class DocPageRenderer(mistune.Renderer):
 
 
 class DocPages:
-   def __init__(self, docroot, index, extensions = ['.md'], debug = False):
-      self._renderer = mistune.Markdown(renderer = DocPageRenderer(self, debug))
+   def __init__(self, docroot, extensions = ['.md'], debug = False):
+      rend = DocPageRenderer(self, debug)
+      self._renderer = mistune.Markdown(renderer = rend)
       self._pages = {}
       self.debug = debug
 
@@ -113,6 +115,10 @@ class DocPages:
                   try:
                      if self.debug:
                         print "\nprocessing {}".format(fp)
+                     if base == 'Home':
+                        rend._prefix = None
+                     else:
+                        rend._prefix = '..'
                      contents = self._renderer(source)
                   except Exception as e:
                      print "warning: failed to process {}: {}".format(fp, e)
@@ -122,13 +128,13 @@ class DocPages:
                      self._pages[base] = contents
       print("processed {} files: {} ok, {} error".format(total, len(self._pages), errors))
 
-      self._pages[None] = self._pages[index]
+      #self._pages[None] = self._pages[index]
 
    def render(self, path):
       return self._pages.get(path, None)
 
 
-pages = DocPages('../wiki', 'Home')
+pages = DocPages('../wiki')
 
 
 
@@ -156,12 +162,16 @@ def page_home():
 @app.route('/docs/<path:path>/')
 @app.route('/docs/')
 def page_docs(path = None):
+   session['tab_selected'] = 'page_docs'
+
+   if path is None or path.strip() == "":
+      title = 'Contents'
+      path = 'Home'
+   else:
+      title = path.replace('-', ' ')
+
    contents = pages.render(path)
    if contents:
-      if path:
-         title = path.replace('-', ' ')
-      else:
-         title = 'Contents'
       return render_template('page_t_doc_page.html', contents = contents, title = title)
    else:
       return "no such page"

@@ -116,23 +116,22 @@
                  <!--  <li {% if session['tab_selected'] == 'page_contribute' %} class="active" {% else %} class="" {% endif %}>
                      <a href="{{ url_for('page_contribute') }}">Contribute</a>
                   </li> -->
+                  <li {% if session['tab_selected'] == 'page_docs' %} class="active" {% else %} class="" {% endif %}>
+                     <a href="{{ url_for('page_docs') }}">
+                        Documentation
+                     </a>
+                  </li>
 
                   <!-- external links -->
                   <li class="external first">
-                     <a href="https://demo.crossbar.io/">
-                        Demos
-                        <img src="{{ url_for('static', filename = 'img/gen/link_external.png') }}">
-                     </a>
-                  </li>
-                  <li class="external">
-                     <a href="https://github.com/crossbario/crossbar/wiki">
-                        Documentation
-                        <img src="{{ url_for('static', filename = 'img/gen/link_external.png') }}">
-                     </a>
-                  </li>
-                  <li class="external">
                      <a href="https://github.com/crossbario/crossbar/">
                         Source Code
+                        <img src="{{ url_for('static', filename = 'img/gen/link_external.png') }}">
+                     </a>
+                  </li>
+                  <li class="external">
+                     <a href="https://demo.crossbar.io/">
+                        Demos
                         <img src="{{ url_for('static', filename = 'img/gen/link_external.png') }}">
                      </a>
                   </li>
