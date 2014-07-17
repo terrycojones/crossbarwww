@@ -94,7 +94,7 @@ class DocPageRenderer(mistune.Renderer):
 
 
 class DocPages:
-   def __init__(self, docroot, extensions = ['.md'], debug = False):
+   def __init__(self, docroot, index, extensions = ['.md'], debug = False):
       self._renderer = mistune.Markdown(renderer = DocPageRenderer(self, debug))
       self._pages = {}
       self.debug = debug
@@ -122,11 +122,13 @@ class DocPages:
                      self._pages[base] = contents
       print("processed {} files: {} ok, {} error".format(total, len(self._pages), errors))
 
+      self._pages[None] = self._pages[index]
+
    def render(self, path):
       return self._pages.get(path, None)
 
 
-pages = DocPages('../wiki')
+pages = DocPages('../wiki', 'Home')
 
 
 
@@ -152,10 +154,14 @@ def page_home():
 ## generic template for all doc pages
 ##
 @app.route('/docs/<path:path>/')
-def page_docs(path):
+@app.route('/docs/')
+def page_docs(path = None):
    contents = pages.render(path)
    if contents:
-      title = path.replace('-', ' ')
+      if path:
+         title = path.replace('-', ' ')
+      else:
+         title = 'Contents'
       return render_template('page_t_doc_page.html', contents = contents, title = title)
    else:
       return "no such page"
