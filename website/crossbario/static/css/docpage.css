@@ -1,0 +1,31 @@
+#contents {
+   width: 95%;
+   max-width: 800px;
+   margin: 40px auto 0 auto;
+}
+
+.highlight {
+   width: 90%;
+   margin: 1.5em auto 1.5em 1em;
+}
+
+#contents img {
+   margin: 24px auto 24px 2em;
+   box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3);
+}
+
+#contents table {
+   margin: 40px auto 40px 2em;
+   border-top: 1px solid #7c6a00;
+   border-bottom: 1px solid #7c6a00;
+}
+
+#contents table {
+}
+
+#contents tbody {
+}
+
+#contents td, th {
+   padding: 3px;
+}

@@ -105,11 +105,12 @@ def page_doc(path):
 @app.route('/doc2/<path:path>/')
 def page_doc2(path):
    fn = os.path.abspath(os.path.join(app.config['FLATPAGES_ROOT'], "{}.md".format(path)))
-   print fn
+   title = path.replace('-', ' ')
+   print fn, title
    with open(fn, 'r') as f:
       source = f.read()
       contents = app_md.render(source)
-      return render_template('page_t_doc_page2.html', contents = contents)
+      return render_template('page_t_doc_page2.html', contents = contents, title = title)
 
 
 @app.route('/howitworks/')
