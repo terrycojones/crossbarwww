@@ -1,0 +1,43 @@
+#contents {
+   width: 95%;
+   max-width: 820px;
+   margin: 40px auto 0 auto;
+}
+
+.highlight {
+   width: 98%;
+   margin: 1.5em auto 1.5em 1em;
+}
+
+#contents img {
+   width: 100%;
+   max-width: 740px;
+   margin: 24px auto 24px auto;
+   padding: 16px;
+   box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3);
+}
+
+#contents table {
+   margin: 40px auto 40px 2em;
+   border-top: 1px solid #7c6a00;
+   border-bottom: 1px solid #7c6a00;
+}
+
+#contents table {
+}
+
+#contents tbody {
+}
+
+#contents td, th {
+   padding: 3px;
+}
+
+#contents h2 {
+   margin-top: 48px;
+}
+
+#contents pre {
+   font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+   font-size: 16px;
+}

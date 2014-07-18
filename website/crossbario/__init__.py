@@ -17,6 +17,7 @@
 ###############################################################################
 
 import uuid
+import os
 
 import mimetypes
 
@@ -33,6 +34,121 @@ from flask import Flask, Request, request, session, g, url_for, \
 app = Flask(__name__)
 app.secret_key = str(uuid.uuid4())
 
+
+## generate Pygments CSS file for style:
+## pygmentize -S default -f html > pygments.css
+##
+
+import mistune
+from pygments import highlight
+from pygments.lexers import get_lexer_by_name
+from pygments.formatters import HtmlFormatter
+import json
+
+class DocPageRenderer(mistune.Renderer):
+
+   def __init__(self, pages, debug = False):
+      mistune.Renderer.__init__(self)
+      self.debug = debug
+      self._pages = pages
+      self._prefix = None
+
+   def block_code(self, code, lang):
+      if self.debug:
+         print "CODE", lang, len(code)
+
+      lexer = None
+      if lang:
+         try:
+            lexer = get_lexer_by_name(lang, stripall = True)
+         except:
+            print("failed to load lexer for language '{}'".format(lang))
+
+      if not lexer:
+         return "\n<pre><code>{}</code></pre>\n".format(mistune.escape(code))
+
+      formatter = HtmlFormatter()
+      return highlight(code, lexer, formatter)
+
+   def autolink(self, link, is_email = False):
+      if self.debug:
+         print "autolink", link
+      return mistune.Renderer.autolink(self, link, is_email)
+
+   def codespan(self, text):
+      if self.debug:
+         print "codespan", text
+      return mistune.Renderer.codespan(self, text)
+
+   def link(self, link, title, content):
+      if not (link.startswith('http') or link.startswith('/') or link.startswith('#')):
+         if self._prefix:
+            link = "{}/{}/".format(self._prefix, link.replace(' ', '-'))
+         else:
+            link = "{}/".format(link.replace(' ', '-'))
+
+      if self.debug:
+         print "link", link, title, content
+      return mistune.Renderer.link(self, link, title, content)
+
+
+
+
+class DocPages:
+   def __init__(self, docroot, extensions = ['.md'], debug = False):
+      rend = DocPageRenderer(self, debug)
+      self._renderer = mistune.Markdown(renderer = rend)
+      self._pages = {}
+      self.debug = debug
+
+      total = 0
+      errors = 0
+
+      for dirpath, dirnames, filenames in os.walk(docroot):
+         for f in filenames:
+            base, ext = os.path.splitext(f)
+            if ext in extensions:
+               total += 1
+               fp = os.path.join(dirpath, f)
+               with open(fp, 'r') as fd:
+                  source = fd.read()
+                  try:
+                     if self.debug:
+                        print "\nprocessing {}".format(fp)
+                     if base == 'Home':
+                        rend._prefix = None
+                     else:
+                        rend._prefix = '..'
+                     contents = self._renderer(source)
+                  except Exception as e:
+                     print "warning: failed to process {}: {}".format(fp, e)
+                     errors += 1
+                  else:
+                     path = base
+                     self._pages[base] = contents
+      print("processed {} files: {} ok, {} error".format(total, len(self._pages), errors))
+
+      #self._pages[None] = self._pages[index]
+
+   def render(self, path):
+      return self._pages.get(path, None)
+
+
+
+pages = DocPages('../wiki')
+
+
+
+## load Sphinx documentation inventory
+##
+# from sphinx.ext.intersphinx import read_inventory_v2
+# from posixpath import join
+
+# f = open("./_build/html/objects.inv", "rb")
+# f.readline()
+# res = read_inventory_v2(f, "http://example.com", join)
+
+
 @app.before_request
 def before_request():
    session["widgeturl"] = app.widgeturl
@@ -42,45 +158,67 @@ def page_home():
    session['tab_selected'] = 'page_home'
    return render_template('index.html')
 
-@app.route('/howitworks/')
-def page_howitworks():
-   session['tab_selected'] = 'page_howitworks'
-   return render_template('page_t_howitworks.html')
+## generic template for all doc pages
+##
+@app.route('/docs/<path:path>/')
+@app.route('/docs/')
+def page_docs(path = None):
+   session['tab_selected'] = 'page_docs'
 
-@app.route('/gettingstarted/')
-def page_gettingstarted():
-   session['tab_selected'] = 'page_gettingstarted'
-   return render_template('page_t_gettingstarted.html')
+   if path is None or path.strip() == "":
+      title = 'Contents'
+      path = 'Home'
+   else:
+      title = path.replace('-', ' ')
 
-@app.route('/features/')
-def page_features():
-   session['tab_selected'] = 'page_features'
-   return render_template('page_t_features.html')
-
-@app.route('/roadmap/')
-def page_roadmap():
-   session['tab_selected'] = 'page_roadmap'
-   return render_template('page_t_roadmap.html')
-
-@app.route('/faq/')
-def page_faq():
-   session['tab_selected'] = 'page_faq'
-   return render_template('page_t_faq.html')
-
-@app.route('/reference/')
-def page_reference():
-   session['tab_selected'] = 'page_reference'
-   return render_template('page_t_reference.html')
+   contents = pages.render(path)
+   if contents:
+      return render_template('page_t_doc_page.html', contents = contents, title = title)
+   else:
+      return "no such page"
 
 @app.route('/impressum/')
 def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
-@app.route('/contribute/')
-def page_contribute():
-   session['tab_selected'] = 'page_faq'
-   return render_template('page_t_contribute.html')
+
+
+if False:
+   @app.route('/howitworks/')
+   def page_howitworks():
+      session['tab_selected'] = 'page_howitworks'
+      return render_template('page_t_howitworks.html')
+
+   @app.route('/gettingstarted/')
+   def page_gettingstarted():
+      session['tab_selected'] = 'page_gettingstarted'
+      return render_template('page_t_gettingstarted.html')
+
+   @app.route('/features/')
+   def page_features():
+      session['tab_selected'] = 'page_features'
+      return render_template('page_t_features.html')
+
+   @app.route('/roadmap/')
+   def page_roadmap():
+      session['tab_selected'] = 'page_roadmap'
+      return render_template('page_t_roadmap.html')
+
+   @app.route('/faq/')
+   def page_faq():
+      session['tab_selected'] = 'page_faq'
+      return render_template('page_t_faq.html')
+
+   @app.route('/reference/')
+   def page_reference():
+      session['tab_selected'] = 'page_reference'
+      return render_template('page_t_reference.html')
+
+   @app.route('/contribute/')
+   def page_contribute():
+      session['tab_selected'] = 'page_faq'
+      return render_template('page_t_contribute.html')
 
 
 if __name__ == "__main__":
@@ -135,6 +273,14 @@ if __name__ == "__main__":
 
       from flask_frozen import Freezer
       freezer = Freezer(app)
+
+      @freezer.register_generator
+      def list_doc_pages():
+         for p in pages._pages.keys():
+            if not p.startswith('FAQ'):
+               yield "/docs/{}/".format(p)
+#            yield {'path': p}
+
       freezer.freeze()
 
       if options.debug:
@@ -171,5 +317,8 @@ if __name__ == "__main__":
          site = Site(resource)
          # FIXME (does not work)
          #site.contentTypes.update(EXTRA_MIME_TYPES)
+         site.noisy = False
+         site.log = lambda _: None
+
          reactor.listenTCP(int(options.port), site)
          reactor.run()

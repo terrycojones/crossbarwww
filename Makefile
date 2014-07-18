@@ -2,15 +2,13 @@ all:
 	@echo "Targets:"
 	@echo ""
 	@echo "  clean"
-	@echo "  deploy"
 	@echo "  img"
 	@echo "  freeze"
+	@echo "  upload"
+	@echo "  publish"
 	@echo "  test"
 	@echo "  test_frozen"
-	@echo "  upload"
 	@echo ""
-
-deploy: clean img freeze upload
 
 clean:
 	rm -rf website/crossbario/build
@@ -24,6 +22,8 @@ freeze:
 
 upload:
 	python website/crossbario/upload.py --bucket "crossbar.io" --directory "build"
+
+publish: img freeze upload
 
 test:
 	# python website/crossbario/__init__.py -d -p 8050

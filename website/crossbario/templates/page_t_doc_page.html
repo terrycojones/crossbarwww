@@ -1,0 +1,15 @@
+{% extends "layout_t.html" %}
+
+{% block subheader %}
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/pygments.css') }}" />
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/docpage.css') }}" />
+{% endblock %}
+
+{% block content %}
+
+<div id="contents">
+   <h1>{{ title }}</h1>
+   {{ contents|safe }}
+</div>
+
+{% endblock %}
