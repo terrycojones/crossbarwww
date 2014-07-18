@@ -135,7 +135,7 @@ class DocPages:
 
 
 
-pages = DocPages('../wiki')
+pages = DocPages('../crossbar.wiki')
 
 
 
