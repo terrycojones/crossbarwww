@@ -81,7 +81,7 @@ class DocPageRenderer(mistune.Renderer):
       return mistune.Renderer.codespan(self, text)
 
    def link(self, link, title, content):
-      if not (link.startswith('http') or link.startswith('/')):
+      if not (link.startswith('http') or link.startswith('/') or link.startswith('#')):
          if self._prefix:
             link = "{}/{}/".format(self._prefix, link.replace(' ', '-'))
          else:

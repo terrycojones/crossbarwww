@@ -10,7 +10,10 @@
 }
 
 #contents img {
-   margin: 24px auto 24px 2em;
+   width: 100%;
+   max-width: 740px;
+   margin: 24px auto 24px auto;
+   padding: 16px;
    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3);
 }
 
