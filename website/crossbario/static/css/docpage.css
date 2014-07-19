@@ -29,8 +29,8 @@ code {
 }
 
 #contents img {
-   width: 100%;
-   max-width: 740px;
+   max-width: 90%;
+   display: block;
    margin: 24px auto 24px auto;
    padding: 16px;
    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3);

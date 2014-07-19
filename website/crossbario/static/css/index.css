@@ -374,3 +374,66 @@ html.no-svg #github:hover {
    vertical-align: middle;
    text-decoration: none;
 }
+
+
+/* CDN CTA */
+
+#cta {
+    background-color: #E5E5E5;
+
+    padding: 1.1em;
+    margin: 1em auto;
+    width: 91%;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.2);
+}
+
+#cta .want,
+#cta .reward {
+    display: block;
+
+}
+
+#cta .want {
+
+}
+
+#cta .reward {
+    font-size: 87%;
+
+}
+
+/*#cta a,*/
+#cta button {
+    background-color: #FFDE00;
+
+    color: #444;
+    padding: 0.2em 1em;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #F2D300;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    margin: 0.9em 0 0.1em;
+    /* display: block; */
+}
+
+#cta button a {
+    color: #7D7D7D;
+
+    /* font-weight: bold; */
+    font-size: 110%;
+}
+
+#cta button a:visited {
+   color: #7d7d7d;
+}
+
+#cta button a:hover {
+   text-decoration: none;
+   color: #999;
+}
+#cta button:hover {
+   background-color: #FFEB61;
+}
