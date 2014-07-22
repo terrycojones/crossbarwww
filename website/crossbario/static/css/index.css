@@ -7,6 +7,7 @@
    margin-top: -6px;
    margin-bottom: 0.8em;
    font-size: 20px;
+   /* font-size: 2vw; */
    font-family: 'Segoe UI', 'Open Sans', sans-serif;
    font-weight: 300;
 }
@@ -27,6 +28,14 @@
    position: relative;
    top: -20px;
    margin-right: 12px;
+}
+
+.cb_icon_and_text {
+    max-width: 683px;
+
+    min-width: 268px;
+    width: 74%;
+    margin: 3em 0 1em;
 }
 
 .cb_prefix,
