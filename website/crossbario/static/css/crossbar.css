@@ -1,57 +1,45 @@
-/*@font-face {
-   font-family: 'Open Sans';
-   font-style: normal;
+@font-face {
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/SourceSansPro-Regular.otf');
    font-weight: normal;
-   src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
-   font-family: 'Open Sans Light';
-   font-style: normal;
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/SourceSansPro-It.otf');
    font-weight: normal;
-   src: url('../fonts/OpenSans-Light.ttf');
-}
-
-@font-face {
-   font-family: 'Play';
-   font-style: normal;
-   font-weight: normal;
-   src: url('../fonts/Play-Regular.ttf');
-}
-
-@font-face {
-   font-family: 'Play Bold';
-   font-style: normal;
-   font-weight: normal;
-   src: url('../fonts/Play-Bold.ttf');
-}*/
-
-/* Open Sans */
-/* not currently used on the Tavendo website, but can be left in
-since the browser only downloads the resources on encountering
-the font in use */
-
-@font-face {
-   font-family: 'Open Sans';
-   src: url('../fonts/OpenSans-Regular_emb.ttf');
-}
-@font-face {
-   font-family: 'Open Sans';
-   src: url('../fonts/OpenSans-Bold.ttf');
-   font-weight: bold;
-}
-@font-face {
-   font-family: 'Open Sans';
-   src: url('../fonts/OpenSans-Italic.ttf');
    font-style: italic;
 }
+
 @font-face {
-   font-family: 'Open Sans';
-   src: url('../fonts/OpenSans-BoldItalic.ttf');
-   font-style: italic;
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/SourceSansPro-Semibold.otf');
    font-weight: bold;
 }
 
+@font-face {
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/SourceSansPro-Light.otf');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'Source Code Pro';
+   src: url('../fonts/SourceCodePro-Regular.otf');
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Source Code Pro';
+   src: url('../fonts/SourceCodePro-Light.otf');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'Source Code Pro';
+   src: url('../fonts/SourceCodePro-Semibold.otf');
+   font-weight: bold;
+}
 
 /* Play */
 @font-face {
@@ -64,117 +52,6 @@ the font in use */
    src: url('../fonts/Play-Bold.ttf');
    font-weight: bold;
 }
-
-
-/* Source Sans Pro */
-
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-Regular.ttf');
-   font-weight: normal;
-}
-
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-Italic.ttf');
-   font-weight: normal;
-   font-style: italic;
-}
-
-
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-Bold.ttf');
-   font-weight: bold;
-}
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-BoldItalic.ttf');
-   font-weight: bold;
-   font-style: italic;
-}
-
-/*
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-Semibold.ttf');
-   font-weight: bold;
-}
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-SemiboldItalic.ttf');
-   font-weight: bold;
-   font-style: italic;
-}
-*/
-
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-Light.ttf');
-   font-weight: 300;
-}
-@font-face {
-   font-family: 'Source Sans Pro';
-   src: url('../fonts/SourceSansPro-LightItalic.ttf');
-   font-weight: 300;
-   font-style: italic;
-}
-
-
-/* Montserrat */
-
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-Regular.ttf');
-   font-weight: normal;
-}
-
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-Bold.ttf');
-   font-weight: bold;
-}
-
-
-
-
-/* Segoe UI */
-/* define here for used weights & styles so that
-font-weight & style declarations work for this + the fallback
-web font */
-
-@font-face {
-   font-family: 'Segoe UI';
-   src: local('Segoe UI');
-   font-weight: normal;
-}
-
-@font-face {
-   font-family: 'Segoe UI';
-   src: local('Segoe UI Italic');
-   font-weight: normal;
-   font-style: italic;
-}
-
-@font-face {
-   font-family: 'Segoe UI';
-   src: local('Segoe UI Bold');
-   font-weight: bold;
-}
-@font-face {
-   font-family: 'Segoe UI';
-   src: local('Segoe UI Bold Italic');
-   font-weight: bold;
-   font-style: italic;
-}
-
-@font-face {
-   font-family: 'Segoe UI';
-   src: local('Segoe UI Light');
-   font-weight: 300;
-}
-
-
 
 
 /* CSS part of fix for IE10/WP8 viewport width reporting problem */
@@ -200,29 +77,25 @@ body {
    padding: 0;
    width: 100%;
    height: 100%;
-   /* color: #666; */
-   background-color: #ececec;
+   background-color: #FCFCFC;
+   color: #333;
 
-            background-color: #FCFCFC;
-            color: #333;
-
-   /*font-family: 'Open Sans', sans-serif;*/
-   /*font-family: 'Segoe UI','Open Sans',sans-serif;*/
-   font-family: 'Source Sans Pro', 'sans-serif';
+   font-family: 'Source Sans Pro', sans-serif;
    font-size: 16px;
+   line-height: 1.428571429;
 }
 
-/*
-:hover {
-color: #E4C904;
+code, kbd, pre, samp, span.pre {
+   font-family: 'Source Code Pro', monospace;
+   font-size: 13px;
 }
-a:visited {
-color: #b59f00;
-*/
 
+ul, ol {
+   line-height: 1.6em;
+}
 
-p, ul, ol {
-   line-height: 1.5;
+p {
+   line-height: 1.5em;
 }
 
 b, strong {
@@ -243,26 +116,6 @@ a:hover {
 
 
 
-/*
-  Vertical centering .. again;)
-  http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
- */
-
-/*#viewport {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-}
-
-#main {
-  width: 940px;
-  height: 800px;
-  overflow: auto;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
 
 */
 #footer {
@@ -547,43 +400,49 @@ h3 {
 }
 */
 
-h1 { font-size: 2em; margin: .67em 0 }
-h2 { font-size: 1.5em; margin: .75em 0 }
-h3 { font-size: 1.17em; margin: .83em 0 }
-h4 { font-size: 1em; margin: 1.12em 0 }
-h5 { font-size: .83em; margin: 1.5em 0 }
-h6 { font-size: .75em; margin: 1.67em 0 }
-
-
-h1 {
-   font-size: 2em;
-   font-family: 'Source Sans Pro', 'sans-serif';
-   font-weight: 300;
-   color: #7c6a00;
-}
-
-h2 {
-   font-size: 1.5em;
-   font-family: 'Source Sans Pro', 'sans-serif';
+h1, h2, h3 {
    font-weight: 300;
    color: #7c6a00;
 }
 
 h3 {
-   font-size: 1.17em;
-   font-family: 'Source Sans Pro', 'sans-serif';
-   font-weight: 300;
    color: #574b00;
    border-bottom: solid 1px rgba(124,106,0,0.3);
 }
 
-h4 {
-   font-size: 1em;
-   font-family: 'Source Sans Pro', 'sans-serif';
-   font-weight: 600;
-   color: #666;
+h4, h5, h6 {
+   color: #574b00;
 }
 
+h1 {
+   font-size: 2em;
+   margin: .67em 0;
+}
+
+h2 {
+   font-size: 1.5em;
+   margin: .75em 0;
+}
+
+h3 {
+   font-size: 1.17em;
+   margin: .83em 0;
+}
+
+h4 {
+   font-size: 1em;
+   margin: 1.12em 0;
+}
+
+h5 {
+   font-size: .83em;
+   margin: 1.5em 0;
+}
+
+h6 {
+   font-size: .75em;
+   margin: 1.67em 0;
+}
 
 
 .maincontent {
