@@ -45,7 +45,9 @@ SVG_FILES = [
    'hiw_sa_sensor.svg',
 
    'link_external.svg',
-   'homepage_cross_diagram.svg'
+   'homepage_cross_diagram.svg',
+
+   'blacktocat.svg'
 
 ]
 

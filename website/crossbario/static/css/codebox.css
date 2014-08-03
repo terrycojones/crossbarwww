@@ -132,7 +132,7 @@
 
 #code .languageBar > a,
 #code .languageBar > a:visited {
-   background: url("/static/img/blacktocat-32.png");
+   background: url("/static/img/gen/blacktocat.svg");
    width: 32px;
    height: 32px;
    display: inline-block;

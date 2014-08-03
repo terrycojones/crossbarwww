@@ -67,12 +67,8 @@
 
                <a class="navbar-brand" href="/">
                   <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_inverted.svg') }}" alt="crossbar graphic logo inverted" width="30" height="30">
-                  <!-- <span class="fontFace">
-                     <span>Crossbar</span><span>.io</span>
-                  </span> -->
-                  <img src="{{ url_for('static', filename = 'img/gen/crossbar_name_lighter.svg') }}" alt="crossbar text logo" width="128" height="20">
 
-                  <img class="nonDisplay noFontFace" id="crossbarNameHeader" src="{{ url_for('static', filename = 'img/gen/crossbar_name_lighter.png') }}" alt="">
+                  <img src="{{ url_for('static', filename = 'img/gen/crossbar_name_lighter.svg') }}" alt="crossbar text logo" width="128" height="20">
 
                </a>
 
@@ -97,13 +93,13 @@
                   <li class="external first">
                      <a href="https://github.com/crossbario/crossbar/">
                         Source Code
-                        <img src="{{ url_for('static', filename = 'img/gen/link_external.png') }}">
+                        <img src="{{ url_for('static', filename = 'img/gen/link_external.svg') }}">
                      </a>
                   </li>
                   <li class="external">
                      <a href="https://demo.crossbar.io/">
                         Demos
-                        <img src="{{ url_for('static', filename = 'img/gen/link_external.png') }}">
+                        <img src="{{ url_for('static', filename = 'img/gen/link_external.svg') }}">
                      </a>
                   </li>
                </ul>
@@ -242,16 +238,16 @@
 
          // fontface support detection and switching
 
-         if(!Modernizr.fontface || document.getElementById("ltIE9")) {
-            // switch out any elements which absolutely require a web font
-            // for display (e.g. logos)
-            // with a PNG counterpart
-            // IE8 is included here since it supports Web fonts, but only
-            // in EOT format, which we don't have (and don't want to produce)
-            // for our used fonts
-            $(".fontFace").addClass("nonDisplay");
-            $(".noFontFace").removeClass("nonDisplay");
-         }
+         // if(!Modernizr.fontface || document.getElementById("ltIE9")) {
+         //    // switch out any elements which absolutely require a web font
+         //    // for display (e.g. logos)
+         //    // with a PNG counterpart
+         //    // IE8 is included here since it supports Web fonts, but only
+         //    // in EOT format, which we don't have (and don't want to produce)
+         //    // for our used fonts
+         //    $(".fontFace").addClass("nonDisplay");
+         //    $(".noFontFace").removeClass("nonDisplay");
+         // }
 
 
 

@@ -10,8 +10,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   width="12.451555"
-   height="12.451555"
+   width="12"
+   height="12"
    sodipodi:docname="link_external.svg">
   <metadata
      id="metadata10">
@@ -45,13 +45,13 @@
      fit-margin-bottom="0"
      inkscape:zoom="2.5371828"
      inkscape:cx="99.820127"
-     inkscape:cy="-22.365996"
-     inkscape:window-x="1442"
-     inkscape:window-y="286"
+     inkscape:cy="-6.6004787"
+     inkscape:window-x="63"
+     inkscape:window-y="188"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <path
-     d="M 10.376295,10.376295 H 2.0752591 V 2.106161 L 4.1505179,2.0752591 V 0 H 0 V 12.451555 H 12.451555 V 7.2634068 h -2.07526 V 10.376295 z M 6.2257772,0 8.3010366,2.0752591 5.1881479,5.1881479 7.2634068,7.2634068 10.376295,4.1505179 12.451555,6.2257772 V 0 H 6.2257772 z"
+     d="M 9.9999992,9.999999 H 1.9999999 V 2.0297812 L 3.9999996,1.9999999 V 0 H 0 V 12 H 12 V 6.9999997 H 9.9999992 V 9.999999 z M 5.9999997,0 7.9999999,1.9999999 5,5 6.9999997,6.9999997 9.9999992,3.9999996 12,5.9999997 V 0 H 5.9999997 z"
      id="path4"
      inkscape:connector-curvature="0"
      style="fill:#b3b3b3" />

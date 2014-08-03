@@ -236,14 +236,6 @@ body {
    margin-left: 0em;
 }
 
-/*.nav .external a:after {
-   display: block;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: transparent url('../img/gen/link_external.png') no-repeat;
-}*/
-
 #wrap .nav .external > a,
 #wrap .nav .external > a:visited {
    color: #EBEBEB;
@@ -516,4 +508,22 @@ span.underDevelopment {
 
 span.partiallyImplemented {
 
+}
+
+
+#footer {
+   width: 95%;
+   max-width: 780px;
+   margin: 40px auto 1em auto;
+   padding: 0.8em 1em 0 1em;
+   border-top: 1px solid #ccc;
+   font-size: 13px;
+   color: #999;
+}
+
+
+.nav li.external a img {
+   width: 12px;
+   height: 12px;
+   padding: 0;
 }
