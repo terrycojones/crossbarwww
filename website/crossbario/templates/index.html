@@ -1,7 +1,6 @@
 {% extends "layout_t.html" %}
 
 {% block additionalload %}
-
    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
    <link rel="stylesheet" href="{{ url_for('static', filename='css/codebox.css') }}">
 
@@ -12,15 +11,13 @@
    <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushJScript.js') }}" type="text/javascript"></script>
    <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPython.js') }}" type="text/javascript"></script>
    <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPlain.js') }}" type="text/javascript"></script>
-
-
 {% endblock %}
+
 
 {% block githubbanner %}
-
-<a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
-
+   <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
 {% endblock %}
+
 
 {% block content %}
 
@@ -29,7 +26,6 @@
       <div id="main">
 
          <div id="header">
-
             <center id="logo">
                <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_and_text_vectorized.svg') }}" class="cb_icon_and_text">
             </center>
@@ -39,10 +35,7 @@
                <span id="followus">
                <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
             </center>
-
          </div>
-
-         <!-- code box -->
 
          <div id="initialExplanation">
             <div class="text">
@@ -62,10 +55,15 @@
             <div>
                <img src="{{ url_for('static', filename = 'img/gen/homepage_cross_diagram.svg') }}" alt="diagram of crossbar.io router connecting frontend and backend application components in a variety of languages">
             </div>
+         </div>
+
+         <div>
 
          </div>
 
 
+         <a id="features"></a> 
+         <h1>Features</h1>
          <div id="detailExplanations">
 
             <div class="detailsItem">
@@ -81,7 +79,6 @@
                <p class="readMore">
                   <a href="https://github.com/crossbario/crossbar/wiki/Unified-Application-Messaging">Read more</a>
                </p>
-
             </div>
 
             <div class="detailsItem">
@@ -134,7 +131,7 @@
 
             <div class="detailsItem">
                <h2>
-                  Scale-up & Scale-out Architecture
+                  Scale-up &amp; Scale-out Architecture
                </h2>
                <p>
                   Crossbar.io has a multi-process architecture where a single node controller process spawns and monitors multiple worker processes. Worker process types include router, application component host and arbitrary guest processes.
@@ -162,188 +159,19 @@
             </button>
          </div>
 
-
-         <div id="code">
-
-            <h2>
-               Here is what code for application components looks like:
-            </h2>
-
-
-            <div id="codeBlock">
-               <div id="switchBar">
-
-                  <!-- ko foreach: switches -->
-                  <div>
-                     <h3 data-bind="text: title"></h3>
-
-                     <div class="switchBarButtons">
-                        <!-- ko foreach: examples -->
-                        <button data-bind="
-                           text: title, attr: { id: $parent.category + '_' + example },
-                           click: function() {
-                              vm.currentExample.category($parent.category);
-                              vm.currentExample.example(example);
-                           },
-                           css: { isSelected: $root.currentExample.category() === $parent.category  && $root.currentExample.example() === example}"></button>
-                        <!-- /ko -->
-                     </div>
-
-                  </div>
-                  <!-- /ko -->
-
-               </div>
-
-               <div id="codeBoxContainer">
-
-                  <div class="demoBox">
-
-                     <div class="dualBox">
-
-                        <div class="frontend codeBox">
-
-                           <div class="selectComponent">
-                              <div>
-                                 Frontend
-                              </div>
-                           </div>
-
-                           <div class="languageBar">
-
-                              <!-- ko foreach:  currentExample.frontendLanguages -->
-                              <button data-bind="text: vm.languageToTitle[$data], click: function() {
-                                 vm.currentExample.frontendLanguage($data);
-                              }, css: { highlighted: vm.currentExample.frontendLanguage() === $data }">Language</button>
-                              <!-- /ko -->
-
-                              <a href="" data-bind="attr: { href: vm.examples[vm.currentExample.category()][vm.currentExample.example()].frontend[vm.currentExample.frontendLanguage()].gitHubUrl }"></a>
-
-                           </div>
-
-                           <div>
-
-                              <div class="syntaxContainer frontendSyntaxContainer">
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                        <div class="backend codeBox  expandToCodeHeight">
-
-                           <div class="selectComponent">Backend</div>
-
-                           <div class="languageBar">
-
-                              <!-- ko foreach:  currentExample.backendLanguages -->
-                              <button data-bind="text: vm.languageToTitle[$data], click: function() {
-                                 vm.currentExample.backendLanguage($data);
-                              }, css: { highlighted: vm.currentExample.backendLanguage() === $data }">Language</button>
-                              <!-- /ko -->
-
-                              <a href="" data-bind="attr: { href: vm.examples[vm.currentExample.category()][vm.currentExample.example()].backend[vm.currentExample.backendLanguage()].gitHubUrl }"></a>
-                           </div>
-
-                           <div>
-
-
-
-                              <div class="syntaxContainer backendSyntaxContainer">
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                     <div class="singleBox">
-
-                        <div class="frontend codeBox"  data-bind="css: { hidden: singleBoxComponent() === 'backend'}">
-
-                           <div class="selectComponent">
-
-                              <button class="highlighted">Frontend</button>
-
-                              <button data-bind="click: function() { vm.singleBoxComponent('backend') }">Backend</button>
-
-                           </div>
-
-                           <div class="languageBar">
-
-                              <!-- ko foreach:  currentExample.frontendLanguages -->
-                              <button data-bind="text: vm.languageToTitle[$data], click: function() {
-                                 vm.currentExample.frontendLanguage($data);
-                              }, css: { highlighted: vm.currentExample.frontendLanguage() === $data }">Language</button>
-                              <!-- /ko -->
-
-                              <a href="" data-bind="attr: { href: vm.examples[vm.currentExample.category()][vm.currentExample.example()].frontend[vm.currentExample.frontendLanguage()].gitHubUrl }"></a>
-
-                           </div>
-
-                           <div>
-
-                              <div class="syntaxContainer frontendSyntaxContainer">
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                        <div class="backend codeBox" data-bind="css: { hidden: singleBoxComponent() === 'frontend'}">
-
-                           <div class="selectComponent">
-
-                              <button data-bind="click: function() { vm.singleBoxComponent('frontend') }">Frontend</button>
-
-                              <button class="highlighted">Backend</button>
-
-                           </div>
-
-                           <div class="languageBar">
-
-                              <!-- ko foreach:  currentExample.backendLanguages -->
-                              <button data-bind="text: vm.languageToTitle[$data], click: function() {
-                                 vm.currentExample.backendLanguage($data);
-                              }, css: { highlighted: vm.currentExample.backendLanguage() === $data }">Language</button>
-                              <!-- /ko -->
-
-                              <a href="" data-bind="attr: { href: vm.examples[vm.currentExample.category()][vm.currentExample.example()].backend[vm.currentExample.backendLanguage()].gitHubUrl }"></a>
-
-                           </div>
-
-
-                           <div>
-
-
-                              <div class="syntaxContainer backendSyntaxContainer">
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                  </div>
-
-               </div>
-
-            </div>
-
-
-
-         </div>
-         <br><br>
-
-         <!-- code box end -->
-
-
+         <a id="use-cases"></a> 
+         <h1>Use Cases</h1>
          <div id="demoBox">
+            <p>
+               Crossbar.io is a good fit for ...
+               WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games). 
 
-            <h2>
-               Demo Gallery:
-            </h2>
+               WebSocket is great for apps like chat, trading, multi-player games or real-time charts. It allows you to actively push information to clients as it happens.
+
+               Further, WebSocket allows you to real-time enable your Web user interfaces: always current information without reloads or polling. UIs no longer need to be a boring, static thing. Looking for the right communication technology for your next-generation Web apps? Enter WebSocket.
+
+               And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
+            </p>
 
             <h3>Try out a demo</h2>
 
@@ -406,8 +234,67 @@
                </li>
 
             </ul>
-
          </div>
+
+
+         <a id="show-me-some-code"></a>
+         <h1>Show me some code!</h1>
+         <div id="">
+            <p>
+               Crossbar.io provides <i>two communication patterns</i> for application components to talk to each other
+            </p>
+            <ul>
+               <li>Remote Procedure Calls</li>
+               <li>Publish &amp; Subscribe</li>
+            </ul>
+            <p>
+               which involve <i>four interactions</i>
+            </p>
+            <ol>
+               <li><b>Registering Procedures</b> for remote calling</li>
+               <li><b>Calling Procedures</b> remotely</li>
+               <li><b>Subscribing to Topics</b> for receiving events</li>
+               <li><b>Publishing Events</b> to topics</li>
+            </ol>
+            <p>
+               Here is how application components look like in different languages supported by Crossbar.io
+            </p>
+            <pre class="brush: python; highlight: [5, 15];">
+class MyComponent(ApplicationSession):
+
+   @inlineCallbacks
+   def onJoin(self, details):
+
+      # 1) subscribe to a topic
+      def onevent(msg):
+         print("Got event: {}".format(msg))
+
+      yield self.subscribe(onevent, 'com.myapp.hello')
+
+      # 2) publish an event
+      self.publish('com.myapp.hello', 'Hello, world!')
+
+      # 3) register a procedure for remoting
+      def add2(x, y):
+         return x + y
+
+      self.register(add2, 'com.myapp.add2');
+
+      # 4) call a remote procedure
+      res = yield self.call('com.myapp.add2', 2, 3)
+      print("Got result: {}".format(res))
+            </pre>
+         </div>
+
+
+         <a id="where-to-start"></a>
+         <h1>Where to start</h1>
+         <div id="">
+            <p>
+               Write me.
+            </p>
+         </div>
+
       </div>
    </div>
 
@@ -438,42 +325,13 @@
       displayRandomDemo();
    </script>
 
+<!--
    <script src="{{ url_for('static', filename='deps/knockout-3.1.0.js') }}"></script>
    <script>
       AUTOBAHN_DEBUG = true;
    </script>
    <script src="{{ url_for('static', filename='deps/autobahn/autobahn.min.js') }}"></script>
-
-
    <script src="{{ url_for('static', filename='js/codebox.js') }}"></script>
+-->
 
 {% endblock %}
-
-
-<!-- <div>
-   <div>
-      <div class="container">
-         <div class="box"></div>
-      </div>
-      <div class="container">
-         <div class="box"></div>
-      </div>
-   </div>
-   <div>
-      <div class="container">
-         <div class="box">
-         </div>
-      </div>
-   </div>
-   <div>
-      <div class="container">
-         <div class="box">
-         </div>
-      </div>
-      <div class="container">
-         <div class="box">
-         </div>
-      </div>
-   </div>
-   <div class="clearBoth"></div>
-</div> -->
