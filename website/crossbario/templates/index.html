@@ -298,7 +298,7 @@
 
                   <div>
                      <div id="switchBarButtons" class="switchBarButtons">
-                        <button data-selectlang="python">
+                        <button data-selectlang="python" class="highlighted">
                            Python
                         </button>
                         <button data-selectlang="js">
@@ -412,19 +412,35 @@ Objective-C code goes here
             // set up the buttons for clicking
             var syntaxContainer = document.getElementById("syntaxContainer");
             var codeBlocks = syntaxContainer.children;
+            var switchBarButtons = document.getElementById("switchBarButtons").children;
+            var currentButton = null;
+            var currentBlock = null;
+
             document.getElementById("switchBarButtons").addEventListener("click", function(evt) {
                console.log(evt);
-               if (evt.target.tagName = "BUTTON") {
+               var target = evt.target;
+               if (target.tagName = "BUTTON") {
 
-                  var selectedLanguage = evt.target.attributes["data-selectlang"].value;
+                  var selectedLanguage = target.attributes["data-selectlang"].value;
                   console.log("select language " + selectedLanguage);
+
+                  // highlight the newly selected button
+                  // and iterate over the switch bar buttons to remove the previous highlighting
+                  target.classList.add("highlighted");
+                  for (var b = 0; b < switchBarButtons.length; b++) {
+                     currentButton = switchBarButtons[b];
+                     if (currentButton.attributes["data-selectlang"].value != selectedLanguage && currentButton.classList.contains("highlighted")) {
+                        currentButton.classList.remove("highlighted");
+                     }
+                  }
 
                   // iterate over the code containers and switch the display state
                   for (var i = 0; i < codeBlocks.length; i++) {
-                     if (codeBlocks[i].id === "code-" + selectedLanguage) {
-                        codeBlocks[i].classList.remove("noShow");
-                     } else {
-                        codeBlocks[i].classList.add("noShow");
+                     currentBlock = codeBlocks[i];
+                     if (currentBlock.id === "code-" + selectedLanguage && currentBlock.classList.contains("noShow")) {
+                        currentBlock.classList.remove("noShow");
+                     } else if (currentBlock.id != "code-" + selectedLanguage && !currentBlock.classList.contains("noShow")) {
+                        currentBlock.classList.add("noShow");
                      }
                   }
                }
@@ -471,14 +487,5 @@ Objective-C code goes here
       displayRandomDemo();
       displayRandomDemo();
    </script>
-
-<!--
-   <script src="{{ url_for('static', filename='deps/knockout-3.1.0.js') }}"></script>
-   <script>
-      AUTOBAHN_DEBUG = true;
-   </script>
-   <script src="{{ url_for('static', filename='deps/autobahn/autobahn.min.js') }}"></script>
-   <script src="{{ url_for('static', filename='js/codebox.js') }}"></script>
--->
 
 {% endblock %}
