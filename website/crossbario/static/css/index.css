@@ -313,7 +313,7 @@ html.no-svg #github:hover {
 /* demoBox formatting */
 
 #demoBox {
-   text-align: center;
+   /* text-align: center; */
    margin-top: 0.2em;
 }
 
@@ -337,6 +337,7 @@ html.no-svg #github:hover {
    font-weight: 300;
    margin-top: 0.5em;
    border-bottom: none;
+   text-align: center;
 }
 
 .demos_list {
@@ -445,4 +446,17 @@ html.no-svg #github:hover {
 }
 #cta button:hover {
    background-color: #FFEB61;
+}
+
+
+.floatContainer {
+   overflow: hidden;
+}
+
+.floatLeft {
+   float: left;
+}
+
+.interactionsSubList {
+   max-width: 400px;
 }

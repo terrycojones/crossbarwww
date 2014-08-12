@@ -255,7 +255,7 @@ body {
    clear: both;
 }
 .nonDisplay {
-   display: none;
+   /* display: none; */
 }
 
 

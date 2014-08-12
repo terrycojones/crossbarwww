@@ -11,6 +11,16 @@
    <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushJScript.js') }}" type="text/javascript"></script>
    <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPython.js') }}" type="text/javascript"></script>
    <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPlain.js') }}" type="text/javascript"></script>
+
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushCpp.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushErlang.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushObjC.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPhp.js') }}" type="text/javascript"></script>
+
+
+   <script type="text/javascript">
+      SyntaxHighlighter.all()
+   </script>
 {% endblock %}
 
 
@@ -62,7 +72,7 @@
          </div>
 
 
-         <a id="features"></a> 
+         <a id="features"></a>
          <h1>Features</h1>
          <div id="detailExplanations">
 
@@ -146,31 +156,37 @@
 
          </div>
 
-         <div id="cta" style="display: none;">
+         <!-- <div id="cta" style="display: none;">
             <span class="want">
                Want to try out Crossbar.io without installation?
             </span>
             <span class="reward">
                Get free hosted routing - just join the Crossbar.io Developer Network
             </span>
-            <!-- link below needs to be changed once we rebrand clandeck to CDN -->
             <button>
                <a href="https://demo.crossbar.io/clandeck/">Join Now</a>
             </button>
-         </div>
+         </div> -->
 
-         <a id="use-cases"></a> 
-         <h1>Use Cases</h1>
+         <a id="use-cases"></a>
+         <h1>Demos</h1>
          <div id="demoBox">
-            <p>
+            <!-- <p>
                Crossbar.io is a good fit for ...
-               WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games). 
+               WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games).
 
                WebSocket is great for apps like chat, trading, multi-player games or real-time charts. It allows you to actively push information to clients as it happens.
 
                Further, WebSocket allows you to real-time enable your Web user interfaces: always current information without reloads or polling. UIs no longer need to be a boring, static thing. Looking for the right communication technology for your next-generation Web apps? Enter WebSocket.
 
                And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
+            </p> -->
+
+            <p>
+               We have some <strong>live demos</strong> which give some examples of the types of applications which can be realized using Crossbar.io
+            </p>
+            <p>
+               For historic reasons, these use PubSub functionality. Demos using RPCs will be added in the near future.
             </p>
 
             <h3>Try out a demo</h2>
@@ -239,27 +255,77 @@
 
          <a id="show-me-some-code"></a>
          <h1>Show me some code!</h1>
-         <div id="">
+         <div>
             <p>
                Crossbar.io provides <i>two communication patterns</i> for application components to talk to each other
             </p>
             <ul>
-               <li>Remote Procedure Calls</li>
-               <li>Publish &amp; Subscribe</li>
+               <li>
+                  <strong>Remote Procedure Calls</strong> (RPC)
+               </li>
+               <li>
+                  <strong>Publish &amp; Subscribe</strong>(PubSub)
+               </li>
             </ul>
             <p>
                which involve <i>four interactions</i>
             </p>
-            <ol>
-               <li><b>Registering Procedures</b> for remote calling</li>
-               <li><b>Calling Procedures</b> remotely</li>
-               <li><b>Subscribing to Topics</b> for receiving events</li>
-               <li><b>Publishing Events</b> to topics</li>
-            </ol>
+            <div class="floatContainer">
+               <ul class="floatLeft interactionsSubList">
+                  <li>
+                     <b>1. Registering Procedures</b> for remote calling (RPC)
+                  </li>
+                  <li>
+                     <b>2. Calling Procedures</b> remotely (RPC)
+                  </li>
+               </ul>
+               <ul class="floatLeft interactionsSubList">
+                  <li>
+                     <b>3. Subscribing to Topics</b> for receiving events (PubSub)
+                  </li>
+                  <li>
+                     <b>4. Publishing Events</b> to topics (PubSub)
+                  </li>
+               </ul>
+            </div>
             <p>
-               Here is how application components look like in different languages supported by Crossbar.io
+               Here is how application components look across the different languages supported by Crossbar.io
             </p>
-            <pre class="brush: python; highlight: [5, 15];">
+
+            <div id="codeBlock">
+
+               <div id="switchBar">
+
+                  <div>
+                     <div id="switchBarButtons" class="switchBarButtons">
+                        <button data-selectlang="python">
+                           Python
+                        </button>
+                        <button data-selectlang="js">
+                           JavaScript
+                        </button>
+                        <button data-selectlang="php">
+                           PHP
+                        </button>
+                        <button data-selectlang="oc">
+                           Objective-C
+                        </button>
+                        <button data-selectlang="cpp">
+                           C++
+                        </button>
+                        <button data-selectlang="erlang">
+                           Erlang
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div id="syntaxContainer" class="syntaxContainer">
+
+
+                  <div id="code-python">
+                     <pre class="brush: python; highlight: [10, 13, 19, 22];">
 class MyComponent(ApplicationSession):
 
    @inlineCallbacks
@@ -283,8 +349,89 @@ class MyComponent(ApplicationSession):
       # 4) call a remote procedure
       res = yield self.call('com.myapp.add2', 2, 3)
       print("Got result: {}".format(res))
-            </pre>
+                     </pre>
+                  </div>
+
+                  <div id="code-js" class="noShow">
+                     <pre class="brush: js; highlight: [7, 10, 16, 19];">
+connection.onopen = function (session) {
+
+   // 1) subscribe to a topic
+   function onEvent (args) {
+      console.log("Got event: " + args[0]);
+   }
+   session.subscribe('com.myapp.hello', onEvent);
+
+   // 2) publish an event
+   session.publish('com.myapp.hello', ['Hello, world!']);
+
+   // 3) register a procedure for remoting
+   var add2 = function (args) {
+      return args[0] + args[1];
+   }
+   session.register('com.myapp.add2', add2)
+
+   // 4) call a remote procedure
+   session.call('com.myapp.add2', [2, 3]).then(function(res) {
+      console.log('Got result: ', res);
+   })
+                     </pre>
+                  </div>
+
+                  <div id="code-php" class="noShow">
+                     <pre class="brush: php; highlight: [5, 8, 14, 17];">
+ PHP code goes here
+
+                     </pre>
+                  </div>
+
+                  <div id="code-cpp" class="noShow">
+                     <pre class="brush: cpp; highlight: [5, 8, 14, 17];">
+C++ code goes here
+                     </pre>
+                  </div>
+
+                  <div id="code-erlang" class="noShow">
+                     <pre class="brush: erlang; highlight: [5, 8, 14, 17];">
+Erlang code goes here
+                     </pre>
+                  </div>
+
+                  <div id="code-oc" class="noShow">
+                     <pre class="brush: oc; highlight: [5, 8, 14, 17];">
+Objective-C code goes here
+                     </pre>
+                  </div>
+               </div>
+
+            </div>
+
          </div>
+
+         <script>
+            // set up the buttons for clicking
+            var syntaxContainer = document.getElementById("syntaxContainer");
+            var codeBlocks = syntaxContainer.children;
+            document.getElementById("switchBarButtons").addEventListener("click", function(evt) {
+               console.log(evt);
+               if (evt.target.tagName = "BUTTON") {
+
+                  var selectedLanguage = evt.target.attributes["data-selectlang"].value;
+                  console.log("select language " + selectedLanguage);
+
+                  // iterate over the code containers and switch the display state
+                  for (var i = 0; i < codeBlocks.length; i++) {
+                     if (codeBlocks[i].id === "code-" + selectedLanguage) {
+                        codeBlocks[i].classList.remove("noShow");
+                     } else {
+                        codeBlocks[i].classList.add("noShow");
+                     }
+                  }
+               }
+
+            })
+
+         </script>
 
 
          <a id="where-to-start"></a>
