@@ -192,6 +192,7 @@ html.no-svg #github:hover {
     margin: 5%;
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
     width: 94%;
+    margin-top: 9em;
 }
 
 #initialExplanation h1  {
@@ -458,5 +459,5 @@ html.no-svg #github:hover {
 }
 
 .interactionsSubList {
-   max-width: 400px;
+   max-width: 425px;
 }

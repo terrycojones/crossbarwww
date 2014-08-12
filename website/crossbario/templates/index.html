@@ -59,8 +59,17 @@
                   Application components can talk freely to each other, whether running locally or when distributed over different machines using the application messaging services provided by Crossbar.io.
                </p>
                <p>
+                  Constructing applications from loosely coupled, polyglot components enables quick development and deployment. You can choose the best language for a particular task, easily reuse components across projects, and add extend existing functionality as needed.
+               </p>
+               <p>
                   Crossbar.io messaging services are based on <strong>WAMP (Web Application Messaging Protocol)</strong>, an open protocol which provides easy to use <em>remote procedure calls</em> and <em>real-time event notifications</em>.
                </p>
+               <p>
+                  Crossbar.io is ideally suited for modern Web apps, and integrates well with many SPA frameworks and libraries such as AngularJS, KnockoutJS, ExtJS or React. It allows full-stack JavaScript development, but is much more versatile because of its polyglot nature: You can combine application components across supported languages. Using this, applications can extend from browser frontends and native mobile clients down to embedded devices, served by backends composed across multiple servers and implemented in a mix of languages.
+               </p>
+
+
+
             </div>
             <div>
                <img src="{{ url_for('static', filename = 'img/gen/homepage_cross_diagram.svg') }}" alt="diagram of crossbar.io router connecting frontend and backend application components in a variety of languages">
@@ -289,7 +298,7 @@
                </ul>
             </div>
             <p>
-               Here is how application components look across the different languages supported by Crossbar.io
+               Here is how <strong>application components</strong> look across the <strong>different languages</strong> supported by Crossbar.io
             </p>
 
             <div id="codeBlock">
@@ -408,54 +417,28 @@ Objective-C code goes here
 
          </div>
 
-         <script>
-            // set up the buttons for clicking
-            var syntaxContainer = document.getElementById("syntaxContainer");
-            var codeBlocks = syntaxContainer.children;
-            var switchBarButtons = document.getElementById("switchBarButtons").children;
-            var currentButton = null;
-            var currentBlock = null;
 
-            document.getElementById("switchBarButtons").addEventListener("click", function(evt) {
-               console.log(evt);
-               var target = evt.target;
-               if (target.tagName = "BUTTON") {
-
-                  var selectedLanguage = target.attributes["data-selectlang"].value;
-                  console.log("select language " + selectedLanguage);
-
-                  // highlight the newly selected button
-                  // and iterate over the switch bar buttons to remove the previous highlighting
-                  target.classList.add("highlighted");
-                  for (var b = 0; b < switchBarButtons.length; b++) {
-                     currentButton = switchBarButtons[b];
-                     if (currentButton.attributes["data-selectlang"].value != selectedLanguage && currentButton.classList.contains("highlighted")) {
-                        currentButton.classList.remove("highlighted");
-                     }
-                  }
-
-                  // iterate over the code containers and switch the display state
-                  for (var i = 0; i < codeBlocks.length; i++) {
-                     currentBlock = codeBlocks[i];
-                     if (currentBlock.id === "code-" + selectedLanguage && currentBlock.classList.contains("noShow")) {
-                        currentBlock.classList.remove("noShow");
-                     } else if (currentBlock.id != "code-" + selectedLanguage && !currentBlock.classList.contains("noShow")) {
-                        currentBlock.classList.add("noShow");
-                     }
-                  }
-               }
-
-            })
-
-         </script>
 
 
          <a id="where-to-start"></a>
          <h1>Where to start</h1>
          <div id="">
-            <p>
-               Write me.
-            </p>
+            <ul>
+               <li>
+                  Learn about <strong><a href="docs/Application-Scenarios/">application scenarios</a></strong> that Crossbar.io supports.
+               </li>
+               <li>
+                  Find out about the <strong><a href="docs/Architecture/">application architectures</a></strong> that you can employ.
+               </li>
+               <li>
+                  Get started quickly <strong><a href="docs/Quick-Start/">setting up Crossbar.io</a></strong>.
+               </li>
+               <li>
+                  Start developing by  <strong><a href="docs/Choose-your-Weapon/">using an app template</a></strong> in your supported language of choice.
+               </li>
+
+
+            </ul>
          </div>
 
       </div>
@@ -486,6 +469,47 @@ Objective-C code goes here
       displayRandomDemo();
       displayRandomDemo();
       displayRandomDemo();
+   </script>
+
+   <script>
+      // set up the buttons for clicking
+      var syntaxContainer = document.getElementById("syntaxContainer");
+      var codeBlocks = syntaxContainer.children;
+      var switchBarButtons = document.getElementById("switchBarButtons").children;
+      var currentButton = null;
+      var currentBlock = null;
+
+      document.getElementById("switchBarButtons").addEventListener("click", function(evt) {
+         console.log(evt);
+         var target = evt.target;
+         if (target.tagName = "BUTTON") {
+
+            var selectedLanguage = target.attributes["data-selectlang"].value;
+            console.log("select language " + selectedLanguage);
+
+            // highlight the newly selected button
+            // and iterate over the switch bar buttons to remove the previous highlighting
+            target.classList.add("highlighted");
+            for (var b = 0; b < switchBarButtons.length; b++) {
+               currentButton = switchBarButtons[b];
+               if (currentButton.attributes["data-selectlang"].value != selectedLanguage && currentButton.classList.contains("highlighted")) {
+                  currentButton.classList.remove("highlighted");
+               }
+            }
+
+            // iterate over the code containers and switch the display state
+            for (var i = 0; i < codeBlocks.length; i++) {
+               currentBlock = codeBlocks[i];
+               if (currentBlock.id === "code-" + selectedLanguage && currentBlock.classList.contains("noShow")) {
+                  currentBlock.classList.remove("noShow");
+               } else if (currentBlock.id != "code-" + selectedLanguage && !currentBlock.classList.contains("noShow")) {
+                  currentBlock.classList.add("noShow");
+               }
+            }
+         }
+
+      })
+
    </script>
 
 {% endblock %}

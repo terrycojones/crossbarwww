@@ -1,3 +1,9 @@
+#codeBlock {
+   max-width: 900px;
+   margin: 1em auto;
+}
+
+
 #switchBar {
     border-radius: 3px 3px 0px 0px;
     font-size: 1px;
