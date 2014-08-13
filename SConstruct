@@ -47,8 +47,12 @@ SVG_FILES = [
    'link_external.svg',
    'homepage_cross_diagram.svg',
 
-   'blacktocat.svg'
+   'blacktocat.svg',
 
+   'rpc_register.svg',
+   'rpc_call.svg',
+   'pubsub_subscribe.svg',
+   'pubsub_publish.svg'
 ]
 
 IMG_SOURCE_DIR = "design"

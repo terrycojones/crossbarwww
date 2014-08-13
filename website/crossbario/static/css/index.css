@@ -1,16 +1,10 @@
 #header {
    margin-top: 43px;
+   text-align: center;
 }
 
 
-#tagline {
-   margin-top: -6px;
-   margin-bottom: 0.8em;
-   font-size: 20px;
-   /* font-size: 2vw; */
-   font-family: 'Segoe UI', 'Open Sans', sans-serif;
-   font-weight: 300;
-}
+
 
 #followus {
    position: relative;
@@ -170,6 +164,8 @@ html.no-svg #github:hover {
 }
 
 
+
+
 /* initialExplanation formatting */
 
 #initialExplanation {
@@ -180,9 +176,11 @@ html.no-svg #github:hover {
 }
 
 #initialExplanation > div {
-    float: left;
+    /* float: left; */
 
-    width: 50%;
+    /* width: 50%; */
+    width: 80%;
+    margin: 0 auto;
 }
 
 #initialExplanation > div > img {
@@ -195,6 +193,44 @@ html.no-svg #github:hover {
     margin-top: 9em;
 }
 
+#initialExplanation > div img.pattern-illustration {
+    width: 40%;
+
+    min-width: 300px;
+    max-width: 350px;
+    /* box-shadow: none; */
+    /* float: left; */
+    display: inline;
+    margin: 1em 1em;
+}
+
+#initialExplanation > div img.pattern-illustration.first {
+    /* margin: 0 55px 0 0; */
+
+    /* float: left; */
+}
+
+#initialExplanation > div img.pattern-illustration.second {
+    /* float: right; */
+
+}
+
+#initialExplanation .pattern-illustration-container {
+   overflow: hidden;
+   padding: 0 1em;
+   text-align: center;
+}
+
+
+
+@media(max-width: px) {
+   #initialExplanation > div img.pattern-illustration.first {
+    margin: 0 0 20px 0;
+   }
+
+}
+
+
 #initialExplanation h1  {
     font-size: 40px;
 
@@ -202,16 +238,22 @@ html.no-svg #github:hover {
     font-weight: normal;
 }
 
-#initialExplanation p {
+/*#initialExplanation p {
     font-size: 22px;
 
-}
+}*/
+
+
+
+
 
 @media (max-width: 1024px) {
    #initialExplanation > div {
        float: left;
 
        width: 100%;
+
+       overflow: visible;
    }
 
    #initialExplanation > div > img {
@@ -219,7 +261,7 @@ html.no-svg #github:hover {
       margin: 41px auto;
 
       display: block;
-}
+   }
 }
 
 
@@ -262,6 +304,8 @@ html.no-svg #github:hover {
 #detailExplanations .detailsItem p > a {
 
 }
+
+
 
 
 @media (min-width: 1200px) {
@@ -309,6 +353,8 @@ html.no-svg #github:hover {
    font-weight: normal;
    text-align: left;
 }
+
+
 
 
 /* demoBox formatting */
@@ -382,7 +428,7 @@ html.no-svg #github:hover {
    margin: 0 auto;
    font-size: 20px;
    text-align: center;
-   vertical-align: middle;
+   /*vertical-align: middle;*/
    text-decoration: none;
 }
 
@@ -460,4 +506,36 @@ html.no-svg #github:hover {
 
 .interactionsSubList {
    max-width: 425px;
+}
+
+
+
+.tagline {
+   margin-top: -6px;
+   margin-bottom: 0.8em;
+   font-size: 22px;
+   /* font-size: 2vw; */
+   /* font-family: 'Segoe UI', 'Open Sans', sans-serif; */
+   font-weight: 300;
+}
+
+.header-cta {
+    font-size: 34px;
+
+    font-weight: bold;
+    margin: 0 auto 1.3em;
+}
+
+ul, ol {
+
+}
+
+.uar {
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.main p, ul, ol {
+   font-size: 20px;
 }

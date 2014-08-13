@@ -1,0 +1,513 @@
+{% extends "layout_t.html" %}
+
+{% block additionalload %}
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/codebox.css') }}">
+
+   <link href="{{ url_for('static', filename='deps/syntaxhighlighter/styles/shCore.css') }}" rel="stylesheet" type="text/css" />
+   <link href="{{ url_for('static', filename='deps/syntaxhighlighter/styles/shThemeTavendo.css') }}" rel="stylesheet" type="text/css" />
+
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shCore.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushJScript.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPython.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPlain.js') }}" type="text/javascript"></script>
+
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushCpp.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushErlang.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushObjC.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='deps/syntaxhighlighter/scripts/shBrushPhp.js') }}" type="text/javascript"></script>
+
+
+   <script type="text/javascript">
+      SyntaxHighlighter.all()
+   </script>
+{% endblock %}
+
+
+{% block githubbanner %}
+   <a id="github" href="https://github.com/crossbario" title="Fork us on GitHub"></a>
+{% endblock %}
+
+
+{% block content %}
+
+   <idv id="viewport">
+
+      <div id="main">
+
+         <div id="header">
+            <div id="logo">
+               <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_and_text_vectorized.svg') }}" class="cb_icon_and_text">
+            </div>
+
+            <center id="tagline">
+               Open-source Unified Application Router
+               <span id="followus">
+               <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=crossbario&show_count=false&show_screen_name=false" style="width:80px; height:20px;"></iframe></span>
+            </center>
+
+
+         </div>
+
+         <div id="initialExplanation">
+            <div class="text">
+               <h1>
+                  Build more powerful applications in less time
+               </h1>
+               <p>
+                  Crossbar.io is a <strong>unified application router</strong> that enables application developers to create powerful systems from loosely coupled application components.
+               </p>
+               <p>
+                  Application components can talk freely to each other, whether running locally or when distributed over different machines using the application messaging services provided by Crossbar.io.
+               </p>
+               <p>
+                  Constructing applications from loosely coupled, polyglot components enables quick development and deployment. You can choose the best language for a particular task, easily reuse components across projects, and add extend existing functionality as needed.
+               </p>
+               <p>
+                  Crossbar.io messaging services are based on <strong>WAMP (Web Application Messaging Protocol)</strong>, an open protocol which provides easy to use <em>remote procedure calls</em> and <em>real-time event notifications</em>.
+               </p>
+               <p>
+                  Crossbar.io is ideally suited for modern Web apps, and integrates well with many SPA frameworks and libraries such as AngularJS, KnockoutJS, ExtJS or React. It allows full-stack JavaScript development, but is much more versatile because of its polyglot nature: You can combine application components across supported languages. Using this, applications can extend from browser frontends and native mobile clients down to embedded devices, served by backends composed across multiple servers and implemented in a mix of languages.
+               </p>
+
+
+
+            </div>
+            <div>
+               <img src="{{ url_for('static', filename = 'img/gen/homepage_cross_diagram.svg') }}" alt="diagram of crossbar.io router connecting frontend and backend application components in a variety of languages">
+            </div>
+         </div>
+
+
+
+         <h1>Features</h1>
+         <div id="detailExplanations">
+
+            <div class="detailsItem">
+               <h2>
+                  Unified Application Messaging
+               </h2>
+               <p>
+                  At its core, Crossbar.io provides a <strong>flexible and scalable communication infrastructure</strong> for application components to talk to each other. This communication infrastructure is based on <strong>Unified Routing</strong> and <strong>WAMP</strong>.
+               </p>
+               <p>
+                  Application components involved are fully decoupled by Crossbar.io which dynamically routes calls and events between them.
+               </p>
+               <p class="readMore">
+                  <a href="https://github.com/crossbario/crossbar/wiki/Unified-Application-Messaging">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Cross-language Integration
+               </h2>
+               <p>
+                  Crossbar.io supports application components written in different programming languages:
+               </p>
+               <p>
+                  <strong>JavaScript</strong> (both Browser and NodeJS), <strong>Python</strong>, <strong>PHP</strong>, <strong>C++</strong>, <strong>Java</strong> (Android) and <strong>ObjectiveC</strong> (iOS), with more upcoming.
+               </p>
+               <p>
+                  Application components run under their native run-time and can be automatically started and monitored by Crossbar.io.
+               </p>
+               <p class="readMore">
+                  <a href="https://github.com/crossbario/crossbar/wiki/Cross-Language-Integration">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Cross-Layer Integration
+               </h2>
+               <p>
+                  Crossbar.io features cross-layer integration: application components can be <strong>flexibly deployed across layers</strong>, and transparently talk to each other no matter in what layer the components reside.
+               </p>
+               <p>
+                  E.g. you can call a remote procedure residing in a backend component from a frontend component running in the browser, but you can also call into code running inside the browser from a backend component!
+               </p>
+               <p class="readMore">
+                  <a href="https://github.com/crossbario/crossbar/wiki/Cross-Layer-Integration">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Full-stack Services
+               </h2>
+               <p>
+                  Crossbar.io also includes a whole <strong>set of full-stack services</strong>, such as authentication and authorization, serving static Web files, HTTP long-poll fallback, HTTP push bridge, CGI scripts and hosting WSGI applications.
+               </p>
+               <p>
+                  This will often make Crossbar.io <strong>all the infrastructure you need</strong> besides your database.
+               </p>
+               <p class="readMore">
+                  <a href="https://github.com/crossbario/crossbar/wiki/Full-stack-Services">Read more</a>
+               </p>
+            </div>
+
+            <div class="detailsItem">
+               <h2>
+                  Scale-up &amp; Scale-out Architecture
+               </h2>
+               <p>
+                  Crossbar.io has a multi-process architecture where a single node controller process spawns and monitors multiple worker processes. Worker process types include router, application component host and arbitrary guest processes.
+               </p>
+               <p>
+                  The multi-process architecture <strong>enables scaling up on multi-core systems</strong> and <strong>supports secure and robust operation</strong>.
+               </p>
+               <p class="readMore">
+                  <a href="https://github.com/crossbario/crossbar/wiki/Scale-up-%26-Scale-out-Architecture">Read more</a>
+               </p>
+            </div>
+
+         </div>
+
+         <!-- <div id="cta" style="display: none;">
+            <span class="want">
+               Want to try out Crossbar.io without installation?
+            </span>
+            <span class="reward">
+               Get free hosted routing - just join the Crossbar.io Developer Network
+            </span>
+            <button>
+               <a href="https://demo.crossbar.io/clandeck/">Join Now</a>
+            </button>
+         </div> -->
+
+         <a id="use-cases"></a>
+         <h1>Demos</h1>
+         <div id="demoBox">
+            <!-- <p>
+               Crossbar.io is a good fit for ...
+               WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games).
+
+               WebSocket is great for apps like chat, trading, multi-player games or real-time charts. It allows you to actively push information to clients as it happens.
+
+               Further, WebSocket allows you to real-time enable your Web user interfaces: always current information without reloads or polling. UIs no longer need to be a boring, static thing. Looking for the right communication technology for your next-generation Web apps? Enter WebSocket.
+
+               And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
+            </p> -->
+
+            <p>
+               We have some <strong>live demos</strong> which give some examples of the types of applications which can be realized using Crossbar.io
+            </p>
+            <p>
+               For historic reasons, these use PubSub functionality. Demos using RPCs will be added in the near future.
+            </p>
+
+            <h3>Try out a demo</h2>
+
+            <ul class="demos_list">
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/pubsub/index.html">
+                     PubSub
+                     <img src="{{ url_for('static', filename = 'img/screenshot_pubsub.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/notification/index.html">
+                     Notification
+                     <img src="{{ url_for('static', filename = 'img/screenshot_notifications.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li>
+                  <a href="https://demo.crossbar.io/demo/chat/index.html#ch1">
+                     Chat
+                     <img src="{{ url_for('static', filename = 'img/screenshot_chat.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li>
+                  <a href="https://demo.crossbar.io/demo/gauges/index.html">
+                     Gauges
+                     <img src="{{ url_for('static', filename = 'img/screenshot_gauges.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/sliders/index.html">
+                     Sliders
+                     <img src="{{ url_for('static', filename = 'img/screenshot_sliders.png') }}" />
+                  </a>
+                  PubSub Functionality, jQuery UI
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/colorpicker/index.html">
+                     Colorpicker
+                     <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/beatbox/index.html">
+                     Beatbox
+                     <img src="{{ url_for('static', filename = 'img/screenshot_beatbox.png') }}" />
+                  </a>
+                  PubSub Functionality
+               </li>
+
+            </ul>
+         </div>
+
+
+         <a id="show-me-some-code"></a>
+         <h1>Show me some code!</h1>
+         <div>
+            <p>
+               Crossbar.io provides <i>two communication patterns</i> for application components to talk to each other
+            </p>
+            <ul>
+               <li>
+                  <strong>Remote Procedure Calls</strong> (RPC)
+               </li>
+               <li>
+                  <strong>Publish &amp; Subscribe</strong>(PubSub)
+               </li>
+            </ul>
+            <p>
+               which involve <i>four interactions</i>
+            </p>
+            <div class="floatContainer">
+               <ul class="floatLeft interactionsSubList">
+                  <li>
+                     <b>1. Registering Procedures</b> for remote calling (RPC)
+                  </li>
+                  <li>
+                     <b>2. Calling Procedures</b> remotely (RPC)
+                  </li>
+               </ul>
+               <ul class="floatLeft interactionsSubList">
+                  <li>
+                     <b>3. Subscribing to Topics</b> for receiving events (PubSub)
+                  </li>
+                  <li>
+                     <b>4. Publishing Events</b> to topics (PubSub)
+                  </li>
+               </ul>
+            </div>
+            <p>
+               Here is how <strong>application components</strong> look across the <strong>different languages</strong> supported by Crossbar.io
+            </p>
+
+            <div id="codeBlock">
+
+               <div id="switchBar">
+
+                  <div>
+                     <div id="switchBarButtons" class="switchBarButtons">
+                        <button data-selectlang="python" class="highlighted">
+                           Python
+                        </button>
+                        <button data-selectlang="js">
+                           JavaScript
+                        </button>
+                        <button data-selectlang="php">
+                           PHP
+                        </button>
+                        <button data-selectlang="oc">
+                           Objective-C
+                        </button>
+                        <button data-selectlang="cpp">
+                           C++
+                        </button>
+                        <button data-selectlang="erlang">
+                           Erlang
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div id="syntaxContainer" class="syntaxContainer">
+
+
+                  <div id="code-python">
+                     <pre class="brush: python; highlight: [10, 13, 19, 22];">
+class MyComponent(ApplicationSession):
+
+   @inlineCallbacks
+   def onJoin(self, details):
+
+      # 1) subscribe to a topic
+      def onevent(msg):
+         print("Got event: {}".format(msg))
+
+      yield self.subscribe(onevent, 'com.myapp.hello')
+
+      # 2) publish an event
+      self.publish('com.myapp.hello', 'Hello, world!')
+
+      # 3) register a procedure for remoting
+      def add2(x, y):
+         return x + y
+
+      self.register(add2, 'com.myapp.add2');
+
+      # 4) call a remote procedure
+      res = yield self.call('com.myapp.add2', 2, 3)
+      print("Got result: {}".format(res))
+                     </pre>
+                  </div>
+
+                  <div id="code-js" class="noShow">
+                     <pre class="brush: js; highlight: [7, 10, 16, 19];">
+connection.onopen = function (session) {
+
+   // 1) subscribe to a topic
+   function onEvent (args) {
+      console.log("Got event: " + args[0]);
+   }
+   session.subscribe('com.myapp.hello', onEvent);
+
+   // 2) publish an event
+   session.publish('com.myapp.hello', ['Hello, world!']);
+
+   // 3) register a procedure for remoting
+   var add2 = function (args) {
+      return args[0] + args[1];
+   }
+   session.register('com.myapp.add2', add2)
+
+   // 4) call a remote procedure
+   session.call('com.myapp.add2', [2, 3]).then(function(res) {
+      console.log('Got result: ', res);
+   })
+                     </pre>
+                  </div>
+
+                  <div id="code-php" class="noShow">
+                     <pre class="brush: php; highlight: [5, 8, 14, 17];">
+ PHP code goes here
+
+                     </pre>
+                  </div>
+
+                  <div id="code-cpp" class="noShow">
+                     <pre class="brush: cpp; highlight: [5, 8, 14, 17];">
+C++ code goes here
+                     </pre>
+                  </div>
+
+                  <div id="code-erlang" class="noShow">
+                     <pre class="brush: erlang; highlight: [5, 8, 14, 17];">
+Erlang code goes here
+                     </pre>
+                  </div>
+
+                  <div id="code-oc" class="noShow">
+                     <pre class="brush: oc; highlight: [5, 8, 14, 17];">
+Objective-C code goes here
+                     </pre>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
+
+
+
+         <a id="where-to-start"></a>
+         <h1>Where to start</h1>
+         <div id="">
+            <ul>
+               <li>
+                  Learn about <strong><a href="docs/Application-Scenarios/">application scenarios</a></strong> that Crossbar.io supports.
+               </li>
+               <li>
+                  Find out about the <strong><a href="docs/Architecture/">application architectures</a></strong> that you can employ.
+               </li>
+               <li>
+                  Get started quickly <strong><a href="docs/Quick-Start/">setting up Crossbar.io</a></strong>.
+               </li>
+               <li>
+                  Start developing by  <strong><a href="docs/Choose-your-Weapon/">using an app template</a></strong> in your supported language of choice.
+               </li>
+
+
+            </ul>
+         </div>
+
+      </div>
+   </div>
+
+   <script>
+      // randomly pick two of the existing demos for display
+
+      // get all demo list elements into array
+      var demosNodeList = document.querySelectorAll(".demos_list > li");
+      var demosArray = [];
+      // set all to display: none
+      // and copy nodesList into real array with array methods
+      for(var i = 0; i < demosNodeList.length; i++) {
+         demosNodeList[i].classList.add("nonDisplay");
+         demosArray[i] = demosNodeList[i];
+      }
+
+      // pick a number between one and the array length
+      // display this element + remove from array
+      function displayRandomDemo() {
+         var d = Math.floor(Math.random() * demosArray.length);
+         demosArray[d].classList.remove("nonDisplay");
+         demosArray.splice(d, 1);
+      }
+
+      // pick the two demos
+      displayRandomDemo();
+      displayRandomDemo();
+      displayRandomDemo();
+   </script>
+
+   <script>
+      // set up the buttons for clicking
+      var syntaxContainer = document.getElementById("syntaxContainer");
+      var codeBlocks = syntaxContainer.children;
+      var switchBarButtons = document.getElementById("switchBarButtons").children;
+      var currentButton = null;
+      var currentBlock = null;
+
+      document.getElementById("switchBarButtons").addEventListener("click", function(evt) {
+         console.log(evt);
+         var target = evt.target;
+         if (target.tagName = "BUTTON") {
+
+            var selectedLanguage = target.attributes["data-selectlang"].value;
+            console.log("select language " + selectedLanguage);
+
+            // highlight the newly selected button
+            // and iterate over the switch bar buttons to remove the previous highlighting
+            target.classList.add("highlighted");
+            for (var b = 0; b < switchBarButtons.length; b++) {
+               currentButton = switchBarButtons[b];
+               if (currentButton.attributes["data-selectlang"].value != selectedLanguage && currentButton.classList.contains("highlighted")) {
+                  currentButton.classList.remove("highlighted");
+               }
+            }
+
+            // iterate over the code containers and switch the display state
+            for (var i = 0; i < codeBlocks.length; i++) {
+               currentBlock = codeBlocks[i];
+               if (currentBlock.id === "code-" + selectedLanguage && currentBlock.classList.contains("noShow")) {
+                  currentBlock.classList.remove("noShow");
+               } else if (currentBlock.id != "code-" + selectedLanguage && !currentBlock.classList.contains("noShow")) {
+                  currentBlock.classList.add("noShow");
+               }
+            }
+         }
+
+      })
+
+   </script>
+
+{% endblock %}
