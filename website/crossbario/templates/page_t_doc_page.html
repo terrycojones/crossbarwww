@@ -10,6 +10,10 @@
 <div id="contents">
    <h1>{{ title }}</h1>
    {{ contents|safe }}
+
+   {% if last_commit %}
+   <p style="font-style: italic; margin-top: 3em;">Last edit by {{ last_commit }}</p>
+   {% endif %}
 </div>
 
 {% endblock %}

@@ -45,8 +45,11 @@ from pygments.lexers import get_lexer_by_name
 from pygments.formatters import HtmlFormatter
 import json
 
+import sys
 import re
 import copy
+import subprocess
+
 
 class MyInlineGrammar(mistune.InlineGrammar):
     # it would take a while for creating the right regex
@@ -188,7 +191,21 @@ class DocPages:
 
 
 
-pages = DocPages('../crossbar.wiki')
+
+def get_git_latest_commit(gitdir = None):
+   """
+   Get git info line on latest commit.
+
+   E.g.: Jay Martin (Wed Aug 13 07:46:39 2014 -0700): Updated Router Realms (markdown)
+
+   Usage: env['COMMIT'] = env.GetLatestCommit()
+   """
+   gitdir = gitdir or '.git'
+   cmd = 'git --git-dir="{}" log -1 --pretty=format:"%an (%ad): %s"'.format(gitdir)
+   output = subprocess.check_output(cmd, shell = True).strip()
+   return output
+
+
 
 
 
@@ -219,14 +236,16 @@ def page_docs(path = None):
    session['tab_selected'] = 'page_docs'
 
    if path is None or path.strip() == "":
-      title = 'Contents'
+      title = 'Documentation'
       path = 'Home'
+      last_commit = app.latest_doc_commit
    else:
       title = path.replace('-', ' ')
+      last_commit = None
 
-   contents = pages.render(path)
+   contents = app.wikipages.render(path)
    if contents:
-      return render_template('page_t_doc_page.html', contents = contents, title = title)
+      return render_template('page_t_doc_page.html', contents = contents, title = title, last_commit = last_commit)
    else:
       return "no such page"
 
@@ -305,13 +324,22 @@ if __name__ == "__main__":
                       default = 8080,
                       help = "Listening port for Web server (i.e. 8090).")
 
-   parser.add_option ("-w",
-                      "--widgeturl",
+   parser.add_option ("--widgeturl",
                       dest = "widgeturl",
                       default = "https://demo.crossbar.io/clandeckwidget",
                       help = "WebClan widget base URL.")
 
+   parser.add_option ("--wikidir",
+                      dest = "wikidir",
+                      default = "../crossbar.wiki",
+                      help = "Documentation Wiki repository directory")
+
    (options, args) = parser.parse_args ()
+
+   app.wikidir = str(options.wikidir).strip()
+   app.wikipages = DocPages(app.wikidir)
+   app.latest_doc_commit = get_git_latest_commit(os.path.join(app.wikidir, '.git'))
+
 
    app.widgeturl = str(options.widgeturl).strip()
    if len(app.widgeturl) == 0:
@@ -329,7 +357,7 @@ if __name__ == "__main__":
 
       @freezer.register_generator
       def list_doc_pages():
-         for p in pages._pages.keys():
+         for p in app.wikipages._pages.keys():
             if not p.startswith('FAQ'):
                yield "/docs/{}/".format(p)
 #            yield {'path': p}

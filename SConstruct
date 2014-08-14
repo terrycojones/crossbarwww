@@ -54,7 +54,6 @@ SVG_FILES = [
 IMG_SOURCE_DIR = "design"
 IMG_GEN_DIR    = "website/crossbario/static/img/gen"
 
-
 ###
 ### Do not touch below this unless you know what you are doing;)
 ###
@@ -65,12 +64,11 @@ import pkg_resources
 taschenmesser = pkg_resources.resource_filename('taschenmesser', '..')
 
 ## use this for Taschenmesser development only
-#taschenmesser = "../infrequent/taschenmesser"
+#taschenmesser = "../../infrequent/taschenmesser"
 
 env = Environment(tools = ['default', 'taschenmesser'],
                   toolpath = [taschenmesser],
                   ENV  = os.environ)
-
 
 ## build optimized SVGs, PNGs and gzipped versions of the former
 ## inside IMG_GEN_DIR
