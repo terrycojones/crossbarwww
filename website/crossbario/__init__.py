@@ -31,7 +31,27 @@ from flask import Flask, Request, request, session, g, url_for, \
      abort, render_template, flash
 
 
-app = Flask(__name__)
+from flask import Flask, render_template, url_for
+from flask.helpers import locked_cached_property
+import jinja2_highlight
+
+## jinja2-highlight
+
+class MyFlask(Flask):
+   jinja_options = dict(Flask.jinja_options)
+   jinja_options.setdefault('extensions',[]).append('jinja2_highlight.HighlightExtension')
+# If you'd like to set the class name of the div code blocks are rendered in
+# Uncomment the below lines otherwise the option below can be used
+#@locked_cached_property
+#def jinja_env(self):
+# jinja_env = self.create_jinja_environment()
+# jinja_env.extend(jinja2_highlight_cssclass = 'codehilite')
+# return jinja_env
+
+
+
+#app = Flask(__name__)
+app = MyFlask(__name__)
 app.secret_key = str(uuid.uuid4())
 
 
@@ -348,7 +368,6 @@ if __name__ == "__main__":
    app.latest_doc_commit = get_git_latest_commit(os.path.join(app.wikidir, '.git'))
 
    app.cstatic = str(options.cstatic).strip()
-
 
    app.widgeturl = str(options.widgeturl).strip()
    if len(app.widgeturl) == 0:

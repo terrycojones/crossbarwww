@@ -23,8 +23,10 @@
 
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.css') }}" />
 
-      <link rel="stylesheet" href="{{ cstatic }}/css/tavendo.css">
+      <link rel="stylesheet" type="text/css" href="{{ session['cstatic'] }}/css/tavendo.css">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/crossbar.css') }}" />
+
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/code.css') }}">
 
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,7 +43,6 @@
    </head>
 
    <body>
-
       <!--[if lt IE 9]>
 
          <div id="ltIE9">
@@ -191,12 +192,8 @@
            <script src="{{ url_for('static', filename = 'deps/respond.min.js') }}"></script>
        <![endif]-->
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="{{ url_for('static', filename = 'deps/jquery-1.10.2.min.js') }}"></script>
-
       <!-- yahoo browser detect for some corner cases -->
       <script src="{{ url_for('static', filename = 'deps/yahooBrowserDetect.js') }}"></script>
-
 
       <script type="text/javascript">
          // SVG vs. PNG detection and switching
@@ -231,22 +228,6 @@
             // needed for the CSS background image switching which is based on the Modernizr classes
             $(html).removeClass("svg").addClass("no-svg");
          }
-
-
-         // fontface support detection and switching
-
-         // if(!Modernizr.fontface || document.getElementById("ltIE9")) {
-         //    // switch out any elements which absolutely require a web font
-         //    // for display (e.g. logos)
-         //    // with a PNG counterpart
-         //    // IE8 is included here since it supports Web fonts, but only
-         //    // in EOT format, which we don't have (and don't want to produce)
-         //    // for our used fonts
-         //    $(".fontFace").addClass("nonDisplay");
-         //    $(".noFontFace").removeClass("nonDisplay");
-         // }
-
-
 
          function switchToPNG () {
             // get all img elements on the page
@@ -285,11 +266,11 @@
          }
 
       </script>
+
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="{{ url_for('static', filename = 'deps/bootstrap/bootstrap.min.js') }}"></script>
 
       <script src="{{ url_for('static', filename = 'js/crossbar.js') }}"></script>
-
 
       <!-- <script src="{{ url_for('static', filename = 'js/cbtrack.js') }}"></script> -->
 
