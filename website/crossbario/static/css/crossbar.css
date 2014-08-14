@@ -445,3 +445,17 @@ table.highlighttable td {
    font-weight: 300;
 }
 
+
+#manifesto img {
+   border: 0;
+   position: absolute;
+   right: 0;
+   top: 41px;
+   z-index: 1;
+}
+
+@media (max-width: 800px) {
+   #manifesto {
+      display: none;
+   }
+}
