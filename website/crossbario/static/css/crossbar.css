@@ -390,3 +390,58 @@ span.partiallyImplemented {
    height: 12px;
    padding: 0;
 }
+
+
+/* prevent pygments-formatted code from breaking */
+[class^="highlight-"],
+[class*=" highlight-"] {
+   overflow: auto;
+   margin-bottom: 1em;
+}
+.highlight {
+   display: table;
+}
+
+/* pygments code block shouldn't word wrap, but show overflow on scroll */
+
+div.highlight, table.highlighttable {
+   width: 100%;
+   margin-left: 0;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   margin: 0;
+}
+
+td.linenos {
+   width: 1px;
+   padding-top: 10px !important;
+}
+
+table.highlighttable td {
+   padding-right: 0;
+}
+
+.highlighttable .linenos pre {
+   font-size: 13px;
+   color: #B6B62C;
+}
+
+.highlighttable .code pre {
+   font-size: 13px;
+}
+
+.highlight pre {
+   word-wrap: normal;
+   margin: 0;
+   white-space: pre;
+}
+
+.highlight .hll {
+   background-color: #E4E451;
+}
+
+.highlight .c {
+   font-style: normal;
+   font-weight: 300;
+}
+
