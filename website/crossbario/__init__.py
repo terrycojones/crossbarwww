@@ -31,7 +31,7 @@ from flask import Flask, Request, request, session, g, url_for, \
      abort, render_template, flash
 
 
-from flask import Flask, render_template, url_for
+# from flask import Flask, render_template, url_for
 from flask.helpers import locked_cached_property
 import jinja2_highlight
 
