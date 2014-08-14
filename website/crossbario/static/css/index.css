@@ -605,10 +605,10 @@ ul, ol {
 }
 
 .syntaxContainer {
-    height: 450px;
+    height: 470px;
     overflow: auto;
     font-size: 14px;
-    background-color: #F4F4F4;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
@@ -637,4 +637,15 @@ ul, ol {
    opacity: 0;
    z-index: -1;  /* make the displayed code accessible for selection */
    transition: opacity 0.7s;
+}
+
+
+/* change overflow here for the code box */
+[class^="highlight-"],
+[class*=" highlight-"] {
+   overflow: visible;
+}
+
+div.highlight {
+   border: none;
 }

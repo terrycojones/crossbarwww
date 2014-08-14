@@ -145,7 +145,7 @@ class DocPageRenderer(mistune.Renderer):
          return "\n<pre><code>{}</code></pre>\n".format(mistune.escape(code))
 
       formatter = HtmlFormatter()
-      return highlight(code, lexer, formatter)
+      return '\n<div class="highlight-code">{}</div>\n'.format(highlight(code, lexer, formatter))
 
    def autolink(self, link, is_email = False):
       if self.debug:

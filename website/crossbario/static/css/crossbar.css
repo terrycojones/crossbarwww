@@ -390,3 +390,70 @@ span.partiallyImplemented {
    height: 12px;
    padding: 0;
 }
+
+
+#manifesto img {
+   border: 0;
+   position: absolute;
+   right: 0px;
+   top: 41px;
+   z-index: 1;
+}
+
+@media (max-width: 800px) {
+   #manifesto {
+      display: none;
+   }
+}
+
+/* prevent pygments-formatted code from breaking */
+[class^="highlight-"],
+[class*=" highlight-"] {
+   overflow: auto;
+   margin-bottom: 2em;
+}
+.highlight {
+   display: table;
+}
+
+/* pygments code block shouldn't word wrap, but show overflow on scroll */
+
+div.highlight, table.highlighttable {
+   width: 100%;
+   margin-left: 0;
+   margin: 1em 0 0 0;
+}
+
+td.linenos {
+   width: 1px;
+   padding-top: 10px !important;
+}
+
+table.highlighttable td {
+   padding-right: 0;
+}
+
+.highlighttable .linenos pre {
+   font-size: 13px;
+   color: #B6B62C;
+}
+
+.highlighttable .code pre {
+   font-size: 13px;
+}
+
+.highlight pre {
+   word-wrap: normal;
+   margin: 0;
+   white-space: pre;
+   background-color: #fff;
+}
+
+.highlight .hll {
+   background-color: #E4E451;
+}
+
+.highlight .c {
+   font-style: normal;
+   font-weight: 300;
+}
