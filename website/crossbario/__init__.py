@@ -222,6 +222,7 @@ def get_git_latest_commit(gitdir = None):
 @app.before_request
 def before_request():
    session["widgeturl"] = app.widgeturl
+   session["cstatic"] = app.cstatic
 
 @app.route('/')
 def page_home():
@@ -334,11 +335,19 @@ if __name__ == "__main__":
                       default = "../crossbar.wiki",
                       help = "Documentation Wiki repository directory")
 
+   parser.add_option ("--cstatic",
+                      dest = "cstatic",
+                      default = "//tavendo-common-static.s3-eu-west-1.amazonaws.com",
+                      help = "Tavendo shared static assets base URL")
+
+
    (options, args) = parser.parse_args ()
 
    app.wikidir = str(options.wikidir).strip()
    app.wikipages = DocPages(app.wikidir)
    app.latest_doc_commit = get_git_latest_commit(os.path.join(app.wikidir, '.git'))
+
+   app.cstatic = str(options.cstatic).strip()
 
 
    app.widgeturl = str(options.widgeturl).strip()

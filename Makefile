@@ -25,10 +25,11 @@ upload:
 
 publish: img freeze upload
 
-test:
-	# python website/crossbario/__init__.py -d -p 8050
-#	python website/crossbario/__init__.py -d --widgeturl "" -p 8050
-	python website/crossbario/__init__.py -d --widgeturl "http://127.0.0.1:8090/widget" -p 8050
+test: img
+	python website/crossbario/__init__.py -d -p 8050
+
+test_no_network: img
+	python website/crossbario/__init__.py -d --widgeturl "http://127.0.0.1:8090/widget" -p 8050 --cstatic "http://127.0.0.1:8888"
 
 test_socketserver:
 	python website/crossbario/__init__.py -d -s --widgeturl "http://127.0.0.1:8090/widget" -p 8050
