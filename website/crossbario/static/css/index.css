@@ -517,6 +517,7 @@ html.no-svg #github:hover {
    /* font-size: 2vw; */
    /* font-family: 'Segoe UI', 'Open Sans', sans-serif; */
    font-weight: 300;
+   /* font-weight: bold; */
 }
 
 .header-cta {
@@ -538,4 +539,100 @@ ul, ol {
 
 .main p, .main ul, .main ol {
    font-size: 20px;
+}
+
+/************************/
+/*    code box styles   */
+/************************/
+
+#codeBlock {
+   max-width: 900px;
+   margin: 1em auto;
+}
+
+
+#switchBar {
+    border-radius: 3px 3px 0px 0px;
+    font-size: 1px;
+    background-color: #000;
+}
+
+#switchBar > div {
+    background-color: #E0E0E0;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    padding: 0.3em 1.1em 0em 0.7em;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+#switchBar .switchBarButtons {
+   display: inline-block;
+}
+
+#switchBar  button {
+    background-color: #BBBBBB;
+    border: medium none;
+    padding: 3px 10px;
+    border-radius: 3px;
+    width: 8em;
+    margin-bottom: 6px;
+    margin-right: 3px;
+    transition: all 0.3s;
+    font-size: 17px;
+}
+
+#switchBar .switchBarButtons > button.highlighted {
+    color: #F0F0F0;
+    text-decoration: none;
+    background-color: #777;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);;
+    transition: all 0.5s;
+}
+
+
+#switchBar .switchBarButtons > button:hover {
+    color: #000;
+    background-color: #ABABAB;
+}
+
+#switchBar .switchBarButtons > button.highlighted:hover {
+   color: #ddd;
+   background-color: #666
+}
+
+.syntaxContainer {
+    height: 380px;
+    overflow: auto;
+    font-size: 14px;
+    background-color: #1b2426;
+}
+
+
+
+.syntaxContainer .container:before,
+.syntaxContainer .container:after {
+   content: none;
+}
+
+
+.syntaxContainer {
+   position: relative;
+}
+
+.syntaxContainer > div {
+   position: absolute;
+   left: 0;
+   top: 0;
+   opacity: 1;
+   transition: opacity 0.7s;
+}
+
+.syntaxContainer > div.noShow {
+   opacity: 0;
+   z-index: -1;  /* make the displayed code accessible for selection */
+   transition: opacity 0.7s;
 }

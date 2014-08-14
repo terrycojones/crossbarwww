@@ -360,7 +360,6 @@ if __name__ == "__main__":
                       default = "//tavendo-common-static.s3-eu-west-1.amazonaws.com",
                       help = "Tavendo shared static assets base URL")
 
-
    (options, args) = parser.parse_args ()
 
    app.wikidir = str(options.wikidir).strip()

@@ -17,12 +17,8 @@
 ###############################################################################
 
 SVG_FILES = [
-   'crossbar_icon.svg',
-   'crossbar_icon_inverted.svg',
    'crossbar_icon_and_text.svg',
    'crossbar_icon_and_text_vectorized.svg',
-   'crossbar_name.svg',
-   'crossbar_name_lighter.svg',
    'github.svg',
    'github_highlighted.svg',
    'github_path.svg',
