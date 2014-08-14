@@ -128,24 +128,26 @@
 
                   <div>
                      <div id="switchBarButtons" class="switchBarButtons">
-                        <button data-selectlang="python" class="highlighted">
-                           Python
-                        </button>
-                        <button data-selectlang="js">
+                        <button data-selectlang="js" class="highlighted">
                            JavaScript
                         </button>
-                        <button data-selectlang="php">
-                           PHP
-                        </button>
-                        <button data-selectlang="oc">
-                           Objective-C
+                        <button data-selectlang="python">
+                           Python
                         </button>
                         <button data-selectlang="cpp">
                            C++
                         </button>
+                        <button data-selectlang="php">
+                           PHP
+                        </button>
+<!--                        
+                        <button data-selectlang="oc">
+                           Objective-C
+                        </button>
                         <button data-selectlang="erlang">
                            Erlang
                         </button>
+-->                        
                      </div>
                   </div>
 
@@ -153,26 +155,29 @@
 
                <div id="syntaxContainer" class="syntaxContainer">
 
-                  <div id="code-python">
-                     {% highlight 'python' %}{% include 'codebox/python.py' %}{% endhighlight %}
-                  </div>
-
                   <div id="code-js">
-                     {% highlight 'javascript' %}{% include 'codebox/javascript.js' %}{% endhighlight %}
+                     {% highlight 'javascript' %}{% include 'codebox/example.js' %}{% endhighlight %}
                   </div>
 
-                  <div id="code-php" class="noShow">
+                  <div id="code-python" class="noShow">
+                     {% highlight 'python' %}{% include 'codebox/example.py' %}{% endhighlight %}
                   </div>
 
                   <div id="code-cpp" class="noShow">
+                     {% highlight 'cpp' %}{% include 'codebox/example.cpp' %}{% endhighlight %}
+                  </div>
+
+                  <div id="code-php" class="noShow">
+                     {% highlight 'php' %}{% include 'codebox/example.php' %}{% endhighlight %}
+                  </div>
+
+<!--
+                  <div id="code-oc" class="noShow">
                   </div>
 
                   <div id="code-erlang" class="noShow">
                   </div>
-
-                  <div id="code-oc" class="noShow">
-                  </div>
-
+-->
                </div>
             </div>
          </div>
