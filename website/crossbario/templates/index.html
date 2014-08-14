@@ -30,7 +30,7 @@
             </div>
          </div>
 
-         <div id="initialExplanation">
+         <div class="initial-explanation">
             <div class="text">
                <p>
                   Crossbar.io apps are built from application components that
@@ -52,65 +52,83 @@
                      communicate in real time
                   </li>
                </ul>
+
+               <!-- add here: some discussion of the benefits that follow from the five points - package these for the developers -->
+
                <p>
-                  Crossbar.io connects the components by providing <strong>Unified Application Routing</strong> for your application:
+                  Constructing applications from loosely coupled, polyglot components enables quick development and deployment. You can choose the best language for a particular task, distribute development for individual components, reuse components across projects, and easily extend functionality.
                </p>
 
                <p>
-                  Application components connect to the central Crossbar.io router. This routes all messages between the components.
+                  Crossbar.io is ideally suited for modern Web apps, and integrates well with many SPA frameworks and libraries such as AngularJS, KnockoutJS, ExtJS or React. It allows full-stack JavaScript development, but is much more versatile because of its polyglot nature: Applications can extend from browser frontends and native mobile clients down to embedded devices, served by backends composed across multiple servers and implemented in a mix of languages.
                </p>
-               <p>
-                  Components message each other using <strong>two communication patterns</strong>:
-               </p>
-               <ul>
-                  <li>
-                     Remote Procedure Calls (RPC)
-                  </li>
-                  <li>
-                     Publish & Subscribe (PubSub)
-                  </li>
-               </ul>
-               <p>
-                  With the <strong>RPC pattern</strong>, any component can
-               </p>
-               <ul>
-                  <li>
-                     register a procedure that other components can call
-                  </li>
-                  <li>
-                     call registered procedures
-                  </li>
-               </ul>
-               <p>
-                  Crossbar.io routes remote procedure calls to the registered component and returns the result to the caller.
-               </p>
-
-               <div class="pattern-illustration-container">
-                  <img src="{{ url_for('static', filename = 'img/gen/rpc_register.svg') }}" alt="RPC pattern - registering a procedure with the Crossbar.io router" class="pattern-illustration first">
-                  <img src="{{ url_for('static', filename = 'img/gen/rpc_call.svg') }}" alt="PRC pattern - calling a remote procedure and receiving the result, routed via Crossbar.io" class="pattern-illustration second">
-               </div>
-
-               <p>
-                  With the <strong>PubSub pattern</strong>, any component can
-               </p>
-               <ul>
-                  <li>
-                     subscribe to events in a category
-                  </li>
-                  <li>
-                     publish events for a category
-                  </li>
-               </ul>
-               <p>
-                  Crossbar.io dispatches publications to subscribed application components.
-               </p>
-
-               <div class="pattern-illustration-container">
-                  <img src="{{ url_for('static', filename = 'img/gen/pubsub_subscribe.svg') }}" alt="PubSub pattern - subscribing with Crossbar.io" class="pattern-illustration first">
-                  <img src="{{ url_for('static', filename = 'img/gen/pubsub_publish.svg') }}" alt="PubSub pattern - publishing to Crossbar.io, and Crossbar.io dispatching to subscribers" class="pattern-illustration second">
-               </div>
 
             </div>
+         </div>
+
+         <div class="how-does-it-work">
+            <h1>
+               How does it work?
+            </h1>
+
+            <p>
+               Crossbar.io connects the components by providing <strong>Unified Application Routing</strong> for your application:
+            </p>
+
+            <p>
+               Application components connect to the central Crossbar.io router. This routes all messages between the components.
+            </p>
+            <p>
+               Components message each other using <strong>two communication patterns</strong>:
+            </p>
+            <ul>
+               <li>
+                  Remote Procedure Calls (RPC)
+               </li>
+               <li>
+                  Publish & Subscribe (PubSub)
+               </li>
+            </ul>
+            <p>
+               With the <strong>RPC pattern</strong>, any component can
+            </p>
+            <ul>
+               <li>
+                  register a procedure that other components can call
+               </li>
+               <li>
+                  call registered procedures
+               </li>
+            </ul>
+            <p>
+               Crossbar.io routes remote procedure calls to the registered component and returns the result to the caller.
+            </p>
+
+            <div class="pattern-illustration-container">
+               <img src="{{ url_for('static', filename = 'img/gen/rpc_register.svg') }}" alt="RPC pattern - registering a procedure with the Crossbar.io router" class="pattern-illustration first">
+               <img src="{{ url_for('static', filename = 'img/gen/rpc_call.svg') }}" alt="PRC pattern - calling a remote procedure and receiving the result, routed via Crossbar.io" class="pattern-illustration second">
+            </div>
+
+            <p>
+               With the <strong>PubSub pattern</strong>, any component can
+            </p>
+            <ul>
+               <li>
+                  subscribe to events in a category
+               </li>
+               <li>
+                  publish events for a category
+               </li>
+            </ul>
+            <p>
+               Crossbar.io dispatches publications to subscribed application components.
+            </p>
+
+            <div class="pattern-illustration-container">
+               <img src="{{ url_for('static', filename = 'img/gen/pubsub_subscribe.svg') }}" alt="PubSub pattern - subscribing with Crossbar.io" class="pattern-illustration first">
+               <img src="{{ url_for('static', filename = 'img/gen/pubsub_publish.svg') }}" alt="PubSub pattern - publishing to Crossbar.io, and Crossbar.io dispatching to subscribers" class="pattern-illustration second">
+            </div>
+
          </div>
 
 
@@ -139,14 +157,14 @@
                         <button data-selectlang="php">
                            PHP
                         </button>
-<!--                        
+<!--
                         <button data-selectlang="oc">
                            Objective-C
                         </button>
                         <button data-selectlang="erlang">
                            Erlang
                         </button>
--->                        
+-->
                      </div>
                   </div>
 

@@ -1,8 +1,27 @@
+.main {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
 #header {
    margin-top: 43px;
    text-align: center;
 }
 
+ul, ol {
+
+}
+
+.uar {
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.main p, .main ul, .main ol {
+   font-size: 16px;
+}
 
 
 
@@ -168,22 +187,35 @@ html.no-svg #github:hover {
 
 /* initialExplanation formatting */
 
-#initialExplanation {
+.initial-explanation {
     overflow: hidden;
 
-    width: 100%;
+    /* width: 100%; */
     /* padding: 10px; */
 }
 
-#initialExplanation > div {
+.initial-explanation > div {
     /* float: left; */
 
     /* width: 50%; */
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
 
-#initialExplanation > div > img {
+.initial-explanation h1  {
+    font-size: 40px;
+
+    color: #444;
+    font-weight: normal;
+}
+
+.initial-explanation p,
+.initial-explanation ul {
+    font-size: 20px;
+
+}
+
+.how-does-it-work > div > img {
     /* max-width: 500px; */
 
     padding: 5px;
@@ -193,7 +225,7 @@ html.no-svg #github:hover {
     margin-top: 9em;
 }
 
-#initialExplanation > div img.pattern-illustration {
+.how-does-it-work > div img.pattern-illustration {
     width: 40%;
 
     min-width: 300px;
@@ -204,18 +236,18 @@ html.no-svg #github:hover {
     margin: 1em 1em;
 }
 
-#initialExplanation > div img.pattern-illustration.first {
+.how-does-it-work > div img.pattern-illustration.first {
     /* margin: 0 55px 0 0; */
 
     /* float: left; */
 }
 
-#initialExplanation > div img.pattern-illustration.second {
+.how-does-it-work > div img.pattern-illustration.second {
     /* float: right; */
 
 }
 
-#initialExplanation .pattern-illustration-container {
+.how-does-it-work .pattern-illustration-container {
    overflow: hidden;
    padding: 0 1em;
    text-align: center;
@@ -224,24 +256,14 @@ html.no-svg #github:hover {
 
 
 @media(max-width: px) {
-   #initialExplanation > div img.pattern-illustration.first {
+   .how-does-it-work > div img.pattern-illustration.first {
     margin: 0 0 20px 0;
    }
 
 }
 
 
-#initialExplanation h1  {
-    font-size: 40px;
 
-    color: #444;
-    font-weight: normal;
-}
-
-/*#initialExplanation p {
-    font-size: 22px;
-
-}*/
 
 
 
@@ -527,19 +549,7 @@ html.no-svg #github:hover {
     margin: 0 auto 1.3em;
 }
 
-ul, ol {
 
-}
-
-.uar {
-    text-align: center;
-
-    font-weight: bold;
-}
-
-.main p, .main ul, .main ol {
-   font-size: 20px;
-}
 
 /************************/
 /*    code box styles   */
