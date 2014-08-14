@@ -536,6 +536,6 @@ ul, ol {
     font-weight: bold;
 }
 
-.main p, ul, ol {
+.main p, .main ul, .main ol {
    font-size: 20px;
 }
