@@ -80,7 +80,7 @@ body {
    background-color: #FCFCFC;
    color: #333;
 
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    font-size: 16px;
    line-height: 1.428571429;
 }
@@ -255,7 +255,7 @@ body {
    clear: both;
 }
 .nonDisplay {
-   display: none;
+   /* display: none; */
 }
 
 

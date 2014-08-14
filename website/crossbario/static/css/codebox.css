@@ -1,56 +1,26 @@
-#code {
-    /* background-color: #EEEEEE; */
-    /* color: #444444; */
-    padding: 1em;
-    text-align: center;
-    min-width: 450px;
-    overflow: visible;
-    border-radius: 3px;
+#codeBlock {
+   max-width: 900px;
+   margin: 1em auto;
 }
 
-#code #codeBlock {
-    background-color: #1B2426;
-
-    margin: 1em 0;
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 12px 2px;
-}
-
-#code #switchBar h3 {
-    display: inline-block;
-}
-
-#code a, #code a:visited {
-    color: #666666;
-}
-
-#code a:hover {
-    color: #000000;
-}
 
 #switchBar {
-    padding: 5.4em 0 0 0;
-    text-align: left;
-    /* text-align: center; */
-    background-color: #313131;
     border-radius: 3px 3px 0px 0px;
     font-size: 1px;
+    background-color: #000;
 }
 
 #switchBar > div {
     background-color: #E0E0E0;
     border: 1px solid #CCCCCC;
     display: inline-block;
-    margin: 0em 0em 0.4em 0.4em;
-    padding: 0.3em 1.1em 0.4em 0.7em;
+    padding: 0.3em 1.1em 0em 0.7em;
     border-radius: 3px;
-    text-align: left;
+    text-align: center;
     font-size: 14px;
+    width: 100%;
 }
 
-#switchBar > div > h3 {
-    margin: 0.3em;
-}
 
 #switchBar .switchBarButtons {
    display: inline-block;
@@ -61,178 +31,61 @@
     border: medium none;
     padding: 3px 10px;
     border-radius: 3px;
+    width: 8em;
+    margin-bottom: 6px;
+    margin-right: 3px;
+    transition: all 0.3s;
+    font-size: 17px;
 }
 
-#switchBar  button.isSelected {
-    background-color: #999999;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-    color: #FFFFFF;
-}
-
-.demoBox {
-    text-align: left;
-    border-radius: 3px;
-}
-
-.demoBox > div {
-    background-color: #1B2426;
-    border-radius: 3px;
-}
-
-#codeBoxContainer {
-   border-radius: 3px;
-}
-
-.codeBox {
-}
-
-.codeBox > h3, .codeBox .selectComponent {
-    background-color: #FFFFFF;
-    margin: 0;
-    padding: 1em 0;
-    text-align: center;
-}
-
-.codeBox > div {
-    background-color: #1B2426;
-}
-
-.codeBox > div.languageBar {
-    text-align: center;
-    border-top: 1px inset #fff;
-    padding: 0.3em 0 0.2em 0;
-    position: relative;
-}
-
-.codeBox > div.languageBar,
-.codeBox > div.selectComponent {
-    background-color: #D1D1D1;
-
-    /* margin-left: 2px; */
-    /* margin-right: 2px; */
-}
-
-.languageBar > button {
-    background-color: #B8B8B8;
-    border: medium none;
-    color: #222222;
-    font-size: 15px;
-    padding: 3px 5px;
-    border-radius: 2px;
-    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); */
-    margin-bottom: 5px;
-}
-
-.languageBar > button.highlighted {
+#switchBar .switchBarButtons > button.highlighted {
     color: #F0F0F0;
     text-decoration: none;
     background-color: #777;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);;
+    transition: all 0.5s;
 }
 
-#code .languageBar > a,
-#code .languageBar > a:visited {
-   background: url("/static/img/gen/blacktocat.svg");
-   width: 32px;
-   height: 32px;
-   display: inline-block;
-   position: absolute;
-   right: 5px;
-   bottom: 2px;
+
+#switchBar .switchBarButtons > button:hover {
+    color: #000;
+    background-color: #ABABAB;
 }
 
-#code .languageBar > a:hover {
-
+#switchBar .switchBarButtons > button.highlighted:hover {
+   color: #ddd;
+   background-color: #666
 }
 
 .syntaxContainer {
-    height: 600px;
+    height: 380px;
     overflow: auto;
     font-size: 14px;
+    background-color: #1b2426;
 }
 
-.dualBox .codeBox {
-    display: inline-block;
-    /* height: 100%; */
-    width: 50%;
-    margin: 0 -4px 0 0;
-}
-
-.dualBox .codeBox:first-of-type {
-   /*margin-right: 3px;*/
-   border-right: 3px solid #888;
-}
-.dualBox .codeBox:last-of-type {
-   /*margin-left: 3px;*/
-   border-left: 3px solid #888;
-}
-
-.dualBox .syntaxContainer {
-}
-
-.codeBox .selectComponent {
-    font-size: 18px;
-    color: #027eae;
-    font-weight: bold;
-    margin: 0;
-    line-height: 28px;
-    padding: 0.3em;
-}
-
-.selectComponent > button {
-    border: 1px solid #999;
-    border: none;
-    border-radius: 3px;
-    padding: 0px 22px;
-    color: #027eae;
-    /* font-weight: bold; */
-    font-size: 18px;
-    background-color: transparent;
-    line-height: 22px;
-    width: 120px;
-    font-weight: bold;
-}
-
-.selectComponent > button.highlighted {
-    /* text-decoration: underline; */
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-    /* font-weight: bold; */
-}
-
-.singleBox .syntaxContainer {
-    height: auto;
-}
-
-.singleBox {
-    position: relative;
-}
-
-.singleBox .codeBox.hidden {
-    display: none;
-}
-
-.singleBox {
-    display: none;
-}
-
-@media (max-width: 1200px) {
-
-   .dualBox {
-       display: none;
-   }
-
-   .singleBox {
-       display: block;
-   }
-
-   }
-   .nonDisplay {
-       display: none;
-
-}
 
 
 .syntaxContainer .container:before,
 .syntaxContainer .container:after {
    content: none;
+}
+
+
+.syntaxContainer {
+   position: relative;
+}
+
+.syntaxContainer > div {
+   position: absolute;
+   left: 0;
+   top: 0;
+   opacity: 1;
+   transition: opacity 0.7s;
+}
+
+.syntaxContainer > div.noShow {
+   opacity: 0;
+   z-index: -1;  /* make the displayed code accessible for selection */
+   transition: opacity 0.7s;
 }

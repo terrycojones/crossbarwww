@@ -15,7 +15,7 @@
  * Dual licensed under the MIT and GPL licenses.
  */
 .syntaxhighlighter {
-  background-color: #1b2426 !important;
+  /* background-color: #1b2426 !important; */
   overflow: visible !important;
 }
 .syntaxhighlighter .line.alt1 {
