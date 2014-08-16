@@ -12,23 +12,99 @@
 
 {% block content %}
 
-   <idv id="viewport">
+   <div id="viewport">
 
       <div id="main" class="main">
 
          <div id="header">
-            <div class="logo">
+            <div id="logo">
                <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_and_text_vectorized.svg') }}" class="cb_icon_and_text">
             </div>
-
-            <div class="tagline">
-               open source platform for building modern Web, mobile and IoT apps
+            <div id="header-cta">
+               Break away from the past.
             </div>
 
-            <div class="header-cta">
-               Break away from the past and create apps better, quicker and with more fun!
+            <div id="tagline">
+               Crossbar.io is a new open-source platform for building advanced applications
+               better, quicker and with more fun!
             </div>
          </div>
+
+         <div id="foowrapper">
+
+         <table id="foo">
+            <tr>
+               <td>
+                  With Crossbar.io you create apps from
+                  <i>application components</i> that:
+<!--                  
+                  Crossbar.io apps are built from <i>application components</i> that ...
+-->
+               </td>
+               <td>
+                  Developer Benefits
+               </td>
+            </tr>
+<!--            
+            <tr>
+               <td>
+                  Crossbar.io apps are built from application components that ...
+               </td>
+               <td>
+               </td>
+            </tr>
+-->
+            <tr>
+               <td>
+                  <div class="bullet">1</div>Are loosely coupled
+               </td>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="bullet">2</div>Can be freely distributed across devices
+               </td>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="bullet">3</div>Can be written in different languages
+               </td>
+               <td>
+                  <ul>
+                     <li>
+                        - Choose the best language for a given part of your app.
+                     </li>
+                     <li>
+                        - Make all team members productive, no matter what language they know/prefer.
+                     </li>
+                     <li>
+                        - Or use one language from front- to backend (e.g. JavaScript)
+                     </li>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="bullet">4</div>Can talk to each other without restrictions
+               </td>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="bullet">5</div>Communicate in real-time
+               </td>
+               <td>
+                  UIs always show current information - no refresh, no polling.
+               </td>
+            </tr>
+         </table>
+
+      </div>
+
+         <br><br><br><br><br><br><br>
 
          <div class="initial-explanation">
             <div class="text">
