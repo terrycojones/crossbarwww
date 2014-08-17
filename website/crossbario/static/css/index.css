@@ -762,3 +762,10 @@ html.no-svg #github:hover {
 div.highlight {
    border: none;
 }
+
+.tip {
+   color: #7c6a00;
+   font-size: 14px;
+   width: 80%;
+   margin: auto;
+}

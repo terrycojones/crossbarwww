@@ -29,20 +29,33 @@
                better, quicker and with more fun!
             </div>
          </div>
+         <br>
+
+         <center>
+            <img width="500px" height="335px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}"
+            >
+            <div style="font-size: 18px; margin-top: 16px; font-weight: 300;">
+            With Crossbar.io, you create apps from <i>application components</i>.<br>
+            You write the components, Crossbar.io provides the glue.
+            </div>
+         </center>
+
 
          <div id="foowrapper">
 
          <table id="foo">
             <tr>
                <td>
+                  
+                  <span style="font-size: 20px;">App Components ...</span>
+<!--                  
                   With Crossbar.io you create apps from
                   <i>application components</i> that:
-<!--                  
                   Crossbar.io apps are built from <i>application components</i> that ...
 -->
                </td>
                <td>
-                  Developer Benefits
+                  <span style="font-size: 20px;">Which brings these benefits</span>
                </td>
             </tr>
 <!--            
@@ -53,12 +66,34 @@
                <td>
                </td>
             </tr>
+
+            structural coupling
+            temporal coupling
+
+            granularity
+            Lego
+            extend and evolve your app without breaking things
+            evolve different parts of your app independently
+            it pays off over time, you won't hit a wall
+
+            tame complexity, even as your app grows
 -->
             <tr>
                <td>
-                  <div class="bullet">1</div>Are loosely coupled
+                  <div class="bullet">1</div>... are loosely coupled
                </td>
                <td>
+                  <ul>
+                     <li>
+                        - improves your development agility, in particular when requirements change over time
+                     </li>
+                     <li>
+                        - incrementally develop 
+                     </li>
+                     <li>
+                        - change your app by simply swapping in and out components
+                     </li>
+                  </ul>
                </td>
             </tr>
             <tr>
@@ -66,6 +101,11 @@
                   <div class="bullet">2</div>Can be freely distributed across devices
                </td>
                <td>
+                  <ul>
+                     <li>
+                        - scale your app by running components on different hosts
+                     </li>
+                  </ul>
                </td>
             </tr>
             <tr>
@@ -83,6 +123,7 @@
                      <li>
                         - Or use one language from front- to backend (e.g. JavaScript)
                      </li>
+                  </ul>
                </td>
             </tr>
             <tr>
@@ -103,7 +144,20 @@
          </table>
 
       </div>
+      <br><br><br>
 
+<!--
+
+http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
+
+"Lego Color Bricks" by Alan Chia - Lego Color Bricks. Licensed under Creative Commons Attribution-Share Alike 2.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Lego_Color_Bricks.jpg#mediaviewer/File:Lego_Color_Bricks.jpg
+
+
+"<a href="http://commons.wikimedia.org/wiki/File:Lego_Color_Bricks.jpg#mediaviewer/File:Lego_Color_Bricks.jpg">Lego Color Bricks</a>" by <a rel="nofollow" class="external text" href="http://www.flickr.com/people/13403905@N03">Alan Chia</a> - <a rel="nofollow" class="external text" href="http://www.flickr.com/photos/13403905@N03/2080281038/">Lego Color Bricks</a>. Licensed under <a title="Creative Commons Attribution-Share Alike 2.0" href="http://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.
+
+-->
+
+<!--
          <br><br><br><br><br><br><br>
 
          <div class="initial-explanation">
@@ -129,8 +183,6 @@
                   </li>
                </ul>
 
-               <!-- add here: some discussion of the benefits that follow from the five points - package these for the developers -->
-
                <p>
                   Constructing applications from loosely coupled, polyglot components enables quick development and deployment. You can choose the best language for a particular task, distribute development for individual components, reuse components across projects, and easily extend functionality.
                </p>
@@ -141,6 +193,19 @@
 
             </div>
          </div>
+-->
+
+<!--
+
+               Crossbar.io connects app components by providing <strong>Unified Application Routing</strong>.
+
+               App components connect to Crossbar.io
+
+
+               which will <i>route</i> all messages exchanged, and
+               components can talk to each other using <strong>two communication patterns</strong>:
+
+-->
 
          <div class="how-does-it-work">
             <h1>
@@ -148,36 +213,40 @@
             </h1>
 
             <p>
-               Crossbar.io connects the components by providing <strong>Unified Application Routing</strong> for your application:
+               Application components connect to Crossbar.io and can then talk to each other using
+               two patterns:
+            </p>
+            <ul>
+               <li>
+                  <a href="http://wamp.ws/faq/#rpc">Remote Procedure Calls</a>
+               </li>
+               <li>
+                  <a href="http://wamp.ws/faq/#pubsub">Publish &amp; Subscribe</a>
+               </li>
+            </ul>
+            <p>
+               Crossbar.io provides the glue between application components by making sure
+               messages are directed and transmitted to the right components ("message routing").
+            </p>
+            <p class="tip">
+               Read more about <a href="">Unified Application Routing and WAMP</a> - the underlying technology.
             </p>
 
+            <h2>Remote Procedure Calls</h2>
             <p>
-               Application components connect to the central Crossbar.io router. This routes all messages between the components.
-            </p>
-            <p>
-               Components message each other using <strong>two communication patterns</strong>:
+               With the <strong>Remote Procedure Call</strong> pattern, any component can
             </p>
             <ul>
                <li>
-                  Remote Procedure Calls (RPC)
+                  <strong>Register</strong> a procedure that other components can call
                </li>
                <li>
-                  Publish & Subscribe (PubSub)
+                  <strong>Call</strong> procedures registered by other components
                </li>
             </ul>
             <p>
-               With the <strong>RPC pattern</strong>, any component can
-            </p>
-            <ul>
-               <li>
-                  register a procedure that other components can call
-               </li>
-               <li>
-                  call registered procedures
-               </li>
-            </ul>
-            <p>
-               Crossbar.io routes remote procedure calls to the registered component and returns the result to the caller.
+               Crossbar.io routes calls to the component that registered the called procedure and
+               returns the result to the caller. Remote Procedure Calls is a <strong>1-to-1 communication pattern</strong>:
             </p>
 
             <div class="pattern-illustration-container">
@@ -185,19 +254,20 @@
                <img src="{{ url_for('static', filename = 'img/gen/rpc_call.svg') }}" alt="PRC pattern - calling a remote procedure and receiving the result, routed via Crossbar.io" class="pattern-illustration second">
             </div>
 
+            <h2>Publish &amp; Subscribe</h2>
             <p>
-               With the <strong>PubSub pattern</strong>, any component can
+               With the <strong>Publish &amp; Subscribe</strong> pattern, any component can
             </p>
             <ul>
                <li>
-                  subscribe to events in a category
+                  <strong>Subscribe</strong> to receive events published from other components
                </li>
                <li>
-                  publish events for a category
+                  <strong>Publish</strong> events which other subscribed components will receive
                </li>
             </ul>
             <p>
-               Crossbar.io dispatches publications to subscribed application components.
+               Crossbar.io routes event published to all components that have subscribed to receive events for the topic. Publish &amp; Subscribe is a <strong>1-to-many communication pattern</strong>:
             </p>
 
             <div class="pattern-illustration-container">
@@ -298,7 +368,7 @@
                For historic reasons, these use PubSub functionality. We are working on demos using RPCs.
             </p>
 
-            <h3>Try out a demo</h2>
+            <h2>Try out a demo</h2>
 
             <ul class="demos_list">
 
