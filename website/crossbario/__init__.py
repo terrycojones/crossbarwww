@@ -31,33 +31,27 @@ from flask import Flask, Request, request, session, g, url_for, \
      abort, render_template, flash
 
 
-# from flask import Flask, render_template, url_for
-from flask.helpers import locked_cached_property
-import jinja2_highlight
+## Jinja2 extension for Pygments
+##
+## Note: To generate Pygments CSS file for style: pygmentize -S default -f html > pygments.css
+##
+try:
+   import jinja2_highlight
+except ImportError:
+   print("Warning: Jinja2-Highlight not available")
+   MyFlask = Flask
+   HAS_HIGHLIGHT = False
+else:   
+   class MyFlask(Flask):
+      jinja_options = dict(Flask.jinja_options)
+      jinja_options.setdefault('extensions',[]).append('jinja2_highlight.HighlightExtension')
+   HAS_HIGHLIGHT = True
 
-## jinja2-highlight
-
-class MyFlask(Flask):
-   jinja_options = dict(Flask.jinja_options)
-   jinja_options.setdefault('extensions',[]).append('jinja2_highlight.HighlightExtension')
-# If you'd like to set the class name of the div code blocks are rendered in
-# Uncomment the below lines otherwise the option below can be used
-#@locked_cached_property
-#def jinja_env(self):
-# jinja_env = self.create_jinja_environment()
-# jinja_env.extend(jinja2_highlight_cssclass = 'codehilite')
-# return jinja_env
-
-
-
-#app = Flask(__name__)
+## Main app object
+##
 app = MyFlask(__name__)
 app.secret_key = str(uuid.uuid4())
 
-
-## generate Pygments CSS file for style:
-## pygmentize -S default -f html > pygments.css
-##
 
 import mistune
 from pygments import highlight
@@ -243,6 +237,7 @@ def get_git_latest_commit(gitdir = None):
 def before_request():
    session["widgeturl"] = app.widgeturl
    session["cstatic"] = app.cstatic
+   session["no_network"] = app.nonetwork
 
 @app.route('/')
 def page_home():
@@ -345,6 +340,13 @@ if __name__ == "__main__":
                       default = 8080,
                       help = "Listening port for Web server (i.e. 8090).")
 
+   parser.add_option ("-n",
+                      "--nonetwork",
+                      dest = "nonetwork",
+                      action = "store_true",
+                      default = False,
+                      help = "Disable any network access")
+
    parser.add_option ("--widgeturl",
                       dest = "widgeturl",
                       default = "https://demo.crossbar.io/clandeckwidget",
@@ -362,6 +364,7 @@ if __name__ == "__main__":
 
    (options, args) = parser.parse_args ()
 
+   app.nonetwork = options.nonetwork
    app.wikidir = str(options.wikidir).strip()
    app.wikipages = DocPages(app.wikidir)
    app.latest_doc_commit = get_git_latest_commit(os.path.join(app.wikidir, '.git'))
