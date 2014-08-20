@@ -32,12 +32,24 @@
          <br>
 
          <center>
-            <img width="500px" height="335px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}"
-            >
+<!--            
+            <img width="500px" height="335px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}">
             <div style="font-size: 18px; margin-top: 16px; font-weight: 300;">
             With Crossbar.io, you create apps from <i>application components</i>.<br>
             You write the components, Crossbar.io provides the glue.
             </div>
+-->         
+            <table id="taghead">
+               <tr>
+                  <td>
+            <img width="400px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}">
+                  </td>
+                  <td>
+                     With Crossbar.io, you create apps from <i>application components</i>.
+                     You write the components, Crossbar.io provides the glue.
+                  </td>
+               </tr>
+            </table>
          </center>
 
 
@@ -334,13 +346,8 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
             </p> -->
 
             <p>
-               We have some <strong>live demos</strong> which give some examples of the types of applications which can be realized using Crossbar.io
+               Want to try out some live demos? Checkout these:
             </p>
-            <p>
-               For historic reasons, these use PubSub functionality. We are working on demos using RPCs.
-            </p>
-
-            <h2>Try out a demo</h2>
 
             <ul class="demos_list">
 
@@ -389,7 +396,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Colorpicker
                      <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" />
                   </a>
-                  PubSub Functionality
+                  A colorpicker with real-time synchronization
                </li>
 
                <li class="nonDisplay">
