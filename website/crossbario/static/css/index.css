@@ -436,7 +436,7 @@ html.no-svg #github:hover {
 
 .demos_list > li {
    width: 280px;
-   height: 280px;
+   height: 320px;
 
    position: relative;
    color: #444;
@@ -445,6 +445,7 @@ html.no-svg #github:hover {
    padding: 0px;
    display: inline-block;
    text-align: center;
+   vertical-align: top;
 }
 
 .demos_list > li.nonDisplay {
