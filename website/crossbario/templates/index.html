@@ -43,105 +43,120 @@
 
          <div id="foowrapper">
 
-         <table id="foo">
-            <tr>
-               <td>
-                  
-                  <span style="font-size: 20px;">App Components ...</span>
-<!--                  
-                  With Crossbar.io you create apps from
-                  <i>application components</i> that:
-                  Crossbar.io apps are built from <i>application components</i> that ...
--->
-               </td>
-               <td>
-                  <span style="font-size: 20px;">Which brings these benefits</span>
-               </td>
-            </tr>
-<!--            
-            <tr>
-               <td>
-                  Crossbar.io apps are built from application components that ...
-               </td>
-               <td>
-               </td>
-            </tr>
+            <table id="foo">
+               <tr>
+                  <td>
+                     
+                     <span style="font-size: 20px;">App Components ...</span>
+   <!--                  
+                     With Crossbar.io you create apps from
+                     <i>application components</i> that:
+                     Crossbar.io apps are built from <i>application components</i> that ...
+   -->
+                  </td>
+                  <td>
+                     <span style="font-size: 20px;">You benefit:</span>
+                  </td>
+               </tr>
+   <!--            
+               <tr>
+                  <td>
+                     Crossbar.io apps are built from application components that ...
+                  </td>
+                  <td>
+                  </td>
+               </tr>
 
-            structural coupling
-            temporal coupling
+               structural coupling
+               temporal coupling
 
-            granularity
-            Lego
-            extend and evolve your app without breaking things
-            evolve different parts of your app independently
-            it pays off over time, you won't hit a wall
+               granularity
+               Lego
+               extend and evolve your app without breaking things
+               evolve different parts of your app independently
+               it pays off over time, you won't hit a wall
 
-            tame complexity, even as your app grows
--->
-            <tr>
-               <td>
-                  <div class="bullet">1</div>... are loosely coupled
-               </td>
-               <td>
-                  <ul>
-                     <li>
-                        - improves your development agility, in particular when requirements change over time
-                     </li>
-                     <li>
-                        - incrementally develop 
-                     </li>
-                     <li>
-                        - change your app by simply swapping in and out components
-                     </li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <div class="bullet">2</div>Can be freely distributed across devices
-               </td>
-               <td>
-                  <ul>
-                     <li>
-                        - scale your app by running components on different hosts
-                     </li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <div class="bullet">3</div>Can be written in different languages
-               </td>
-               <td>
-                  <ul>
-                     <li>
-                        - Choose the best language for a given part of your app.
-                     </li>
-                     <li>
-                        - Make all team members productive, no matter what language they know/prefer.
-                     </li>
-                     <li>
-                        - Or use one language from front- to backend (e.g. JavaScript)
-                     </li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <div class="bullet">4</div>Can talk to each other without restrictions
-               </td>
-               <td>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <div class="bullet">5</div>Communicate in real-time
-               </td>
-               <td>
-                  UIs always show current information - no refresh, no polling.
-               </td>
-            </tr>
-         </table>
+               tame complexity, even as your app grows
+   -->
+               <tr>
+                  <td>
+                     <div class="bullet">1</div>... are loosely coupled
+                  </td>
+                  <td>
+                     <ul>
+                        <li>
+                           Develop with more agility, in particular when requirements change over time.
+                        </li>
+                        <li>
+                           Incrementally development your apps.
+                        </li>
+                        <li>
+                           Change your app by simply swapping in and out components.
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="bullet">2</div>Can be freely distributed across devices
+                  </td>
+                  <td>
+                     <ul>
+                        <li>
+                           Scale your app by running components on different hosts.
+                        </li>
+                        <li>
+                           Pick the best host to run a particular set of functionality
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="bullet">3</div>Can be written in different languages
+                  </td>
+                  <td>
+                     <ul>
+                        <li>
+                           Choose the best language for a given part of your app.
+                        </li>
+                        <li>
+                           Make all team members productive, no matter what language they know/prefer.
+                        </li>
+                        <li>
+                           Use a single language for the full stack (e.g. JavaScript).
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="bullet">4</div>Can talk to each other without restrictions
+                  </td>
+                  <td>
+                     <ul>
+                        <li>
+                           Put functionality where you need it - backends can call frontends when needed, not just vice versa.
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="bullet">5</div>Communicate in real-time
+                  </td>
+                  <td>
+                     <ul>
+                        <li>
+                           UIs always show current information - no refresh, no polling.
+                        </li>
+                        <li>
+                           Offer your users the reactive applications they want.
+                        </li>
+                     </ul>                  
+                  </td>
+               </tr>
+            </table>
 
       </div>
       <br><br><br>
@@ -368,7 +383,16 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                For historic reasons, these use PubSub functionality. We are working on demos using RPCs.
             </p>
 
-            <h2>Try out a demo</h2>
+            <!-- <h2>Try out a demo</h2> -->
+
+            <div class="demos-overview-link">
+               <a href="https://demo.crossbar.io/">See all demos (7 total)</a>
+            </div>
+            
+            
+            <p class="direct-demos">
+               or go directly to one of three randomly picked
+            </p>
 
             <ul class="demos_list">
 

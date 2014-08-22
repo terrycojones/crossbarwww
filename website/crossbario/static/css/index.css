@@ -400,11 +400,28 @@ html.no-svg #github:hover {
 
 #demoBox h3 {
    font-size: 20px;
-   font-family: 'Segoe UI', 'Open Sans', sans-serif;
+   /*font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
    font-weight: 300;
    margin-top: 0.5em;
    border-bottom: none;
    text-align: center;
+}
+
+.demos-overview-link {
+    text-align: center;
+
+    font-size: 22px;
+    padding-top: 0.7em;
+}
+
+.demos-overview-link a {
+  text-decoration: underline;
+}
+
+#demoBox p.direct-demos {
+    text-align: center;
+  
+    padding-top: 1em;
 }
 
 .demos_list {
@@ -601,9 +618,16 @@ html.no-svg #github:hover {
 
 #foo li {
    font-size: 14px;
-    list-style-type: none;
+    
+   list-style-type: none;
     margin-left: 0;
-    padding-left: 0;
+    
+   text-indent: -1em;
+    padding-left: 1.5em;
+}
+#foo li:before
+{
+  content: "\2013\A0";
 }
 
 #foo tr:first-of-type {
