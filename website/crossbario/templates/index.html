@@ -32,12 +32,24 @@
          <br>
 
          <center>
-            <img width="500px" height="335px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}"
-            >
+<!--            
+            <img width="500px" height="335px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}">
             <div style="font-size: 18px; margin-top: 16px; font-weight: 300;">
             With Crossbar.io, you create apps from <i>application components</i>.<br>
             You write the components, Crossbar.io provides the glue.
             </div>
+-->         
+            <table id="taghead">
+               <tr>
+                  <td>
+            <img width="400px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}">
+                  </td>
+                  <td>
+                     With Crossbar.io, you create apps from <i>application components</i>.
+                     You write the components, Crossbar.io provides the glue.
+                  </td>
+               </tr>
+            </table>
          </center>
 
 
@@ -292,18 +304,14 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
 
          </div>
 
-
          <a id="show-me-some-code"></a>
          <h1>Show me some code!</h1>
          <div>
             <p>
                Here is what <strong>application components</strong> look like across the <strong>different languages</strong> supported by Crossbar.io
             </p>
-
             <div id="codeBlock">
-
                <div id="switchBar">
-
                   <div>
                      <div id="switchBarButtons" class="switchBarButtons">
                         <button data-selectlang="js" class="highlighted">
@@ -318,49 +326,25 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                         <button data-selectlang="php">
                            PHP
                         </button>
-<!--
-                        <button data-selectlang="oc">
-                           Objective-C
-                        </button>
-                        <button data-selectlang="erlang">
-                           Erlang
-                        </button>
--->
                      </div>
                   </div>
-
                </div>
-
                <div id="syntaxContainer" class="syntaxContainer">
-
                   <div id="code-js">
                      {% highlight 'javascript' %}{% include 'codebox/example.js' %}{% endhighlight %}
                   </div>
-
                   <div id="code-python" class="noShow">
                      {% highlight 'python' %}{% include 'codebox/example.py' %}{% endhighlight %}
                   </div>
-
                   <div id="code-cpp" class="noShow">
                      {% highlight 'cpp' %}{% include 'codebox/example.cpp' %}{% endhighlight %}
                   </div>
-
                   <div id="code-php" class="noShow">
                      {% highlight 'php' %}{% include 'codebox/example.php' %}{% endhighlight %}
                   </div>
-
-<!--
-                  <div id="code-oc" class="noShow">
-                  </div>
-
-                  <div id="code-erlang" class="noShow">
-                  </div>
--->
                </div>
             </div>
          </div>
-
-
 
          <a id="use-cases"></a>
          <h1>Demos</h1>
@@ -375,13 +359,6 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
 
                And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
             </p> -->
-
-            <p>
-               We have some <strong>live demos</strong> which give some examples of the types of applications which can be realized using Crossbar.io
-            </p>
-            <p>
-               For historic reasons, these use PubSub functionality. We are working on demos using RPCs.
-            </p>
 
             <!-- <h2>Try out a demo</h2> -->
 
@@ -441,7 +418,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Colorpicker
                      <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" />
                   </a>
-                  PubSub Functionality
+                  A colorpicker with real-time synchronization
                </li>
 
                <li class="nonDisplay">
