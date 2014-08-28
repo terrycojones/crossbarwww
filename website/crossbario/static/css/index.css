@@ -231,13 +231,13 @@ html.no-svg #github:hover {
 
     padding: 5px;
     margin: 5%;
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);*/
     width: 94%;
     margin-top: 9em;
 }
 
 .how-does-it-work > div img.pattern-illustration {
-    width: 40%;
+    width: 48%;
 
     min-width: 300px;
     max-width: 350px;
@@ -245,6 +245,10 @@ html.no-svg #github:hover {
     /* float: left; */
     display: inline;
     margin: 1em 1em;
+    background-color: #fcfcfc;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #B79F00;
 }
 
 .how-does-it-work > div img.pattern-illustration.first {
@@ -603,6 +607,8 @@ html.no-svg #github:hover {
    padding: 8px 12px 8px 12px;
    border-radius: 8px;
    border: 1px solid #B79F00;
+    background-color: #fcfcfc;
+
 }
 
 #foo {
@@ -780,7 +786,7 @@ html.no-svg #github:hover {
 
 .syntaxContainer > div {
    position: absolute;
-   left: 0;
+   left: 24px;
    top: 0;
    opacity: 1;
    transition: opacity 0.7s;
