@@ -272,14 +272,20 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                </li>
             </ul>
             <p>
-               Crossbar.io routes calls to the component that registered the called procedure and
-               returns the result to the caller. Remote Procedure Calls is a <strong>1-to-1 communication pattern</strong>:
+               Crossbar.io routes calls to the component that registered the respective procedure and
+               returns the result to the caller:
             </p>
 
             <div class="pattern-illustration-container">
                <img src="{{ url_for('static', filename = 'img/gen/rpc_register.svg') }}" alt="RPC pattern - registering a procedure with the Crossbar.io router" class="pattern-illustration first">
                <img src="{{ url_for('static', filename = 'img/gen/rpc_call.svg') }}" alt="PRC pattern - calling a remote procedure and receiving the result, routed via Crossbar.io" class="pattern-illustration second">
             </div>
+
+            <p>
+               Remote Procedure Call is a <strong>1-to-1 communication pattern</strong> which involves
+               the Caller, the Router (Crossbar.io) and the Callee.
+            </p>
+
 
             <h2>Publish &amp; Subscribe</h2>
             <p>
@@ -294,13 +300,17 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                </li>
             </ul>
             <p>
-               Crossbar.io routes event published to all components that have subscribed to receive events for the topic. Publish &amp; Subscribe is a <strong>1-to-many communication pattern</strong>:
+               Crossbar.io routes event published to all components that have subscribed to receive events for the topic:
             </p>
 
             <div class="pattern-illustration-container">
                <img src="{{ url_for('static', filename = 'img/gen/pubsub_subscribe.svg') }}" alt="PubSub pattern - subscribing with Crossbar.io" class="pattern-illustration first">
                <img src="{{ url_for('static', filename = 'img/gen/pubsub_publish.svg') }}" alt="PubSub pattern - publishing to Crossbar.io, and Crossbar.io dispatching to subscribers" class="pattern-illustration second">
             </div>
+            <p>
+               Publish &amp; Subscribe is a <strong>1-to-many communication pattern</strong> which involves
+               the Publisher, the Router (Crossbar.io) and Subscribers.
+            </p>
 
          </div>
 
@@ -431,11 +441,6 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
 
             </ul>
          </div>
-
-
-
-
-
 
          <a id="where-to-start"></a>
          <h1>Where to go from here</h1>
