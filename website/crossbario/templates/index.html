@@ -15,7 +15,6 @@
    <div id="viewport">
 
       <div id="main" class="main">
-
          <div id="header">
             <div id="logo">
                <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_and_text_vectorized.svg') }}" class="cb_icon_and_text">
@@ -23,7 +22,6 @@
             <div id="header-cta">
                Break away from the past.
             </div>
-
             <div id="tagline">
                Crossbar.io is a new open-source platform for building advanced applications
                better, quicker and with more fun!
@@ -32,70 +30,42 @@
          <br>
 
          <center>
-
-            <img width="400px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}">
-            <div style="font-size: 24px; margin-top: 32px; font-weight: 300;">
-               With Crossbar.io apps are built from <i>application components</i>.<br>
-               You write the components and Crossbar.io provides the glue.
+            <a href="http://commons.wikimedia.org/wiki/File:Lego_Color_Bricks.jpg#mediaviewer/File:Lego_Color_Bricks.jpg">
+               <img width="400" height="268" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}" title="Lego Color Bricks by Alan Chia. Licensed under Creative Commons Attribution-Share Alike 2.0 via Wikimedia Commons">
+            </a>
+            <div style="font-size: 22px; margin-top: 32px; font-weight: 300;">
+               With Crossbar.io apps are built from <b>application components</b>:<br>
+               you write the components and Crossbar.io provides the glue.
             </div>
-
-<!--
-            <table id="taghead">
-               <tr>
-                  <td>
-                     <img width="400px" src="{{ url_for('static', filename = 'img/lego_orig.jpg') }}">
-                  </td>
-                  <td>
-                     <p style="font-size: 24px; font-weight: 300;">
-                        With Crossbar.io apps are built
-                        from <i>application components</i>.
-                     </p>
-                     <p style="font-size: 24px; font-weight: 300;">
-                        You write the components and Crossbar.io provides the glue.
-                     </p>
-                  </td>
-               </tr>
-            </table>
--->            
          </center>
 
+         <h1>
+            Why should I care?
+         </h1>
+
+         <p style="width: 95%; margin: 30px auto 0 auto;">
+            Crossbar.io is ideally suited for modern Web apps, integrates well with many SPA frameworks and libraries such as <a href="https://angularjs.org/">AngularJS</a>, <a href="http://knockoutjs.com/">KnockoutJS</a>, <a href="http://www.sencha.com/products/extjs/">ExtJS</a> or <a href="http://facebook.github.io/react/">React</a> and allows to build reactive apps with awesome user experience.
+            <br><br>
+
+             Crossbar.io allows full-stack JavaScript development, but is also much more versatile because of its polyglot nature: apps can extend from browser frontends and native mobile clients down to embedded devices, served by backends composed across multiple servers and implemented in a mix of languages.
+         </p>
 
          <div id="foowrapper">
-
             <table id="foo">
                <tr>
-                  <td>
-                     
+                  <td>                     
                      <span style="font-size: 20px;">App Components ...</span>
-   <!--                  
-                     With Crossbar.io you create apps from
-                     <i>application components</i> that:
-                     Crossbar.io apps are built from <i>application components</i> that ...
-   -->
                   </td>
                   <td>
                      <span style="font-size: 20px;">Your benefits:</span>
                   </td>
                </tr>
    <!--            
-               <tr>
-                  <td>
-                     Crossbar.io apps are built from application components that ...
-                  </td>
-                  <td>
-                  </td>
-               </tr>
-
-               structural coupling
-               temporal coupling
-
-               granularity
-               Lego
-               extend and evolve your app without breaking things
-               evolve different parts of your app independently
+               Remove structural and temporal coupling
                it pays off over time, you won't hit a wall
-
-               tame complexity, even as your app grows
+               Change your app by simply swapping in and out components
+               Reuse components across projects
+               Quick development, flexible deployment
    -->
                <tr>
                   <td>
@@ -104,25 +74,31 @@
                   <td>
                      <ul>
                         <li>
-                           Develop with more agility, in particular when requirements change over time.
+                           Extend your app incrementally without breaking things
                         </li>
                         <li>
-                           Incrementally development your apps.
+                           Evolve different parts of your app independently
                         </li>
                         <li>
-                           Change your app by simply swapping in and out components.
+                           Tame complexity as your app grows
+                        </li>
+                        <li>
+                           Agile development, as requirements change over time
                         </li>
                      </ul>
                   </td>
                </tr>
                <tr>
                   <td>
-                     <div class="bullet">2</div>Can be freely distributed across devices
+                     <div class="bullet">2</div>Can run distributed across devices
                   </td>
                   <td>
                      <ul>
                         <li>
-                           Scale your app by running components on different hosts.
+                           Integrate components seamlessly using one technology
+                        </li>
+                        <li>
+                           Scale your app by running components on different hosts
                         </li>
                         <li>
                            Pick the best host to run a particular set of functionality
@@ -137,13 +113,13 @@
                   <td>
                      <ul>
                         <li>
-                           Choose the best language for a given part of your app.
+                           Choose the best language for a given part of your app
                         </li>
                         <li>
-                           Make all team members productive, no matter what language they know/prefer.
+                           Make all team members productive, no matter what language
                         </li>
                         <li>
-                           Use a single language for the full stack (e.g. JavaScript).
+                           Use a single language for the full stack (e.g. JavaScript)
                         </li>
                      </ul>
                   </td>
@@ -155,7 +131,10 @@
                   <td>
                      <ul>
                         <li>
-                           Put functionality where you need it - backends can call frontends when needed, not just vice versa.
+                           Put functionality where you need it
+                        </li>
+                        <li>
+                           Backends can call frontends when needed, not just vice versa
                         </li>
                      </ul>
                   </td>
@@ -167,84 +146,24 @@
                   <td>
                      <ul>
                         <li>
-                           UIs always show current information - no refresh, no polling.
+                           Build <a href="http://www.reactivemanifesto.org/">reactive</a> apps - from sensors to UIs
                         </li>
                         <li>
-                           Offer your users the reactive applications they want.
+                           Build UIs with great user experience that users love to use
+                        </li>
+                        <li>
+                           UIs always show current information - no refresh, no polling
                         </li>
                      </ul>                  
                   </td>
                </tr>
             </table>
-
-      </div>
-
-<!--
-
-http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
-
-"Lego Color Bricks" by Alan Chia - Lego Color Bricks. Licensed under Creative Commons Attribution-Share Alike 2.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Lego_Color_Bricks.jpg#mediaviewer/File:Lego_Color_Bricks.jpg
-
-
-"<a href="http://commons.wikimedia.org/wiki/File:Lego_Color_Bricks.jpg#mediaviewer/File:Lego_Color_Bricks.jpg">Lego Color Bricks</a>" by <a rel="nofollow" class="external text" href="http://www.flickr.com/people/13403905@N03">Alan Chia</a> - <a rel="nofollow" class="external text" href="http://www.flickr.com/photos/13403905@N03/2080281038/">Lego Color Bricks</a>. Licensed under <a title="Creative Commons Attribution-Share Alike 2.0" href="http://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.
-
--->
-
-<!--
-         <br><br><br><br><br><br><br>
-
-         <div class="initial-explanation">
-            <div class="text">
-               <p>
-                  Crossbar.io apps are built from application components that
-               </p>
-               <ul>
-                  <li>
-                     are loosely coupled
-                  </li>
-                  <li>
-                     can be freely distributed across devices
-                  </li>
-                  <li>
-                     can be written in different languages
-                  </li>
-                  <li>
-                     can talk to each other without restrictions
-                  </li>
-                  <li>
-                     communicate in real time
-                  </li>
-               </ul>
-
-               <p>
-                  Constructing applications from loosely coupled, polyglot components enables quick development and deployment. You can choose the best language for a particular task, distribute development for individual components, reuse components across projects, and easily extend functionality.
-               </p>
-
-               <p>
-                  Crossbar.io is ideally suited for modern Web apps, and integrates well with many SPA frameworks and libraries such as AngularJS, KnockoutJS, ExtJS or React. It allows full-stack JavaScript development, but is much more versatile because of its polyglot nature: Applications can extend from browser frontends and native mobile clients down to embedded devices, served by backends composed across multiple servers and implemented in a mix of languages.
-               </p>
-
-            </div>
          </div>
--->
-
-<!--
-
-               Crossbar.io connects app components by providing <strong>Unified Application Routing</strong>.
-
-               App components connect to Crossbar.io
-
-
-               which will <i>route</i> all messages exchanged, and
-               components can talk to each other using <strong>two communication patterns</strong>:
-
--->
 
          <div class="how-does-it-work">
             <h1>
                How does it work?
             </h1>
-
             <p>
                Application components connect to Crossbar.io and can then talk to each other using
                two patterns:
@@ -363,8 +282,13 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
          </div>
 
          <a id="use-cases"></a>
-         <h1>Demos</h1>
+         <h1>Let me try some Demos!</h1>
          <div id="demoBox">
+            <p>
+               Crossbar.io is great for building advanced, distributed applications for
+               Mobile, Web and Internet-of-Things (IoT). In particular if you need real-time.
+               To give you a taste, here are a couple of live demos.
+            </p>
             <!-- <p>
                Crossbar.io is a good fit for ...
                WAMP is ideal for distributed, multi-client and server applications, such as multi-user database-driven business applications, sensor networks (IoT), instant messaging or MMOGs (massively multi-player online games).
@@ -376,17 +300,11 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                And WebSocket works great not only on the Web, but also as a protocol for wiring up the Internet-of-Things (IoT). Connecting a sensor or actor to other application components in real-time over an efficient protocol. Plus: you are using the same protocol to connect frontends like Web browsers.
             </p> -->
 
-            <!-- <h2>Try out a demo</h2> -->
-
             <div class="demos-overview-link">
-               <a href="https://demo.crossbar.io/">See all demos (7 total)</a>
+               Checkout all <a href="https://demo.crossbar.io/">demos</a>
+               or go directly to a randomly picked:
             </div>
-            
-            
-            <p class="direct-demos">
-               or go directly to one of three randomly picked
-            </p>
-
+            <br>
             <ul class="demos_list">
 
                <li class="nonDisplay">
@@ -394,7 +312,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      PubSub
                      <img src="{{ url_for('static', filename = 'img/screenshot_pubsub.png') }}" />
                   </a>
-                  PubSub Functionality
+                  Basic publish &amp; subscribe
                </li>
 
                <li class="nonDisplay">
@@ -402,7 +320,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Notification
                      <img src="{{ url_for('static', filename = 'img/screenshot_notifications.png') }}" />
                   </a>
-                  PubSub Functionality
+                  Real-time notifications
                </li>
 
                <li>
@@ -410,7 +328,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Chat
                      <img src="{{ url_for('static', filename = 'img/screenshot_chat.png') }}" />
                   </a>
-                  PubSub Functionality
+                  A group chat widget
                </li>
 
                <li>
@@ -418,7 +336,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Gauges
                      <img src="{{ url_for('static', filename = 'img/screenshot_gauges.png') }}" />
                   </a>
-                  PubSub Functionality
+                  Gauges with real-time sync
                </li>
 
                <li class="nonDisplay">
@@ -426,7 +344,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Sliders
                      <img src="{{ url_for('static', filename = 'img/screenshot_sliders.png') }}" />
                   </a>
-                  PubSub Functionality, jQuery UI
+                  Sliders with real-time UI sync
                </li>
 
                <li class="nonDisplay">
@@ -434,7 +352,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Colorpicker
                      <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" />
                   </a>
-                  A colorpicker with real-time synchronization
+                  A collaborative colorpicker
                </li>
 
                <li class="nonDisplay">
@@ -442,7 +360,7 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
                      Beatbox
                      <img src="{{ url_for('static', filename = 'img/screenshot_beatbox.png') }}" />
                   </a>
-                  PubSub Functionality
+                  A collaborative beatbox
                </li>
 
             </ul>
@@ -453,16 +371,16 @@ http://en.wikipedia.org/wiki/Lego#mediaviewer/File:Lego_Color_Bricks.jpg
          <div id="where_to_go">
             <ul>
                <li>
+                  Get started quickly <a href="docs/Quick-Start/">setting up Crossbar.io</a>
+               </li>
+               <li>
+                  Start developing by <a href="docs/Choose-your-Weapon/">using an app template</a> in your language
+               </li>
+               <li>
                   Learn about <a href="docs/Application-Scenarios/">application scenarios</a> that Crossbar.io supports
                </li>
                <li>
                   Find out about the <a href="docs/Architecture/">application architectures</a> that you can employ
-               </li>
-               <li>
-                  Get started quickly <a href="docs/Quick-Start/">setting up Crossbar.io</a>
-               </li>
-               <li>
-                  Start developing by <a href="docs/Choose-your-Weapon/">using an app template</a> in your language of choice
                </li>
                <li>
                   Read about <a href="https://wamp.ws/why">WAMP</a>, the protocol underyling that Crossbar.io

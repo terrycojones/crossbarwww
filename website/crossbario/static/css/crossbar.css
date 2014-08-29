@@ -40,19 +40,6 @@ a:hover {
 }
 
 
-
-
-*/
-#footer {
-   width: 95%;
-   max-width: 780px;
-   margin: 40px auto 1em auto;
-   padding: 0.8em 1em 0 1em;
-   border-top: 1px solid #ccc;
-   font-size: 13px;
-   color: #999;
-}
-
 /* Sticky footer styles
 -------------------------------------------------- */
 /* need to adapt this to a responsive solution */
@@ -378,7 +365,7 @@ span.partiallyImplemented {
    width: 95%;
    max-width: 780px;
    margin: 40px auto 1em auto;
-   padding: 0.8em 1em 0 1em;
+   padding: 0.8em 1em 20px 1em;
    border-top: 1px solid #ccc;
    font-size: 13px;
    color: #999;
