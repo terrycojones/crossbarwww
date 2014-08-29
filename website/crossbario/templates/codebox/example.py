@@ -1,7 +1,7 @@
 # 1) SUBSCRIBE to a topic to reveive events
 def onhello(msg):
    print("Got event: {}".format(msg))
-yield from session.subscribe(onhello, 'com.myapp.hello')
+session.subscribe(onhello, 'com.myapp.hello')
 
 # 2) PUBLISH an event
 session.publish('com.myapp.hello', 'Hello, world!')
