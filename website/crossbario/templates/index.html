@@ -14,6 +14,7 @@
 
    <div id="viewport">
 
+      <a id="top"></a>
       <div id="main" class="main">
          <div id="header">
             <div id="logo">
@@ -39,15 +40,34 @@
             </div>
          </center>
 
+         <center style="margin-top: 40px;">
+            <p>
+               <b>Quick links:</b>&nbsp; 
+               <a href="#why">Why should I care?</a> &nbsp; | &nbsp; 
+               <a href="#howitworks">How it works</a> &nbsp; | &nbsp; 
+               <a href="#code">Show me some code!</a> &nbsp; | &nbsp; 
+               <a href="#demos">Live Demos</a>
+               <br>
+               <b>Getting started</b>:&nbsp;
+               <a href="docs/Quick-Start/">Install</a> Crossbar.io and
+                  <a href="docs/Choose-your-Weapon/">start developing</a> using an app template in your language.
+            </p>
+         </center>
+
+         <a id="why"></a>
          <h1>
             Why should I care?
          </h1>
 
          <p style="width: 95%; margin: 30px auto 0 auto;">
-            Crossbar.io is ideally suited for modern Web apps, integrates well with many SPA frameworks and libraries such as <a href="https://angularjs.org/">AngularJS</a>, <a href="http://knockoutjs.com/">KnockoutJS</a>, <a href="http://www.sencha.com/products/extjs/">ExtJS</a> or <a href="http://facebook.github.io/react/">React</a> and allows to build reactive apps with awesome user experience.
+            Crossbar.io is ideally suited for modern Web apps, integrates well with many <a href="http://en.wikipedia.org/wiki/Single-page_application">single-page app (SPA)</a> frameworks and libraries such as <a href="https://angularjs.org/">AngularJS</a>, <a href="http://knockoutjs.com/">KnockoutJS</a>, <a href="http://www.sencha.com/products/extjs/">ExtJS</a> or <a href="http://facebook.github.io/react/">React</a> and allows you to build reactive apps with awesome user experience.
             <br><br>
 
-             Crossbar.io allows full-stack JavaScript development, but is also much more versatile because of its polyglot nature: apps can extend from browser frontends and native mobile clients down to embedded devices, served by backends composed across multiple servers and implemented in a mix of languages.
+             Crossbar.io allows full-stack JavaScript development, but is also much more versatile because of its polyglot nature: apps can extend from <a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a> browser frontends and native mobile clients (such as <a href="http://developer.android.com/index.html">Android</a> and <a href="https://developer.apple.com/devcenter/ios/">iOS</a>) down to embedded devices (such as <a href="http://www.raspberrypi.org/">RaspberryPi</a> and <a href="http://arduino.cc/">Arduino</a>), served by backends composed across multiple servers and implemented in a mix of languages.
+            <br><br>
+
+            Crossbar.io is fully <a href="https://github.com/crossbario/crossbar/">open-source</a>, builds on <a href="http://wamp.ws/">open standards</a>, does not lock you in, has a growing community of users and developers and a <a href="http://tavendo.com">company behind</a> that provides professional
+            services and support.
          </p>
 
          <div id="foowrapper">
@@ -160,9 +180,10 @@
             </table>
          </div>
 
+         <a id="howitworks"></a>
          <div class="how-does-it-work">
             <h1>
-               How does it work?
+               How it works
             </h1>
             <p>
                Application components connect to Crossbar.io and can then talk to each other using
@@ -181,7 +202,7 @@
                messages are directed and transmitted to the right components ("message routing").
             </p>
             <p class="tip">
-               Read more about <a href="">Unified Application Routing and WAMP</a> - the underlying technology.
+               Read more about <a href="http://wamp.ws/why">Unified Application Routing and WAMP</a> - the underlying technology.
             </p>
 
             <h2>Remote Procedure Calls</h2>
@@ -239,11 +260,11 @@
 
          </div>
 
-         <a id="show-me-some-code"></a>
+         <a id="code"></a>
          <h1>Show me some code!</h1>
          <div>
             <p>
-               Here is what <strong>application components</strong> look like across the <strong>different languages</strong> supported by Crossbar.io
+               Here is what <strong>application components</strong> look like in <strong>some languages</strong> supported by Crossbar.io
             </p>
             <div id="codeBlock">
                <div id="switchBar">
@@ -281,8 +302,8 @@
             </div>
          </div>
 
-         <a id="use-cases"></a>
-         <h1>Let me try some Demos!</h1>
+         <a id="demos"></a>
+         <h1>Live Demos</h1>
          <div id="demoBox">
             <p>
                Crossbar.io is great for building advanced, distributed applications for
@@ -301,8 +322,8 @@
             </p> -->
 
             <div class="demos-overview-link">
-               Checkout all <a href="https://demo.crossbar.io/">demos</a>
-               or go directly to a randomly picked:
+               Check out all <a href="https://demo.crossbar.io/">demos</a>
+               or go directly to one randomly picked:
             </div>
             <br>
             <ul class="demos_list">
@@ -366,15 +387,16 @@
             </ul>
          </div>
 
-         <a id="where-to-start"></a>
-         <h1>Where to go from here</h1>
+<!--               
+         <a id="getstarted"></a>
+         <h1>Get started</h1>
          <div id="where_to_go">
             <ul>
                <li>
-                  Get started quickly <a href="docs/Quick-Start/">setting up Crossbar.io</a>
+                  <a href="docs/Quick-Start/">Install Crossbar.io</a>
                </li>
                <li>
-                  Start developing by <a href="docs/Choose-your-Weapon/">using an app template</a> in your language
+                  Start developing in your language using an <a href="docs/Choose-your-Weapon/">app template</a>
                </li>
                <li>
                   Learn about <a href="docs/Application-Scenarios/">application scenarios</a> that Crossbar.io supports
@@ -387,6 +409,7 @@
                </li>
             </ul>
          </div>
+-->               
 
       </div>
    </div>
