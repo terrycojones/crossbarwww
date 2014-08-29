@@ -237,7 +237,7 @@ html.no-svg #github:hover {
 }
 
 .how-does-it-work > div img.pattern-illustration {
-    width: 48%;
+    width: 44%;
 
     min-width: 300px;
     max-width: 350px;
@@ -245,9 +245,9 @@ html.no-svg #github:hover {
     /* float: left; */
     display: inline;
     margin: 1em 1em;
-    background-color: #fcfcfc;
+    background-color: #FFFBE2;
     padding: 16px;
-    border-radius: 6px;
+    border-radius: 0px;
     border: 1px solid #B79F00;
 }
 
@@ -599,16 +599,21 @@ html.no-svg #github:hover {
 */    
 }
 
+#where_to_go li {
+   font-size: 22px;
+   font-weight: 300;
+   line-height: 1.7em;
+}
+
 #foowrapper {
-   margin-top: 60px;
+   margin-top: 32px;
 /*   
    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
 */   
    padding: 8px 12px 8px 12px;
-   border-radius: 8px;
+   border-radius: 0px;
    border: 1px solid #B79F00;
-    background-color: #fcfcfc;
-
+   background-color: #FFFBE2;
 }
 
 #foo {
@@ -719,6 +724,10 @@ html.no-svg #github:hover {
 #switchBar > div {
     background-color: #E0E0E0;
     border: 1px solid #CCCCCC;
+
+    background-color: #FFFBE2;
+   border: 1px solid #B79F00;
+
     display: inline-block;
     padding: 0.3em 1.1em 0em 0.7em;
     /* border-radius: 3px; */
@@ -764,12 +773,13 @@ html.no-svg #github:hover {
 }
 
 .syntaxContainer {
-    height: 470px;
+    height: 520px;
     overflow: auto;
     font-size: 14px;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid #B79F00;
+    border-radius: 0px;
 }
 
 
@@ -807,6 +817,10 @@ html.no-svg #github:hover {
 
 div.highlight {
    border: none;
+}
+
+div.highlight pre {
+   font-size: 15px;
 }
 
 .tip {
