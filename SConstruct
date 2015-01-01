@@ -105,7 +105,7 @@ Depends(uploaded, imgs)
 
 Clean(uploaded, UPLOADED_DIR)
 
-Alias("publish", uploaded)
+Alias("upload", uploaded)
 
 
 

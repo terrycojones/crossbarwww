@@ -1,13 +1,17 @@
 all:
-	@echo "Targets:"
+	@echo "Main targets:"
 	@echo ""
-	@echo "  clean"
-	@echo "  img"
-	@echo "  freeze"
-	@echo "  upload"
-	@echo "  publish"
-	@echo "  test"
-	@echo "  test_frozen"
+	@echo "  test         : test the Web site locally"
+	@echo "  testf        : freeze and test the Web site locally"
+	@echo "  publish      : freeze and publish the Web site"
+	@echo ""
+	@echo "More targets:"
+	@echo ""
+	@echo "  clean        : clean everything"
+	@echo "  img          : build images"
+	@echo "  freeze       : build static Web site"
+	@echo "  upload       : upload Web site to S3"
+	@echo "  requirements : install software packages required to build the Web site"
 	@echo ""
 
 requirements:
@@ -28,23 +32,16 @@ clean:
 img:
 	scons img
 
-freeze: img
+freeze:
 	python website/crossbario/__init__.py -f
 
+test: img
+	python website/crossbario/__init__.py -d --widgeturl '' -p 8080
+
+testf: img
+	python website/crossbario/__init__.py -f -d --widgeturl '' -p 8080
+
 upload:
-#	python website/crossbario/upload.py --bucket 'crossbar.io' --directory 'build'
-	python website/crossbario/upload.py --bucket 'www-crossbario' --directory 'build'
+	scons upload
 
 publish: img freeze upload
-
-test: img
-	python website/crossbario/__init__.py -d -p 8080
-
-test_no_network: img
-	python website/crossbario/__init__.py -d --nonetwork --widgeturl 'http://127.0.0.1:8090/widget' -p 8080 --cstatic 'http://127.0.0.1:8888'
-
-test_socketserver:
-	python website/crossbario/__init__.py -d -s --widgeturl 'http://127.0.0.1:8090/widget' -p 8080
-
-test_frozen: img freeze
-	python website/crossbario/__init__.py -f -d --widgeturl 'http://127.0.0.1:8090/widget' -p 8080
