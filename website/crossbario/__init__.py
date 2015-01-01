@@ -81,12 +81,12 @@ class MyInlineGrammar(mistune.InlineGrammar):
 
 
 class MyInlineLexer(mistune.InlineLexer):
-    default_features = copy.copy(mistune.InlineLexer.default_features)
+    default_rules = copy.copy(mistune.InlineLexer.default_rules)
 
     # Add wiki_link parser to default features
     # you can insert it any place you like
-    default_features.insert(3, 'wiki_link')
-    default_features.insert(3, 'wiki_short_link')
+    default_rules.insert(3, 'wiki_link')
+    default_rules.insert(3, 'wiki_short_link')
 
     def __init__(self, renderer, rules=None, **kwargs):
         if rules is None:
