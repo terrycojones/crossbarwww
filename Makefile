@@ -10,18 +10,30 @@ all:
 	@echo "  test_frozen"
 	@echo ""
 
+requirements:
+	#pip install scons # fails on Windows, so install manually
+	pip install taschenmesser
+	pip install scour
+	pip install boto
+	pip install flask
+	pip install jinja2-highlight
+	pip install mistune
+	pip install frozen-flask
+
 clean:
 	rm -rf website/crossbario/build
+	rm -rf website/crossbario/build_uploaded
 	scons -uc
 
 img:
-	scons
+	scons img
 
-freeze:
+freeze: img
 	python website/crossbario/__init__.py -f
 
 upload:
-	python website/crossbario/upload.py --bucket 'crossbar.io' --directory 'build'
+#	python website/crossbario/upload.py --bucket 'crossbar.io' --directory 'build'
+	python website/crossbario/upload.py --bucket 'www-crossbario' --directory 'build'
 
 publish: img freeze upload
 
@@ -34,5 +46,5 @@ test_no_network: img
 test_socketserver:
 	python website/crossbario/__init__.py -d -s --widgeturl 'http://127.0.0.1:8090/widget' -p 8080
 
-test_frozen:
+test_frozen: img freeze
 	python website/crossbario/__init__.py -f -d --widgeturl 'http://127.0.0.1:8090/widget' -p 8080

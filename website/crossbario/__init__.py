@@ -1,6 +1,6 @@
 ###############################################################################
 ##
-##  Copyright 2013 Tavendo GmbH
+##  Copyright (C) 2013-2014 Tavendo GmbH
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
 ##  you may not use this file except in compliance with the License.
@@ -270,43 +270,6 @@ def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
-
-
-if False:
-   @app.route('/howitworks/')
-   def page_howitworks():
-      session['tab_selected'] = 'page_howitworks'
-      return render_template('page_t_howitworks.html')
-
-   @app.route('/gettingstarted/')
-   def page_gettingstarted():
-      session['tab_selected'] = 'page_gettingstarted'
-      return render_template('page_t_gettingstarted.html')
-
-   @app.route('/features/')
-   def page_features():
-      session['tab_selected'] = 'page_features'
-      return render_template('page_t_features.html')
-
-   @app.route('/roadmap/')
-   def page_roadmap():
-      session['tab_selected'] = 'page_roadmap'
-      return render_template('page_t_roadmap.html')
-
-   @app.route('/faq/')
-   def page_faq():
-      session['tab_selected'] = 'page_faq'
-      return render_template('page_t_faq.html')
-
-   @app.route('/reference/')
-   def page_reference():
-      session['tab_selected'] = 'page_reference'
-      return render_template('page_t_reference.html')
-
-   @app.route('/contribute/')
-   def page_contribute():
-      session['tab_selected'] = 'page_faq'
-      return render_template('page_t_contribute.html')
 
 
 if __name__ == "__main__":
