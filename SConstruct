@@ -1,6 +1,6 @@
 ###############################################################################
 ##
-##  Copyright (C) 2012-2014 Tavendo GmbH
+##  Copyright (C) 2012-2015 Tavendo GmbH
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
 ##  you may not use this file except in compliance with the License.
@@ -67,7 +67,7 @@ UPLOAD_DIR = 'website/crossbario/build'
 UPLOADED_DIR = 'website/crossbario/build_uploaded'
 
 ## The Tavendo S3 Bucket to upload to
-BUCKET = 'www-crossbario'
+BUCKET = 'crossbar.io'
 
 ## The Bucket Prefix to upload files to
 BUCKET_PREFIX = ''
