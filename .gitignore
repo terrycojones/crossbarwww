@@ -1,5 +1,5 @@
 *.sublime-workspace
 .sconsign.dblite
-website/crossbario/build
+website/crossbario/build*
 build
 website/crossbario/static/img/gen
