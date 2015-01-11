@@ -351,8 +351,7 @@ if __name__ == "__main__":
       @freezer.register_generator
       def list_doc_pages():
          for p in app.wikipages._pages.keys():
-            if not p.startswith('FAQ'):
-               yield "/docs/{}/".format(p)
+            yield "/docs/{}/".format(p)
 #            yield {'path': p}
 
       freezer.freeze()
