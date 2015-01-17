@@ -52,6 +52,7 @@ code {
 
 #contents td, th {
    padding: 3px;
+   vertical-align: top;
 }
 
 #contents h2 {
