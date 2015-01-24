@@ -53,7 +53,10 @@ SVG_FILES = [
    'rpc_register.svg',
    'rpc_call.svg',
    'pubsub_subscribe.svg',
-   'pubsub_publish.svg'
+   'pubsub_publish.svg',
+
+   'iot_draft.svg',
+   'web_draft.svg'
 ]
 
 IMG_SOURCE_DIR = "design"
