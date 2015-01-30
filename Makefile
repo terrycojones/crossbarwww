@@ -38,10 +38,10 @@ freeze:
 test: img
 	python website/crossbario/__init__.py -d --widgeturl '' -p 8080
 
-testf: img
+test_frozen: img
 	python website/crossbario/__init__.py -f -d --widgeturl '' -p 8080
 
 upload:
 	scons upload
 
-publish: img freeze upload
+deploy: img freeze upload
