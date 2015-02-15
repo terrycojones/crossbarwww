@@ -1,6 +1,6 @@
 {% extends "layout_t.html" %}
 
-{% block additionalload %}
+{% block subheader %}
    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
 
@@ -18,7 +18,7 @@
       <div id="main" class="main">
          <div id="header">
             <div id="logo">
-               <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_and_text_vectorized.svg') }}" class="cb_icon_and_text">
+               <img src="{{ url_for('static', filename = 'img/gen/crossbar_icon_and_text_vectorized.svg') }}" class="cb_icon_and_text" alt="crossbar icon and crossbar name">
             </div>
             <div id="header-cta">
                Break away from the past.
@@ -471,7 +471,7 @@ var switchCarousel = function (type) {
                <li class="nonDisplay">
                   <a href="https://demo.crossbar.io/demo/pubsub/index.html">
                      PubSub
-                     <img src="{{ url_for('static', filename = 'img/screenshot_pubsub.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_pubsub.png') }}" alt="screenshot of PubSub demo" />
                   </a>
                   Basic publish &amp; subscribe
                </li>
@@ -479,7 +479,7 @@ var switchCarousel = function (type) {
                <li class="nonDisplay">
                   <a href="https://demo.crossbar.io/demo/notification/index.html">
                      Notification
-                     <img src="{{ url_for('static', filename = 'img/screenshot_notifications.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_notifications.png') }}" alt="screenshot of notifications demo" />
                   </a>
                   Real-time notifications
                </li>
@@ -487,7 +487,7 @@ var switchCarousel = function (type) {
                <li>
                   <a href="https://demo.crossbar.io/demo/chat/index.html#ch1">
                      Chat
-                     <img src="{{ url_for('static', filename = 'img/screenshot_chat.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_chat.png') }}" alt="screenshot of chat demo" />
                   </a>
                   A group chat widget
                </li>
@@ -495,7 +495,7 @@ var switchCarousel = function (type) {
                <li>
                   <a href="https://demo.crossbar.io/demo/gauges/index.html">
                      Gauges
-                     <img src="{{ url_for('static', filename = 'img/screenshot_gauges.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_gauges.png') }}" alt="screenshot of gauges demo"/>
                   </a>
                   Gauges with real-time sync
                </li>
@@ -503,7 +503,7 @@ var switchCarousel = function (type) {
                <li class="nonDisplay">
                   <a href="https://demo.crossbar.io/demo/sliders/index.html">
                      Sliders
-                     <img src="{{ url_for('static', filename = 'img/screenshot_sliders.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_sliders.png') }}" alt="screenshot of sliders demo"/>
                   </a>
                   Sliders with real-time UI sync
                </li>
@@ -511,7 +511,7 @@ var switchCarousel = function (type) {
                <li class="nonDisplay">
                   <a href="https://demo.crossbar.io/demo/colorpicker/index.html">
                      Colorpicker
-                     <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_colorpicker.png') }}" alt="screenshot of colorpicker demo"/>
                   </a>
                   A collaborative colorpicker
                </li>
@@ -519,9 +519,17 @@ var switchCarousel = function (type) {
                <li class="nonDisplay">
                   <a href="https://demo.crossbar.io/demo/beatbox/index.html">
                      Beatbox
-                     <img src="{{ url_for('static', filename = 'img/screenshot_beatbox.png') }}" />
+                     <img src="{{ url_for('static', filename = 'img/screenshot_beatbox.png') }}" alt="screenshot of beatbox demo" />
                   </a>
                   A collaborative beatbox
+               </li>
+
+               <li class="nonDisplay">
+                  <a href="https://demo.crossbar.io/demo/vote/web/index.html">
+                     Votes
+                     <img src="{{ url_for('static', filename = 'img/screenshot_votes.png') }}" alt="screenshot of votes demo" />
+                  </a>
+                  Collaborative live voting
                </li>
 
             </ul>
