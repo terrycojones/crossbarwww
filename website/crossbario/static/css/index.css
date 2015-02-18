@@ -858,8 +858,11 @@ div.highlight pre {
 
 .topCarousel .controller button.active {
     color: #A18700;
-    
     text-decoration: underline;
+}
+
+.topCarousel .controller button:focus {
+    color: #A18700;
 }
 
 .topCarousel .contentWrapper {
