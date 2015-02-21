@@ -15,7 +15,7 @@ all:
 	@echo ""
 
 requirements:
-	#pip install scons # fails on Windows, so install manually
+	# pip install --egg scons # Fails on Windows, so install manually
 	pip install taschenmesser
 	pip install scour
 	pip install boto
