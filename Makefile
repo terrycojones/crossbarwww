@@ -31,6 +31,8 @@ clean:
 
 img:
 	scons img
+# images for the documentation are created via 'make img' inside 'static/img/docs'
+
 
 freeze:
 	python website/crossbario/__init__.py -f
