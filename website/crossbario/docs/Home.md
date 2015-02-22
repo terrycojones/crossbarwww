@@ -119,16 +119,35 @@ Testing your instance & browser support.
 
 Guides for using Crossbar.io in specific scenarios, or for using specific features of WAMP & Crossbar.io in your applications.
 
+* WAMP features
+
+  - Session
+
+    + [Session Metaevents](Session Metaevents)
+    + [Using Schemas](Using Schemas)
+
+  - Subscriptions
+
+    + [How Subscriptions Work](How Subscriptions Work)
+    + [Pattern-Based Subscriptions](Pattern Based Subscriptions)
+    + [Subscription Meta-Events](Subscription Meta Events)
+
+  - Registrations
+
+    + How Registrations Work
+    + Pattern-Based Registrations
+    + Invokation Rules
+    + How a callee is determined
+    + Registration Meta-Events
+
 * Frameworks & Specific Scenarios
+
   - [Adding Real-Time to Django Applications](Adding Real Time to Django Applications)
   - [[AngularJS Application Components]]
   - [Database Programming with PostgreSQL](Database Programming with PostgreSQL)
 
-* WAMP features
-  - [Session Metaevents](Session Metaevents)
-  - [Using Schemas](Using Schemas)
-
 * Crossbar.io features
+
   - [Starting and Stopping Crossbar.io](Starting and Stopping Crossbar.io)
 
 
