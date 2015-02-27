@@ -82,4 +82,4 @@ session.subscribe("com.mychatapp.privatechannel.123", printMyEvents, { match: "e
 Since this is the default, it is unnecessary though, unless there is a need to make the matching policy explicit as a marker in the code.
 
 
-> Note: the above examples are for Autobahn|JS since this we also maintain and use this WAMP client library, and JavaScript is the closest there is to a lingua franca in programming. Users of other WAMP client libraries should feel free to add code examples for these!
+> Note: the above examples are for Autobahn|JS since we also maintain and use this WAMP client library, and JavaScript is the closest there is to a lingua franca in programming. Users of other WAMP client libraries should feel free to add code examples for these!
