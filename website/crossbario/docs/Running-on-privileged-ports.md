@@ -23,3 +23,6 @@ sudo setcap cap_net_bind_service=+ep `which pypy`
 ```
 
 > Note that with above, any user on the host that is able to execute PyPy (or Crossbar) will be able to bind privileged ports *with any Python script*. If the host is used by others as well, you might want to restrict *execution permissions* on the binaries again.
+
+> Also note that using capabilities will disable searching directories for shared libraries from `LD_LIBRARY_PATH`. See [here](http://stackoverflow.com/questions/9843178/linux-capabilities-setcap-seems-to-disable-ld-library-path)
+> 
