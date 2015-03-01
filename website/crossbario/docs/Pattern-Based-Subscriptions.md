@@ -6,8 +6,8 @@ There are use cases where more flexibility is required. As an example, in a chat
 
 WAMP offers two matching mechanisms to cover use cases such as these:
 
-* prefix subscriptions
-* wildcard subscriptions
+* prefix matchin
+* wildcard matching
 
 ## Prefix Matching
 
@@ -70,6 +70,11 @@ As an example, in an application written in JavaScript and using Autobahn|JS as 
 session.subscribe("com.mychatapp.privatechannel..statusupdate", monitorStatusUpdates, { match: "wildcard" });
 ```
 
+> Using wildcard matching, only entire component parts of URIs can be set as wildcards. There is no mechanism to match partially identical components, e.g. "com.myapp.user3278378" and "com.myapp.user7727278".
+
+## No combination of prefix & wildcard matching
+
+Only one of prefix matching and wildcard matching may be set for a subscription URI, i.e. there is no way to combine the two matching policies.
 
 ## Exact matching
 
@@ -83,3 +88,7 @@ Since this is the default, it is unnecessary though, unless there is a need to m
 
 
 > Note: the above examples are for Autobahn|JS since we also maintain and use this WAMP client library, and JavaScript is the closest there is to a lingua franca in programming. Users of other WAMP client libraries should feel free to add code examples for these!
+
+## Working Example
+
+For a full working example in JavaScript, see [Crossbar Examples](https://github.com/crossbario/crossbarexamples/tree/master/metaapi).

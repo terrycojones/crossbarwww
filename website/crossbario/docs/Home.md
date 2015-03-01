@@ -119,7 +119,7 @@ Testing your instance & browser support.
 
 Guides for using Crossbar.io in specific scenarios, or for using specific features of WAMP & Crossbar.io in your applications.
 
-* WAMP features
+* [WAMP Features](WAMP Features)
 
   - Session
 
@@ -130,15 +130,15 @@ Guides for using Crossbar.io in specific scenarios, or for using specific featur
 
     + [How Subscriptions Work](How Subscriptions Work)
     + [Pattern-Based Subscriptions](Pattern Based Subscriptions)
-    + [Subscription Meta-Events](Subscription Meta Events)
+    + [Subscription Meta-Events and Procedures](Subscription Meta Events and Procedures)
 
   - Registrations
 
-    + How Registrations Work
-    + Pattern-Based Registrations
-    + Invokation Rules
-    + How a callee is determined
-    + Registration Meta-Events
+    + [How Registrations Work](How Registrations Work)
+    + [Pattern-Based Registrations](Pattern Based Registrations)
+    + [How A Callee Is Determined](How A Callee Is Determined)
+    + [Invokation Rules](Invokation Rules)    
+    + [Registration Meta-Events and Procedures](Registration Meta-Events and Procedures)
 
 * Frameworks & Specific Scenarios
 

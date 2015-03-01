@@ -1,10 +1,12 @@
 A subscription is created within Crossbar.io when a first client issues a subscription request for a topic, and it is deleted when the last client unsubscribes or its session is disconnected. In between, other client sessions may be attached to the subscription or removed from it.
 
-Subscription meta-events give information about these events. Additionally, there is a set of procedures which can be called to receive information about currently existing subscriptions.
+Subscription meta-events give information about these events. Additionally, there is a set of meta-procedures which can be called to receive information about currently existing subscriptions.
 
-## Use cases for subscription meta-events
+Meta-events are created by the router itself. This means that the events as well as the data received when calling a meta-procedure can be accorded the same trust level as the router.
 
-Within an application, it may be desirable for a publisher to know whether a publication to a specific topic currently makes sense, i.e. whether there are any subscribers who would receive an event based on the publication. It may also be desirable to keep a current count of subscribers to a topic to then be able to filter out any subscribers who are not supposed to receive an event.
+## Use cases for subscription meta-events & procedures
+
+Within an application, it may be desirable for a publisher to know whether a publication to a specific topic currently makes sense, i.e. whether there are any subscribers who would receive an event based on the publication. It may also be desirable to keep a current count of subscribers to a topic to then be able to filter out any subscribers who are not supposed to receive an event. 
 
 ## Events
 
@@ -16,6 +18,10 @@ The set of meta events covers the lifecycle of a subscription. A client can subs
 * `wamp.subscription.on_delete`: Is fired when a subscription is deleted after the last session attached to it has been removed.
 
 > Note: A `wamp.subscription.on_subscribe` event is always fired subsequent to a `wamp.subscription.on_create` event, since the first subscribe results in both the creation of the subscription and the addition of a session. Similarly, the `wamp.subscription.on_delete` event is always preceded by a `wamp.subscription.on_unsubscribe` event.
+
+The WAMP subscription meta events are dispatched by the router to the *same realm* as the WAMP session which triggered the event.
+
+**Important**: To receive and process these events, your component will need to have *subscribe* permission on the respective topic.
 
 ## Procedures
 
@@ -35,15 +41,15 @@ session.call("wamp.subscription.list").then(session.log, session.log)
 Example code for **looking up a subscription**:
 
 ```javascript
-session.call("wamp.subscription.lookup", ["com.myapp.topic1"])
+session.call("wamp.subscription.lookup", ["com.myapp.topic1"]).then(session.log, session.log)
 ```
 
 ```javascript
-session.call("wamp.subscription.lookup", ["com.myapp", { match: "prefix" }])
+session.call("wamp.subscription.lookup", ["com.myapp", { match: "prefix" }]).then(session.log, session.log)
 ```
 
 ```javascript
-session.call("wamp.subscription.lookup", ["com.myapp..create", { match: "wildcard" }])
+session.call("wamp.subscription.lookup", ["com.myapp..create", { match: "wildcard" }]).then(session.log, session.log)
 ```
 
 Using a subscription ID, information about a specific subscription can be retrieved using:
@@ -70,3 +76,8 @@ Example code for **getting the subscriber count**:
 session.call("wamp.subscription.count_subscribers", [23560753]).then(session.log, session.log)
 ```
 
+> Note: the above examples are for Autobahn|JS. Users of other WAMP client libraries should feel free to add code examples for these!
+
+## Working Example
+
+For a full working example in JavaScript, see [Crossbar Examples](https://github.com/crossbario/crossbarexamples/tree/master/metaapi).
