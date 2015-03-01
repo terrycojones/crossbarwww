@@ -33,10 +33,10 @@ img:
 	scons img
 
 freeze:
-	python website/crossbario/__init__.py -f
+	python website/crossbario/__init__.py -f    --widgeturl ''
 
 test: img
-	python website/crossbario/__init__.py -d --widgeturl '' -p 8080
+	python website/crossbario/__init__.py    -d --widgeturl '' -p 8080
 
 test_frozen: img
 	python website/crossbario/__init__.py -f -d --widgeturl '' -p 8080
