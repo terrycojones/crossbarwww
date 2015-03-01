@@ -29,10 +29,11 @@ The WAMP registration meta events are dispatched by the router to the *same real
 
 It is possible to actively retrieve information about registrations via the following procedures. 
 
-You can retrieve registration IDs via the following two procedures:
+You can retrieve registration IDs via the following three procedures:
 
 * `wamp.registration.list`: Returns an object with three lists of the registration IDs for all current registrations for exact matching, prefix matching and wildcard matching. 
 * `wamp.registration.lookup`: Returns the registration ID for an existing registration to the provided URI, or null if no such registration exists. The matching policy to apply is set as an option, with exact matching applied if this is omitted.
+* `wamp.registration.match`: Returns a list of IDs of registrations which currently match the URI using any matching strategy.
 
 Example code for retrieving the **lists of current registrations**:
 
@@ -52,6 +53,12 @@ session.call("wamp.registration.lookup", ["com.myapp", { match: "prefix" }]).the
 
 ```javascript
 session.call("wamp.registration.lookup", ["com.myapp..create", { match: "wildcard" }]).then(session.log, session.log)
+```
+
+Example code for **matching registrations**:
+
+```javascript
+session.call("wamp.registration.match", ["com.myapp.procedure1"]).then(session.log, session.log)
 ```
 
 Using a registration ID, information about a specific registration can be retrieved using:

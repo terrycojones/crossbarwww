@@ -12,4 +12,4 @@ As a default, a procedure can only be registered by a single callee. All further
 
 [How a callee is determined](How a callee is determined) covers rules which are necessary to make sure that only a single, predictable callee receives an invokation of a procedure for each call that a caller makes.
 
-Finally, [Registration Meta-Events](Registration Meta Events) allow clients to be notfied of events regarding the lifecycle of registrations, and to query for information about existing registrations.
+Finally, [Registration Meta-Events and Procedures](Registration Meta Events and Procedures) allow clients to be notfied of events regarding the lifecycle of registrations, and to query for information about existing registrations.

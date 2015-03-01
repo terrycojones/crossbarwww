@@ -6,7 +6,7 @@ There are use cases where more flexibility is required. As an example, in a chat
 
 WAMP offers two matching mechanisms to cover use cases such as these:
 
-* prefix matchin
+* prefix matching
 * wildcard matching
 
 ## Prefix Matching
@@ -32,12 +32,20 @@ but not
 
 Using this, in the chat application mentioned initially, the logging component would subscribe to `com.mychatapp.privatechannel` using prefix matching, and receive the events for any private channels.
 
-To enable prefix matching, the matchig policy "prefix" needs to be set within the subscription options. 
+To enable prefix matching, the matchig policy `prefix` needs to be set within the subscription options. 
 
 As an example, in an application written in JavaScript and using Autobahn|JS as the WAMP client library, the subscription would be
 
 ```javascript
 session.subscribe("com.mychatapp.privatechannel", logPrivateChannels, { match: "prefix" });
+```
+
+Since with prefix matching there is no local knowledge of the URI for a received event, events which are dispatched to subscribers here contain the URI of the publication.
+
+For example, when the handler `logPrivateChannels` is called based on the above subscription, the handler can only be certain that the URI of the publication based on which it received an event begins with `com.mychatapp.privatechannel`. The event contains the information about the topic as part of the event details, e.g. 
+
+```javascript
+{publication: 464157938, publisher: undefined, topic: "com.myapp.topic1"}
 ```
 
 ## Wildcard Matching
@@ -48,7 +56,7 @@ For example, the subscription topic URI
 
 `com.myapp..create`
 
-contains three defined URI components ("com", "myapp", "create") and one wildcard, which is indicated by the double dots between "myapp" and "create".
+contains three defined URI components (`com`, `myapp`, `create`) and one wildcard, which is indicated by the double dots between `myapp` and `create`.
 
 This would be matched by
 
@@ -60,9 +68,9 @@ but not
 `com.myapp.product.delete`
 `com.myapp.product.123.create`
 
-Using this, in the chat application mentioned initially, the component monitoring status updates would subscribe to `com.mychatapp.privatechannel..statusupdate` using wildcard matching and receive just the status updates for any priivate channels.
+Using this, in the chat application mentioned initially, the component monitoring status updates would subscribe to `com.mychatapp.privatechannel..statusupdate` using wildcard matching and receive just the status updates for any private channels.
 
-To enable wildcard matching, the matchin policy "wildcard" needs to be set within the subscription options.
+To enable wildcard matching, the matchin policy `wildcard` needs to be set within the subscription options.
 
 As an example, in an application written in JavaScript and using Autobahn|JS as the WAMP client library, the subscription would be
 
@@ -70,24 +78,35 @@ As an example, in an application written in JavaScript and using Autobahn|JS as 
 session.subscribe("com.mychatapp.privatechannel..statusupdate", monitorStatusUpdates, { match: "wildcard" });
 ```
 
-> Using wildcard matching, only entire component parts of URIs can be set as wildcards. There is no mechanism to match partially identical components, e.g. "com.myapp.user3278378" and "com.myapp.user7727278".
+> Using wildcard matching, only entire component parts of URIs can be set as wildcards. There is no mechanism to match partially identical components, e.g. `com.myapp.user3278378` and `com.myapp.user7727278`.
 
-## No combination of prefix & wildcard matching
 
-Only one of prefix matching and wildcard matching may be set for a subscription URI, i.e. there is no way to combine the two matching policies.
+Just as with prefix matching, with wildcard matching the publication URI is part of the event details.
 
 ## Exact matching
 
-It is possibly to explicitly set the matching policy for exact matching, e.g.
+While is possibly to explicitly set the matching policy for exact matching, e.g.
 
 ```javascript
 session.subscribe("com.mychatapp.privatechannel.123", printMyEvents, { match: "exact" });
 ```
 
-Since this is the default, it is unnecessary though, unless there is a need to make the matching policy explicit as a marker in the code.
+this is unnecessary, unless there is a need to make the matching policy explicit as a marker in the code. Absent an explicit setting of `match`, the default value `exact` applies.
 
 
 > Note: the above examples are for Autobahn|JS since we also maintain and use this WAMP client library, and JavaScript is the closest there is to a lingua franca in programming. Users of other WAMP client libraries should feel free to add code examples for these!
+
+## Multiple Matching Subscriptions
+
+With pattern-based subscriptions it becomes possible that a component has multiple subscriptions which match the topic URI of a publication. Since subscriptions are separate entities, the component then receives one event for each of its subscriptions.
+
+## No Set-Based Subscription Logic
+
+Subscriptions are entities which are based on a combination of registration URI and matching policy. It is thus not possible to perform any set-based logic with subscriptions.
+
+As an example: 
+
+There is an existing subscription for the URI `com.myapp` using prefix matching. It is then not possible to send an 'unsubscribe' for the URI `com.myapp.topic2` in order to exclude events published to this URI from being dispatched to the subscriber.
 
 ## Working Example
 

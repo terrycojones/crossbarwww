@@ -123,22 +123,28 @@ Guides for using Crossbar.io in specific scenarios, or for using specific featur
 
   - Session
 
-    + [Session Metaevents](Session Metaevents)
+    + [Session Metaevents and Procedures](Session Metaevents and Procedures)
     + [Using Schemas](Using Schemas)
 
-  - Subscriptions
+  - Publish & Subscribe (PubSub)
 
     + [How Subscriptions Work](How Subscriptions Work)
+    + [Basic Subscriptions](Basic Subscriptions)
+    + [Publisher Black- and Whitelisting](Publisher Black and Whitelisting)
+    + [Publisher Exclusion](Publisher Exclusion)
+    + [Publisher Identification](Publisher Identification)
     + [Pattern-Based Subscriptions](Pattern Based Subscriptions)
     + [Subscription Meta-Events and Procedures](Subscription Meta Events and Procedures)
 
-  - Registrations
+  - Remote Procedure Calls (RPC)
 
     + [How Registrations Work](How Registrations Work)
+    + [Basic Registrations](Basic Registrations)
+    + [Caller Identification](Caller Identification)
+    + [Progressive Call Results](Progressive Call Results)
     + [Pattern-Based Registrations](Pattern Based Registrations)
-    + [How A Callee Is Determined](How A Callee Is Determined)
-    + [Invokation Rules](Invokation Rules)    
-    + [Registration Meta-Events and Procedures](Registration Meta-Events and Procedures)
+    + [Shared Registrations](Shared Registrations)    
+    + [Registration Meta-Events and Procedures](Registration Meta Events and Procedures)
 
 * Frameworks & Specific Scenarios
 

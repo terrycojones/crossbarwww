@@ -27,10 +27,13 @@ The WAMP subscription meta events are dispatched by the router to the *same real
 
 It is possible to actively retrieve information about subscriptions via the following procedures. 
 
-You can retrieve subscription IDs via the following two procedures:
+## Retrieve Subscription IDs
+
+You can retrieve subscription IDs via the following three procedures:
 
 * `wamp.subscription.list`: Returns an object with three lists of the subscription IDs for all current subscriptions for exatc matching, prefix matching and wildcard matching. 
 * `wamp.subscription.lookup`: Returns the subscription ID for an existing subscription to the provided topic URI, or null if no such subscription exists. The matching policy to apply is set as an option, with exact matching applied if this is omitted.
+* `wamp.subscription.match`: Returns a list of IDs of subscriptions which match the URI, irrespetive of what matching policy this match is based, i.e. a list of the IDs of all subscriptions which would presently receive a publication to the URI.
 
 Example code for retrieving the **lists of current subscriptions**:
 
@@ -51,6 +54,14 @@ session.call("wamp.subscription.lookup", ["com.myapp", { match: "prefix" }]).the
 ```javascript
 session.call("wamp.subscription.lookup", ["com.myapp..create", { match: "wildcard" }]).then(session.log, session.log)
 ```
+
+Example code for **matching subscriptions**:
+
+```javascript
+session.call("wamp.subscription.match", ["com.myapp.topic1"]).then(session.log, session.log)
+```
+
+## Retrieve information about a subscription
 
 Using a subscription ID, information about a specific subscription can be retrieved using:
 
