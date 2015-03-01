@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="799.99597"
+   height="194.13022"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="crossbar_http_push.svg"
+   inkscape:export-filename="F:\scm\tavendo\crossbar\crossbar.wiki\images\crossbar_http_push.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="397.39078"
+     inkscape:cy="80.870373"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1440"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(482.46057,59.238651)">
+    <g
+       id="g2989"
+       transform="matrix(0.77408625,0,0,0.77408625,-483.93422,-60.712305)">
+      <text
+         id="text2991"
+         style="font-size:20px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="43.75"
+         x="240"
+         xml:space="preserve">Calls</text>
+      <text
+         id="text2993"
+         style="font-size:20px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="208.75"
+         x="240"
+         xml:space="preserve">Notifications</text>
+      <path
+         id="path2995"
+         d="m 677.73438,167.5 0,85 188.90624,0 0,-85 -188.90624,0 z"
+         style="fill:#e8eef7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path2997"
+         d="m 677.73438,252.5 188.90624,0 0,-85 -188.90624,0 0,85 z"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text2999"
+         style="font-size:16.25px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="215"
+         x="738.75"
+         xml:space="preserve">Crossbar</text>
+      <path
+         id="path3001"
+         d="m 677.73438,2.109375 0,85.078125 188.90624,0 0,-85.078125 -188.90624,0 z"
+         style="fill:#e8eef7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3003"
+         d="m 677.73438,87.1875 188.90624,0 0,-85.078125 -188.90624,0 0,85.078125 z"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3005"
+         style="font-size:16.25px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="50"
+         x="712.5"
+         xml:space="preserve">Web Application</text>
+      <path
+         id="path3007"
+         d="m 772.1875,87.1875 0,63.20312"
+         style="fill:none;stroke:#da078b;stroke-width:2.03125px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3009"
+         d="M 778.35938,148.82812 772.1875,167.5 l -6.17188,-18.67188 12.34376,0 z"
+         style="fill:#da078b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3011"
+         d="m 725.39062,117.34375 0,20 93.59376,0 0,-20 -93.59376,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3013"
+         style="font-size:16.25px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#da078b;font-family:Arial"
+         y="132.5"
+         x="725"
+         xml:space="preserve">HTTP</text>
+      <text
+         id="text3015"
+         style="font-size:16.25px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#da078b;font-family:Arial"
+         y="132.5"
+         x="768.75"
+         xml:space="preserve">/</text>
+      <text
+         id="text3017"
+         style="font-size:16.25px;font-style:normal;font-weight:bold;text-align:start;text-anchor:start;fill:#da078b;font-family:Arial"
+         y="132.5"
+         x="773.75"
+         xml:space="preserve">POST</text>
+      <path
+         id="path3019"
+         d="m 191.09375,68.28125 486.64063,0 0,14.140625"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3021"
+         d="m 424.0625,60.234375 0,16.015625 34.84375,0 0,-16.015625 -34.84375,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3023"
+         style="font-size:13.75px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="72.5"
+         x="423.75"
+         xml:space="preserve">HTTP</text>
+      <path
+         id="path3025"
+         d="m 630.46875,44.609375 -33.04687,33.125 0,-21.875 -108.67188,0 0,-22.5 108.67188,0 0,-21.796875 33.04687,33.046875 z"
+         style="fill:#e8eef7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3027"
+         d="m 630.46875,44.609375 -33.04687,33.125 0,-21.875 -108.67188,0 0,-22.5 108.67188,0 0,-21.796875 33.04687,33.046875 z"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3029"
+         style="font-size:13.75px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="48.75"
+         x="541.25"
+         xml:space="preserve">REST</text>
+      <path
+         id="path3031"
+         d="m 191.09375,228.90625 486.64063,0 0,14.14063"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3033"
+         d="m 407.42188,220.85938 0,16.01562 68.125,0 0,-16.01562 -68.125,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3035"
+         style="font-size:13.75px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="232.5"
+         x="407.5"
+         xml:space="preserve">WebSocket</text>
+      <path
+         id="path3037"
+         d="m 488.75,205.23438 33.04688,33.125 0,-21.875 108.67187,0 0,-22.5 -108.67187,0 0,-21.79688 -33.04688,33.04688 z"
+         style="fill:#e8eef7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3039"
+         d="m 488.75,205.23438 33.04688,33.125 0,-21.875 108.67187,0 0,-22.5 -108.67187,0 0,-21.79688 -33.04688,33.04688 z"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3041"
+         style="font-size:13.75px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="208.75"
+         x="538.75"
+         xml:space="preserve">WAMP</text>
+      <path
+         id="path3043"
+         d="m 2.109375,2.109375 0,250.390625 188.984375,0 0,-250.390625 -188.984375,0 z"
+         style="fill:#e8eef7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3045"
+         d="m 2.109375,252.5 188.984375,0 0,-250.390625 -188.984375,0 0,250.390625 z"
+         style="fill:none;stroke:#000000;stroke-width:0.390625px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3047"
+         style="font-size:16.25px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="132.5"
+         x="26.25"
+         xml:space="preserve">Frontend </text>
+      <text
+         id="text3049"
+         style="font-size:16.25px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="132.5"
+         x="97.5"
+         xml:space="preserve">/ </text>
+      <text
+         id="text3051"
+         style="font-size:16.25px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Arial"
+         y="132.5"
+         x="106.25"
+         xml:space="preserve">Browser</text>
+      <path
+         id="path3053"
+         d="m 734.375,167.5 0,11.32812 75.625,0 0,-11.32812 -75.625,0 z"
+         style="fill:#da078b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3055"
+         d="M 968.28125,148.59375 810,173.125"
+         style="fill:none;stroke:#da078b;stroke-width:2.03125px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3057"
+         d="m 902.10938,124.92188 0,47.26562 132.26562,0 0,-47.26562 -132.26562,0 z"
+         style="fill:#da078b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3059"
+         d="m 902.10938,172.1875 132.26562,0 0,-47.26562 -132.26562,0 0,47.26562 z"
+         style="fill:none;stroke:#da078b;stroke-width:2.03125px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text3061"
+         style="font-size:15px;font-style:italic;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         y="143.75"
+         x="916.25"
+         xml:space="preserve">Crossbar HTTP </text>
+      <text
+         id="text3063"
+         style="font-size:15px;font-style:italic;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;font-family:Arial"
+         y="163.75"
+         x="923.75"
+         xml:space="preserve">Push Service</text>
+    </g>
+  </g>
+</svg>

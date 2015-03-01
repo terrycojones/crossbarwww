@@ -1,0 +1,72 @@
+A subscription is created within Crossbar.io when a first client issues a subscription request for a topic, and it is deleted when the last client unsubscribes or its session is disconnected. In between, other client sessions may be attached to the subscription or removed from it.
+
+Subscription meta-events give information about these events. Additionally, there is a set of procedures which can be called to receive information about currently existing subscriptions.
+
+## Use cases for subscription meta-events
+
+Within an application, it may be desirable for a publisher to know whether a publication to a specific topic currently makes sense, i.e. whether there are any subscribers who would receive an event based on the publication. It may also be desirable to keep a current count of subscribers to a topic to then be able to filter out any subscribers who are not supposed to receive an event.
+
+## Events
+
+The set of meta events covers the lifecycle of a subscription. A client can subscribe to the following subscription meta events:
+
+* `wamp.subscription.on_create`: Is fired when a subscription is created through a subscription request for a topic which was previously without subscribers. 
+* `wamp.subscription.on_subscribe`: Is fired when a session is added to a subscription. 
+* `wamp.subscription.on_unsubscribe`: Is fired when a session is removed from a subscription.
+* `wamp.subscription.on_delete`: Is fired when a subscription is deleted after the last session attached to it has been removed.
+
+> Note: A `wamp.subscription.on_subscribe` event is always fired subsequent to a `wamp.subscription.on_create` event, since the first subscribe results in both the creation of the subscription and the addition of a session. Similarly, the `wamp.subscription.on_delete` event is always preceded by a `wamp.subscription.on_unsubscribe` event.
+
+## Procedures
+
+It is possible to actively retrieve information about subscriptions via the following procedures. 
+
+You can retrieve subscription IDs via the following two procedures:
+
+* `wamp.subscription.list`: Returns an object with three lists of the subscription IDs for all current subscriptions for exatc matching, prefix matching and wildcard matching. 
+* `wamp.subscription.lookup`: Returns the subscription ID for an existing subscription to the provided topic URI, or null if no such subscription exists. The matching policy to apply is set as an option, with exact matching applied if this is omitted.
+
+Example code for retrieving the **lists of current subscriptions**:
+
+```javascript
+session.call("wamp.subscription.list").then(session.log, session.log)
+```
+
+Example code for **looking up a subscription**:
+
+```javascript
+session.call("wamp.subscription.lookup", ["com.myapp.topic1"])
+```
+
+```javascript
+session.call("wamp.subscription.lookup", ["com.myapp", { match: "prefix" }])
+```
+
+```javascript
+session.call("wamp.subscription.lookup", ["com.myapp..create", { match: "wildcard" }])
+```
+
+Using a subscription ID, information about a specific subscription can be retrieved using:
+
+* `wamp.subscription.get`: Returns data about the subscription itself: the subscription URI, ID, matching policy and creation date.
+* `wamp.subscription.list_subscribers`: Returns a list of session IDs for sessions currently attached to the subscription.
+* `wamp.subscription.count_subscribers`: Returns the number of sessions currently attached to the subscription.
+
+Example code for **getting data about a subscription**:
+
+```javascript
+session.call("wamp.subscription.get", [23560753]).then(session.log, session.log)
+```
+
+Example code for **getting the subscribers to a subscription**:
+
+```javascript
+session.call("wamp.subscription.list_subscribers", [23560753]).then(session.log, session.log)
+```
+
+Example code for **getting the subscriber count**:
+
+```javascript
+session.call("wamp.subscription.count_subscribers", [23560753]).then(session.log, session.log)
+```
+

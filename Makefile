@@ -2,8 +2,8 @@ all:
 	@echo "Main targets:"
 	@echo ""
 	@echo "  test         : test the Web site locally"
-	@echo "  testf        : freeze and test the Web site locally"
-	@echo "  publish      : freeze and publish the Web site"
+	@echo "  test_frozen  : freeze and test the Web site locally"
+	@echo "  deploy       : build images, freeze and publish the Web site"
 	@echo ""
 	@echo "More targets:"
 	@echo ""
@@ -15,7 +15,7 @@ all:
 	@echo ""
 
 requirements:
-	#pip install scons # fails on Windows, so install manually
+	# pip install --egg scons # Fails on Windows, so install manually
 	pip install taschenmesser
 	pip install scour
 	pip install boto
@@ -31,6 +31,8 @@ clean:
 
 img:
 	scons img
+# images for the documentation are created via 'make img' inside 'static/img/docs'
+
 
 freeze:
 	python website/crossbario/__init__.py -f    --widgeturl ''

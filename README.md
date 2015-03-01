@@ -12,13 +12,14 @@ make test
 
 You will need a couple of tools installed:
 
+* Inkscape
 * SCons
 * Taschenmesser
 * Sphinx
 * ..
 
-And you will also need to have a working copy of the [Crossbar.io Wiki](https://github.com/crossbario/crossbar/wiki) repository as a sibling directory to this directory:
+Some of them can be installed by running
 
 ```
-git clone git@github.com:crossbario/crossbar.wiki.git
+make requirements
 ```

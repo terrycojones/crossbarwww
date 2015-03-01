@@ -254,7 +254,8 @@ def page_docs(path = None):
    if path is None or path.strip() == "":
       title = 'Documentation'
       path = 'Home'
-      last_commit = app.latest_doc_commit
+      # last_commit = app.latest_doc_commit # no longer possible with the docs in the same repo
+      last_commit = None
    else:
       title = path.replace('-', ' ')
       last_commit = None
@@ -317,8 +318,8 @@ if __name__ == "__main__":
 
    parser.add_option ("--wikidir",
                       dest = "wikidir",
-                      default = "../crossbar.wiki",
-                      help = "Documentation Wiki repository directory")
+                      default = "website/crossbario/docs",
+                      help = "documenation markdown files directory")
 
    parser.add_option ("--cstatic",
                       dest = "cstatic",
@@ -330,7 +331,7 @@ if __name__ == "__main__":
    app.nonetwork = options.nonetwork
    app.wikidir = str(options.wikidir).strip()
    app.wikipages = DocPages(app.wikidir)
-   app.latest_doc_commit = get_git_latest_commit(os.path.join(app.wikidir, '.git'))
+   # app.latest_doc_commit = get_git_latest_commit(os.path.join(app.wikidir, '.git'))
 
    app.cstatic = str(options.cstatic).strip()
 
