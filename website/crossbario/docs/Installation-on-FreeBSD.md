@@ -74,7 +74,7 @@ wget --no-check-certificate https://raw.github.com/pypa/pip/master/contrib/get-p
 pypy get-pip.py
 ```
 
-## Crossbar.io
+### Installing Crossbar.io
 
 To install **Crossbar**.io with minimal (required) dependencies:
 
@@ -111,4 +111,4 @@ pip install -U crossbar
 
 ## Next
 
-Ready to go? Please follow the [First Steps](First Steps).
+Ready to go? Then [choose your language or device of choice](Choose your Weapon).
