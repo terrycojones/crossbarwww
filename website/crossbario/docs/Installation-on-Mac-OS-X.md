@@ -1,96 +1,109 @@
-## Prerequisites
+When installing on OS X, you have the choice of installing on CPython (the standard interpreter) or PyPy (a high performance interpreter).
+Both are good choices, but PyPy is generally faster (at the cost of a little extra RAM).
 
-It is possible to run **Crossbar.io** based on the CPython interpreter, but running on the PyPy infrastructure has speed advantages. Have a try for yourself, e.g. using [virtualenv](http://www.virtualenv.org/en/latest/)!
+## Setting up CPython
 
-### Running under CPython
-
-These instructions have been tested with a plain vanilla Python2.7 installation on Mac OS X v10.5.8.
-
-Install a pip version that matches your CPython version.
-
-Continue with the step _Installing **Crossbar.io**_
-
-### Running under PyPy
-
-These instructions have largely been tested with PyPy 2.2.1 on Mac OS X v10.9.2.
-
-Download [the Mac OS X version of PyPy 2.2.1](https://bitbucket.org/pypy/pypy/downloads/pypy-2.2.1-osx64.tar.bz2) (or find a newer version in https://bitbucket.org/pypy/pypy/downloads).
-
-Let's extract it into your $HOME.
-
-#### Untested (but should work)
-In order to have the shell find the **pypy** command, add it to your $PATH as follows:
-
-Add the following to `$HOME/.profile`:
-```
-export PATH=$HOME/pypy-2.2.1-osx64/bin:${PATH}
-```
-and either incorporate this addition to your $PATH in your current shell:
-```
-source $HOME/.profile
-```
-or log out and log in again.
-
-Next, install a pip version that matches the PyPy version:
-```
-wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-pypy get-pip.py
-```
-(There are other ways than to use **wget** to obtain that file from github, of course).
-
-Continue with the step _Installing **Crossbar.io**_
-
-#### Tested (worked, duh)
-As an alternative, these instructions used a virtualenv called 'my-pypy-env', based on the pypy that was extracted to $HOME:
-```
-virtualenv -p ~/pypy-2.2.1-osx64/bin/pypy my-pypy-env
-```
-
-The virtualenv comes with its own pip, so it is easy to continue with the step _Installing **Crossbar.io**_ after the virtualenv has been activated:
+Install pip:
 
 ```console
-cd my-pypy-env
-source bin/activate
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python get-pip.py
 ```
 
+Install virtualenv:
+
+```console
+sudo pip install -U virtualenv
+```
+
+Then create a new virtualenv:
+
+```console
+virtualenv ~/python-venv
+```
+
+Finally, start working in the virtual environment:
+
+```console
+cd ~/python-venv/
+. bin/activate
+```
+
+Continue with the step _Installing **Crossbar.io**_.
+
+
+## Setting up PyPy
+
+Install [Homebrew](http://brew.sh/).
+
+Then install PyPy:
+
+```console
+brew install pypy
+```
+
+Install virtualenv:
+
+```console
+pypy -m pip install virtualenv
+```
+
+Create a PyPy virtualenv in the directory `pypy-venv`:
+
+```console
+pypy -m virtualenv ~/pypy-venv
+```
+
+Finally, start working in the virtual environment:
+
+```console
+cd ~/pypy-venv/
+. bin/activate
+```
+
+
 ## Installing **Crossbar.io**
-Fingers crossed now, and:
+
+To install **Crossbar**.io with minimal (required) dependencies:
 
 ```console
 pip install crossbar
 ```
 
-will give you no errors!
-
-The latter will install **Crossbar**.io with minimal (required) dependencies. To install **Crossbar**.io with all additional (optional) dependencies:
+To install **Crossbar**.io with all additional (optional) dependencies:
 
 ```console
-pip install crossbar[tls,msgpack,manhole,system]
+pip install crossbar[all]
 ```
 
+To check the installation:
 
-## Checking the installation of **Crossbar.io**
-Entering:
-```
-crossbar version
-```
-should give you output resembling:
-```
-Crossbar.io software versions:
+```console
+(pypy-venv)hawkowl@hegira:~/pypy-venv> crossbar version
 
-Crossbar.io     : 0.9.3
-Autobahn        : 0.8.8
-Twisted         : 13.2.0-KQueueReactor
-Python          : 2.7.3
-UTF8 Validator  : autobahn
-XOR Masker      : autobahn
+Crossbar.io package versions and platform information:
+
+Crossbar.io                  : 0.10.2
+
+  Autobahn|Python            : 0.10.1
+    WebSocket UTF8 Validator : autobahn
+    WebSocket XOR Masker     : autobahn
+    WAMP JSON Codec          : stdlib
+    WAMP MsgPack Codec       : msgpack-python-0.4.5
+  Twisted                    : 15.0.0-KQueueReactor
+  Python                     : 2.7.8-PyPy
+
+OS                           : Darwin-14.1.0-x86_64-i386-64bit
+Machine                      : x86_64
 ```
 
-## Updating an existing **Crossbar**.io installation:
-The project is in flux, so rather sooner than later, you'll need to:
-```
+To update an existing **Crossbar**.io installation:
+
+```console
 pip install -U crossbar
 ```
 
+
 ## Next
-Ready to go? Please follow the [First Steps](First-Steps) page.
+
+Ready to go? Then [choose your language or device of choice](Choose your Weapon).
