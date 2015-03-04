@@ -34,7 +34,9 @@ Continue with the step _Installing **Crossbar.io**_.
 
 ## Setting up PyPy
 
-Install [Homebrew](http://brew.sh/).
+Install Homebrew using the instructions on the [Homebrew site](http://brew.sh/).
+
+> *Why Homebrew?* Homebrew is OS X's "missing package manager" and can make updating PyPy in the future much easier. It also makes sure you have all the dependencies without manually fetching anything.
 
 Then install PyPy:
 
