@@ -33,6 +33,9 @@ You can then test the installation by printing out the versions of the Crossbar 
 /opt/crossbar/bin/crossbar version
 ```
 
+You're done! See _Next_.
+
+
 ## Installing from Source
 
 Install the requirements:
@@ -56,6 +59,9 @@ Finally, start working in the virtual environment:
 cd python-venv/
 . bin/activate
 ```
+
+Continue with the step _Installing **Crossbar.io**_.
+
 
 ### Install Crossbar.io
 

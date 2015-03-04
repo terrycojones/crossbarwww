@@ -61,6 +61,8 @@ cd ~/pypy-venv/
 . bin/activate
 ```
 
+Continue with the step _Installing **Crossbar.io**_.
+
 
 ## Installing **Crossbar.io**
 

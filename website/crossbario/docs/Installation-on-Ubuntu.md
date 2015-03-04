@@ -35,6 +35,8 @@ You can then test the installation by printing out the versions of the Crossbar 
 /opt/crossbar/bin/crossbar version
 ```
 
+You're done! See _Next_.
+
 
 ## Installing from Source
 
@@ -45,14 +47,18 @@ This guide will install Crossbar.io in a virtualenv.
 
 > *Why virtualenv?* Virtualenv, as the name suggests, creates a "virtual environment" for your Python packages. This means that you can have newer versions of packages that might already be on your system, without worrying about breaking any applications that might require previous versions.
 
+
 ### Update your system
 
-Update your system:
+Update your system, to make sure you have the latest packages:
 
 ```console
 sudo apt-get update
 sudo apt-get dist-upgrade
 ```
+
+Continue with _Setup for CPython_ or _Setup for PyPy_.
+
 
 ### Setup for CPython
 
@@ -74,6 +80,9 @@ Finally, start working in the virtual environment:
 cd ~/python-venv/
 . bin/activate
 ```
+
+Continue with the step _Installing **Crossbar.io**_.
+
 
 ### Setup for PyPy
 
@@ -109,7 +118,10 @@ cd ~/pypy-venv/
 . bin/activate
 ```
 
-### Install Crossbar.io
+Continue with the step _Installing **Crossbar.io**_.
+
+
+### Installing Crossbar.io
 
 To install **Crossbar**.io with minimal (required) dependencies:
 

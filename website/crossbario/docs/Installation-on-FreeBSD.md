@@ -51,6 +51,9 @@ Then test your installation:
 /opt/crossbar/bin/crossbar version
 ```
 
+You're done! See _Next_.
+
+
 ## Installing from Source
 
 For installing [PyPy](http://pypy.org/) on FreeBSD, please follow [this](http://tavendo.com/blog/post/pypy-on-freebsd-nightlies/).
