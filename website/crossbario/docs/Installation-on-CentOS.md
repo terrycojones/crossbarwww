@@ -63,7 +63,7 @@ cd python-venv/
 Continue with the step _Installing **Crossbar.io**_.
 
 
-### Install Crossbar.io
+### Installing Crossbar.io
 
 To install **Crossbar**.io with minimal (required) dependencies:
 
