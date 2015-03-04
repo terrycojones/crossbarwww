@@ -3,7 +3,7 @@ There are two methods of installing Crossbar -- from the official binary distrib
 ## Installing the Official Distribution (Ubuntu 14.04)
 
 Crossbar hosts official binary packages for Ubuntu 14.04 LTS.
-If this is not your OS, please install from source as mentioned below.
+If this is not the version of Ubuntu you are using, please install from source as mentioned below.
 
 First, install the repo's GPG key:
 
@@ -109,7 +109,7 @@ cd ~/pypy-venv/
 . bin/activate
 ```
 
-### Install Crossbar
+### Install Crossbar.io
 
 To install **Crossbar**.io with minimal (required) dependencies:
 
@@ -150,7 +150,7 @@ To update an existing **Crossbar**.io installation:
 pip install -U crossbar
 ```
 
-You can then invoke Crossbar by running ``~/pypy-venv/bin/crossbar`` or ``~/python-venv/bin/crossbar``, depending on which Python interpreter you are using.
+You can then invoke Crossbar without activating the virtualenv by running ``~/pypy-venv/bin/crossbar`` or ``~/python-venv/bin/crossbar``, depending on which Python interpreter you are using.
 
 
 ## Next
