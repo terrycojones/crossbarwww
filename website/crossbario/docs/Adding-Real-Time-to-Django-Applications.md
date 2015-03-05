@@ -28,7 +28,7 @@ Publishing to an example topic "great_topic" is then just:
 
 
 ```python
-import requets
+import requests
 requests.post("http://router_ip/notify",
                   json={
                       'topic': 'great_topic'
