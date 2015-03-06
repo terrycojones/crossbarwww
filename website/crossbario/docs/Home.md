@@ -130,7 +130,7 @@ Guides for using Crossbar.io in specific scenarios, or for using specific featur
 
     + [How Subscriptions Work](How Subscriptions Work)
     + [Basic Subscriptions](Basic Subscriptions)
-    + [Publisher Black- and Whitelisting](Publisher Black and Whitelisting)
+    + [Subscriber Black- and Whitelisting](Subscriber Black and Whitelisting)
     + [Publisher Exclusion](Publisher Exclusion)
     + [Publisher Identification](Publisher Identification)
     + [Pattern-Based Subscriptions](Pattern Based Subscriptions)
@@ -141,7 +141,7 @@ Guides for using Crossbar.io in specific scenarios, or for using specific featur
     + [How Registrations Work](How Registrations Work)
     + [Basic Registrations](Basic Registrations)
     + [Caller Identification](Caller Identification)
-    + [Progressive Call Results](Progressive Call Results)
+    + [Progressive Results](Progressive Results)
     + [Pattern-Based Registrations](Pattern Based Registrations)
     + [Shared Registrations](Shared Registrations)    
     + [Registration Meta-Events and Procedures](Registration Meta Events and Procedures)

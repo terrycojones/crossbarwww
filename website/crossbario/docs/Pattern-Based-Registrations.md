@@ -147,4 +147,4 @@ A conflict resolution for wildcard matches has yet to be specified and implement
 
 ## Working Example
 
-For a full working example in JavaScript, see [Crossbar Examples](https://github.com/crossbario/crossbarexamples/tree/master/metaapi).
+For a full working example in JavaScript, see [Crossbar Examples](https://github.com/crossbario/crossbarexamples/tree/master/patternregs).

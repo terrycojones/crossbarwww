@@ -110,4 +110,4 @@ There is an existing subscription for the URI `com.myapp` using prefix matching.
 
 ## Working Example
 
-For a full working example in JavaScript, see [Crossbar Examples](https://github.com/crossbario/crossbarexamples/tree/master/metaapi).
+For a full working example in JavaScript, see [Crossbar Examples](https://github.com/crossbario/crossbarexamples/tree/master/patternsubs).
