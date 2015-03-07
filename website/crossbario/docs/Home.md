@@ -141,7 +141,7 @@ Guides for using Crossbar.io in specific scenarios, or for using specific featur
     + [How Registrations Work](How Registrations Work)
     + [Basic Registrations](Basic Registrations)
     + [Caller Identification](Caller Identification)
-    + [Progressive Results](Progressive Results)
+    + [Progressive Call Results](Progressive Call Results)
     + [Pattern-Based Registrations](Pattern Based Registrations)
     + [Shared Registrations](Shared Registrations)    
     + [Registration Meta-Events and Procedures](Registration Meta Events and Procedures)
