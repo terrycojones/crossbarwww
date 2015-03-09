@@ -13,3 +13,15 @@ session.call("com.myapp.procedure1", [], {}, { disclose_me: true });
 and given that the caller's session ID is `4747837`, the callee would receive the session ID `4747837` as `details.caller`.
 
 If further information about the caller is required, then this can be retrieved via [Registration Meta-Events and Procedures](Registration Meta Events and Procedures).
+
+## Overriding the default
+
+As a default, the `disclose_me` option needs to be set to `true` on every call. Some libraries may implement a global flag which changes this behaviour.
+
+For example, with Autobahn|JS you can do
+
+```javascript
+session.caller_disclose_me = true
+```
+
+This flag can be changed at any time during the session lifecycle.

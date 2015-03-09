@@ -19,3 +19,11 @@ If further information about the publisher is required, then this can be retriev
 We see the need for publisher disclosure. With the provided solution, we wanted to keep things simple with just one place to set the option. With a view to having a single serialization for an event which is sent to all subscribers, the publisher was the logical place for this.
 
 WAMP client libraries may provide a global flag for setting the default for `disclose_me` to `true`.
+
+For example, with Autobahn|JS you can do
+
+```javascript
+session.publisher_disclose_me = true
+```
+
+This flag can be changed at any time during the session lifecycle.
