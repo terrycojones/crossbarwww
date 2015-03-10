@@ -2,7 +2,7 @@
 
 > This feature is available starting with Crossbar **0.9.5**
 
-Imagine you have an existing application which isn't based on WAMP components. Say a REST or classical Web application using HTTP.
+Imagine you have an existing application which isn't based on WAMP components -- say, a REST or classical Web application using HTTP.
 
 Now what if you just want to *add* some real-time features *without* changing your existing app to use WAMP or migrate from synchronous, blocking to asynchronous, non-blocking code?
 
@@ -23,7 +23,7 @@ crossbar start
 
 and open [http://localhost:8080](http://localhost:8080) in your browser. Open the JavaScript console to see events received.
 
-To submit events via HTTP/POST, you can use [curl](http://curl.haxx.se/)
+To submit events via HTTP/POST, you can use [curl](http://curl.haxx.se/):
 
 ```console
 curl -H "Content-Type: application/json" \
@@ -43,7 +43,7 @@ pip install crossbarconnect
 
 > `crossbarconnect` does *not* depend on `crossbar`, `autobahn`, `twisted` or `asyncio`. It only uses the Python standard library. It only does HTTP/POST requests.
 
-You can publish events from Python like this
+You can publish events from Python like this:
 
 ```python
 import crossbarconnect
@@ -52,13 +52,13 @@ client = crossbarconnect.Client("http://127.0.0.1:8080/push")
 client.publish("com.myapp.topic1", "Hello, world!", 23)
 ```
 
-The example also contains two Python scripts for testing unsigned requests
+The example also contains two Python scripts for testing unsigned requests:
 
 ```console
 python publish.py
 ```
 
-and signed requests
+and signed requests:
 
 ```console
 python publish_signed.py
@@ -69,7 +69,7 @@ python publish_signed.py
 The *HTTP Pusher* is configured on a path of a Web transport - here is part of a Crossbar configuration:
 
 ```javascript
-{   
+{
    "workers": [
       {
          "type": "router",
@@ -109,7 +109,7 @@ option | description
 **`key`** | A string that when present provides the *key* from which request signatures are computed. If present, the `secret` must also be provided. E.g. `"myapp1"`.
 **`secret`** | A string with the *secret* from which request signatures are computed. If present, the `key` must also be provided. E.g. `"kkjH68GiuUZ"`).
 **`post_body_limit`** | An integer when present limits the length of a HTTP/POST body that will be accepted. If the request body exceed this limit, the request is rejected. If 0, accept unlimited length. (default: **0**)
-**`timestamp_delta_limit`** | An integer when present limits the difference between a signature's timestamp and current time. If 0, allow any divergence. (default: **0**).
+**`timestamp_delta_limit`** | An integer when present limits the difference (in seconds) between a signature's timestamp and current time. If 0, allow any divergence. (default: **0**).
 **`require_ip`** | A list of strings with single IP addresses or IP networks. When given, only clients with an IP from the designated list are accepted. Otherwise a request is denied. E.g. `["192.168.1.1/255.255.255.0", "127.0.0.1"]` (default: **-**).
 **`require_tls`** | A flag that indicates if only requests running over TLS are accepted. (default: **false**).
 **`debug`** | A boolean that activates debug output for this service. (default: **false**).
@@ -119,7 +119,7 @@ option | description
 
 ### Unsigned Requests
 
-To submit events to Crossbar, issue a HTTP/POST request to the URL of the Crossbar HTTP Pusher service with
+To submit events to Crossbar, issue a HTTP/POST request to the URL of the Crossbar HTTP Pusher service with:
 
 1. Content type `application/json`
 2. Body containing a JSON object
