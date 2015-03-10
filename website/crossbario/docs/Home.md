@@ -146,6 +146,8 @@ Guides for using Crossbar.io in specific scenarios, or for using specific featur
     + [Shared Registrations](Shared Registrations)    
     + [Registration Meta-Events and Procedures](Registration Meta Events and Procedures)
 
+  - [Error Handling](Error Handling)
+
 * Frameworks & Specific Scenarios
 
   - [Adding Real-Time to Django Applications](Adding Real Time to Django Applications)
