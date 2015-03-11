@@ -81,7 +81,7 @@ Configuration options explained (with examples).
         - [CGI Script Service](CGI Script Service)
         - [WSGI Host Service](WSGI Host Service)
         - [WAMP Long-Poll Service](WAMP Long-Poll Service)
-        - [HTTP Pusher Service](HTTP Pusher Service)
+        - [HTTP Bridge Services](HTTP Bridge Services)
      - [Flash Policy Transports](Flash-Policy-Transports)
   - [Router Components](Router Components)
   - [Authentication](Authentication)
