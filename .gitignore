@@ -3,3 +3,5 @@
 website/crossbario/build*
 build
 website/crossbario/static/img/gen
+.DS_Store
+*~
