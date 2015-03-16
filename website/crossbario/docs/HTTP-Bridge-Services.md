@@ -1,6 +1,6 @@
 ## Introduction
 
-> The *HTTP Pusher* feature is available starting with Crossbar **0.9.5**, and the *HTTP Caller* feature is available starting with Crossbar **0.11.0**.
+> The *HTTP Publisher* (formerly *HTTP Pusher*) feature is available starting with Crossbar **0.9.5**, and the *HTTP Caller* feature is available starting with Crossbar **0.11.0**.
 
 Imagine you have an existing application which isn't based on WAMP components -- say, a REST or classical Web application using HTTP.
 
@@ -8,18 +8,18 @@ Now what if you just want to *add* some real-time features *without* changing yo
 
 This is where the *HTTP bridge services* of Crossbar can help.
 
-The *HTTP Pusher* is a service that allows clients to submit PubSub events via HTTP/POST requests.
+The *HTTP Publisher* is a service that allows clients to submit PubSub events via HTTP/POST requests.
 Crossbar will receive the event data via the request and forward the event via standard WAMP to any connected subscribers in real-time.
 
 The *HTTP Caller* is a service that allows clients to perform WAMP calls via HTTP/POST requests.
 Crossbar will forward the call to the performing server and return the result.
 
-## HTTP Pusher
+## HTTP Publisher
 
-![](/static/img/docs/crossbar_http_push.png)
+![](/static/img/docs/crossbar_http_publish.png)
 ### Try it
 
-Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `pusher` subdirectory.
+Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `publisher` subdirectory.
 
 Now start Crossbar:
 
@@ -34,14 +34,14 @@ To submit events via HTTP/POST, you can use [curl](http://curl.haxx.se/):
 ```console
 curl -H "Content-Type: application/json" \
    -d '{"topic": "com.myapp.topic1", "args": ["Hello, world"]}' \
-   http://127.0.0.1:8080/push
+   http://127.0.0.1:8080/publish
 ```
 
 ...or any other HTTP/POST capable tool or library.
 
 ### Using Python
 
-To make using the *HTTP Pusher* service even easier, we've created a (trivial) library which you can install by doing:
+To make using the *HTTP Publisher* service even easier, we've created a (trivial) library which you can install by doing:
 
 ```console
 pip install crossbarconnect
@@ -54,7 +54,7 @@ You can publish events from Python like this:
 ```python
 import crossbarconnect
 
-client = crossbarconnect.Client("http://127.0.0.1:8080/push")
+client = crossbarconnect.Client("http://127.0.0.1:8080/publish")
 client.publish("com.myapp.topic1", "Hello, world!", 23)
 ```
 
@@ -72,7 +72,7 @@ python publish_signed.py
 
 ### Configuration
 
-The *HTTP Pusher* is configured on a path of a Web transport - here is part of a Crossbar configuration:
+The *HTTP Publisher* is configured on a path of a Web transport - here is part of a Crossbar configuration:
 
 ```javascript
 {
@@ -86,8 +86,8 @@ The *HTTP Pusher* is configured on a path of a Web transport - here is part of a
                ...
                "paths": {
                   ...
-                  "push": {
-                     "type": "pusher",
+                  "publish": {
+                     "type": "publisher",
                      "realm": "realm1",
                      "role": "anonymous"
                   }
@@ -103,7 +103,7 @@ The service dictionary has the following parameters:
 
 option | description
 ---|---
-**`type`** | MUST be `"pusher"` (*required*)
+**`type`** | MUST be `"publisher"` (*required*)
 **`realm`** | The realm to which the forwarding session is attached that will inject the submitted events, e.g. `"realm1"` (*required*)
 **`role`** | The fixed (authentication) role the forwarding session is authenticated as when attaching to the router-realm, e.g. `"role1"` (*required*)
 **`options`** | A dictionary of options (optional, see below).
@@ -122,7 +122,7 @@ option | description
 
 ### Running Standalone
 
-If you only want to run WebSocket and the HTTP Pusher Service (and no other Web path services), here is an example configuration:
+If you only want to run WebSocket and the HTTP Publisher Service (and no other Web path services), here is an example configuration:
 
 ```javascript
 {
@@ -164,7 +164,7 @@ If you only want to run WebSocket and the HTTP Pusher Service (and no other Web 
                },
                "paths": {
                   "/": {
-                     "type": "pusher",
+                     "type": "publisher",
                      "realm": "realm1",
                      "role": "anonymous"
                   }
@@ -215,7 +215,7 @@ You can test this using
 </html>
 ```
 
-and pushing from curl:
+and publishing from curl:
 
 ```console
 curl -H "Content-Type: application/json" \
@@ -265,7 +265,7 @@ The *HTTP Caller* is configured on a path of a Web transport - here is part of a
                ...
                "paths": {
                   ...
-                  "push": {
+                  "publish": {
                      "type": "caller",
                      "realm": "realm1",
                      "role": "anonymous"
@@ -302,7 +302,7 @@ option | description
 
 ## Making Requests
 
-To submit events or call WAMP procedures through Crossbar, issue a HTTP/POST request to the URL of the Crossbar HTTP Pusher/Caller service with:
+To submit events or call WAMP procedures through Crossbar, issue a HTTP/POST request to the URL of the Crossbar HTTP Publisher/Caller service with:
 
 1. Content type `application/json`
 2. Body containing a JSON object
@@ -310,7 +310,7 @@ To submit events or call WAMP procedures through Crossbar, issue a HTTP/POST req
 
 ### Publish
 
-For a call to a HTTP Pusher service, the body MUST be a JSON object with the following attributes:
+For a call to a HTTP Publisher service, the body MUST be a JSON object with the following attributes:
 
 * `topic`: A string with the URI of the topic to publish to.
 * `args`: An (optional) list of positional event payload arguments.
@@ -348,7 +348,7 @@ The signature computed as the Base64 encoding of the following value:
 HMAC[SHA256]_{secret} (key | timestamp | seq | nonce | body)
 ```
 
-Here, `secret` is the secret shared between the pushing application and Crossbar. This value will never travel over the wire.
+Here, `secret` is the secret shared between the publishing application and Crossbar. This value will never travel over the wire.
 
 The **HMAC[SHA256]** is computed w.r.t. the `secret`, and over the concatenation
 
