@@ -5,11 +5,12 @@ There are two methods of installing Crossbar -- from the official binary distrib
 Crossbar hosts official binary packages for FreeBSD 10.1.
 If this is not the version of FreeBSD you are using, please install from source as mentioned below.
 
-First, install Crossbar's RSA key:
+First, install Crossbar's software signing key:
 
 ```console
-sudo mkdir -p /usr/local/etc/ssl/certs/
-sudo sh -c "echo '-----BEGIN PUBLIC KEY-----
+mkdir -p /usr/local/etc/ssl/certs/
+cat >> /usr/local/etc/ssl/certs/crossbar.cert << EOT
+-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzlYpaiHktflMhsXVIT03
 yH+tS7IgFrucL6Hqpa394WUR8w23Ua1PtoQruj7sn4ZkmA02g2qzSJ8A9DdgYFBE
 0AHqAEIzVljGXYWN8FmULs290WpL9R6pSp0mDcpFu+FEhaeQXC0t7wjlZOpEpiV+
@@ -17,32 +18,35 @@ vDeX+/Mnf1yW75sE9gbRqT4zfmz6oIE9LIWkqW9CKiV0+XvmsSLRg6fJfKfi77GM
 Wg8DzIHo4ssWr3AqpXABxnV+euXHGViYCzCMjOxW7lRmEm4ySPanZokKIpUBtKhA
 SNchklvN4JfYSQuE3P+d3Amx0st6SnTeEB6/du9lwJ5PpK+tF2JblOIdkMy5+TkU
 wwIDAQAB
------END PUBLIC KEY-----' > /usr/local/etc/ssl/certs/crossbar.cert"
+-----END PUBLIC KEY-----
+EOT
 ```
 
-Then install the Crossbar pkg repo:
+Then install the Crossbar package repository:
 
 ```console
-sudo mkdir -p /usr/local/etc/pkg/repos/
-sudo sh -c "echo 'crossbar: {
-  url: \"http://package.crossbar.io/freebsd/10.1\",
-  mirror_type: \"http\",
-  signature_type: \"pubkey\",
-  pubkey: \"/usr/local/etc/ssl/certs/crossbar.cert\",
+mkdir -p /usr/local/etc/pkg/repos/
+cat >> /usr/local/etc/pkg/repos/crossbar.conf << EOT
+crossbar: {
+  url: "http://package.crossbar.io/freebsd/10.1",
+  mirror_type: "http",
+  signature_type: "pubkey",
+  pubkey: "/usr/local/etc/ssl/certs/crossbar.cert",
   enabled: yes
-}' > /usr/local/etc/pkg/repos/crossbar.conf"
+}
+EOT
 ```
 
 Update your pkg cache:
 
 ```console
-sudo pkg update
+pkg update
 ```
 
 Install Crossbar:
 
 ```console
-sudo pkg install crossbar
+pkg install crossbar
 ```
 
 Then test your installation:
