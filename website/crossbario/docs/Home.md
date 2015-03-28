@@ -69,6 +69,7 @@ Configuration options explained (with examples).
   - [Endpoints](Endpoints)
   - [Native Worker Shared Options](Native Worker Shared Options)
   - [Process Enviroments](Process Environments)
+* [Controller Configuration](Controller Configuration)
 * [Router Configuration](Router Configuration)
   - [Router Realms](Router Realms)
   - [Router Transports](Router Transports)
