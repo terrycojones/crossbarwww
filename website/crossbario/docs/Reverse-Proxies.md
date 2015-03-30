@@ -6,7 +6,7 @@ Write me.
 
 ## Nginx
 
-Write me.
+Write me. You can find some Nginx examples and hints [here](https://github.com/nicokaiser/nginx-websocket-proxy).
 
 ## Apache
 
