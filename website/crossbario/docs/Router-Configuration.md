@@ -1,6 +1,6 @@
 *Routers* are the core facilities of **Crossbar**.io, responsible for routing WAMP remote procedure calls between *Callers* and *Callees*, as well as routing WAMP publish-subscribe events between *Publishers* and *Subscribers*.
 
-A **Crossbar**.io instance will usually be running at least one *Router*, unless is used solely to run application components in *Workers* or *Guests*, 
+A **Crossbar**.io instance will usually be running at least one *Router*, unless is used solely to run application components in *Workers* or *Guests*.
 
 A *Router* is configured as a *Worker*, more precisely a *Native Worker*, process of `type == "router"`:
 
