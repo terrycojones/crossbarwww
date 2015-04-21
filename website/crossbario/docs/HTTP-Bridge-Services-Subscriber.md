@@ -78,3 +78,28 @@ option | description
 
 The Subscriber, upon recieving a PubSub event that it has been configured to subscribe to, will send a request to the URL associated with the topic.
 The body will be a JSON encoded dictionary and contain two keys, `"args"` and `"kwargs"` from the PubSub event.
+Here is an example Flask application that prints the pubsub event to the terminal:
+
+```python
+import json
+from flask import Flask, request
+app = Flask(__name__)
+
+@app.route("/", methods=["POST"])
+def message():
+    body = json.loads(request.get_data())
+    print("args:", body["args"], "kwargs:", body["kwargs"])
+    return b"OK"
+
+if __name__ == "__main__":
+    app.run()
+```
+
+When this server is started, Crossbar is configured to forward the event to it, and the example event at the top of the page is published, you should see:
+
+```console
+$ python ~/example.py
+ * Running on http://127.0.0.1:5000/
+('args:', [u'Hello, world'], 'kwargs:', {})
+127.0.0.1 - - [21/Apr/2015 21:01:05] "POST / HTTP/1.1" 200 -
+```
