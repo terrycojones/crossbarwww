@@ -6,7 +6,7 @@ The *HTTP Subscriber* is a service that forwards PubSub events to HTTP endpoints
 
 ## Try it
 
-Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `rest/subscriber` subdirectory.
+Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and go to the `rest/subscriber` subdirectory.
 
 Now start Crossbar:
 
