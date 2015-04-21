@@ -4,6 +4,7 @@
 
 The *HTTP Subscriber* is a service that forwards PubSub events to HTTP endpoints.
 
+
 ## Try it
 
 Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and go to the `rest/subscriber` subdirectory.
@@ -22,6 +23,7 @@ curl -H "Content-Type: application/json" \
 	-d '{"topic": "com.myapp.topic1", "args": ["Hello, world"]}' \
 	http://127.0.0.1:8080/publish
 ```
+
 
 ## Configuration
 
@@ -73,6 +75,7 @@ option | description
 **`method`** | The HTTP method which the forwarding requests will be made with. (optional, `"POST"` by default)
 **`expectedcode`** | The HTTP status code which is expected from the requests. If none is given, the status code is not checked. (optional)
 **`debug`** | If `true`, then the response body will be printed to Crossbar's debug log. (optional, `false` by default)
+
 
 ## Handling Forwarded Events
 

@@ -11,4 +11,4 @@ Crossbar will receive the event data via the request and forward the event via s
 * The *HTTP Caller* is a service that allows clients to perform WAMP calls via HTTP/POST requests.
 Crossbar will forward the call to the performing server and return the result. [HTTP Caller Docs >](HTTP Bridge Services Caller)
 * The *HTTP Subscriber* is a service that forwards PubSub events to HTTP endpoints. [HTTP Subscriber Docs >](HTTP Bridge Services Subscriber)
-* The *HTTP Callee* is a service that translates WAMP procedures to HTTP POST requests. [HTTP Callee Docs >](HTTP Bridge Services Callee)
+* The *HTTP Callee* is a service that translates WAMP procedures to HTTP requests. [HTTP Callee Docs >](HTTP Bridge Services Callee)
