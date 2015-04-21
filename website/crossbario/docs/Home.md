@@ -83,6 +83,8 @@ Configuration options explained (with examples).
         - [WSGI Host Service](WSGI Host Service)
         - [WAMP Long-Poll Service](WAMP Long-Poll Service)
         - [HTTP Bridge Services](HTTP Bridge Services)
+          - [HTTP Publisher](HTTP Bridge Services Publisher)
+          - [HTTP Caller](HTTP Bridge Services Caller)
      - [Flash Policy Transports](Flash-Policy-Transports)
   - [Router Components](Router Components)
   - [Authentication](Authentication)
