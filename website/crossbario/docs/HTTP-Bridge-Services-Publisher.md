@@ -8,7 +8,7 @@ Crossbar will receive the event data via the request and forward the event via s
 ![](/static/img/docs/crossbar_http_publish.png)
 ## Try it
 
-Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `publisher` subdirectory.
+Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `rest/publisher` subdirectory.
 
 Now start Crossbar:
 

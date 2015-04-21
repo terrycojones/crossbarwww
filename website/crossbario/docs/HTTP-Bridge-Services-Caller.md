@@ -7,7 +7,7 @@ Crossbar will forward the call to the performing server and return the result.
 
 ## Try it
 
-Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `caller` subdirectory.
+Clone the [Crossbar.io examples repository](https://github.com/crossbario/crossbarexamples), and got to the `rest/caller` subdirectory.
 
 Now start Crossbar:
 
