@@ -14,3 +14,66 @@ Now start Crossbar:
 ```console
 crossbar start
 ```
+
+This example is configured to register a WAMP procedure named `com.myap.rest`, which sends requests to `httpbin.org`.
+The procedure's complete keyword arguments are detailed further down, but if we use a kwargs of `{"url": "get", "method": "GET"}`, Crossbar will send a HTTP GET request to `httpbin.org/get` and respond with the result.
+You can test this using the [HTTP Caller](HTTP Bridge Services Caller) configured in the example:
+
+```shell
+curl -H "Content-Type: application/json" \
+	-d '{"procedure": "com.myapp.rest", "kwargs": {"url": "get", "method": "GET"}}' \
+	http://127.0.0.1:8080/call
+    ```
+
+This will call the procedure and print the web response to the terminal.
+
+
+## Configuration
+
+The *HTTP Callee* is configured as a WAMP component.
+Here it is as part of a Crossbar configuration:
+
+```javascript
+{
+    "type": "container",
+    "options": {
+        "pythonpath": [".."]
+    },
+    "components": [
+        {
+            "type": "class",
+            "classname": "crossbar.adapter.rest.RESTCallee",
+            "realm": "realm1",
+            "extra": {
+                "procedure": "com.myapp.rest",
+                "baseurl": "https://httpbin.org/"
+            },
+            "transport": {
+                "type": "websocket",
+                "endpoint": {
+                    "type": "tcp",
+                    "host": "127.0.0.1",
+                    "port": 8080
+                },
+                "url": "ws://127.0.0.1:8080/ws"
+            }
+        }
+    ]
+}
+```
+
+The callee is configured through the `extra` dictionary:
+
+option | description
+---|---
+**`procedure`** | The WAMP procedure name to register the callee as. (*required*)
+**`baseurl`** | The base URL that the callee will use. All calls will work downward from this URL. If you wish to call any URL, set it as an empty string `""`. This URL must contain the protocol (e.g. `"https://"`) (*required*)
+
+
+When making calls to the registered WAMP procedure, you can use the following keyword arguments:
+
+argument | description
+---|---
+**`method`** | The HTTP method. (*required*)
+**`url`** | The url which will be appended to the configurd base URL. For example, if the base URL was `"http://example.com"`, providing `"test"` as this argument would send the request to `http://example.com/test`. (optional, uses the configured base URL if not provided)
+**`body`** | The

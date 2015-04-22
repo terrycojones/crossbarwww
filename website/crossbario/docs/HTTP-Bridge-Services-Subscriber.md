@@ -27,7 +27,8 @@ curl -H "Content-Type: application/json" \
 
 ## Configuration
 
-The *HTTP Subscriber* is configured as a WAMP component. Here it is as part of a Crossbar configuration:
+The *HTTP Subscriber* is configured as a WAMP component.
+Here it is as part of a Crossbar configuration:
 
 ```javascript
 {
