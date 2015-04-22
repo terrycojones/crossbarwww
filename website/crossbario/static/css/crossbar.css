@@ -91,7 +91,8 @@ body {
 /* navbar stylings */
 
 .navbar {
-
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .navbar-brand > span {
@@ -114,8 +115,12 @@ body {
 }
 
 #wrap .nav.navbar-nav .active a {
-  color: #FFE000;
+  background-color: #FFDE00;
+}
+
+#wrap .nav.navbar-nav .active a {
   color: #fff;
+  color: #333333;
 }
 
 

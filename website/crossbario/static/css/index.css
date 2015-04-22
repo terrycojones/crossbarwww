@@ -99,15 +99,15 @@ h2 {
 
 }
 
-/*#github {
+/*
+#github {
    background-image: url('../img/gen/github.png');
 }
 
 #github:hover {
    background-image: url('../img/gen/github_highlighted.png');
-}*/
-
-
+}
+*/
 
 /* the below works to switch out SVG for PNG
    using Modernizr, but the rendering quality of
