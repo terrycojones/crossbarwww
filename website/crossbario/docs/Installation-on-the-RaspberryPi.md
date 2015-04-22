@@ -11,8 +11,9 @@ To install Raspbian on your Pi, follow the [NOOBS installation guide](http://www
 
 The only adjustments I made during installation were:
 
-1. Activate *Turbo mode*, which allows the CPU clock to scale from 700MHz to 1GHz during load. Note that you will need a power supply that can supply sufficient current for this to work stable.
-2. Activate *SSH daemon*, which allows to log into the Pi remotely via SSH.
+1. Activate *SSH daemon*, which allows to log into the Pi remotely via SSH.
+2. *Expand Filesystem*, which ensure all of the SD card capacity is available.
+3. Activate *Turbo mode*, which allows the CPU clock to scale from 700MHz to 1GHz during load. **Note that you will need a power supply that can supply sufficient current for this to work stable.**
 
 > Note: you can check the current clock rate at which the Pi runs by doing `sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq`
 
@@ -34,7 +35,7 @@ and choose **Expand Filesystem**.
 
 It is recommended to update the OS and installed software. Log into your Pi and do
 
-```
+```console
 sudo apt-get update
 sudo apt-get -y dist-upgrade
 ```
@@ -43,51 +44,123 @@ sudo apt-get -y dist-upgrade
 
 To install the necessary prerequisites on the Pi, do
 
-```
+```console
 sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev
 ```
 
 Then install the latest version of [Pip](https://pip.pypa.io/en/latest/), a Python package manager:
 
-```
+```console
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 ```
 
+## Install AutobahnPython
+
+If you want to write WAMP application components in Python which run on the Pi and connect to Crossbar.io running somewhere else, all you need is [AutobahnPython](http://autobahn.ws/python).
+
+AutobahnPython can run on top of [Twisted]() and [asyncio]() as the underlying network framework. You need to choose one.
+
+### Running on asyncio
+
+Install AutobahnPython for asyncio:
+
+```console
+sudo pip install autobahn[asyncio]
+```
+
+To test, save the following to a file `client.py` on the Pi, adjusting the URL of Crossbar.io:
+
+```python
+from autobahn.asyncio.wamp import ApplicationSession
+from autobahn.asyncio.wamp import ApplicationRunner
+
+class MyComponent(ApplicationSession):
+
+    def onJoin(self, details):
+        print("session ready")
+
+runner = ApplicationRunner(url=u"ws://192.168.1.141:8080/ws", realm=u"realm1")
+runner.run(MyComponent)
+```
+
+When running, you should see the following:
+
+```console
+pi@raspberrypi ~ $ python client.py
+session ready
+```
+
+Hooray, that means it works!
+
+
+### Running on Twisted
+
+Install AutobahnPython for Twisted:
+
+```console
+sudo pip install autobahn[twisted]
+```
+
+To test, save the following to a file `client.py` on the Pi, adjusting the URL of Crossbar.io:
+
+```python
+from autobahn.twisted.wamp import ApplicationSession
+from autobahn.twisted.wamp import ApplicationRunner
+
+class MyComponent(ApplicationSession):
+
+    def onJoin(self, details):
+        print("session ready")
+
+runner = ApplicationRunner(url=u"ws://192.168.1.141:8080/ws", realm=u"realm1")
+runner.run(MyComponent)
+```
+
+When running, you should see the following:
+
+```console
+pi@raspberrypi ~ $ python client.py
+session ready
+```
+
+Hooray, that means it works!
+
+
 ## Install Crossbar.io
 
-Now we are ready to install Crossbar.io.
+If you want to run Crossbar.io itself on the Pi, you need to install it on the Pi - obviously;)
 
 You can install the **minimal set** of packages for Crossbar.io by doing
 
-```
+```console
 sudo pip install crossbar
 ```
 
-*or* you can install the **full set** of packages (takes longer):
+*or* you can install the **full set** of packages (this will take a long time):
 
-```
+```console
 sudo pip install crossbar[all]
 ```
 
-To test the installation, do the following (be patient, this can take 10-20s):
+To test the installation, do the following (be patient, startup can take 10-20s):
 
 ```console
 pi@raspberrypi ~ $ crossbar version
 
 Crossbar.io package versions and platform information:
 
-Crossbar.io                  : 0.9.11
+Crossbar.io                  : 0.10.4
 
-  Autobahn|Python            : 0.9.3-3
+  Autobahn|Python            : 0.10.3
     WebSocket UTF8 Validator : wsaccel-0.6.2
     WebSocket XOR Masker     : wsaccel-0.6.2
     WAMP JSON Codec          : ujson-1.33
-    WAMP MsgPack Codec       : msgpack-python-0.4.2
-  Twisted                    : 14.0.2-EPollReactor
+    WAMP MsgPack Codec       : msgpack-python-0.4.6
+  Twisted                    : 15.1.0-EPollReactor
   Python                     : 2.7.3-CPython
 
-OS                           : Linux-3.12.28+-armv6l-with-debian-7.6
+OS                           : Linux-3.18.7+-armv6l-with-debian-7.8
 Machine                      : armv6l
 ```
 
@@ -103,17 +176,16 @@ pi@raspberrypi ~ $ cd node1/
 pi@raspberrypi ~/node1 $ crossbar init --template hello:python
 Initializing application template 'hello:python' in directory '/home/pi/node1'
 Using template from '/usr/local/lib/python2.7/dist-packages/crossbar/templates/hello/python'
-Creating directory /home/pi/node1/hello
 Creating directory /home/pi/node1/.crossbar
-Creating file      /home/pi/node1/README.md
-Creating file      /home/pi/node1/setup.py
+Creating directory /home/pi/node1/hello
 Creating file      /home/pi/node1/MANIFEST.in
-Creating directory /home/pi/node1/hello/web
-Creating file      /home/pi/node1/hello/hello.py
-Creating file      /home/pi/node1/hello/__init__.py
-Creating file      /home/pi/node1/hello/web/index.html
-Creating file      /home/pi/node1/hello/web/autobahn.min.js
+Creating file      /home/pi/node1/setup.py
+Creating file      /home/pi/node1/README.md
 Creating file      /home/pi/node1/.crossbar/config.json
+Creating directory /home/pi/node1/hello/web
+Creating file      /home/pi/node1/hello/__init__.py
+Creating file      /home/pi/node1/hello/hello.py
+Creating file      /home/pi/node1/hello/web/index.html
 Application template initialized
 
 To start your node, run 'crossbar start --cbdir /home/pi/node1/.crossbar'
