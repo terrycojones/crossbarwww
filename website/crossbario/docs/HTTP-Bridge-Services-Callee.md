@@ -69,11 +69,55 @@ option | description
 **`procedure`** | The WAMP procedure name to register the callee as. (*required*)
 **`baseurl`** | The base URL that the callee will use. All calls will work downward from this URL. If you wish to call any URL, set it as an empty string `""`. This URL must contain the protocol (e.g. `"https://"`) (*required*)
 
-
 When making calls to the registered WAMP procedure, you can use the following keyword arguments:
 
 argument | description
 ---|---
 **`method`** | The HTTP method. (*required*)
 **`url`** | The url which will be appended to the configurd base URL. For example, if the base URL was `"http://example.com"`, providing `"test"` as this argument would send the request to `http://example.com/test`. (optional, uses the configured base URL if not provided)
-**`body`** | The
+**`body`** | The body of the request as a string. (optional, empty if not provided)
+**`headers`** | A dictionary, containing the header names as the key, and a *list* of header values as the value. For example, to send a `Content-Type` of `application/json`, you would use `{"Content-Type": ["application/json"]}` as the argument. (optional)
+**`params`** | Request parameters to send, as a dictionary. (optional)
+
+
+## Examples
+
+### Wikipedia
+
+Wikipedia has a web API that we can use for this demonstration.
+
+Configure the `RESTCallee` WAMP component:
+
+```javascript
+"extra": {
+    "procedure": "org.wikipedia.en.api",
+    "baseurl": "http://en.wikipedia.org/w/api.php"
+}
+````
+
+And then call the procedure, reading the response as JSON, and then printing the wikitext of the page to the terminal.
+
+```python
+import json
+
+from twisted.internet.defer import inlineCallbacks
+from autobahn.twisted.wamp import ApplicationSession
+
+
+class AppSession(ApplicationSession):
+
+    @inlineCallbacks
+    def onJoin(self, details):
+
+        res = yield self.call("org.wikipedia.en.api",
+                              params={
+                                  "format": "json",
+                                  "action": "query",
+                                  "titles": "Twisted (software)",
+                                  "prop": "revisions",
+                                  "rvprop": "content"
+                              })
+
+        pageContent = json.loads(res["content"])
+        print(pageContent["query"]["pages"][0]["revisions"][0]["*"])
+```
