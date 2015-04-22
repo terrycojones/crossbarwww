@@ -17,6 +17,19 @@ The only adjustments I made during installation were:
 > Note: you can check the current clock rate at which the Pi runs by doing `sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq`
 
 
+## Enlarge Root Partition
+
+The Raspbian images will create a root filesystem of only 2GB size, independent of the capacity of the actual SD card used. The is very small and you can't install a lot of additional stuff.
+
+To enlarge the root partition to the full size of the SD card, you can [use raspi-config](http://elinux.org/RPi_raspi-config#expand_rootfs_-_Expand_root_partition_to_fill_SD_card):
+
+```console
+sudo raspi-config
+```
+
+and choose **Expand Filesystem**.
+
+
 ## Update the OS
 
 It is recommended to update the OS and installed software. Log into your Pi and do
