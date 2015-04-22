@@ -1,72 +1,65 @@
-We provide a [**Crossbar.io on Azure Virtual Machine Image**](https://vmdepot.msopentech.com/Vhd/Show?vhdId=49990&version=51102) on [VM Depot](https://vmdepot.msopentech.com/) to make setup on [Microsoft Azure](http://azure.microsoft.com/) as simple as possible. The image has Crossbar.io running on [Ubuntu Server 14.04 LTS](https://insights.ubuntu.com/2014/04/17/whats-new-in-ubuntu-server-14-04-lts/).
+We provide a [**Crossbar on Azure Virtual Machine Image**](http://azure.microsoft.com/en-us/marketplace/partners/tavendo/crossbar-on-azure-ubuntu1404-free/) in the  [Azure Marketplace](http://azure.microsoft.com/en-us/marketplace/) to make setup on [Microsoft Azure](http://azure.microsoft.com/) as simple as possible. The image has Crossbar.io running on [Ubuntu Server 14.04 LTS](https://insights.ubuntu.com/2014/04/17/whats-new-in-ubuntu-server-14-04-lts/).
+
+Use of this image is free (but Azure billings for running the VM apply).
 
 If you want to install Crossbar.io from scratch, or run it on a different OS, see the [instructions for installation](Home#Installation).
 
-## Prepare the image
 
-You first need to create a copy of the image we provide in a storage container of your own, and register this for usage with a virtual machine.
+## Creating the Virtual Machine
 
-To do so:
+* Go to the [image](http://azure.microsoft.com/en-us/marketplace/partners/tavendo/crossbar-on-azure-ubuntu1404-free/) in the Azure Marketplace (or search for 'crossbar'). 
+* Click on "Create Virtual Machine".
+* This takes you to the Azure portal (possibly with an intermediate login screen if you're not currently logged in to Azure) and starts the creation of the machine.
+* Enter the required information:
+   + "Host Name" (pick anything you like)
+   + "User Name": needs to be 'ubuntu'
+   + We suggest using an SSH public key instead of a password.
+* Defaults for other settings are OK. Necessary ports are already configured.
+* Click "Create".
+* On the purchasing information screen click "Buy".
+* Wait for the machine setup to finish.
 
-1. In the Azure management console, go to 'Virtual Machines', and there to the 'Images' tab.
-2. At the bottom of the screen, select 'Browse VM Depot'.
-3. Scroll down the list & select the Crossbar.io image. ![Crossbar.io in VM Depot](/static/img/docs/azure_01.png)
-4. Select an image region & storage account. If you've not previously done so, you may need to create a new storage account.
-5. Wait for the image to be copied into the storage account. This can take a while (up to half an hour). The Crossbar.io VM Depot image is stored on all storage regions, so which region you choose should not influence the copying time much, if at all.
-6. Register the image by selecting it and clicking on 'Register' at the bottom of the screen.
 
-## Create the machine
+## Running the VM
 
-Now create a virtual machine using the image that you just copied.
+Crossbar.io automatically starts up once the machine is started. This runs with a default configuration which is maximally permissive for testing and development purposes. A single realm (`realm1`) is preconfigured, and accepts any clients.
 
-1. At the bottom of the images screen press 'New'.
-2. The dialog which opens should have 'Compute' and 'Virtual Machine' pre-selected.
-3. Select 'From Gallery' to access the images.
-4. Select 'My Images', and then the Crossbar.io image.
-5. Fill in the required information. *Note regarding keys: You need a key for the SSH connection into the virtual machine. Azure currently only accepts SSH public keys that are encapsulated in a X.509 certificate. Microsoft provides a decent [how to](http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-use-ssh-key/) for handling this inconvenience. Don't be fooled by the fact that the wizard seemingly accepts any key file here with a 'cer' or 'pem' file type - there's no actual check until later, and the creation of the machine fails entirely at that point!*
-6. Create a cloud service and add a HTTP endpoint. The demos and application templates which Crossbar.io provides are served on port 8080, so best add this.
+On first startup, the system and Crossbar.io are automatically updated. Because of this the first startup may take a little while. Further updates are under your control. 
 
-![Add HTTP Endpoint](/static/img/docs/azure_02.png)
+## Testing functionality
 
-Once you finish the creation, the machine now starts up automatically, which takes a few minutes.
+To check whether Crossbar.io is up, get the public IP of your instance from the Azure dashboard, and point your browser to it.
 
-## SSH into the machine
+You should then see the welcome screen below:
 
-Now connect to the machine via SSH software of your choice.
+![Azure Welcome Screen](/static/img/docs/shots/azure_welcome.png)
 
-You can find the public DNS hostname of your machine in the administration console **Virtual Machines -> Instances -> Click on the instance**, select "Dashboard", information is on the right-hand side.
+To test the actual Crossbar.io core functionality, i.e. WAMP routing, you can run any of the [Crossbar.io examples](https://github.com/crossbario/crossbarexamples). For these you need to adapt the connection data. 
 
-The user name is 'azureuser', unless you changed it during the creation of the machine.
+We suggest you use the [Votes Browser Demo](https://github.com/crossbario/crossbarexamples/tree/master/votes/browser), since this runs entirely in the browser. To run this
 
-Once you've logged into the machine, you can set up Crossbar.io using the [command line](First Steps). For example, to set up the votes demo and run it, do
+* Get a local copy of the repository. You can clone it using [git](http://www.git-scm.com/), or download the repository as a [zip file](https://github.com/crossbario/crossbarexamples/archive/master.zip).
+* Set the appropriate connection data, i.e. in 'crossbarexamples/votes/browser/js' you need to modify both 'backend.js' and 'frontend.js' so that 'wsuri' is the IP of your Azure instance, with port 80.   
+E.g. for an Azure IP of '178.34.23.89', you would add 'wsuri = 'ws://178.34.23.89:80';' after line 21 in both files.
 
-```
-crossbar init --template votes:python --appdir votes_python
-cd votes_python
-crossbar start
-```
+```javascript
+   } 
+ } 
 
-You can then access the demo from any (modern) browser by opening `http://<your Azure instance hostname>:8080`.
+wsuri = 'ws://178.34.23.89:80'; // add this!
 
-## Updating Crossbar.io
-
-Since Crossbar.io is under active development, the version of Crossbar installed in the image will often lag behind. There are two ways of updating Crossbar.io:
-
-### Update to latest release
-
-You can udpate to the latest release version using `pip` (a Python package manager). Simply do
-
-```
-pip install -U crossbar
+var connection = new autobahn.Connection({ 
+   url: wsuri, 
+   realm: 'votesapp'} 
+); 
 ```
 
-### Update to trunk
+## Start developing
 
-To get the most current development version of Crossbar.io - which might be broken any time - you can update from the GitHub repository. Git is already installed and the repository is cloned into `crossbar_source`.  To update do
+We provide [getting started guides](Choose your Weapon) for various languages. WAMP client libraries may be available for languages not covered there. Check the [WAMP implementations list](http://wamp.ws/implementations) for the most current overview of supported languages.
 
-```
-cd crossbar_source
-git pull
-cd crossbar
-python setup.py install
-```
+## Administrating Crossbar.io
+
+The following aspects are specific to administrating the Azure image:
+
+* write me
