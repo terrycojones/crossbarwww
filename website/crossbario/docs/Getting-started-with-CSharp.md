@@ -51,7 +51,7 @@ Application template initialized
 Now build by opening 'src/Hello/Hello.sln' in Visual Studio, start Crossbar using 'crossbar start' and open http://local
 host:8080 in your browser.
 ```
-## Build the C# application component
+## Building the application component
 
 Now open `src/Hello/Hello.sln` in Visual Studio by double clicking the file. Go to the menu entry `TOOLS -> Library Package Manager -> Package Manager Console` in Visual Studio and enter:
 

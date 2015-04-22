@@ -1,6 +1,6 @@
 There are two methods of installing Crossbar -- from the official binary distribution, or from source.
 
-## Installing the Official Distribution (CentOS 7)
+## Installing the Official Distribution
 
 Crossbar hosts official binary packages for CentOS 7.
 If this is not the CentOS version you are using, please install from source as mentioned below.

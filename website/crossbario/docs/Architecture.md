@@ -70,7 +70,7 @@ Clients can connect to the same *Router* over different *Transports* and are sti
 Clients can be any application component which speaks WAMP. These can run outside of the node, be it on the same machine or connected via network. A Router can also connect native Python application components that run inside the same worker process (Container) as the router ("side-by-side" connection), as well as application components that run outside the router's Container process - see below ("component hosts").
 
 
-## Component hosts: *Containers* & *Guests*
+## Containers and Guests
 
 Crossbar.io can work as a component host or component container for WAMP application components - regardless in which language they are written or under which run-time they run. You can host mixed language or run-time application component sets.
 

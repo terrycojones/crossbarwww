@@ -24,7 +24,7 @@
   + [session join & leave](Session Metaevents) 
 
 
-## Multi-Transport & Serialization
+## Multi-Transport and Serialization
 
 * [Serializations](https://github.com/tavendo/WAMP/blob/master/spec/basic.md#serializations): 
 
@@ -80,7 +80,7 @@
 * install from the command line
 * offer a working basis to get you hacking
 
-## JSON & YAML configuration
+## JSON and YAML configuration
 
 ## Multi-Process Architecture
 

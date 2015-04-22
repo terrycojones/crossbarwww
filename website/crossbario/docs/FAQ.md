@@ -4,7 +4,7 @@
    + [What is Autobahn?](#ecosystem_basics_what_is_autobahn)
    + [What is Crossbar.io?](#ecosystem_basics_what_is_crossbario)
 * **[Licenses](#licenses)**
-   + [What does Crossbar.io's open-source license mean for me when I use it for a project?](#license_mean_for_me)
+   + [What does open-source license mean for me when I use it for a project?](#license_mean_for_me)
    + [What is the license for the application templates?](#license_for_templates)
 * **[Modifying & contributing](#contributing)**
    + [Can I hack Crossbar.io to fit my own needs?](#contributing_hack)
@@ -56,7 +56,8 @@ Applications developed with Crossbar.io can use any WAMP client library. This, o
 # Licenses
 
 <a name="license_mean_for_me"></a>
-## What does Crossbar.io's open-source license mean for me when I use it for a project?
+
+## What does open-source license mean for me when I use it for a project?
 
 The license ([AGPL v3](http://www.gnu.org/licenses/agpl-3.0.html)) does not have any effect on your application. The APGL only affects code which is joined to a AGPL licensed project's code.
 
@@ -74,7 +75,7 @@ We license all examples and other materials that you can use in creating your ow
 In the case of the application templates, these are licensed either under the BSD 2-clause license or the Apache 2.0 license. Both allow you to use the code in your own applications, irrespective of which license you are using. And yes, this includes commercial & closed source.
 
 <a name="contributing"></a>
-# Modifying & Contributing
+# Modifying and Contributing
 
 <a name="contributing_hack"></a>
 ## Can I hack Crossbar.io to fit my own needs?
@@ -140,7 +141,7 @@ Running on PyPy will give you a *lot* more performance than CPython though. Of c
 # Integration
 
 <a name="integration_non_wamp_components"></a>
-## Can I integrate a non-WAMP application (component) into my WAMP application?
+## Can I integrate a non-WAMP application component into my WAMP application?
 
 It is possible to have a WAMP component which communicates with your non-WAMP application (component) and does WAMP messaging based on this. How complex this is depends on the specifics of the use case, e.g. the protocol. 
 

@@ -45,7 +45,7 @@ option | description
 **`debug`** | A boolean that activates debug output for this service. (default: **false**).
 **`debug_transport_id`** | If given (e.g. `"kjmd3sBLOUnb3Fyr"`), use this fixed transport ID. (default: **null**).
 
-## Example using Autobahn|JS
+## Example using AutobahnJS
 
 You can find a working example for longpolling using AutobahnJS in the [Crossbar.io examples](https://github.com/crossbario/crossbarexamples/tree/master/longpoll).
 

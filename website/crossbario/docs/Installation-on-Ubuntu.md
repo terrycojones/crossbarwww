@@ -1,6 +1,6 @@
 There are two methods of installing Crossbar -- from the official binary distribution, or from source.
 
-## Installing the Official Distribution (Ubuntu 14.04)
+## Installing the Official Distribution
 
 Crossbar hosts official binary packages for Ubuntu 14.04 LTS.
 If this is not the version of Ubuntu you are using, please install from source as mentioned below.

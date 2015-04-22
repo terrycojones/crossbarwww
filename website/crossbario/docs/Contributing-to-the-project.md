@@ -8,7 +8,7 @@ This means that you fork the repo, make changes to your fork, and then make a pu
 
 This [article on GitHub](https://help.github.com/articles/using-pull-requests) gives more detailed information on how the process works.
    
-## Send us a Contributor Assignment Agreement (CAA)
+## Send us a Contributor Assignment Agreement
 
 Before you can contribute any changes to the Crossbar.io project, we need a CAA (Contributor Assignment Agreement) from you.
    
@@ -16,7 +16,7 @@ The CAA gives us the rights to your code, which we need e.g. to react to license
   
 The CAA closely follows a template established by the [Harmony project](http://harmonyagreements.org/), and CAAs are required by almost all open source projects which are non-trivial in scope.
 
-### What we need you to do:
+### What we need you to do
  
 1. Download the [Individual CAA (PDF)](https://github.com/crossbario/crossbar/raw/master/legal/individual_caa.pdf).
 

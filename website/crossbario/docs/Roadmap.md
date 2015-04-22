@@ -42,11 +42,11 @@ These allow databases to become WAMP clients. They offer all four WAMP client ro
 
 Release 3.0 adresses scalability and robustness/high availability both for Crossbar itself and for WAMP applications.
 
-### Multi-core/Multi-node Support
+### Multi-core and Multi-node Support
 
 WAMP messages are routed between routers. This allows to scale Crossbar and/or increase system availability by scaling up to multiple cores and/or scaling out to multiple nodes (clustering, federation).
 
-### Partitioned/distributed calls & events
+### Partitioned and distributed Calls and Events
 
 * Distributed calls allow load balancing for callees.
 * Partitioned calls enable using e.g. database sharding.

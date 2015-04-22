@@ -1,3 +1,5 @@
+# coding=utf8
+
 ###############################################################################
 ##
 ##  Copyright (C) 2013-2014 Tavendo GmbH
@@ -18,6 +20,7 @@
 
 import uuid
 import os
+import re
 
 import mimetypes
 
@@ -110,6 +113,9 @@ class MyInlineLexer(mistune.InlineLexer):
         return self.renderer.wiki_link(alt, link)
 
 
+HEADER_PAT_REGEX = r"^[a-zA-Z0-9_,\-\?\. ]*$"
+HEADER_PAT = re.compile(HEADER_PAT_REGEX)
+
 class DocPageRenderer(mistune.Renderer):
 
    def __init__(self, pages, debug = False):
@@ -117,6 +123,18 @@ class DocPageRenderer(mistune.Renderer):
       self.debug = debug
       self._pages = pages
       self._prefix = None
+
+   def header(self, text, level, raw=None):
+      if not HEADER_PAT.match(raw):
+         print("invalid header (does not match pattern {}): {}".format(HEADER_PAT_REGEX, raw))
+      if text != raw:
+         print("invalid header: {}".format(raw))
+      if True: # render anchors besides headline elements
+         anchor = text.lower().strip().replace(' ', '-')
+         res = u"""<h{level} id="{anchor}">{text}<a class="headerlink" title="Permalink to this headline" href="#{anchor}">¶</a></h{level}>""".format(level=level, text=text, anchor=anchor)
+      else:
+         res = mistune.Renderer.header(self, text, level, raw)
+      return res
 
    def wiki_link(self, alt, link):
       if self._prefix:

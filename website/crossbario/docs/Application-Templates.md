@@ -57,7 +57,7 @@ Once Crossbar has started you can access the HTML5 client under `http://localhos
 All application templates are licensed either under the BSD 2-clause license or under Apache 2.0. Both licenses allow you to use the code in your own applications, including closed-source and commercial applications.
 
 
-## Additional Examples & Demos
+## Additional Examples and Demos
 
 In addition to the simple 'Hello' templates, there are [examples](https://github.com/crossbario/crossbarexamples) and [demos](https://github.com/crossbario/crossbardemo).
 

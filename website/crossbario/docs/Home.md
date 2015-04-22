@@ -57,13 +57,13 @@ How to get started using your language or device of choice.
 
 
 
-## [Administration](Administration)
+## Administration
 
 How to adapt Crossbar.io for your specific use case.
 
-### [Configuration](Configuration)
+### Configuration
 
-Configuration options explained (with examples).
+The Configuration section covers configuring the basics of Crossbar.io, e.g. realms, transports and workers.
 
 * [Configuration Overview](Configuration Overview)
   - [Endpoints](Endpoints)
@@ -99,9 +99,9 @@ Configuration options explained (with examples).
 * [Container Configuration](Container Configuration)
 * [Guest Configuration](Guest Configuration)
 
-### [Going to Production](Going to Production)
+### Going to Production
 
-Tips for a performant and secure production configuration.
+This section covers security issues and fine-tuning of advanced options. Tips for a performant and secure production configuration.
 
 * [Running on privileged ports](Running on privileged ports)
 * [Secure WebSocket and HTTPS](Secure WebSocket and HTTPS)
@@ -121,7 +121,7 @@ Testing your instance & browser support.
 * [Stream Testee](Stream Testee)
 
 
-## [Programming Guides](Programming Guides)
+## Programming Guides
 
 Guides for using Crossbar.io in specific scenarios, or for using specific features of WAMP & Crossbar.io in your applications.
 

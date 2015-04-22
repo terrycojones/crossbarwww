@@ -24,7 +24,7 @@ else we suggest using SSH
 git clone git@github.com:crossbario/crossbar.git
 ```
 
-These clone the repository into a directory `crossbar` in your current directory.
+Then clone the repository into a directory `crossbar` in your current directory.
 
 If you want to name the directory differently, just add that directory name at the end, e.g.
 
@@ -32,7 +32,7 @@ If you want to name the directory differently, just add that directory name at t
 git clone https://github.com/crossbario/crossbar.git crossbar_source
 ```
 
-## Updating the repo & Crossbar
+## Updating the repository clone
 
 Unless you've just cloned the repository, you need to update it before installing. In a shell, in the repository directory, do
 

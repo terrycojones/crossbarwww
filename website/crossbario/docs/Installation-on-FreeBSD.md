@@ -1,6 +1,6 @@
 There are two methods of installing Crossbar -- from the official binary distribution, or from source.
 
-## Installing the Official Distribution (FreeBSD 10.1)
+## Installing the Official Distribution
 
 Crossbar hosts official binary packages for FreeBSD 10.1.
 If this is not the version of FreeBSD you are using, please install from source as mentioned below.

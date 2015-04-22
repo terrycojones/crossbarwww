@@ -66,7 +66,7 @@ cd ~/pypy-venv/
 Continue with the step _Installing **Crossbar.io**_.
 
 
-## Installing **Crossbar.io**
+## Installing Crossbar.io
 
 To install **Crossbar**.io with minimal (required) dependencies:
 

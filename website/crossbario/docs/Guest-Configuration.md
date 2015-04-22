@@ -39,7 +39,7 @@ The `options` are:
 5. `stdout`: Action on signal on standard out, can be `close`, `log` or `drop`
 6. `stderr`: Action on signal on standard error, can be `close`, `log` or `drop`
 
-## Path to the `executable`
+## Executable Path
 
 The argument `executable` provides the path to the executable that Crossbar.io uses when starting the worker. 
 
