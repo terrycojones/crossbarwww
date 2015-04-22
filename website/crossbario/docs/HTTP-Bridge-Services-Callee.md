@@ -95,21 +95,21 @@ Configure the `RESTCallee` WAMP component:
 }
 ````
 
-And then call the procedure, reading the response as JSON, and then printing the wikitext of the page to the terminal.
+This code snippet calls the procedure with the parameters to look up the current revision of the Twisted Wikipedia page, reads the web response as JSON, and then pretty prints the response to the terminal.
 
 ```python
 import json
-
+from twisted.internet import reactor
 from twisted.internet.defer import inlineCallbacks
-from autobahn.twisted.wamp import ApplicationSession
-
+from autobahn.twisted.wamp import ApplicationSession, ApplicationRunner
 
 class AppSession(ApplicationSession):
 
     @inlineCallbacks
     def onJoin(self, details):
-
         res = yield self.call("org.wikipedia.en.api",
+                              method="GET",
+                              url="",
                               params={
                                   "format": "json",
                                   "action": "query",
@@ -119,5 +119,12 @@ class AppSession(ApplicationSession):
                               })
 
         pageContent = json.loads(res["content"])
-        print(pageContent["query"]["pages"][0]["revisions"][0]["*"])
+        print(json.dumps(pageContent, sort_keys=True,
+                         indent=4, separators=(',', ': ')))
+        reactor.stop()
+
+if __name__ == '__main__':
+    from autobahn.twisted.wamp import ApplicationRunner
+    runner = ApplicationRunner("ws://127.0.0.1:8080/ws", "realm1")
+    runner.run(AppSession)
 ```
