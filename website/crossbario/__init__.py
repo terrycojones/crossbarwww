@@ -289,6 +289,11 @@ def page_impressum():
    session['tab_selected'] = 'page_impressum'
    return render_template('page_t_impressum.html')
 
+@app.route('/iotcookbook/')
+def page_iotcookbook():
+   session['tab_selected'] = 'page_iotcookbook'
+   return render_template('page_t_iotcookbook.html')
+
 
 
 if __name__ == "__main__":

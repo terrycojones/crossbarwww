@@ -11,10 +11,10 @@ There are two possibilities to install Crossbar.io:
 
 Crossbar.io is a Python application. In addition to Python, setup requires the PyWin32 additions and `pip`, a Python package manager.
 
-* Download [Python for Windows](https://www.python.org/downloads/windows/) - we recommend the latest 2.7.x 32-bit version (even on 64-bit systems).
-* Once you've installed Python, add `C:\Python27\` and `C:\Python27\Scripts` to your `PATH`
-* Download [PyWin32](http://sourceforge.net/projects/pywin32/files/pywin32/) - make sure you download the 32-bit version if you've installed a 32-bit Python (as recommended)
-* If you're on any Python version previous to 2.7.9, you need to install `pip`. Download the [`get-pip` script](https://bootstrap.pypa.io/get-pip.py) and run this (works from Windows Explorer or the download dialog of your browser).
+1. Download [Python for Windows 2.7.9](https://www.python.org/downloads/windows/) - **32-bit** even on 64-bit systems (strongly recommended)
+2. Add `C:\Python27\` and `C:\Python27\Scripts` to your `PATH`
+3. Download [PyWin32](http://sourceforge.net/projects/pywin32/files/pywin32/) - 32-bit version for Python 2.7
+4. If you're on any Python version previous to 2.7.9, you need to install `pip`. Download the [`get-pip` script](https://bootstrap.pypa.io/get-pip.py) and run this (works from Windows Explorer or the download dialog of your browser).
 
 You now have all the dependencies for a basic Crossbar.io installation. 
 
@@ -26,7 +26,7 @@ Now you can install Crossbar.io by opening a command shell and doing
 pip install crossbar
 ```
 
-To verify that the installation was successful, in the shell do
+Ignore any possible warnings about C extensions not being installed. To verify that the installation was successful, in the shell do
 
 ```sh
 crossbar version

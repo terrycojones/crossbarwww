@@ -1,0 +1,127 @@
+{% extends "layout_t.html" %}
+
+{% block subheader %}
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/iotcookbook.css') }}">
+{% endblock %}
+
+{% block content %}
+
+   <div id="viewport">
+
+      <a id="top"></a>
+      <div id="main" class="main">
+         <h1>
+            IoT Cookbook for WAMP & Crossbar.io
+         </h1>
+
+         <p class="problem">
+            You want to solve a problem -
+         </p>
+         <p class="solution">
+            we offer components & recipes to build your solutions
+         </p>
+         <ul>
+            <li>
+               All components come with <strong>built-in connectivity</strong>. They can connect from anywhere,  and you can easily  build distributed applications.
+            </li>
+            <li>
+               All components can <strong>communicate freely with each other</strong> - including calling procedures. The compoments connect via a Crossbar.io application router. Client libraries for WAMP, the protocol used, are available for 9 languages (and growing). You can also integrate services with REST APIs, so your applications can talk to pretty much anything on the internet.
+            </li>
+            <li>
+               All recipes include <strong>step-by-step instructions</strong> to get things working. Just follow the instructions - no need to worry about the technological background details. If you want to dive deeper into the technology, we provide links to get your started.
+            </li>
+            <li>
+               The software used in these recipes is <strong>open source</strong>, and part of a growing ecosystem aorund the WAMP protocol.
+            </li>
+            <li>
+               A <strong>variety of microcontrollers</strong>, including the Raspberry Pi and Arduino Yun, are used as part of components.
+            </li>
+            
+         </ul>
+
+         <h2>
+            The components
+         </h2>
+         <p>
+            Building blocks, ready to use for solving your problem!
+         </p>
+         <ul>
+            <li>
+               Speech Synthesis (Raspberry Pi)
+            </li>
+            <li>
+               X-Box Controller (Raspberry Pi)
+            </li>
+            <li>
+               Acceleromoted (Tessel)
+            </li>
+            <li>
+               Camera (Tessel)
+            </li>
+         </ul>
+
+
+         <h2>
+            The applications
+         </h2>
+
+         <p>
+            Applications which use the components. Get an idea for how combining things works, find code to re-use, be inspired - and maybe already find a solution which fits your needs!
+         </p>
+
+         <ul>
+            <li>
+               Tessel Alarm App
+            </li>
+            <li>
+               Real-time charting with the Arduino Yun
+            </li>
+         </ul>
+
+         <h2>
+            Components and applications by device
+         </h2>
+
+         <p>
+            Pick a microcontroller and see what we are offering for it: 
+         </p>
+         <ul>
+            <li>
+               Raspberry Pi
+            </li>
+            <li>
+               Arduino Yun
+            </li>
+            <li>
+               Tessel
+            </li>
+         </ul>
+
+         <h2>
+            Getting a WAMP router
+         </h2>
+
+         <p>
+            There are three main ways to gettin a WAMP router
+         </p>
+
+         <ul>
+            <li>
+               We offer a demo instance for testing and light development workloads.
+            </li>
+            <li>
+               You can quickly spin up a virtual machine with Crossbar.io preinstalled. We suggest Microsoft Azure, but Amazon EC2 also works.
+            </li>
+            <li>
+               You can install Crossbar.io yourself - locally or in the cloud.
+            </li>
+         </ul>
+            
+         
+
+         
+      </div>
+   </div>
+
+{% endblock %}
