@@ -71,7 +71,6 @@ class MyFrontendComponent(wamp.ApplicationSession):
       else:
          raise Exception("don't know how to handle authmethod {}".format(challenge.method))
 
-   @inlineCallbacks
    def onJoin(self, details):
       print("ok, session joined!")
 ```
