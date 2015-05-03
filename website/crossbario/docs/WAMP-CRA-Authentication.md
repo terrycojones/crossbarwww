@@ -66,7 +66,7 @@ class MyFrontendComponent(wamp.ApplicationSession):
    def onChallenge(self, challenge):
       if challenge.method == u"wampcra":
          signature = auth.compute_wcs(u"secret2".encode('utf8'),
-                                      challenge.extra['challenge'].encode('utf8'))
+                                      challenge.extra['challenge'])
          return signature.decode('ascii')
       else:
          raise Exception("don't know how to handle authmethod {}".format(challenge.method))
